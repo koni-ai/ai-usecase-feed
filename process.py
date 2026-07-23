@@ -311,7 +311,23 @@ def find_claude_executable(explicit: str | None = None) -> str:
 def verify_subscription_auth(
     claude_executable: str,
     runner: Callable[..., subprocess.CompletedProcess[str]] = subprocess.run,
+    environment: dict[str, str] | None = None,
 ) -> dict[str, Any]:
+    auth_env = os.environ if environment is None else environment
+    oauth_token = auth_env.get("CLAUDE_CODE_OAUTH_TOKEN", "").strip()
+    if oauth_token:
+        if any(auth_env.get(key) for key in SENSITIVE_ENV_KEYS):
+            raise SubscriptionAuthError(
+                "구독 OAuth와 유료 API/클라우드 인증을 함께 사용할 수 없습니다."
+            )
+        if not oauth_token.startswith("sk-ant-oat01-") or len(oauth_token) <= 13:
+            raise SubscriptionAuthError("Claude 구독 OAuth 토큰 형식이 올바르지 않습니다.")
+        return {
+            "logged_in": True,
+            "auth_method": "claude_code_oauth_token",
+            "subscription_type": "subscription",
+        }
+
     try:
         completed = runner(
             [claude_executable, "auth", "status"],

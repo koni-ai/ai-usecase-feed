@@ -331,6 +331,29 @@ class ProcessorTests(unittest.TestCase):
         with self.assertRaises(process.SubscriptionAuthError):
             process.verify_subscription_auth("claude", runner=runner_key)
 
+        def runner_never(*_args, **_kwargs) -> subprocess.CompletedProcess[str]:
+            self.fail("OAuth 토큰 경로에서는 로컬 로그인 상태를 조회하면 안 됩니다.")
+
+        oauth_auth = process.verify_subscription_auth(
+            "claude",
+            runner=runner_never,
+            environment={"CLAUDE_CODE_OAUTH_TOKEN": "sk-ant-oat01-test_token"},
+        )
+        self.assertEqual("claude_code_oauth_token", oauth_auth["auth_method"])
+        self.assertEqual("subscription", oauth_auth["subscription_type"])
+
+        for unsafe_env in (
+            {"CLAUDE_CODE_OAUTH_TOKEN": "not-a-subscription-token"},
+            {
+                "CLAUDE_CODE_OAUTH_TOKEN": "sk-ant-oat01-test_token",
+                "ANTHROPIC_API_KEY": "metered-key",
+            },
+        ):
+            with self.assertRaises(process.SubscriptionAuthError):
+                process.verify_subscription_auth(
+                    "claude", runner=runner_never, environment=unsafe_env
+                )
+
     def test_claude_command_disables_tools_and_scrubs_api_key(self) -> None:
         captured: dict = {}
         payload = {"results": [{"input_id": "a", "case": None}]}
