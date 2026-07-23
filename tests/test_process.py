@@ -311,7 +311,9 @@ class ProcessorTests(unittest.TestCase):
                 stderr="",
             )
 
-        auth = process.verify_subscription_auth("claude", runner=runner_ok)
+        auth = process.verify_subscription_auth(
+            "claude", runner=runner_ok, environment={}
+        )
         self.assertEqual("max", auth["subscription_type"])
 
         def runner_key(*_args, **_kwargs) -> subprocess.CompletedProcess[str]:
@@ -329,7 +331,9 @@ class ProcessorTests(unittest.TestCase):
             )
 
         with self.assertRaises(process.SubscriptionAuthError):
-            process.verify_subscription_auth("claude", runner=runner_key)
+            process.verify_subscription_auth(
+                "claude", runner=runner_key, environment={}
+            )
 
         def runner_never(*_args, **_kwargs) -> subprocess.CompletedProcess[str]:
             self.fail("OAuth 토큰 경로에서는 로컬 로그인 상태를 조회하면 안 됩니다.")
