@@ -3,6 +3,11 @@
 공개된 AI 실제 활용사례를 매일 수집하고 한국어 카드로 가공해 보여주는
 개인용 모바일 피드입니다.
 
+## 바로 보기
+
+- 모바일·PC 공용: https://koni-ai.github.io/ai-usecase-feed/
+- GitHub 저장소: https://github.com/koni-ai/ai-usecase-feed
+
 ## 운영 구조
 
 - 매일 오전 7시(Asia/Seoul) GitHub Actions 실행
@@ -26,4 +31,3 @@ python -B run.py
 Actions에는 `CLAUDE_CODE_OAUTH_TOKEN` 하나만 필요합니다.
 토큰은 `claude setup-token`으로 생성하고 GitHub Secret에만 저장합니다.
 파일, 커밋, 로그에는 토큰을 기록하지 않습니다.
-
