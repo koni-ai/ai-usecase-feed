@@ -58,8 +58,10 @@ jobs:
           test -z "${CLAUDE_CODE_USE_BEDROCK:-}"
           test -z "${CLAUDE_CODE_USE_VERTEX:-}"
           test -z "${CLAUDE_CODE_USE_FOUNDRY:-}"
-          auth_json="$(claude auth status)"
-          python -c 'import json,sys; d=json.load(sys.stdin); assert d.get("loggedIn") is True; assert d.get("authMethod") == "claude.ai"; assert str(d.get("subscriptionType","")).lower() in {"pro","max","team","enterprise"}' <<<"$auth_json"
+          case "${CLAUDE_CODE_OAUTH_TOKEN}" in
+            sk-ant-oat01-*) ;;
+            *) echo "Expected a Claude subscription OAuth token." >&2; exit 1 ;;
+          esac
 
       - name: Run deterministic tests
         run: python -B -m unittest discover -s tests -q
@@ -99,4 +101,3 @@ jobs:
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

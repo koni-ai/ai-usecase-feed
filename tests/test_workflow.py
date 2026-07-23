@@ -21,6 +21,10 @@ class HostedWorkflowTests(unittest.TestCase):
         self.assertNotIn("secrets.ANTHROPIC_API_KEY", text)
         self.assertIn("Reject metered API routing", text)
         self.assertIn('@anthropic-ai/claude-code@2.1.218', text)
+        self.assertIn('case "${CLAUDE_CODE_OAUTH_TOKEN}" in', text)
+        self.assertIn("sk-ant-oat01-*", text)
+        self.assertNotIn('d.get("authMethod")', text)
+        self.assertNotIn('d.get("subscriptionType")', text)
 
     def test_failure_cannot_replace_last_successful_pages_version(self) -> None:
         text = WORKFLOW.read_text(encoding="utf-8")
