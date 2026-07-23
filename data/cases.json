@@ -1,0 +1,140 @@
+[
+  {
+    "id": "2026-07-23-026",
+    "title": "로컬 LLM에 KOSIS MCP 연동, HITL 승인 데모",
+    "summary": "노트북에서 구동하는 9B 로컬 모델에 국가통계포털(KOSIS) 공식 MCP를 연결해 API 키 없이 합계출산율 데이터를 조회하고 차트를 그린 뒤, 파일 저장 같은 민감 작업에는 사람이 직접 승인하는 HITL 워크플로를 구현한 사례.",
+    "tool": [
+      "로컬 LLM",
+      "MCP",
+      "KOSIS API"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=31719",
+    "source_name": "GeekNews",
+    "collected_at": "2026-07-23"
+  },
+  {
+    "id": "2026-07-23-025",
+    "title": "자연어로 개인 앱 만드는 바이브 코딩 플랫폼",
+    "summary": "자연어 지시(바이브 코딩)만으로 사용자가 자신만의 개인화된 앱을 만들고 커스터마이징할 수 있는 플랫폼. 신경다양인 친구들의 경험에서 영감을 받아 앱 간 컨텍스트 공유와 루틴 적응 기능을 제공.",
+    "tool": [
+      "Oriflow"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://oriflow.in",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-23"
+  },
+  {
+    "id": "2026-07-23-024",
+    "title": "여러 LLM이 함께 포커 두는 PokerLLM",
+    "summary": "Claude, GPT, Gemini, Grok 등 여러 AI 모델이 텍사스 홀덤 포커를 서로 겨루며 플레이하는 것을 관전하거나 직접 AI와 대결할 수 있는 서비스.",
+    "tool": [
+      "Claude",
+      "GPT",
+      "Gemini",
+      "Grok"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://poker.sanskarshukla.com",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-23"
+  },
+  {
+    "id": "2026-07-23-023",
+    "title": "Codex 기반 AI 구직 검색·이력서 맞춤 도구",
+    "summary": "로컬 Codex를 백엔드로 사용해 희망 직무에 맞는 채용공고를 검색하고, 각 공고에 맞춰 이력서와 커버레터를 자동으로 맞춤 작성하며 LinkedIn에서 담당자를 찾아 연락 메시지까지 초안 작성하는 개인 구직 대시보드.",
+    "tool": [
+      "Codex"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://searchdesk.app",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-23"
+  },
+  {
+    "id": "2026-07-23-021",
+    "title": "채용 이메일 자동 답장 생성 도구",
+    "summary": "리크루터가 보낸 채용 제안 이메일을 읽고 AI가 적절한 답장을 자동으로 작성해주는 무료 웹 도구. OfferFlowAI에서 제공.",
+    "tool": [
+      "OfferFlowAI"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.offerflowai.com/tools/recruiter-reply",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-23"
+  },
+  {
+    "id": "2026-07-23-020",
+    "title": "AI 코치가 함께하는 충동 억제 잠금 앱",
+    "summary": "스스로도 모르는 무작위 비밀번호로 스마트폰을 잠그고, 습관 과학 기반 AI 코치가 충동이 올 때 대화로 함께 버텨주는 디지털 디톡스·중독 관리 앱.",
+    "tool": [
+      "AI 챗봇 코치",
+      "음성 메시지 녹음"
+    ],
+    "domain": "기타",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.kalmdown.app",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-23"
+  },
+  {
+    "id": "2026-07-23-017",
+    "title": "AI 앵커가 진행하는 개인화 뉴스 팟캐스트",
+    "summary": "관심 주제별로 AI 페르소나(앵커)가 매일 아침 이메일 브리핑과 팟캐스트를 자동 생성. 출처 표기·편향 제거·톤 커스터마이징을 지원하는 개인화 미디어 서비스.",
+    "tool": [
+      "LLM 요약 생성",
+      "TTS 음성 합성",
+      "AI 페르소나 진행자"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://beamwire.ai",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-23"
+  },
+  {
+    "id": "2026-07-23-016",
+    "title": "OpenAPI 스펙을 MCP 서버 코드로 자동 생성",
+    "summary": "OpenAPI/Postman 스펙이나 URL을 입력하면 Claude Desktop 등과 바로 연동되는 Python MCP 서버 소스코드를 30초 만에 생성해주는 CLI 도구. 런타임 의존성 없이 생성된 코드를 그대로 소유·수정·배포 가능.",
+    "tool": [
+      "mcpgen-cli",
+      "Claude Desktop",
+      "MCP"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/JnanaSrota/mcpgen",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-23"
+  },
+  {
+    "id": "2026-07-23-012",
+    "title": "MCP 서버로 Claude가 사이트 배포·수정",
+    "summary": "Nippy MCP 서버를 Claude Code/Cursor 등에 연결하면 AI 어시스턴트가 만든 HTML/파일을 바로 라이브 URL로 배포하고 같은 주소에서 계속 수정할 수 있음. OAuth 인증과 스코프별 토큰으로 배포/조회/관리 권한을 분리.",
+    "tool": [
+      "Claude Code",
+      "MCP",
+      "Nippy"
+    ],
+    "domain": "개발",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://mcp.so/servers/nippy",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-23"
+  }
+]

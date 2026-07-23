@@ -1,0 +1,102 @@
+name: Daily AI use-case feed
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 7 * * *"
+      timezone: "Asia/Seoul"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ai-usecase-feed-production
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      PYTHONUTF8: "1"
+      PYTHONIOENCODING: "utf-8"
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --requirement requirements.txt
+          npm install --global @anthropic-ai/claude-code@2.1.218
+
+      - name: Reject metered API routing
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${CLAUDE_CODE_OAUTH_TOKEN:-}"
+          test -z "${ANTHROPIC_API_KEY:-}"
+          test -z "${CLAUDE_CODE_USE_BEDROCK:-}"
+          test -z "${CLAUDE_CODE_USE_VERTEX:-}"
+          test -z "${CLAUDE_CODE_USE_FOUNDRY:-}"
+          auth_json="$(claude auth status)"
+          python -c 'import json,sys; d=json.load(sys.stdin); assert d.get("loggedIn") is True; assert d.get("authMethod") == "claude.ai"; assert str(d.get("subscriptionType","")).lower() in {"pro","max","team","enterprise"}' <<<"$auth_json"
+
+      - name: Run deterministic tests
+        run: python -B -m unittest discover -s tests -q
+
+      - name: Collect, process, and build
+        run: python -B run.py
+
+      - name: Validate generated feed
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s site/index.html
+          python -c 'import json,pathlib; cards=json.loads(pathlib.Path("data/cases.json").read_text(encoding="utf-8")); assert isinstance(cards,list)'
+
+      - name: Persist successful state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/seen.json data/process_state.json data/cases.json data/raw site/index.html
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+          else
+            git commit -m "chore: update daily AI use-case feed"
+            git push origin HEAD:main
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+

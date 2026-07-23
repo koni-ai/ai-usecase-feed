@@ -1,0 +1,32 @@
+sources:
+  - name: GeekNews
+    type: rss
+    endpoint: https://news.hada.io/rss/news
+    enabled: true
+
+  - name: Hacker News Show HN
+    type: hn_algolia
+    endpoint: https://hn.algolia.com/api/v1/search_by_date?tags=show_hn
+    recent_hours: 24
+    enabled: true
+
+  - name: r/ClaudeAI
+    type: reddit_json
+    endpoint: https://www.reddit.com/r/ClaudeAI/top.json?t=day&limit=25
+    fallback:
+      type: rss
+      endpoint: https://www.reddit.com/r/ClaudeAI/top/.rss?t=day
+    enabled: true
+
+  - name: r/LocalLLaMA
+    type: reddit_json
+    endpoint: https://www.reddit.com/r/LocalLLaMA/top.json?t=day&limit=25
+    fallback:
+      type: rss
+      endpoint: https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day
+    enabled: true
+
+  - name: Simon Willison
+    type: rss
+    endpoint: https://simonwillison.net/atom/everything/
+    enabled: true

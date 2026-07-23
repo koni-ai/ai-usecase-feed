@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="매일 수집한 구체적인 AI 활용사례 개인 피드">
+  <title>AI 활용사례 피드</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090b11;
+      --panel: #11141d;
+      --panel-2: #171b27;
+      --line: #272c3b;
+      --text: #f4f5f8;
+      --muted: #9aa3b7;
+      --accent: #9b8cff;
+      --accent-2: #62d6ae;
+      --warn: #ffbd66;
+      --shadow: 0 18px 50px rgba(0,0,0,.28);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 50% -12rem, rgba(115,92,255,.18), transparent 28rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Pretendard, "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+      line-height: 1.62;
+      word-break: keep-all;
+    }
+    button, select, input { font: inherit; }
+    button, select, label { min-height: 44px; }
+    button, select {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--text);
+      background: var(--panel-2);
+    }
+    button { cursor: pointer; }
+    button:focus-visible, select:focus-visible, a:focus-visible, input:focus-visible {
+      outline: 3px solid rgba(155,140,255,.42);
+      outline-offset: 2px;
+    }
+    .app { width: min(640px, 100%); margin: 0 auto; padding: 0 16px 80px; }
+    header { padding: 48px 4px 26px; }
+    .eyebrow {
+      color: var(--accent-2);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 10px 0 8px;
+      font-size: clamp(31px, 8vw, 46px);
+      line-height: 1.12;
+      letter-spacing: -.045em;
+    }
+    header p { margin: 0; color: var(--muted); }
+    .filter-shell {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      margin: 0 -16px 20px;
+      padding: 10px 16px 12px;
+      border-bottom: 1px solid rgba(39,44,59,.84);
+      background: rgba(9,11,17,.92);
+      backdrop-filter: blur(16px);
+    }
+    .filter-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    select { width: 100%; padding: 0 12px; }
+    .toggles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 8px;
+    }
+    .toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 0 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--panel);
+      color: var(--muted);
+      font-size: 13px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .toggle:has(input:checked) {
+      border-color: rgba(155,140,255,.72);
+      background: rgba(155,140,255,.13);
+      color: #ddd8ff;
+    }
+    .toggle input { margin: 0; accent-color: var(--accent); }
+    .status {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 13px 2px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .feed { display: grid; gap: 14px; }
+    .card {
+      position: relative;
+      overflow: hidden;
+      padding: 21px 19px 17px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(145deg, rgba(24,28,40,.98), rgba(15,18,26,.98));
+      box-shadow: var(--shadow);
+      transition: opacity .18s ease, border-color .18s ease, transform .18s ease;
+    }
+    .card:hover { border-color: #3a4053; transform: translateY(-1px); }
+    .card.is-read { opacity: .52; box-shadow: none; }
+    .card-head { display: grid; grid-template-columns: 1fr 44px; gap: 10px; align-items: start; }
+    h2 { margin: 0; font-size: 20px; line-height: 1.36; letter-spacing: -.02em; }
+    .star {
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      color: #798197;
+      font-size: 23px;
+    }
+    .star.is-on { color: #ffd36d; border-color: rgba(255,211,109,.42); }
+    .summary { margin: 13px 0 15px; color: #c9cede; font-size: 14px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 6px; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 27px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #222738;
+      color: #bdc4d5;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .badge.tool { color: #d8d2ff; background: rgba(155,140,255,.16); }
+    .badge.action { color: #a7f0d4; background: rgba(98,214,174,.13); }
+    .badge.hard { color: #ffd8a4; background: rgba(255,189,102,.12); }
+    .card-foot {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 17px;
+      padding-top: 13px;
+      border-top: 1px solid rgba(39,44,59,.78);
+    }
+    .meta { margin-right: auto; color: #7f899e; font-size: 11px; }
+    .read-button {
+      min-width: 72px;
+      padding: 0 12px;
+      color: #b9c1d2;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .source {
+      display: inline-grid;
+      place-items: center;
+      min-height: 44px;
+      padding: 0 12px;
+      border: 1px solid rgba(155,140,255,.35);
+      border-radius: 12px;
+      color: #d8d2ff;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      background: rgba(155,140,255,.08);
+    }
+    .empty {
+      padding: 58px 24px;
+      border: 1px dashed #343a4d;
+      border-radius: 18px;
+      color: var(--muted);
+      text-align: center;
+    }
+    .selftest {
+      display: none;
+      margin-bottom: 12px;
+      padding: 12px;
+      border-radius: 10px;
+      background: #12281f;
+      color: #a7f0d4;
+      font: 12px/1.4 ui-monospace, Consolas, monospace;
+    }
+    body[data-selftest] .selftest { display: block; }
+    @media (max-width: 430px) {
+      .app { padding-inline: 12px; }
+      .filter-shell { margin-inline: -12px; padding-inline: 12px; }
+      header { padding-top: 34px; }
+      .card { padding: 18px 15px 14px; }
+      .card-foot { flex-wrap: wrap; }
+      .meta { flex-basis: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="eyebrow">Daily AI field notes</div>
+      <h1>AI 활용사례 피드</h1>
+      <p>뉴스가 아니라, 실제로 무엇을 만들고 자동화했는지만 모았습니다.</p>
+    </header>
+
+    <section class="filter-shell" aria-label="피드 필터">
+      <div class="filter-row">
+        <select id="toolFilter" aria-label="도구별 필터"><option value="">모든 도구</option></select>
+        <select id="domainFilter" aria-label="도메인별 필터"><option value="">모든 도메인</option></select>
+      </div>
+      <div class="toggles">
+        <label class="toggle"><input id="actionableOnly" type="checkbox"> 따라하기 쉬운 사례</label>
+        <label class="toggle"><input id="bookmarkedOnly" type="checkbox"> ★ 북마크만</label>
+      </div>
+      <div class="status"><span id="countStatus">0건</span><span>최신순 · 로컬 저장</span></div>
+    </section>
+
+    <div id="selftest" class="selftest" role="status"></div>
+    <section id="feed" class="feed" aria-live="polite"></section>
+  </main>
+
+  <script id="caseData" type="application/json">[{"id":"2026-07-23-026","title":"로컬 LLM에 KOSIS MCP 연동, HITL 승인 데모","summary":"노트북에서 구동하는 9B 로컬 모델에 국가통계포털(KOSIS) 공식 MCP를 연결해 API 키 없이 합계출산율 데이터를 조회하고 차트를 그린 뒤, 파일 저장 같은 민감 작업에는 사람이 직접 승인하는 HITL 워크플로를 구현한 사례.","tool":["로컬 LLM","MCP","KOSIS API"],"domain":"개발","difficulty":"어려움","actionable":true,"source_url":"https://news.hada.io/topic?id=31719","source_name":"GeekNews","collected_at":"2026-07-23"},{"id":"2026-07-23-025","title":"자연어로 개인 앱 만드는 바이브 코딩 플랫폼","summary":"자연어 지시(바이브 코딩)만으로 사용자가 자신만의 개인화된 앱을 만들고 커스터마이징할 수 있는 플랫폼. 신경다양인 친구들의 경험에서 영감을 받아 앱 간 컨텍스트 공유와 루틴 적응 기능을 제공.","tool":["Oriflow"],"domain":"개발","difficulty":"중간","actionable":true,"source_url":"https://oriflow.in","source_name":"Hacker News Show HN","collected_at":"2026-07-23"},{"id":"2026-07-23-024","title":"여러 LLM이 함께 포커 두는 PokerLLM","summary":"Claude, GPT, Gemini, Grok 등 여러 AI 모델이 텍사스 홀덤 포커를 서로 겨루며 플레이하는 것을 관전하거나 직접 AI와 대결할 수 있는 서비스.","tool":["Claude","GPT","Gemini","Grok"],"domain":"콘텐츠","difficulty":"쉬움","actionable":true,"source_url":"https://poker.sanskarshukla.com","source_name":"Hacker News Show HN","collected_at":"2026-07-23"},{"id":"2026-07-23-023","title":"Codex 기반 AI 구직 검색·이력서 맞춤 도구","summary":"로컬 Codex를 백엔드로 사용해 희망 직무에 맞는 채용공고를 검색하고, 각 공고에 맞춰 이력서와 커버레터를 자동으로 맞춤 작성하며 LinkedIn에서 담당자를 찾아 연락 메시지까지 초안 작성하는 개인 구직 대시보드.","tool":["Codex"],"domain":"업무자동화","difficulty":"어려움","actionable":true,"source_url":"https://searchdesk.app","source_name":"Hacker News Show HN","collected_at":"2026-07-23"},{"id":"2026-07-23-021","title":"채용 이메일 자동 답장 생성 도구","summary":"리크루터가 보낸 채용 제안 이메일을 읽고 AI가 적절한 답장을 자동으로 작성해주는 무료 웹 도구. OfferFlowAI에서 제공.","tool":["OfferFlowAI"],"domain":"업무자동화","difficulty":"쉬움","actionable":true,"source_url":"https://www.offerflowai.com/tools/recruiter-reply","source_name":"Hacker News Show HN","collected_at":"2026-07-23"},{"id":"2026-07-23-020","title":"AI 코치가 함께하는 충동 억제 잠금 앱","summary":"스스로도 모르는 무작위 비밀번호로 스마트폰을 잠그고, 습관 과학 기반 AI 코치가 충동이 올 때 대화로 함께 버텨주는 디지털 디톡스·중독 관리 앱.","tool":["AI 챗봇 코치","음성 메시지 녹음"],"domain":"기타","difficulty":"중간","actionable":true,"source_url":"https://www.kalmdown.app","source_name":"Hacker News Show HN","collected_at":"2026-07-23"},{"id":"2026-07-23-017","title":"AI 앵커가 진행하는 개인화 뉴스 팟캐스트","summary":"관심 주제별로 AI 페르소나(앵커)가 매일 아침 이메일 브리핑과 팟캐스트를 자동 생성. 출처 표기·편향 제거·톤 커스터마이징을 지원하는 개인화 미디어 서비스.","tool":["LLM 요약 생성","TTS 음성 합성","AI 페르소나 진행자"],"domain":"콘텐츠","difficulty":"어려움","actionable":true,"source_url":"https://beamwire.ai","source_name":"Hacker News Show HN","collected_at":"2026-07-23"},{"id":"2026-07-23-016","title":"OpenAPI 스펙을 MCP 서버 코드로 자동 생성","summary":"OpenAPI/Postman 스펙이나 URL을 입력하면 Claude Desktop 등과 바로 연동되는 Python MCP 서버 소스코드를 30초 만에 생성해주는 CLI 도구. 런타임 의존성 없이 생성된 코드를 그대로 소유·수정·배포 가능.","tool":["mcpgen-cli","Claude Desktop","MCP"],"domain":"개발","difficulty":"중간","actionable":true,"source_url":"https://github.com/JnanaSrota/mcpgen","source_name":"Hacker News Show HN","collected_at":"2026-07-23"},{"id":"2026-07-23-012","title":"MCP 서버로 Claude가 사이트 배포·수정","summary":"Nippy MCP 서버를 Claude Code/Cursor 등에 연결하면 AI 어시스턴트가 만든 HTML/파일을 바로 라이브 URL로 배포하고 같은 주소에서 계속 수정할 수 있음. OAuth 인증과 스코프별 토큰으로 배포/조회/관리 권한을 분리.","tool":["Claude Code","MCP","Nippy"],"domain":"개발","difficulty":"쉬움","actionable":true,"source_url":"https://mcp.so/servers/nippy","source_name":"Hacker News Show HN","collected_at":"2026-07-23"}]</script>
+  <script>
+    (() => {
+      "use strict";
+      const CASES = JSON.parse(document.getElementById("caseData").textContent);
+      const KEYS = {
+        bookmarks: "ai-usecase-feed:bookmarks:v1",
+        read: "ai-usecase-feed:read:v1"
+      };
+      const byId = id => document.getElementById(id);
+      const safeLoadSet = key => {
+        try {
+          const value = JSON.parse(localStorage.getItem(key) || "[]");
+          return new Set(Array.isArray(value) ? value.filter(v => typeof v === "string") : []);
+        } catch (_) { return new Set(); }
+      };
+      const safeSaveSet = (key, set) => {
+        try { localStorage.setItem(key, JSON.stringify([...set])); return true; }
+        catch (_) { return false; }
+      };
+      const bookmarks = safeLoadSet(KEYS.bookmarks);
+      const read = safeLoadSet(KEYS.read);
+
+      const toolFilter = byId("toolFilter");
+      const domainFilter = byId("domainFilter");
+      const actionableOnly = byId("actionableOnly");
+      const bookmarkedOnly = byId("bookmarkedOnly");
+      const feed = byId("feed");
+      const countStatus = byId("countStatus");
+
+      const appendOptions = (select, values) => {
+        [...new Set(values)].sort((a, b) => a.localeCompare(b, "ko")).forEach(value => {
+          const option = document.createElement("option");
+          option.value = value;
+          option.textContent = value;
+          select.append(option);
+        });
+      };
+      appendOptions(toolFilter, CASES.flatMap(card => card.tool));
+      appendOptions(domainFilter, CASES.map(card => card.domain));
+
+      const makeBadge = (text, className = "") => {
+        const badge = document.createElement("span");
+        badge.className = `badge ${className}`.trim();
+        badge.textContent = text;
+        return badge;
+      };
+
+      const toggleBookmark = id => {
+        bookmarks.has(id) ? bookmarks.delete(id) : bookmarks.add(id);
+        safeSaveSet(KEYS.bookmarks, bookmarks);
+        render();
+      };
+      const toggleRead = id => {
+        read.has(id) ? read.delete(id) : read.add(id);
+        safeSaveSet(KEYS.read, read);
+        render();
+      };
+
+      const makeCard = card => {
+        const article = document.createElement("article");
+        article.className = "card" + (read.has(card.id) ? " is-read" : "");
+        article.dataset.id = card.id;
+
+        const head = document.createElement("div");
+        head.className = "card-head";
+        const title = document.createElement("h2");
+        title.textContent = card.title;
+        const star = document.createElement("button");
+        star.type = "button";
+        star.className = "star" + (bookmarks.has(card.id) ? " is-on" : "");
+        star.setAttribute("aria-label", bookmarks.has(card.id) ? "북마크 해제" : "북마크");
+        star.setAttribute("aria-pressed", String(bookmarks.has(card.id)));
+        star.textContent = bookmarks.has(card.id) ? "★" : "☆";
+        star.addEventListener("click", () => toggleBookmark(card.id));
+        head.append(title, star);
+
+        const summary = document.createElement("p");
+        summary.className = "summary";
+        summary.textContent = card.summary;
+
+        const badges = document.createElement("div");
+        badges.className = "badges";
+        card.tool.forEach(tool => badges.append(makeBadge(tool, "tool")));
+        badges.append(makeBadge(card.domain));
+        badges.append(makeBadge(card.difficulty, card.difficulty === "어려움" ? "hard" : ""));
+        if (card.actionable) badges.append(makeBadge("따라하기 가능", "action"));
+
+        const foot = document.createElement("div");
+        foot.className = "card-foot";
+        const meta = document.createElement("span");
+        meta.className = "meta";
+        meta.textContent = `${card.source_name} · ${card.collected_at}`;
+        const readButton = document.createElement("button");
+        readButton.type = "button";
+        readButton.className = "read-button";
+        readButton.textContent = read.has(card.id) ? "읽음 취소" : "읽음";
+        readButton.setAttribute("aria-pressed", String(read.has(card.id)));
+        readButton.addEventListener("click", () => toggleRead(card.id));
+        const source = document.createElement("a");
+        source.className = "source";
+        source.href = card.source_url;
+        source.target = "_blank";
+        source.rel = "noopener noreferrer";
+        source.textContent = "원문 보기 ↗";
+        source.addEventListener("click", () => {
+          if (!read.has(card.id)) {
+            read.add(card.id);
+            safeSaveSet(KEYS.read, read);
+          }
+        });
+        foot.append(meta, readButton, source);
+        article.append(head, summary, badges, foot);
+        return article;
+      };
+
+      const filteredCases = () => CASES.filter(card =>
+        (!toolFilter.value || card.tool.includes(toolFilter.value)) &&
+        (!domainFilter.value || card.domain === domainFilter.value) &&
+        (!actionableOnly.checked || card.actionable) &&
+        (!bookmarkedOnly.checked || bookmarks.has(card.id))
+      );
+
+      function render() {
+        const visible = filteredCases();
+        feed.replaceChildren();
+        if (!visible.length) {
+          const empty = document.createElement("div");
+          empty.className = "empty";
+          empty.textContent = "조건에 맞는 사례가 없습니다.";
+          feed.append(empty);
+        } else {
+          const fragment = document.createDocumentFragment();
+          visible.forEach(card => fragment.append(makeCard(card)));
+          feed.append(fragment);
+        }
+        countStatus.textContent = `${visible.length}건 / 전체 ${CASES.length}건`;
+      }
+
+      [toolFilter, domainFilter, actionableOnly, bookmarkedOnly]
+        .forEach(control => control.addEventListener("change", render));
+
+      const runSelfTest = () => {
+        const mode = new URLSearchParams(location.search).get("selftest");
+        if (!mode) return;
+        const status = byId("selftest");
+        try {
+          if (!CASES.length) throw new Error("테스트할 카드가 없음");
+          const id = CASES[0].id;
+          if (mode === "write") {
+            bookmarks.add(id);
+            read.add(id);
+            if (!safeSaveSet(KEYS.bookmarks, bookmarks) || !safeSaveSet(KEYS.read, read)) {
+              throw new Error("localStorage 저장 실패");
+            }
+            render();
+          }
+          toolFilter.value = CASES[0].tool[0];
+          domainFilter.value = CASES[0].domain;
+          actionableOnly.checked = CASES[0].actionable;
+          bookmarkedOnly.checked = true;
+          render();
+          const filtered = filteredCases();
+          const filtersPassed =
+            filtered.length > 0 &&
+            filtered.every(card =>
+              card.tool.includes(toolFilter.value) &&
+              card.domain === domainFilter.value &&
+              (!actionableOnly.checked || card.actionable) &&
+              bookmarks.has(card.id)
+            );
+          toolFilter.value = "";
+          domainFilter.value = "";
+          actionableOnly.checked = false;
+          bookmarkedOnly.checked = false;
+          render();
+          const card = feed.querySelector(`[data-id="${CSS.escape(id)}"]`);
+          const touchTargets = [
+            toolFilter,
+            domainFilter,
+            actionableOnly.closest("label"),
+            bookmarkedOnly.closest("label"),
+            card && card.querySelector(".star"),
+            card && card.querySelector(".read-button"),
+            card && card.querySelector(".source")
+          ].filter(Boolean);
+          const passed =
+            filtersPassed &&
+            bookmarks.has(id) &&
+            read.has(id) &&
+            !!card &&
+            card.classList.contains("is-read") &&
+            card.querySelector(".star").getAttribute("aria-pressed") === "true" &&
+            touchTargets.every(target => target.getBoundingClientRect().height >= 44) &&
+            toolFilter.options.length > 1 &&
+            domainFilter.options.length > 1;
+          if (!passed) throw new Error("상태 또는 필터 검증 실패");
+          document.body.dataset.selftest = "PASS";
+          status.textContent = `PASS:${mode}:cards=${CASES.length}`;
+        } catch (error) {
+          document.body.dataset.selftest = "FAIL";
+          status.textContent = `FAIL:${mode}:${error.message}`;
+        }
+      };
+
+      window.__feedTestApi = {
+        render,
+        filteredCases,
+        toggleBookmark,
+        toggleRead,
+        bookmarks,
+        read
+      };
+      render();
+      runSelfTest();
+    })();
+  </script>
+</body>
+</html>
