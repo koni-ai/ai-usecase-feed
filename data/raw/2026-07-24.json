@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-07-24",
-  "updated_at": "2026-07-24T07:55:29.335231+09:00",
+  "updated_at": "2026-07-24T10:09:26.748332+09:00",
   "runs": [
     {
       "started_at": "2026-07-24T00:08:27.832298+09:00",
@@ -168,6 +168,91 @@
       "max_candidates": 30,
       "daily_capacity_before_run": 0,
       "partial_failure": true
+    },
+    {
+      "started_at": "2026-07-24T10:09:18.543838+09:00",
+      "finished_at": "2026-07-24T10:09:26.748332+09:00",
+      "sources": [
+        {
+          "name": "GeekNews",
+          "type": "rss",
+          "status": "success",
+          "fetched": 50,
+          "filtered_out": 1,
+          "duplicate": 5,
+          "invalid": 0,
+          "deferred_by_limit": 44,
+          "selected": 0,
+          "fallback_used": false,
+          "fallback_type": null,
+          "error": null
+        },
+        {
+          "name": "Hacker News Show HN",
+          "type": "hn_algolia",
+          "status": "success",
+          "fetched": 100,
+          "filtered_out": 0,
+          "duplicate": 28,
+          "invalid": 0,
+          "deferred_by_limit": 72,
+          "selected": 0,
+          "fallback_used": false,
+          "fallback_type": null,
+          "error": null
+        },
+        {
+          "name": "r/ClaudeAI",
+          "type": "reddit_json",
+          "status": "error",
+          "fetched": 0,
+          "filtered_out": 0,
+          "duplicate": 0,
+          "invalid": 0,
+          "deferred_by_limit": 0,
+          "selected": 0,
+          "fallback_used": false,
+          "fallback_type": null,
+          "error": "HTTPError: HTTP Error 403: Blocked"
+        },
+        {
+          "name": "r/LocalLLaMA",
+          "type": "reddit_json",
+          "status": "error",
+          "fetched": 0,
+          "filtered_out": 0,
+          "duplicate": 0,
+          "invalid": 0,
+          "deferred_by_limit": 0,
+          "selected": 0,
+          "fallback_used": false,
+          "fallback_type": null,
+          "error": "HTTPError: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "name": "Simon Willison",
+          "type": "rss",
+          "status": "success",
+          "fetched": 30,
+          "filtered_out": 0,
+          "duplicate": 1,
+          "invalid": 0,
+          "deferred_by_limit": 29,
+          "selected": 0,
+          "fallback_used": false,
+          "fallback_type": null,
+          "error": null
+        }
+      ],
+      "successful_sources": 3,
+      "failed_sources": 2,
+      "candidate_count_before_limit": 145,
+      "selected_count": 0,
+      "max_candidates": 30,
+      "daily_capacity_before_run": 0,
+      "partial_failure": true,
+      "selection_strategy": "freshness_round_robin",
+      "source_share_warning": false
     }
   ],
   "items": [
