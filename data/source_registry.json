@@ -1,12 +1,51 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-24T09:43:08.106753+09:00",
+  "updated_at": "2026-07-24T10:08:01.831531+09:00",
   "sources": [],
   "retired_hosts": [],
   "discovery_runs": [
     {
       "started_at": "2026-07-24T09:43:02.439978+09:00",
       "finished_at": "2026-07-24T09:43:08.106753+09:00",
+      "status": "success",
+      "indexes": [
+        {
+          "name": "HN AI workflow stories",
+          "status": "success",
+          "urls": 15,
+          "error": null
+        },
+        {
+          "name": "HN Claude use cases",
+          "status": "success",
+          "urls": 17,
+          "error": null
+        },
+        {
+          "name": "DEV AI articles",
+          "status": "success",
+          "urls": 20,
+          "error": null
+        },
+        {
+          "name": "DEV automation articles",
+          "status": "success",
+          "urls": 20,
+          "error": null
+        }
+      ],
+      "pages_considered": 12,
+      "page_errors": 0,
+      "discovered_count": 0,
+      "rejected_count": 1,
+      "probed_count": 0,
+      "promoted_count": 0,
+      "recovered_static_count": 0,
+      "dry_run": false
+    },
+    {
+      "started_at": "2026-07-24T10:07:56.104200+09:00",
+      "finished_at": "2026-07-24T10:08:01.831531+09:00",
       "status": "success",
       "indexes": [
         {
