@@ -1,0 +1,18 @@
+# 후보 페이지를 찾는 공개 읽기 전용 인덱스다.
+# 둘 다 공식 문서가 있고 API key가 필요하지 않으며 주 1회만 호출한다.
+indexes:
+  - name: HN AI workflow stories
+    type: hn_algolia
+    endpoint: https://hn.algolia.com/api/v1/search_by_date?query=AI%20workflow&tags=story&hitsPerPage=20
+
+  - name: HN Claude use cases
+    type: hn_algolia
+    endpoint: https://hn.algolia.com/api/v1/search_by_date?query=using%20Claude&tags=story&hitsPerPage=20
+
+  - name: DEV AI articles
+    type: devto
+    endpoint: https://dev.to/api/articles?tag=ai&state=fresh&per_page=20
+
+  - name: DEV automation articles
+    type: devto
+    endpoint: https://dev.to/api/articles?tag=automation&state=fresh&per_page=20
