@@ -22,6 +22,14 @@ from zoneinfo import ZoneInfo
 
 import yaml
 
+from source_manager import (
+    MAX_FEED_BYTES,
+    SourceManagerError,
+    make_safe_fetcher,
+    runtime_sources,
+    update_health,
+)
+
 
 SUPPORTED_SOURCE_TYPES = {"rss", "hn_algolia", "reddit_json"}
 TRACKING_QUERY_KEYS = {
@@ -305,6 +313,9 @@ def _feed_link(element: ElementTree.Element) -> str:
 
 
 def parse_rss(payload: bytes, source: dict[str, Any], now: datetime) -> list[dict[str, Any]]:
+    upper_payload = payload.upper()
+    if b"<!DOCTYPE" in upper_payload or b"<!ENTITY" in upper_payload:
+        raise ValueError("DOCTYPE/ENTITY가 포함된 XML은 거부됩니다.")
     root = ElementTree.fromstring(payload)
     entries = [
         element
@@ -446,19 +457,47 @@ def make_network_fetcher(
     user_agent: str,
 ) -> FetchFunction:
     limiter = RateLimiter(request_interval_seconds)
+    dynamic_fetch = make_safe_fetcher(
+        timeout_seconds=timeout_seconds,
+        user_agent=user_agent,
+    )
 
     def fetch(source: dict[str, Any], now: datetime) -> bytes:
-        limiter.wait()
-        request = Request(
-            _network_url(source, now),
-            headers={
-                "User-Agent": user_agent,
-                "Accept": "application/json, application/atom+xml, application/rss+xml, "
-                "application/xml, text/xml;q=0.9, */*;q=0.5",
-            },
-        )
-        with urlopen(request, timeout=timeout_seconds) as response:
-            return response.read()
+        url = _network_url(source, now)
+        if source.get("dynamic"):
+            limiter.wait()
+            payload, _, _ = dynamic_fetch(
+                url,
+                "application/rss+xml, application/atom+xml, "
+                "application/xml, text/xml",
+                MAX_FEED_BYTES,
+            )
+            return payload
+        for attempt in range(2):
+            limiter.wait()
+            request = Request(
+                url,
+                headers={
+                    "User-Agent": user_agent,
+                    "Accept": "application/json, application/atom+xml, "
+                    "application/rss+xml, application/xml, text/xml;q=0.9, "
+                    "*/*;q=0.5",
+                    "Accept-Encoding": "identity",
+                },
+            )
+            try:
+                with urlopen(request, timeout=timeout_seconds) as response:
+                    return response.read()
+            except HTTPError as exc:
+                if exc.code != 429 or attempt:
+                    raise
+                retry_after = str(exc.headers.get("Retry-After") or "").strip()
+                try:
+                    delay = float(retry_after)
+                except ValueError:
+                    delay = 2.0
+                time.sleep(max(1.0, min(delay, 15.0)))
+        raise RuntimeError("429 재시도 상태가 올바르지 않습니다.")
 
     return fetch
 
@@ -602,7 +641,21 @@ def collect_once(
             item["url_hash"],
         )
     )
-    selected = candidates[:daily_remaining]
+    source_ranks: dict[str, int] = {}
+    for item in candidates:
+        source_name = item["source_name"]
+        item["_source_rank"] = source_ranks.get(source_name, 0)
+        source_ranks[source_name] = item["_source_rank"] + 1
+    balanced_candidates = sorted(
+        candidates,
+        key=lambda item: (
+            item["_source_rank"],
+            -_published_sort_key(item),
+            item["_source_order"],
+            item["url_hash"],
+        ),
+    )
+    selected = balanced_candidates[:daily_remaining]
     selected_hashes = {item["url_hash"] for item in selected}
     for stat in source_stats:
         stat["selected"] = sum(
@@ -610,13 +663,18 @@ def collect_once(
         )
         stat["deferred_by_limit"] = sum(
             1
-            for item in candidates[daily_remaining:]
+            for item in balanced_candidates[daily_remaining:]
             if item["source_name"] == stat["name"]
         )
     for item in selected:
         item.pop("_source_order", None)
+        item.pop("_source_rank", None)
 
     finished_at = datetime.now(SEOUL).isoformat()
+    max_source_selected = max(
+        (stat["selected"] for stat in source_stats),
+        default=0,
+    )
     run_record = {
         "started_at": started_at,
         "finished_at": finished_at,
@@ -628,6 +686,11 @@ def collect_once(
         "max_candidates": max_candidates,
         "daily_capacity_before_run": daily_remaining,
         "partial_failure": 0 < success_count < len(sources),
+        "selection_strategy": "freshness_round_robin",
+        "source_share_warning": (
+            bool(selected)
+            and max_source_selected / len(selected) > 0.40
+        ),
     }
 
     existing_item_hashes = {
@@ -674,6 +737,16 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         default=project_dir / "data",
         help="seen.json과 raw/가 위치할 데이터 디렉토리",
     )
+    parser.add_argument(
+        "--source-registry",
+        type=Path,
+        default=project_dir / "data" / "source_registry.json",
+    )
+    parser.add_argument(
+        "--source-health",
+        type=Path,
+        default=project_dir / "data" / "source_health.json",
+    )
     parser.add_argument("--timeout", type=float, default=15.0)
     parser.add_argument("--request-delay", type=float, default=1.0)
     parser.add_argument("--max-candidates", type=int, default=30)
@@ -690,7 +763,12 @@ def main(argv: list[str] | None = None) -> int:
             raise ConfigError("외부 요청 간격은 최소 1초이어야 합니다.")
         if not args.user_agent.strip():
             raise ConfigError("User-Agent는 비어 있을 수 없습니다.")
-        sources = load_sources(args.sources.resolve())
+        static_sources = load_sources(args.sources.resolve())
+        sources = runtime_sources(
+            static_sources,
+            args.source_registry.resolve(),
+            args.source_health.resolve(),
+        )
         fetch = make_network_fetcher(
             timeout_seconds=args.timeout,
             request_interval_seconds=args.request_delay,
@@ -703,9 +781,15 @@ def main(argv: list[str] | None = None) -> int:
             now=datetime.now(SEOUL),
             max_candidates=args.max_candidates,
         )
+        result["health"] = update_health(
+            args.source_health.resolve(),
+            args.source_registry.resolve(),
+            result["sources"],
+            datetime.now(SEOUL),
+        )
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0 if result["status"] == "success" else 2
-    except CollectorError as exc:
+    except (CollectorError, SourceManagerError) as exc:
         print(f"수집기 오류: {exc}", file=sys.stderr)
         return 2
     except Exception as exc:

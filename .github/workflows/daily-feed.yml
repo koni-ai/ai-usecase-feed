@@ -83,6 +83,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/seen.json data/process_state.json data/cases.json data/raw site/index.html
+          git add data/source_registry.json data/source_health.json
           if git diff --cached --quiet; then
             echo "No state changes to commit."
           else
