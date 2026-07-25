@@ -1,5 +1,82 @@
 [
   {
+    "id": "2026-07-26-018",
+    "title": "Opus 5로 데이터 분석 파이프라인 실패 사례",
+    "summary": "사용자는 CLAUDE.md 규칙과 스킬 라우팅을 갖춘 데이터 해석 파이프라인에서 Opus 5를 사용했으나, 모델이 스스로 판단해 5개 이상의 스킬을 건너뛰고 결과를 생성했다. 결과물은 실제로 사용하기 어려운 수준이었고 약 40달러의 비용만 소모됐다.",
+    "tool": [
+      "Claude Opus 5",
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1v6a3qc/opus_5_ignoring_guardrails",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-26"
+  },
+  {
+    "id": "2026-07-26-016",
+    "title": "Anthropic의 Claude Code·Tag·Fable 내부 활용",
+    "summary": "Anthropic 팀은 Claude Code, Slack 통합형 Claude Tag, 영상 편집 도구 Fable을 내부 업무에 실제로 적용했다. Claude Tag는 팀 내 제품 엔지니어링 PR의 65%를 자동으로 처리했고, 담당자는 Fable로 자사 제품 런칭 영상을 직접 편집했다. 시스템 프롬프트를 80% 축소하는 등 모델 성능에 맞춰 워크플로를 조정했다.",
+    "tool": [
+      "Claude Code",
+      "Claude Tag",
+      "Fable"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-07-26"
+  },
+  {
+    "id": "2026-07-26-013",
+    "title": "AI 에이전트 행동 검증 오픈소스 프레임워크 ActionRail",
+    "summary": "ToolJet이 AI 에이전트의 도구 호출을 실행 전에 실제 시스템 데이터와 대조해 검증하는 오픈소스 프레임워크 ActionRail을 공개했다. LangGraph와 Claude(claude-sonnet-4-6) API를 연동한 데모에서 교차 고객 환불 같은 잘못된 값 기반 행동을 실행 전에 차단하는 것을 보여줬다. Python SDK와 콘솔을 통해 누구나 로컬에서 데모를 실행하고 실제 모델 연동 테스트를 해볼 수 있다.",
+    "tool": [
+      "Claude",
+      "LangGraph",
+      "Python"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://github.com/ToolJet/ActionRail",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-26"
+  },
+  {
+    "id": "2026-07-26-007",
+    "title": "Claude Code가 로그 추가해 스스로 버그 디버깅",
+    "summary": "사용자가 Claude(Claude Code로 추정)에 실행 권한을 주고 해결 못한 버그를 맡기자, 직접 로그 라인을 추가하고 실행 결과를 읽어 가설을 세운 뒤 다시 코드를 수정하며 원인을 좁혀갔다. 사용자는 명령만 실행했을 뿐 실제 디버깅 루프는 AI가 주도했으며 중간에 지치거나 단계를 건너뛰지 않았다고 전했다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1v6co6g/i_watched_claude_debug_for_20_minutes_by_adding",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-26"
+  },
+  {
+    "id": "2026-07-26-002",
+    "title": "Codex와 Claude로 Python 린트 오류 자동 수정",
+    "summary": "Simon Willison은 Ruff 0.16.0의 새 기본 규칙으로 발견된 대량의 린트 오류를 수정하기 위해 Codex(GPT-5.6)로 LLM과 sqlite-utils 프로젝트를, Claude Code(Opus)로 Datasette 프로젝트를 업그레이드했다. sqlite-utils에서는 1618개 오류 중 1538개가 자동으로 수정되었다. 포괄적인 테스트 스위트 덕분에 이러한 자동 업그레이드가 안전하게 이루어졌다.",
+    "tool": [
+      "Codex",
+      "Claude Code",
+      "Ruff"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Jul/25/ruff",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-07-26"
+  },
+  {
     "id": "2026-07-25-029",
     "title": "AI 에이전트 행동 기록용 로컬 감사 도구 Lotor 개발",
     "summary": "개발자가 AI 에이전트 세션의 행동을 로컬에 서명된 형태로 기록하는 MCP 기반 도구 Lotor를 GitHub에 공개했다. 이 도구는 에이전트가 수행한 작업, 파일 접근, 비용 등을 위변조 감지가 가능한 로그로 남기며 클라우드 업로드 없이 사용자 기기에만 저장된다.",
