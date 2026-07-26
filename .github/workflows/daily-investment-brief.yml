@@ -31,6 +31,7 @@ jobs:
     env:
       PYTHONUTF8: "1"
       PYTHONIOENCODING: "utf-8"
+      TZ: "Asia/Seoul"
       PJ23_CLOUD_MODE: "1"
       PJ23_FEED_KEY: ${{ secrets.PJ23_FEED_KEY }}
       CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -96,7 +97,7 @@ jobs:
 
       - name: Generate today's validated brief
         working-directory: .pj23-runtime
-        run: python -B run_daily.py --skip-git
+        run: python -B run_daily.py --date "$(date +%F)" --skip-git
 
       - name: Validate publish candidate
         shell: bash
@@ -106,8 +107,9 @@ jobs:
           import datetime as dt
           import json
           import pathlib
+          from zoneinfo import ZoneInfo
           root = pathlib.Path(".pj23-runtime")
-          today = dt.date.today().isoformat()
+          today = dt.datetime.now(ZoneInfo("Asia/Seoul")).date().isoformat()
           state = json.loads((root / "logs/last_run.json").read_text(encoding="utf-8"))
           brief = json.loads((root / "data/briefs" / f"{today}.json").read_text(encoding="utf-8"))
           html = (root / "public/brief.html").read_text(encoding="utf-8")
