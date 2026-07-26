@@ -1,0 +1,162 @@
+name: Daily private investment brief
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_validator_failure:
+        description: "Fail before decrypt/publish to verify last-good preservation"
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    - cron: "30 6 * * *"
+      timezone: "Asia/Seoul"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ai-usecase-feed-production
+  cancel-in-progress: false
+
+jobs:
+  generate-encrypt-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      PYTHONUTF8: "1"
+      PYTHONIOENCODING: "utf-8"
+      PJ23_CLOUD_MODE: "1"
+      PJ23_FEED_KEY: ${{ secrets.PJ23_FEED_KEY }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+
+    steps:
+      - name: Check out trusted main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Validate secrets and cryptography
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${PJ23_FEED_KEY:-}"
+          test -n "${CLAUDE_CODE_OAUTH_TOKEN:-}"
+          test -z "${ANTHROPIC_API_KEY:-}"
+          test -z "${CLAUDE_CODE_USE_BEDROCK:-}"
+          test -z "${CLAUDE_CODE_USE_VERTEX:-}"
+          test -z "${CLAUDE_CODE_USE_FOUNDRY:-}"
+          case "${CLAUDE_CODE_OAUTH_TOKEN}" in sk-ant-oat01-*) ;; *) exit 1 ;; esac
+          node investment/pj23_crypto.mjs self-test
+
+      - name: Forced fail-closed verification
+        if: ${{ inputs.force_validator_failure == true }}
+        run: |
+          echo "Intentional pre-publish failure; last known good remains untouched."
+          exit 42
+
+      - name: Restore encrypted PJ23 runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .pj23-runtime
+          node investment/pj23_crypto.mjs decrypt investment/runtime.enc /tmp/pj23-runtime.tar.gz runtime
+          tar -xzf /tmp/pj23-runtime.tar.gz -C .pj23-runtime
+          test -s .pj23-runtime/run_daily.py
+          test -s .pj23-runtime/config/portfolio.yaml
+
+      - name: Install subscription client and Python dependencies
+        run: |
+          python -m pip install --requirement .pj23-runtime/requirements.txt
+          npm install --global @anthropic-ai/claude-code@2.1.218
+
+      - name: Reject metered routing and verify Claude subscription
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, subprocess
+          result = subprocess.run(["claude", "auth", "status"], check=True, capture_output=True, text=True)
+          status = json.loads(result.stdout)
+          assert status.get("loggedIn") is True
+          assert status.get("authMethod") == "claude.ai"
+          assert status.get("subscriptionType") == "max"
+          print("Claude subscription authentication verified")
+          PY
+
+      - name: Generate today's validated brief
+        working-directory: .pj23-runtime
+        run: python -B run_daily.py --skip-git
+
+      - name: Validate publish candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import datetime as dt
+          import json
+          import pathlib
+          root = pathlib.Path(".pj23-runtime")
+          today = dt.date.today().isoformat()
+          state = json.loads((root / "logs/last_run.json").read_text(encoding="utf-8"))
+          brief = json.loads((root / "data/briefs" / f"{today}.json").read_text(encoding="utf-8"))
+          html = (root / "public/brief.html").read_text(encoding="utf-8")
+          assert state["status"] == "ok", state
+          assert state["date"] == today
+          assert state["steps"]["brief"]["status"] == "ok"
+          assert state["steps"]["brief"]["review_mode"] == "cloud_deterministic_v1"
+          assert brief["date"] == today and brief["stale"] is False
+          assert today in html and "STALE · 전일 브리프 유지" not in html
+          print(f"publish candidate verified for {today}")
+          PY
+
+      - name: Encrypt successful runtime and HTML
+        shell: bash
+        run: |
+          set -euo pipefail
+          tar -czf /tmp/pj23-runtime-next.tar.gz +            --exclude=.git --exclude=.venv --exclude=.tmp --exclude=dist +            --exclude='logs/*.log' -C .pj23-runtime .
+          node investment/pj23_crypto.mjs encrypt /tmp/pj23-runtime-next.tar.gz investment/runtime.enc runtime
+          mkdir -p site/investment
+          node investment/pj23_crypto.mjs encrypt .pj23-runtime/public/brief.html site/investment/latest.enc html
+          node investment/pj23_crypto.mjs decrypt site/investment/latest.enc /tmp/pj23-latest.html html
+          cmp --silent .pj23-runtime/public/brief.html /tmp/pj23-latest.html
+
+      - name: Persist ciphertext only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add investment/runtime.enc site/investment/latest.enc
+          git diff --cached --check
+          git commit -m "chore: publish encrypted daily investment brief"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy encrypted content endpoint
+        id: deployment
+        uses: actions/deploy-pages@v4
