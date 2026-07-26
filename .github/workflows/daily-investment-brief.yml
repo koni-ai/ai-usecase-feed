@@ -124,7 +124,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          tar -czf /tmp/pj23-runtime-next.tar.gz +            --exclude=.git --exclude=.venv --exclude=.tmp --exclude=dist +            --exclude='logs/*.log' -C .pj23-runtime .
+          tar -czf /tmp/pj23-runtime-next.tar.gz --exclude=.git --exclude=.venv --exclude=.tmp --exclude=dist --exclude='logs/*.log' -C .pj23-runtime .
           node investment/pj23_crypto.mjs encrypt /tmp/pj23-runtime-next.tar.gz investment/runtime.enc runtime
           mkdir -p site/investment
           node investment/pj23_crypto.mjs encrypt .pj23-runtime/public/brief.html site/investment/latest.enc html
