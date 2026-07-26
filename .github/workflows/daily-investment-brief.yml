@@ -24,7 +24,7 @@ concurrency:
 jobs:
   generate-encrypt-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -81,6 +81,25 @@ jobs:
           tar -xzf /tmp/pj23-runtime.tar.gz -C .pj23-runtime
           test -s .pj23-runtime/run_daily.py
           test -s .pj23-runtime/config/portfolio.yaml
+
+      - name: Apply reviewed cloud runtime migration
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('.pj23-runtime/src/brief.py')
+          text = path.read_text(encoding='utf-8')
+          old_timeout = 'timeout=600,'
+          old_message = 'claude CLI timed out after 600 seconds'
+          if old_timeout in text:
+              text = text.replace(old_timeout, 'timeout=900,', 1)
+          if old_message in text:
+              text = text.replace(old_message, 'claude CLI timed out after 900 seconds', 1)
+          assert 'timeout=900,' in text
+          assert 'claude CLI timed out after 900 seconds' in text
+          path.write_text(text, encoding='utf-8')
+          PY
 
       - name: Install subscription client and Python dependencies
         run: |
