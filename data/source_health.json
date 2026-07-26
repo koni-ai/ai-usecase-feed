@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-26T09:11:22.686971+09:00",
+  "updated_at": "2026-07-27T07:58:22.241904+09:00",
   "sources": {
     "GeekNews": {
       "kind": "static",
       "status": "healthy",
-      "total_runs": 3,
-      "successful_runs": 3,
+      "total_runs": 4,
+      "successful_runs": 4,
       "failed_runs": 0,
       "consecutive_failures": 0,
-      "total_fetched": 150,
-      "total_selected": 15,
-      "total_duplicates": 17,
+      "total_fetched": 200,
+      "total_selected": 23,
+      "total_duplicates": 27,
       "history": [
         {
           "at": "2026-07-24T10:09:26.751175+09:00",
@@ -36,21 +36,29 @@
           "selected": 7,
           "duplicate": 8,
           "error": null
+        },
+        {
+          "at": "2026-07-27T07:58:22.241904+09:00",
+          "status": "success",
+          "fetched": 50,
+          "selected": 8,
+          "duplicate": 10,
+          "error": null
         }
       ],
-      "last_success_at": "2026-07-26T07:55:08.979353+09:00",
+      "last_success_at": "2026-07-27T07:58:22.241904+09:00",
       "last_error": null,
-      "last_run_at": "2026-07-26T07:55:08.979353+09:00"
+      "last_run_at": "2026-07-27T07:58:22.241904+09:00"
     },
     "Hacker News Show HN": {
       "kind": "static",
       "status": "healthy",
-      "total_runs": 3,
-      "successful_runs": 3,
+      "total_runs": 4,
+      "successful_runs": 4,
       "failed_runs": 0,
       "consecutive_failures": 0,
-      "total_fetched": 277,
-      "total_selected": 16,
+      "total_fetched": 377,
+      "total_selected": 24,
       "total_duplicates": 30,
       "history": [
         {
@@ -76,21 +84,29 @@
           "selected": 8,
           "duplicate": 1,
           "error": null
+        },
+        {
+          "at": "2026-07-27T07:58:22.241904+09:00",
+          "status": "success",
+          "fetched": 100,
+          "selected": 8,
+          "duplicate": 0,
+          "error": null
         }
       ],
-      "last_success_at": "2026-07-26T07:55:08.979353+09:00",
+      "last_success_at": "2026-07-27T07:58:22.241904+09:00",
       "last_error": null,
-      "last_run_at": "2026-07-26T07:55:08.979353+09:00"
+      "last_run_at": "2026-07-27T07:58:22.241904+09:00"
     },
     "r/ClaudeAI": {
       "kind": "static",
       "status": "healthy",
-      "total_runs": 3,
-      "successful_runs": 2,
+      "total_runs": 4,
+      "successful_runs": 3,
       "failed_runs": 1,
       "consecutive_failures": 0,
-      "total_fetched": 50,
-      "total_selected": 15,
+      "total_fetched": 75,
+      "total_selected": 22,
       "total_duplicates": 0,
       "history": [
         {
@@ -116,20 +132,28 @@
           "selected": 8,
           "duplicate": 0,
           "error": null
+        },
+        {
+          "at": "2026-07-27T07:58:22.241904+09:00",
+          "status": "success",
+          "fetched": 25,
+          "selected": 7,
+          "duplicate": 0,
+          "error": null
         }
       ],
       "last_failure_at": "2026-07-24T10:09:26.751175+09:00",
       "last_error": null,
-      "last_run_at": "2026-07-26T07:55:08.979353+09:00",
-      "last_success_at": "2026-07-26T07:55:08.979353+09:00"
+      "last_run_at": "2026-07-27T07:58:22.241904+09:00",
+      "last_success_at": "2026-07-27T07:58:22.241904+09:00"
     },
     "r/LocalLLaMA": {
       "kind": "static",
       "status": "warning",
-      "total_runs": 3,
+      "total_runs": 4,
       "successful_runs": 0,
-      "failed_runs": 3,
-      "consecutive_failures": 3,
+      "failed_runs": 4,
+      "consecutive_failures": 4,
       "total_fetched": 0,
       "total_selected": 0,
       "total_duplicates": 0,
@@ -157,22 +181,30 @@
           "selected": 0,
           "duplicate": 0,
           "error": "HTTPError: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "at": "2026-07-27T07:58:22.241904+09:00",
+          "status": "error",
+          "fetched": 0,
+          "selected": 0,
+          "duplicate": 0,
+          "error": "HTTPError: HTTP Error 429: Too Many Requests"
         }
       ],
-      "last_failure_at": "2026-07-26T07:55:08.979353+09:00",
+      "last_failure_at": "2026-07-27T07:58:22.241904+09:00",
       "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
-      "last_run_at": "2026-07-26T07:55:08.979353+09:00"
+      "last_run_at": "2026-07-27T07:58:22.241904+09:00"
     },
     "Simon Willison": {
       "kind": "static",
       "status": "healthy",
-      "total_runs": 3,
-      "successful_runs": 3,
+      "total_runs": 4,
+      "successful_runs": 4,
       "failed_runs": 0,
       "consecutive_failures": 0,
-      "total_fetched": 90,
-      "total_selected": 14,
-      "total_duplicates": 10,
+      "total_fetched": 120,
+      "total_selected": 21,
+      "total_duplicates": 25,
       "history": [
         {
           "at": "2026-07-24T10:09:26.751175+09:00",
@@ -197,11 +229,19 @@
           "selected": 7,
           "duplicate": 8,
           "error": null
+        },
+        {
+          "at": "2026-07-27T07:58:22.241904+09:00",
+          "status": "success",
+          "fetched": 30,
+          "selected": 7,
+          "duplicate": 15,
+          "error": null
         }
       ],
-      "last_success_at": "2026-07-26T07:55:08.979353+09:00",
+      "last_success_at": "2026-07-27T07:58:22.241904+09:00",
       "last_error": null,
-      "last_run_at": "2026-07-26T07:55:08.979353+09:00"
+      "last_run_at": "2026-07-27T07:58:22.241904+09:00"
     }
   }
 }
