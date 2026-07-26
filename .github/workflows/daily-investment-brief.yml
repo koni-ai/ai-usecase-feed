@@ -99,6 +99,19 @@ jobs:
           assert 'timeout=900,' in text
           assert 'claude CLI timed out after 900 seconds' in text
           path.write_text(text, encoding='utf-8')
+          test_path = Path('.pj23-runtime/tests/test_core.py')
+          test_text = test_path.read_text(encoding='utf-8')
+          test_text = test_text.replace(
+              'subprocess.TimeoutExpired(["claude"], 600)',
+              'subprocess.TimeoutExpired(["claude"], 900)',
+          )
+          test_text = test_text.replace(
+              '"timed out after 600 seconds"',
+              '"timed out after 900 seconds"',
+          )
+          assert 'subprocess.TimeoutExpired(["claude"], 900)' in test_text
+          assert '"timed out after 900 seconds"' in test_text
+          test_path.write_text(test_text, encoding='utf-8')
           PY
 
       - name: Install subscription client and Python dependencies
