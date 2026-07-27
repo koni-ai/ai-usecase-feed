@@ -1,5 +1,141 @@
 [
   {
+    "id": "2026-07-28-030",
+    "title": "Claude Code로 만드는 스펙 기반 오픈소스 폼 라이브러리",
+    "summary": "GolemUI 창업자들이 Claude Code를 활용해 스펙을 먼저 작성하고 Claude가 코드 초안을 생성한 뒤 모든 코드를 직접 검토하는 방식으로 오픈소스(MIT) JavaScript 폼 라이브러리를 개발했다. 개발 컨퍼런스 부스에서 약 50명의 개발자에게 AI 활용법을 물은 결과 대부분이 '스펙 작성과 PR 리뷰' 중심으로 업무가 바뀌었다고 답했다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1v85ps5/asked_50_devs_at_our_conference_booth_how_they",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-28"
+  },
+  {
+    "id": "2026-07-28-026",
+    "title": "Fable 5로 만든 프랙탈 우주비행 시뮬레이터",
+    "summary": "Claude Code(Fable 5)를 이용해 3D 프랙탈 구조물 내부를 비행하는 웹 시뮬레이터를 하나의 HTML 파일로 제작했다. 표면과의 거리에 따라 이동 속도가 조절되어 거의 무한히 안쪽으로 진입할 수 있고 충돌이 불가능하도록 구현했다. 배경음악은 Suno로 생성했으며 오토파일럿 기능도 시행착오를 거쳐 추가했다.",
+    "tool": [
+      "Claude Code",
+      "Suno"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1v85xwo/i_built_a_fractal_spaceflight_sim_with_fable_5",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-28"
+  },
+  {
+    "id": "2026-07-28-022",
+    "title": "Claude로 보험금 지급 거부 뒤집은 사례",
+    "summary": "사용자가 부당한 소송에 휘말려 타이틀보험 보장을 거부당하자 Claude에 관련 문서와 타임라인을 정리한 프로젝트를 만들어 법률 조언처럼 활용했다. Claude는 법원 제출용 답변서와 보험사에 보내는 재심사 요청 이메일 초안을 작성했고, 사용자는 모든 인용과 법 조항을 직접 검증했다. 결과적으로 보험사가 보장 및 변호사 선임을 제공하기로 결정했다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "기타",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1v85zi3/claude_helped_me_overturn_an_insurance_coverage",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-28"
+  },
+  {
+    "id": "2026-07-28-020",
+    "title": "Kimi K3로 펠리컨 SVG 생성 및 이미지 설명 테스트",
+    "summary": "Simon Willison이 OpenRouter와 llm CLI 도구를 이용해 Kimi K3 모델에 '자전거 타는 펠리컨 SVG 생성' 프롬프트를 실행했다. 생성된 SVG는 약 16,658개 출력 토큰을 소모해 25센트 비용이 들었고, 이후 같은 모델로 이미지에 대한 alt 텍스트 설명도 생성해 0.6센트에 결과를 얻었다. 이를 통해 모델의 추론 토큰 사용량, 비용, 비전 성능 등을 실제로 확인했다.",
+    "tool": [
+      "Kimi K3",
+      "OpenRouter",
+      "llm CLI"
+    ],
+    "domain": "리서치",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Jul/16/kimi-k3",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-07-28"
+  },
+  {
+    "id": "2026-07-28-016",
+    "title": "Claude로 Firefox를 WebAssembly로 컴파일",
+    "summary": "Puter 팀이 Claude Opus와 Fable 모델을 활용해 Firefox 브라우저 전체를 WebAssembly로 컴파일하는 프로젝트를 진행했다. 약 2만5천 달러 상당의 토큰을 사용했으나 Claude Max 구독 덕분에 실제 비용은 크게 낮았다. 결과물은 다른 브라우저 안에서 Firefox가 실행되는 데모로 공개되었고, Wisp 프로토콜 기반 WebSocket 프록시로 네트워크 통신을 처리했다.",
+    "tool": [
+      "Claude Opus",
+      "Claude Fable"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-07-28"
+  },
+  {
+    "id": "2026-07-28-014",
+    "title": "Claude Skills로 SEO 콘텐츠 파이프라인 구축",
+    "summary": "한 사용자는 Claude Skills로 자신의 문체를 학습시켜 AI 특유 표현을 피하도록 편집 지시를 내리고, n8n으로 포스팅을 자동화하며 SE Ranking 콘텐츠 생성기, Wix, Notion 데이터베이스를 결합한 SEO 콘텐츠 워크플로를 운영했다. 직접 작성한 사실 기반 원고에 AI 편집을 더하는 방식은 효과가 있었으나, AI로만 생성하거나 기존 글을 AI로 재작성한 콘텐츠는 성과가 나빴다고 보고했다.",
+    "tool": [
+      "Claude Skills",
+      "n8n",
+      "SE Ranking",
+      "Wix",
+      "Notion"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1v877e9/claude_is_powerful_seo_software_but_you_should",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-28"
+  },
+  {
+    "id": "2026-07-28-008",
+    "title": "AI로 LLM 문체 클리셰 강조 앱 만들기",
+    "summary": "작성자는 LLM 특유의 상투적 표현(‘no fluff, no filler’ 등)에 불만을 느껴 Fable 5를 이용해 바이브 코딩으로 웹 앱을 제작했다. 이 앱은 흔한 LLM 글쓰기 패턴 10가지를 텍스트에서 자동으로 하이라이트해준다. 개인이 아이디어에서 실제 동작하는 도구까지 빠르게 구현한 사례다.",
+    "tool": [
+      "Fable 5"
+    ],
+    "domain": "개발",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-07-28"
+  },
+  {
+    "id": "2026-07-28-004",
+    "title": "Opus 5 바이브코딩으로 3일 만에 만든 로보택시 게임",
+    "summary": "한 사용자가 Claude Opus 5를 이용한 바이브코딩으로 테슬라 로보택시 차량 운영을 소재로 한 브라우저 경영 시뮬레이션 게임 'Deadhead'를 3일 만에 제작했다. 실제 로보택시 서비스 도시 6곳의 지오펜스와 전기요금 체계를 반영했으며 무료로 웹에 공개했다. 이는 제작자의 첫 바이브코딩 게임 프로젝트였다.",
+    "tool": [
+      "Claude Opus 5"
+    ],
+    "domain": "개발",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1v8ekmk/3_days_of_opus_5_vibecoding_my_1st_game_deadhead",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-28"
+  },
+  {
+    "id": "2026-07-28-001",
+    "title": "AI 서브에이전트 충돌 방지 도구 Heddle 개발",
+    "summary": "개발자가 git 위에 얹는 계층인 Heddle을 만들어 여러 AI 서브에이전트가 같은 저장소에서 작업할 때 생기는 충돌을 토큰 소모 전에 미리 감지하도록 했다. 이를 통해 여러 서브에이전트를 동시에 실행해 서로 다른 기능을 병렬로 개발할 수 있게 되었으며, 여러 대의 기기와 네트워크에 걸쳐 협업이 가능해졌다.",
+    "tool": [
+      "Heddle",
+      "git",
+      "AI 서브에이전트"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/zyads/heddle",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-28"
+  },
+  {
     "id": "2026-07-27-029",
     "title": "Claude로 이산 6502 CPU 설계 프로젝트 시도",
     "summary": "개발자가 Monster6502 프로젝트에서 영감을 받아 Claude가 이산 트랜지스터 6502 CPU 설계를 도울 수 있는지 확인하려 했다. Raspberry Pi Pico 2 W를 후면에 장착해 구동하도록 설계하고 JLCPCB에 PCB 제작 파일을 제출했다. 아직 최종 주문은 완료하지 않았다고 밝혔다.",
