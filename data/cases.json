@@ -1,5 +1,124 @@
 [
   {
+    "id": "2026-07-30-027",
+    "title": "공개 엔지니어링 관행을 AI 에이전트 스킬로 변환",
+    "summary": "Dev-like는 특정 개발팀의 공개된 워크플로, 스택, 트레이드오프를 OSINT로 수집해 인용된 프로필을 만들고 이를 Claude Code용 에이전트 스킬로 설치할 수 있게 한다. 설치 후 에이전트는 해당 팀의 문서화된 워크플로를 따르며, 예시로 Every사의 코드 리뷰 기준을 적용해 코드 배치, 테스트 생략, 캐싱 도입 여부를 평가했다. npx 명령이나 Claude Code 플러그인 마켓플레이스를 통해 설치할 수 있다.",
+    "tool": [
+      "Claude Code",
+      "npx dev-like"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://mrbro.dev/dev-like",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-30"
+  },
+  {
+    "id": "2026-07-30-022",
+    "title": "Claude로 픽셀 아트를 반복 개선하는 도구 개발",
+    "summary": "개발자가 Aseprite를 MCP 서버로 연결해 Claude 등 LLM이 픽셀 아트를 그리고, 미리보기를 확인한 뒤 스스로 수정하는 'Pixel Art Lab'을 만들었다. 기존 원샷 방식과 달리 모델이 이미지를 반복적으로 검토·수정할 수 있으며, 네 종류의 Claude 모델에 동일한 세 가지 프롬프트를 주고 결과를 비교했다. OpenRouter를 지원하는 모든 툴콜링 모델에서도 동작하며 GitHub에 코드가 공개되어 있다.",
+    "tool": [
+      "Claude",
+      "Aseprite",
+      "MCP",
+      "OpenRouter"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1va4hbc/wait_claude_can_draw",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-30"
+  },
+  {
+    "id": "2026-07-30-018",
+    "title": "AI 에이전트 말투를 모은 'ratherthan.ai' 박물관 제작",
+    "summary": "Claude 에이전트가 반복적으로 사용하는 'rather than' 류의 수사적 표현을 수집해 ratherthan.ai라는 웹 박물관을 만들었다. 현재 95개의 사례가 다섯 가지 문형으로 분류되어 있으며, 큐레이터 역할도 Claude가 맡아 설명 문구를 작성한다. 방문자는 표현을 투표로 분류할 수 있고 사이트는 무료·오픈소스로 운영된다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1va6o9g/why_i_built_a_museum_of_agent_rhetoric",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-30"
+  },
+  {
+    "id": "2026-07-30-016",
+    "title": "Claude와 ChatGPT에 커스텀 MCP 서버 연결하기",
+    "summary": "Simon Willison이 Claude와 ChatGPT의 표준 채팅 인터페이스에 커스텀 MCP 서버를 연결하는 방법을 직접 시도했다. 연결이 가능하지만 여러 단계를 거쳐야 한다는 점을 확인했다. 이를 TIL 형태로 정리해 공유했다.",
+    "tool": [
+      "Claude",
+      "ChatGPT",
+      "Model Context Protocol"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-07-30"
+  },
+  {
+    "id": "2026-07-30-015",
+    "title": "Gemma 4 26B를 2GB RAM으로 구동하는 오픈소스 엔진 개발",
+    "summary": "개발자가 TurboFieldfare라는 오픈소스 엔진을 만들어 14.3GB 크기의 Gemma 4 26B-A4B 모델을 약 2GB 메모리만으로 실행시켰다. 공유 코어와 KV 캐시만 메모리에 상주시키고 MoE 전문가 가중치를 SSD에서 스트리밍하는 방식을 적용했다. 이를 통해 8GB Apple Silicon Mac에서도 로컬 추론이 가능해졌다.",
+    "tool": [
+      "TurboFieldfare",
+      "Gemma 4 26B"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=31958",
+    "source_name": "GeekNews",
+    "collected_at": "2026-07-30"
+  },
+  {
+    "id": "2026-07-30-005",
+    "title": "Claude 에이전트용 로컬 화면 컨텍스트 도구 개발",
+    "summary": "개발자가 스크린샷을 매번 복사·붙여넣기 하지 않도록 Claude가 자신의 화면 활동을 검색하고 볼 수 있게 하는 완전 로컬 도구를 만들었다. 이를 통해 Claude 에이전트에 항상 시각적 컨텍스트를 제공할 수 있게 됐다. Hacker News Show HN을 통해 프로젝트가 공개되었다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://useglass.up.railway.app",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-30"
+  },
+  {
+    "id": "2026-07-30-002",
+    "title": "Word 문서 프롬프트 주입으로 Copilot 자기전파 웜 시연",
+    "summary": "보안 연구자들이 Word 문서에 숨긴 교차 도메인 프롬프트 주입(XPIA)을 통해 Copilot이 문서 내용을 조작하고 이를 새 문서로 복제해 전파시키는 실험을 진행했다. 흰색·소형 글꼴로 숨긴 명령을 Copilot이 서식 제거 후 읽어들여 재무 수치를 바꾸는 등의 결과를 확인했다. 이는 원본 공격 문서 없이도 일상 업무 흐름을 따라 확산될 수 있는 취약점을 보여준 보안 연구 사례다.",
+    "tool": [
+      "Microsoft Copilot"
+    ],
+    "domain": "리서치",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=31961",
+    "source_name": "GeekNews",
+    "collected_at": "2026-07-30"
+  },
+  {
+    "id": "2026-07-30-001",
+    "title": "Claude로 영상 색보정하는 Pico 개발",
+    "summary": "한 영화 제작자가 기존 AI 영상 편집 도구가 자동화에만 치우친 데 불만을 느껴 Claude 모델을 이용해 영상 색보정을 수행하는 Pico라는 도구를 만들었다. 실험 결과 Claude가 실제로 색보정 작업을 어느 정도 수행할 수 있음을 확인했다. 프로젝트는 공개되어 연구자나 취미 영화 제작자의 참여와 피드백을 받고 있다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.perbhat.com/pico",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-30"
+  },
+  {
     "id": "2026-07-29-030",
     "title": "세션·플랫폼 간 기억 유지되는 AI 코딩 메모리 도구 출시",
     "summary": "개발자가 CogniKernel이라는 도구를 만들어 Claude Code와 Codex에 세션 간·플랫폼 간 기억 기능을 추가했다. GitHub 클론 600회, PyPI 패키지 설치 300회 이상을 기록하며 실제 사용자 반응을 얻었다.",
