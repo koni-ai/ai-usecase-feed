@@ -1,5 +1,152 @@
 [
   {
+    "id": "2026-07-31-030",
+    "title": "클로드코드로 만든 에어갭 폰 간 파일 전송 POC",
+    "summary": "개발자가 Claude Code로 캐시 기반 MP3 플레이어 웹앱을 만들던 중, 네트워크 연결 없이 QR코드를 빠르게 깜빡여 폰과 폰 사이에 파일을 전송하는 아이디어를 떠올렸다. Claude Code를 이용해 하룻밤 만에 이 방식의 작동하는 프로토타입을 구현했다. 소스코드는 GitHub에 공개됐다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vawcw3/i_had_an_idea_for_an_airgapped_file_transfer",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-31"
+  },
+  {
+    "id": "2026-07-31-028",
+    "title": "클로드코드로 만든 익명 SNS 웹 서비스 'blank'",
+    "summary": "개발자가 Claude Code를 이용해 프로필과 사용자 기록이 남지 않는 익명 SNS 웹 서비스 'blank'를 제작했다. 사용자는 이름표나 과거 게시물 없이 부담 없이 이용할 수 있는 피드 기능을 제공받는다. 개발자는 피드백을 받기 위해 커뮤니티에 공개했다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=31990",
+    "source_name": "GeekNews",
+    "collected_at": "2026-07-31"
+  },
+  {
+    "id": "2026-07-31-024",
+    "title": "Claude Code 토큰 사용량을 시각화하는 가상 애완동물 제작",
+    "summary": "개발자가 Claude Code 사용 시 소비되는 토큰량을 시각적으로 보여주는 'Nomlings'라는 가상 애완동물 위젯을 제작했다. Claude Code의 공식 훅(SessionStart, PostToolUse, Stop 등)과 세션 트랜스크립트(jsonl) 데이터를 읽어 Rust 상태 머신으로 처리하고, Tauri v2와 Three.js로 만든 투명 위젯에 8비트 캐릭터를 렌더링해 작업 완료, 도구 오류, 토큰 소모 등을 애니메이션으로 표현한다. 모든 처리는 로컬에서 이루어지며 API 키나 별도 프록시 없이 동작하고, 코드는 GitHub에 공개되었다.",
+    "tool": [
+      "Claude Code",
+      "Rust",
+      "Tauri",
+      "Three.js"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vazctm/i_built_a_virtual_pet_that_eats_the_tokens_my",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-31"
+  },
+  {
+    "id": "2026-07-31-022",
+    "title": "긴 정책문서로 AI 에이전트 통제 가능성 실험한 벤치마크",
+    "summary": "HANDBOOK.md라는 20~124쪽 분량의 업무 절차 문서만으로 AI 에이전트의 행동을 장시간·다중 도구 작업에서 제약할 수 있는지 측정하는 65개 과제 벤치마크가 만들어졌다. 금융, 의료 청구, 보험, 물류, 인사 등 다양한 환경에서 과제마다 권한자와 임계값, 절차를 다르게 설정해 에이전트가 익숙한 규칙을 재사용하지 않고 문서를 직접 참조해야 하는 상황을 테스트했다. 이를 통해 긴 정책 문서만으로는 에이전트를 안정적으로 통제하기 어렵다는 결과가 도출되었다.",
+    "tool": [
+      "AI 에이전트"
+    ],
+    "domain": "리서치",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=31994",
+    "source_name": "GeekNews",
+    "collected_at": "2026-07-31"
+  },
+  {
+    "id": "2026-07-31-019",
+    "title": "18년차 개발자가 Claude로 첫 사이드프로젝트 출시",
+    "summary": "18년 경력 개발자가 Claude Code(Sonnet 4.6)를 활용해 120일 만에 웹과 안드로이드용 티켓 지도 앱 Ticketmappr를 개발해 출시했다. 36,159줄 코드, 286개 파일, 86개 커밋 등 구체적 개발 데이터를 공개했으며, 기능 추가와 폐기가 저비용으로 반복되는 워크플로를 경험했다. 일부 인프라 성능 문제는 개발자의 아키텍처 판단으로 직접 해결했다.",
+    "tool": [
+      "Claude Code",
+      "Sonnet 4.6"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vb0pfp/in_18_years_i_never_shipped_a_side_project_until",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-31"
+  },
+  {
+    "id": "2026-07-31-018",
+    "title": "AI가 새로운 암호분석 공격 기법을 고안",
+    "summary": "Anthropic의 미공개 고급 모델 Claude Mythos가 HAWK 키 복구 공격과 7라운드 AES 공격 개선안을 도출했다. 이는 기존 암호분석 기법을 이해하고 결합·확장하는 AI의 능력을 보여준 사례다. HAWK 공격은 배포된 체계를 즉시 깨진 않지만 보안 비트 수를 대략 절반으로 낮춘다.",
+    "tool": [
+      "Claude Mythos"
+    ],
+    "domain": "리서치",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=31995",
+    "source_name": "GeekNews",
+    "collected_at": "2026-07-31"
+  },
+  {
+    "id": "2026-07-31-016",
+    "title": "Claude 챗봇 조언으로 급성 난청 조기 치료 성공",
+    "summary": "한쪽 귀 청력이 갑자기 저하된 사용자가 Claude에게 증상을 설명했고, Claude가 즉시 이비인후과 방문을 권유했다. 이에 따라 조기에 병원을 찾아 돌발성 난청 진단을 받고 스테로이드 치료를 시작해 청력이 회복되고 있다. 의사도 즉시 내원한 것이 최선의 조치였다고 확인했다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "기타",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vb17nr/claude_may_have_saved_my_hearing",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-31"
+  },
+  {
+    "id": "2026-07-31-013",
+    "title": "Claude 활용 정치인 발언 실시간 팩트체커 개발",
+    "summary": "Claude Sonnet 모델을 이용해 정치인 발언을 실시간 검증하는 InTruth 팩트체커 파이프라인을 개선함. Politifact, AP, Factcheck.org 등 소스와 비교해 거짓 판정 정확도 89%, 참 발언 오탐 0건, 체크 가치 있는 주장 커버리지 79~85%를 달성함. 출처별 정치 성향 태그를 추가했고 16개 이상 언어로 무료 오픈소스 제공되며 사용자 2만4천명을 넘김.",
+    "tool": [
+      "Claude Sonnet"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vb19a6/last_update_on_politician_factchecker",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-07-31"
+  },
+  {
+    "id": "2026-07-31-011",
+    "title": "AI로 사진을 자동 선별하는 스마트글래스 앱",
+    "summary": "Meta Display 스마트글래스용 앱 Keepers를 개발해 10초마다 사진과 영상을 자동 캡처하고 AI로 보관할 가치가 있는지 판단하도록 구현함. 캡처된 사진은 글래스 기본 기능과 달리 폰에 직접 저장되며 일일 하이라이트 요약 기능도 제공함. iOS와 Android 앱으로 출시되어 사용자 피드백을 받고 있음.",
+    "tool": [
+      "AI 판별 알고리즘"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://apps.apple.com/us/app/keepers-smart-glasses-camera/id6792932390",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-31"
+  },
+  {
+    "id": "2026-07-31-005",
+    "title": "Rabbit R1에서 동작하는 커스텀 음성 AI 에이전트 제작",
+    "summary": "개발자가 Nous Research의 Hermes 런타임을 이용해 Rabbit R1 하드웨어에서 동작하는 독립형 음성 에이전트 Pomi를 만들었다. Picovoice로 오프라인 웨이크워드를 구현하고 Tailscale로 원격 접속과 OTA 업데이트를 처리했으며, 안드로이드 서비스로 부팅 시 자동 실행되도록 구성했다. 전체 코드와 설치 스크립트를 GitHub에 공개해 다른 R1 소유자도 재현할 수 있게 했다.",
+    "tool": [
+      "Hermes (Nous Research)",
+      "Picovoice",
+      "Tailscale",
+      "Android"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://github.com/sidmohan0/pomi",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-07-31"
+  },
+  {
     "id": "2026-07-30-027",
     "title": "공개 엔지니어링 관행을 AI 에이전트 스킬로 변환",
     "summary": "Dev-like는 특정 개발팀의 공개된 워크플로, 스택, 트레이드오프를 OSINT로 수집해 인용된 프로필을 만들고 이를 Claude Code용 에이전트 스킬로 설치할 수 있게 한다. 설치 후 에이전트는 해당 팀의 문서화된 워크플로를 따르며, 예시로 Every사의 코드 리뷰 기준을 적용해 코드 배치, 테스트 생략, 캐싱 도입 여부를 평가했다. npx 명령이나 Claude Code 플러그인 마켓플레이스를 통해 설치할 수 있다.",
