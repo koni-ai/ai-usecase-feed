@@ -1,5 +1,154 @@
 [
   {
+    "id": "2026-08-01-026",
+    "title": "Opus 5로 방치된 FPS 게임 프로젝트 재구축",
+    "summary": "개발자가 2월에 만들다 중단한 브라우저 기반 멀티플레이어 FPS 게임을 Claude Opus 5를 이용해 다시 손봐 서버 랙 등 문제를 해결했다. 그 결과 CTF, 데스매치 등 여러 게임모드와 4개 맵, 서버 브라우저, 관전 모드 등을 갖춘 게임을 완성해 실제 EU 서버에 배포했다. 약 250개의 git 커밋을 거쳐 완성했으며 최대 60명 동시접속을 지원한다.",
+    "tool": [
+      "Claude Opus 5"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vbxn3e/opus_5_helped_salvage_an_fps_multiplayer_game",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-01"
+  },
+  {
+    "id": "2026-08-01-024",
+    "title": "GPT로 OpenAI 호환 채팅 서버 플러그인 개발",
+    "summary": "개발자가 LLM 도구의 대화 로그를 위한 llm-chat-completions-server 플러그인을 만들었다. GPT-5.6 Sol 모델이 OpenAI Chat Completions API와 호환되는 코드 전체를 작성했다. 이 플러그인은 로컬 서버를 열어 설치된 모든 LLM 모델을 ChatGPT 호환 엔드포인트로 노출한다.",
+    "tool": [
+      "GPT-5.6 Sol",
+      "LLM"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-01"
+  },
+  {
+    "id": "2026-08-01-023",
+    "title": "구글, Gemini 에이전트로 크롬 보안버그 대량 수정",
+    "summary": "구글은 Gemini 기반 에이전트를 활용해 취약점 발견부터 분류, 수정, 배포, 업데이트 적용까지 자동화했다. 이를 통해 Chrome 149와 150 버전에서 이전 23개 마일스톤 합계보다 많은 1,072개의 보안 버그를 수정했다. 탐지 시스템은 여러 모델과 Chrome의 CVE·Git 이력, SECURITY.md 등을 지식 기반으로 활용했다.",
+    "tool": [
+      "Gemini"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=32019",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-01"
+  },
+  {
+    "id": "2026-08-01-018",
+    "title": "Claude Code 응답을 BLUF 형식으로 정리하는 훅 설정",
+    "summary": "Claude Code(Opus 5)의 장황한 응답 문제를 해결하기 위해 CLAUDE.md에 결론 우선(BLUF) 톤 지침을 추가하고, UserPromptSubmit 훅으로 매 프롬프트마다 해당 지침을 재주입했다. 그 결과 응답의 핵심 결론이 항상 첫 문장에 오도록 개선되었다고 보고했다.",
+    "tool": [
+      "Claude Code",
+      "Opus 5"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vbzgi3/opus_5_too_chatty_reach_for_hooks_my_friends",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-01"
+  },
+  {
+    "id": "2026-08-01-014",
+    "title": "Claude에 적대적 리뷰어 역할 부여해 코드 검토 개선",
+    "summary": "작성자는 Claude가 자신이 작성한 코드를 스스로 검토할 때 문제를 잘 찾지 못하는 점을 개선하기 위해, 별도의 새로운 컨텍스트에서 '작성자가 아닌, 결함이 있다고 가정하는 회의적인 리뷰어' 역할을 부여하는 방식을 적용했다. 이 방법을 통해 기존 방식보다 실제로 비판적인 코드 리뷰 결과를 얻을 수 있었다고 밝혔다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vc11nl/whoever_popularized_the_adversarial_reviewer",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-01"
+  },
+  {
+    "id": "2026-08-01-012",
+    "title": "GPT-5.6로 커널 최적화 및 가격 인하, 개인 데모 전환",
+    "summary": "OpenAI는 GPT-5.6 Sol을 활용해 자사 프로덕션 GPU 커널을 자동으로 재작성·최적화해 서빙 비용을 20% 절감했다고 밝혔다. 이에 따라 GPT-5.6 Luna 모델 가격이 대폭 인하되어 경쟁 모델보다 저렴해졌다. Simon Willison은 자신의 agent.datasette.io 데모 사이트를 Gemini 3.1 Flash-Lite에서 GPT-5.6 Luna로 전환했다.",
+    "tool": [
+      "GPT-5.6 Sol",
+      "GPT-5.6 Luna",
+      "Codex",
+      "Triton",
+      "Gluon"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://simonwillison.net/2026/Jul/30/luna-price-drop",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-01"
+  },
+  {
+    "id": "2026-08-01-010",
+    "title": "Claude와 Cursor로 만든 타워디펜스 게임에 1000달러 지출",
+    "summary": "작성자는 Claude 최신 모델을 Cursor를 통해 사용하고 Godot 엔진으로 레인리스 타워디펜스 게임을 제작했다. 개발 과정에서 Claude 크레딧으로 약 1000달러를 지출했으며, 완성된 게임은 브라우저에서 무료로 플레이할 수 있게 공개되었다.",
+    "tool": [
+      "Claude",
+      "Cursor",
+      "Godot"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vc2aw2/1000_in_claude_credits_to_create_my_dream_game",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-01"
+  },
+  {
+    "id": "2026-08-01-008",
+    "title": "비개발자가 Claude로 만든 의회 후원금 추적 사이트",
+    "summary": "비개발자인 작성자가 Claude와 함께 미국 하원·상원 의원 537명의 FEC 선거자금 신고 데이터를 분석해 후원금 출처를 점수화하는 웹사이트를 제작했다. 파이썬 스코어링 파이프라인과 5000줄짜리 단일 HTML 앱으로 구성되며, 편집 중 마크업 손상을 막기 위해 정확 문자열 교체와 무결성 검사를 도입했다. 사이트는 실제로 배포되어 누구나 의원별 후원 내역을 조회할 수 있다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vc2oma/im_not_a_developer_i_built_a_537member_campaign",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-01"
+  },
+  {
+    "id": "2026-08-01-004",
+    "title": "Spotify Car Thing을 Claude Code 컨트롤러로 개조",
+    "summary": "개발자가 단종된 Spotify Car Thing 하드웨어를 개조해 Claude Code 세션을 관리하고 권한/선택 질문에 응답할 수 있는 'Claude Thing'을 만들었다. Nocturne 펌웨어 기반으로 음악 모드와 전환 가능하며 블루투스로 동작하고 전원만 유선 연결하면 된다. 소스코드는 GitHub에 공개되었다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vc37ks/i_turned_spotify_car_thing_into_a_claude_thing",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-01"
+  },
+  {
+    "id": "2026-08-01-002",
+    "title": "항공우주 표준 기술영어 작성 강제하는 Claude Skill",
+    "summary": "SimpleEnglish는 1983년부터 항공우주 분야에서 쓰인 통제언어 ASD-STE100 규칙을 적용해 LLM이 모호하지 않고 짧은 기술 문서를 작성하도록 만든 Agent Skill이다. 문장 길이 제한, 능동태 사용, 단순 시제, 조건절 우선 배치, 문장당 하나의 지시 등 53개 규칙을 강제한다. Claude 같은 LLM에 스킬로 연결해 기술 문서 작성 품질을 표준화하는 데 사용된다.",
+    "tool": [
+      "Claude",
+      "Agent Skills"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=32024",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-01"
+  },
+  {
     "id": "2026-07-31-030",
     "title": "클로드코드로 만든 에어갭 폰 간 파일 전송 POC",
     "summary": "개발자가 Claude Code로 캐시 기반 MP3 플레이어 웹앱을 만들던 중, 네트워크 연결 없이 QR코드를 빠르게 깜빡여 폰과 폰 사이에 파일을 전송하는 아이디어를 떠올렸다. Claude Code를 이용해 하룻밤 만에 이 방식의 작동하는 프로토타입을 구현했다. 소스코드는 GitHub에 공개됐다.",
