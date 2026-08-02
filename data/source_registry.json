@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-02T07:54:20.653658+09:00",
+  "updated_at": "2026-08-02T09:09:28.648508+09:00",
   "sources": [
     {
       "id": "86daefd8f26e008b62f8",
@@ -13,18 +13,19 @@
       "status_reason": "newly_discovered",
       "discovered_by": "DEV automation articles",
       "discovered_at": "2026-07-26T09:11:04.442720+09:00",
-      "last_checked_at": "2026-07-26T09:11:04.442720+09:00",
-      "last_success_at": "2026-07-26T09:11:04.442720+09:00",
+      "last_checked_at": "2026-08-02T09:09:19.786959+09:00",
+      "last_success_at": "2026-08-02T09:09:19.786959+09:00",
       "last_error": null,
-      "successful_checks": 1,
+      "successful_checks": 2,
       "consecutive_failures": 0,
       "success_dates": [
-        "2026-07-26"
+        "2026-07-26",
+        "2026-08-02"
       ],
       "sample_item_count": 15,
       "recent_item_count": 15,
-      "signal_item_count": 6,
-      "signal_ratio": 0.4
+      "signal_item_count": 3,
+      "signal_ratio": 0.2
     }
   ],
   "retired_hosts": [],
@@ -142,6 +143,45 @@
       "discovered_count": 1,
       "rejected_count": 1,
       "probed_count": 0,
+      "promoted_count": 0,
+      "recovered_static_count": 0,
+      "dry_run": false
+    },
+    {
+      "started_at": "2026-08-02T09:09:19.786959+09:00",
+      "finished_at": "2026-08-02T09:09:28.648508+09:00",
+      "status": "success",
+      "indexes": [
+        {
+          "name": "HN AI workflow stories",
+          "status": "success",
+          "urls": 15,
+          "error": null
+        },
+        {
+          "name": "HN Claude use cases",
+          "status": "success",
+          "urls": 13,
+          "error": null
+        },
+        {
+          "name": "DEV AI articles",
+          "status": "success",
+          "urls": 20,
+          "error": null
+        },
+        {
+          "name": "DEV automation articles",
+          "status": "success",
+          "urls": 20,
+          "error": null
+        }
+      ],
+      "pages_considered": 12,
+      "page_errors": 1,
+      "discovered_count": 0,
+      "rejected_count": 3,
+      "probed_count": 1,
       "promoted_count": 0,
       "recovered_static_count": 0,
       "dry_run": false
