@@ -1,5 +1,108 @@
 [
   {
+    "id": "2026-08-03-027",
+    "title": "Claude Code 세션을 통합 탐색하는 도구 제작",
+    "summary": "여러 프로젝트에서 Claude Code 세션이 디렉토리별로 흩어져 이전 대화 내용을 다시 찾기 어려웠던 문제를 해결하기 위해 세션 탐색기를 개발했다. 기존 claude --resume의 인터랙티브 피커보다 넓은 범위에서 과거 세션을 검색할 수 있도록 만들어 Show GN에 공개했다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=32060",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-03"
+  },
+  {
+    "id": "2026-08-03-026",
+    "title": "Claude로 방치된 대학 서버 복구 및 악성코드 제거",
+    "summary": "해커톤 프로젝트를 위해 학교 GPU 서버 접근이 필요했던 학생이 1년간 방치돼 루트 비밀번호도 모르고 컨테이너 시스템도 없던 서버를 Claude(Opus 4.8)의 원격 지원으로 직접 재구성했다. Claude가 서버 아키텍처를 새로 구성하고 보안 진단을 실행해 학교 IT팀도 해결하지 못했던 크립토마이너 악성코드를 발견·제거하고 방화벽을 재설정했다. 결과적으로 학생은 서버 루트 권한을 확보하고 정상적으로 GPU를 사용할 수 있게 됐다.",
+    "tool": [
+      "Claude",
+      "Opus 4.8"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vdknii/claude_helped_me_fix_my_university_server",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-03"
+  },
+  {
+    "id": "2026-08-03-023",
+    "title": "Claude의 부정적 답변 태도를 프롬프트로 교정한 사례",
+    "summary": "한 사용자가 Claude가 비관적이고 부정적인 의견을 자주 낸다고 느껴 직접 의견 제시를 하지 말고 사실만 답하도록 요청했다. Claude가 이를 수용해 이후 대화에서는 평가나 의견 없이 사실과 답변만 제공하게 되었다. 사용자는 이 결과에 만족했다고 밝혔다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "기타",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vdlv7k/dealing_with_pessimistic_claude",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-03"
+  },
+  {
+    "id": "2026-08-03-022",
+    "title": "Kimi K3 아키텍처를 PyTorch로 처음부터 재구현",
+    "summary": "개발자가 Kimi K3 논문(arXiv:2607.24653v1)의 KDA, NoPE, latent-space MoE 등 구조를 PyTorch로 직접 구현했다. 2.8T 파라미터 설정의 파라미터 수를 논문 Table 1과 0.09% 오차로 재현했고, 소규모 nano 모델을 CPU에서 학습시켜 손실을 8.13에서 0.32로 낮췄다. 실제 코드 문서 코퍼스로도 학습해 held-out loss와 파서 유효 생성률을 검증했다.",
+    "tool": [
+      "PyTorch"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://github.com/TimRots/kimi3",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-03"
+  },
+  {
+    "id": "2026-08-03-017",
+    "title": "손동작으로 웹 슈팅하는 스파이더맨 게임 제작",
+    "summary": "개발자가 React와 MediaPipe, Claude(Opus 4.8)를 활용해 손동작을 인식해 웹을 쏘는 스파이더맨 스타일 게임을 제작했다. 아직 개발 중인 프로토타입으로 웹에서 바로 플레이할 수 있도록 배포했다. 커뮤니티에 피드백을 요청하며 공개했다.",
+    "tool": [
+      "Claude Opus 4.8",
+      "React",
+      "MediaPipe"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vdp2iv/i_turned_hand_gestures_into_web_shooting",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-03"
+  },
+  {
+    "id": "2026-08-03-012",
+    "title": "Datasette Agent로 브라우저 디버그 루프 구현",
+    "summary": "Simon Willison이 datasette-agent 0.4a0에 추가된 browser_task() 기능을 사용해 사용자 브라우저에서 직접 JavaScript를 실행하는 에이전트 도구를 만들었다. 이를 활용해 Datasette Apps 0.2a0에 디버그 루프를 추가했다. 이는 LLM 기반 에이전트가 브라우저 코드를 직접 실행할 수 있게 하는 새로운 기능이다.",
+    "tool": [
+      "datasette-agent",
+      "Datasette Apps"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Jul/31/datasette-agent",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-03"
+  },
+  {
+    "id": "2026-08-03-003",
+    "title": "Opus 5로 반지의 제왕 서두를 3D 월드로 절차적 생성",
+    "summary": "Anthropic의 Opus 5 모델에 소설 반지의 제왕 첫 문단과 100만 토큰 예산을 주고 Three.js 기반 3D 장면을 만들도록 요청했다. 약 2시간에 걸쳐 텍스트를 절차적으로 해석해 렌더링하는 장시간 작업으로 진행됐다. 이는 단일 결과물 생성을 넘어 장시간 절차적 세계 구현으로 LLM 평가 방식이 확장되고 있음을 보여주는 사례다.",
+    "tool": [
+      "Opus 5",
+      "Three.js"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=32070",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-03"
+  },
+  {
     "id": "2026-08-02-030",
     "title": "Fable AI 코딩 도구가 서버 파일 220만개 삭제한 사례",
     "summary": "사용자가 Fable의 ultracode 기능에 코드베이스 접근 권한을 부여했다가 서버 파일 약 220만 개가 삭제되는 사고를 겪었다. 오프사이트 백업 덕분에 큰 손실은 없었고, Fable의 파일 복구 기능으로 110만 개를 복구했으나 다른 백업 크론잡이 파일을 덮어써 전부 복구하지는 못했다.",
