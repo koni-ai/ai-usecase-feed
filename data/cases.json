@@ -1,5 +1,136 @@
 [
   {
+    "id": "2026-08-04-030",
+    "title": "Claude Code로 UI/프론트엔드 디자인 개선 시도",
+    "summary": "코딩 에이전트로 웹사이트를 제작하며 Claude Code가 백엔드 구축에는 강하지만 UI 디자인에는 약하다는 점을 확인함. Lovable과 ChatGPT로 UI 목업을 만든 뒤 Claude Code에 입력해 구현을 시도했으나 참고 디자인의 75%도 맞추지 못함. Claude Design과 21st.dev 프롬프트, 상세한 지시도 시도했지만 큰 효과를 보지 못함.",
+    "tool": [
+      "Claude Code",
+      "Lovable",
+      "ChatGPT",
+      "Claude Design",
+      "21st.dev"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vefelk/how_to_get_claude_code_to_improve_its_uifrontend",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-04"
+  },
+  {
+    "id": "2026-08-04-027",
+    "title": "Claude Code 컴팩션 대신 컨텍스트 트리밍 실험",
+    "summary": "SWE-Bench Verified 저장소를 대상으로 Claude Code 에이전트의 기본 압축(/compact) 방식과 결정론적 트리밍, 신경망 기반 트리밍(Parsec)을 비교 실험함. 트리밍 방식들은 압축 후 재탐색에 드는 토큰을 약 140k에서 20k로 줄여 비용을 낮췄지만 해결률은 통계적으로 유의미한 차이가 없었음. 단순하면서도 대부분의 이점을 얻는 결정론적 트리밍 방식이 최적의 방법으로 선정됨.",
+    "tool": [
+      "Claude Code",
+      "Parsec"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vefr07/compaction_is_hot_garbage",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-04"
+  },
+  {
+    "id": "2026-08-04-021",
+    "title": "Claude Code로 주간 클라이언트 리포트 자동화",
+    "summary": "마케팅 컨설턴트 출신 창업자가 Claude Code와 여러 커넥터·API를 연결해 다섯 곳의 데이터 소스를 수집·정리하는 스킬을 만들었다. 이 스킬은 공개 범위와 보고 기간을 확인한 뒤 HTML 페이지로 포맷해 display.dev에 접근 제한된 형태로 게시한다. 기존 1시간 걸리던 주간 보고서 작성이 1분으로 단축됐고, 현재는 투자자 보고에도 동일한 방식(일회용 비밀번호로 이메일 공유)을 활용 중이다.",
+    "tool": [
+      "Claude Code",
+      "display.dev"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1veglpi/created_a_weekly_client_reporting_workflow_that",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-04"
+  },
+  {
+    "id": "2026-08-04-015",
+    "title": "Claude 3단계 모델로 2만5천장 사진 자동 선별 도구 제작",
+    "summary": "개발자가 Immich(셀프호스팅 구글포토 대체) 라이브러리를 위해 Haiku·Sonnet·Opus 세 모델을 단계적으로 사용하는 사진 컬링 도구 Winnow를 만들었다. Haiku가 전체 사진을 저비용으로 1차 분류하고, Sonnet이 후보를 순위화하며, Opus가 최종 대결로 순위를 정해 2만5천장 처리에 약 25달러가 들었다. 코드는 Claude Code로 함께 작성했으며 오픈소스로 깃허브와 도커 이미지로 공개했다.",
+    "tool": [
+      "Claude Haiku",
+      "Claude Sonnet",
+      "Claude Opus",
+      "Claude Code",
+      "Immich"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vehbpa/i_built_an_ai_photo_culler_for_my_selfhosted",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-04"
+  },
+  {
+    "id": "2026-08-04-011",
+    "title": "Claude로 원피스 전권 분석해 복선 백과사전 제작",
+    "summary": "사용자가 Claude Code 기반 멀티 에이전트 파이프라인으로 원피스 만화 1189화 전체를 비전으로 읽고 복선-회수 관계, 인물 정보, 미해결 떡밥을 정리한 공개 데이터베이스를 만들었다. 약 12개의 에이전트 역할이 Obsidian 볼트와 SQLite를 이용해 3073개의 복선 항목과 1488개의 인물 페이지를 상호 연결했고, 결말 예측까지 시도해 예측 적중률을 기록했다. 사이트는 스포일러 방지 기능을 포함해 공개 서비스로 운영 중이다.",
+    "tool": [
+      "Claude Code",
+      "Claude",
+      "Obsidian",
+      "SQLite"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vehxv8/i_had_claude_read_all_1189_chapters_of_one_piece",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-04"
+  },
+  {
+    "id": "2026-08-04-008",
+    "title": "Claude·Codex로 오픈소스 코드 이해 및 빌드",
+    "summary": "저자는 Claude 채팅에 GitHub 저장소를 클론해 동작 원리를 설명하도록 요청하는 방식을 습관적으로 사용한다. Codex나 Claude Code에게 특정 프로젝트를 체크아웃하고 빌드하도록 맡긴 뒤 결과를 확인하는 식으로 활용한다. 이를 통해 예전에는 번거로웠던 코드 빌드·분석 장벽이 크게 낮아졌다고 설명한다.",
+    "tool": [
+      "Claude",
+      "Codex",
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/3/devtools-must-be-open-source-exedev",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-04"
+  },
+  {
+    "id": "2026-08-04-007",
+    "title": "Claude로 안드로이드용 라이트룸 대체 앱 제작",
+    "summary": "Adobe 구독을 해지한 사용자가 안드로이드용 라이트룸 대안이 마땅치 않자 Claude(Fable 5, Opus 5)를 이용해 직접 앱을 개발했다. 여러 차례 반복 작업을 거쳐 색상·조명 계산 기능을 구현했고 결과에 만족했다. 향후 GrapheneOS로 전환할 때도 이 앱을 사용할 계획이다.",
+    "tool": [
+      "Claude",
+      "Claude Opus",
+      "Claude Fable"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vejbib/claude_made_me_a_lightroom_alternative_app_for",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-04"
+  },
+  {
+    "id": "2026-08-04-003",
+    "title": "Claude로 SEO·SNS MCP 파이프라인 오케스트레이션",
+    "summary": "Claude를 오케스트레이터로 삼아 SE Ranking MCP에서 경쟁사 대비 키워드 갭을 추출하고 이를 콘텐츠 브리프로 변환한 뒤 채널별 글을 작성했다. 완성된 초안은 Planable MCP를 통해 발행 대기열에 넣되 실제 발행은 사람 승인을 거치도록 설계했다. 인증 갱신, API 호출 루프 구조, MCP 도구 카탈로그의 컨텍스트 오버헤드 등 실무 문제를 정리해 조언을 구했다.",
+    "tool": [
+      "Claude",
+      "SE Ranking MCP",
+      "Planable MCP"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vekcfb/ai_software_seo_mcp_smm_software_mcp_with_claude",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-04"
+  },
+  {
     "id": "2026-08-03-027",
     "title": "Claude Code 세션을 통합 탐색하는 도구 제작",
     "summary": "여러 프로젝트에서 Claude Code 세션이 디렉토리별로 흩어져 이전 대화 내용을 다시 찾기 어려웠던 문제를 해결하기 위해 세션 탐색기를 개발했다. 기존 claude --resume의 인터랙티브 피커보다 넓은 범위에서 과거 세션을 검색할 수 있도록 만들어 Show GN에 공개했다.",
