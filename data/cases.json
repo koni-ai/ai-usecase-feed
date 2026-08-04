@@ -1,5 +1,117 @@
 [
   {
+    "id": "2026-08-05-030",
+    "title": "AI CLI용 OAuth API 프록시 개발",
+    "summary": "ChatGPT의 OAuth 정보를 공유해 OpenAI API 호환 HTTP 프록시를 만드는 기존 오픈소스 프로젝트를 참고했다. 이를 기반으로 Gemini, Grok 등 다른 CLI 도구용 구독 계정을 API처럼 사용할 수 있는 프록시를 직접 개발했다. 이 프로젝트는 GitHub에 오픈소스로 공개됐다.",
+    "tool": [
+      "ChatGPT",
+      "Gemini",
+      "Grok"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=32144",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-05"
+  },
+  {
+    "id": "2026-08-05-023",
+    "title": "Claude로 사람처럼 웹사이트 접근하는 오픈소스 도구 제작",
+    "summary": "개발자가 Kayak, Skyscanner 등 봇 차단 사이트에 접근하기 위해 Claude가 사람처럼 커서를 움직이고 클릭하도록 Robot JS를 연동했다. 스크린샷 대신 Accessibility API로 화면을 텍스트로 설명해 LLM에 전달하는 방식을 사용해 기존 컴퓨터 비전 방식보다 빠르고 효율적으로 만들었다. 기본적으로 Claude Haiku 모델을 사용하며 MIT 라이선스로 GitHub에 오픈소스 공개했다.",
+    "tool": [
+      "Claude",
+      "Claude Haiku",
+      "Robot JS",
+      "Accessibility API"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vfhmqm/claude_fixed_my_biggest_frustration_with",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-05"
+  },
+  {
+    "id": "2026-08-05-020",
+    "title": "Claude Code로 마케팅 업무 자동화 및 가계부 앱 제작 시도",
+    "summary": "코딩 초보자가 Claude Code의 CoWork 기능과 MCP, 스킬, claude.md 설정을 구성해 본업인 마케팅 업무를 지원받고 있다. 이어서 커스텀 카테고리와 요약 기능을 갖춘 개인용 지출 관리 앱을 만들기 위해 어떤 MCP와 스킬을 구성해야 할지 조언을 구했다.",
+    "tool": [
+      "Claude Code",
+      "CoWork",
+      "MCP"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vfioan/beginner_claude_code_tips",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-05"
+  },
+  {
+    "id": "2026-08-05-019",
+    "title": "메타 스마트글라스로 수어 지문자 번역 시스템 제작",
+    "summary": "개발자가 청각장애 가족을 위해 Google FSboard 데이터셋으로 CNN+GRU 신경망을 CTC 방식으로 학습시켜 수어 지문자 번역 모델을 만들었다. CTC 빔서치와 KenLM 언어모델로 인식 정확도를 보완하고, Modal에 모델을 호스팅해 메타 스마트글라스와 웹/iOS에서 동작하는 크로스플랫폼 오픈소스 프로젝트로 공개했다.",
+    "tool": [
+      "CNN+GRU 신경망",
+      "KenLM",
+      "Modal",
+      "Meta 스마트글라스"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://github.com/aadisang/hand-wave",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-05"
+  },
+  {
+    "id": "2026-08-05-015",
+    "title": "단일 AMD GPU에서 3040억 파라미터 모델 운영",
+    "summary": "304B 파라미터의 DeepSeek-V4-Flash-0731 모델을 추가 양자화나 오프로딩 없이 단일 AMD MI300X GPU에서 프로덕션 운영할 수 있는 구성과 패치를 제공했다. MI300X의 192GB HBM3 메모리에 156.67GiB의 가중치와 20GB GPU KV 캐시를 배치하고, 퇴거된 프리픽스 캐시는 CPU로 옮기는 방식을 사용했다.",
+    "tool": [
+      "DeepSeek-V4-Flash",
+      "AMD MI300X"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=32149",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-05"
+  },
+  {
+    "id": "2026-08-05-013",
+    "title": "AI 에이전트와 실시간 협업하는 DOCX 웹 편집기 개발",
+    "summary": "개발자가 MS Word 수준의 호환성을 갖춘 순수 JS 기반 DOCX 웹 편집기에 종단간 암호화 실시간 협업 기능을 추가했다. Codex나 Claude를 초대 링크로 연결해 AI 에이전트가 문서 편집에 직접 참여하고 초대자와 채팅할 수 있도록 구현했다. 서버는 암호화된 편집 데이터를 순서대로 중계만 하며 내용을 읽을 수 없는 구조로 설계됐다.",
+    "tool": [
+      "Codex",
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://collab.word-in-web.com",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-05"
+  },
+  {
+    "id": "2026-08-05-004",
+    "title": "MiniMax-H3 모델을 MLX로 Mac에서 돌려 영상 생성",
+    "summary": "Simon Willison은 MiniMax-H3 모델을 MLX로 포팅한 패키지를 M5 Max 맥북프로에서 실행했다. 115GB 모델을 내려받아 텍스트 프롬프트로 15초 분량의 오디오 포함 영상을 생성했으며 생성에는 약 45분이 걸렸다. 오디오 프롬프트 가이드를 읽지 않아 오디오 결과물은 이상한 음성 잡음처럼 나왔다.",
+    "tool": [
+      "MiniMax-H3",
+      "MLX",
+      "Hugging Face Hub"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-05"
+  },
+  {
     "id": "2026-08-04-030",
     "title": "Claude Code로 UI/프론트엔드 디자인 개선 시도",
     "summary": "코딩 에이전트로 웹사이트를 제작하며 Claude Code가 백엔드 구축에는 강하지만 UI 디자인에는 약하다는 점을 확인함. Lovable과 ChatGPT로 UI 목업을 만든 뒤 Claude Code에 입력해 구현을 시도했으나 참고 디자인의 75%도 맞추지 못함. Claude Design과 21st.dev 프롬프트, 상세한 지시도 시도했지만 큰 효과를 보지 못함.",
