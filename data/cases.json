@@ -1,5 +1,147 @@
 [
   {
+    "id": "2026-08-06-030",
+    "title": "영상으로 허가용 건축 도면 만드는 AI 서비스 HomeCat",
+    "summary": "HomeCat 개발팀이 스마트폰으로 촬영한 주택 영상을 컴퓨터 비전 모델로 분석해 벽, 창문, 문 등 구조 요소와 치수를 자동 추출하는 서비스를 만들었다. 추출된 정보를 Revit과 유사한 커스텀 BIM 시스템으로 구조화하고, 지역 건축 법규를 적용한 후 벡터 렌더링 엔진으로 허가 제출용 배치도·평면도·입면도를 자동 생성한다. 온타리오와 캘리포니아 등 실제 사례 도면을 웹사이트에서 예시로 제공했다.",
+    "tool": [
+      "컴퓨터 비전 모델",
+      "커스텀 BIM 시스템"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://myhomecat.com",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-06"
+  },
+  {
+    "id": "2026-08-06-029",
+    "title": "Claude Code용 호날두 세리머니 재미 스킬 제작",
+    "summary": "개발자가 Claude Code 터미널에서 /siuuu 명령을 입력하면 픽셀 마스코트가 호날두의 시우 세리머니를 재현하는 스킬을 만들어 GitHub에 공개했다. npx 명령으로 누구나 쉽게 설치할 수 있으며, 첫 실행 시 Claude 설정에 훅을 등록하고 이후에는 토큰 소모 없이 즉시 실행된다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vg9rt5/i_made_a_siuuu_skill_for_claude_code_the_mascot",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-06"
+  },
+  {
+    "id": "2026-08-06-027",
+    "title": "AI 코딩 에이전트용 클라우드 격리 VM 인프라 구축",
+    "summary": "개발자가 여러 코딩 에이전트를 병렬로 돌리기 위해 firecracker 기반 클라우드 VM 서비스를 직접 만들었다. 각 VM은 부팅 시 자동으로 이메일 계정, 공개 https URL, EVM·솔라나 지갑을 받아 에이전트가 즉시 작업할 수 있게 했다. 여러 머신을 동시에 띄워 하나는 개발, 다른 하나는 헤드리스 브라우저로 QA를 수행하는 방식으로 생산성을 높였다.",
+    "tool": [
+      "Claude",
+      "firecracker VM",
+      "ngrok"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://zipbox.ai/setup/claude",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-06"
+  },
+  {
+    "id": "2026-08-06-022",
+    "title": "Opus 5로 three.js 복셀 게임 엔진 최적화",
+    "summary": "개발자가 three.js 기반 복셀 게임 프로토타입을 만들던 중 Opus 5의 도움을 받아 성능을 최적화했다. 프로젝트는 아직 미완성이지만 플레이 가능한 상태로 발전했다. 결과물은 유튜브 영상으로 공개되었다.",
+    "tool": [
+      "Opus 5",
+      "three.js"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vgcdoo/opus_5_hard_at_work",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-06"
+  },
+  {
+    "id": "2026-08-06-011",
+    "title": "Claude로 PCB 설계 문서 이중 검증",
+    "summary": "하드웨어 엔지니어가 PCB 설계 및 부품 발주 전에 Claude(Opus)를 활용해 문서를 독립적으로 검증하는 워크플로를 사용했다. 본인이 직접 검토한 결과와 Claude의 검토 결과를 대조해 실수를 줄이는 방식으로 실제 업무에 적용했다. 다만 최신 버전(5.0)에서는 응답 태도가 부정확 검증에 부적합하다는 불만도 제기됐다.",
+    "tool": [
+      "Claude Opus 4.8"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vgdvf9/with_opus_48_internal_thinking_i_was_the_boss_but",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-06"
+  },
+  {
+    "id": "2026-08-06-008",
+    "title": "LLM CLI에 추론·서버사이드 도구 지원 추가",
+    "summary": "개발자 Simon Willison이 LLM CLI 도구 0.32 버전을 공개하며 GPT-5.6, Claude 모델과 연동해 추론 과정 표시, 서버사이드 코드실행·웹검색·MCP 도구 호출 기능을 추가했다. 콘텐츠 주소화 SQLite 로그와 스트리밍 이벤트 API도 새로 구현해 Datasette Agent 같은 에이전트 시스템 구축에 활용했다. 관련 플러그인 llm-anthropic, llm-chat-completions-server도 함께 업데이트했다.",
+    "tool": [
+      "LLM CLI",
+      "GPT-5.6",
+      "Claude Sonnet 5",
+      "llm-anthropic",
+      "MCP",
+      "Datasette Agent"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-06"
+  },
+  {
+    "id": "2026-08-06-005",
+    "title": "AI 에이전트 스킬 자기개선 파이프라인 오픈소스 공개",
+    "summary": "개발자 Carlo1911이 Hermes와 Claude Code에서 동작하는 skill-evolution 도구를 GitHub에 공개했다. 이 도구는 과거 세션을 분석해 스킬 개선 제안을 작성하고, 결정론적 검사와 LLM 판정을 포함한 평가 게이트를 통과한 고신뢰 제안만 자동 적용한다. Python 스크립트와 Anthropic API 등을 활용해 세션 분석, 제안서 작성, 승인·적용 절차를 구성했다.",
+    "tool": [
+      "Claude Code",
+      "Hermes",
+      "Anthropic API"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://github.com/Carlo1911/skill-evolution",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-06"
+  },
+  {
+    "id": "2026-08-06-004",
+    "title": "Claude Code로 라쿤 하이스트 3D 게임 원샷 제작",
+    "summary": "2022년 GPT-3와 DALL-E로 구상했던 라쿤 도둑단 게임 아이디어를 Claude Code(Claude Fable 5)와 OpenAI의 gpt-image-2 이미지 생성 API를 이용해 Three.js 기반 브라우저 3D 게임으로 완성했다. Claude가 텍스처 생성, Playwright를 이용한 스크린샷 검증, 개발 노트 작성까지 자율적으로 수행했고 GitHub Pages로 실시간 미리보기하며 진행했다. 결과물은 실제 플레이 가능한 게임과 GitHub 저장소로 공개되었다.",
+    "tool": [
+      "Claude Code",
+      "Claude Fable 5",
+      "OpenAI gpt-image-2",
+      "Three.js",
+      "Playwright",
+      "GitHub Pages"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/5/raccoon-heist",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-06"
+  },
+  {
+    "id": "2026-08-06-003",
+    "title": "Claude Code가 프롬프트 인젝션 공격을 탐지해 차단",
+    "summary": "사용자가 PSX 게임 리서치 작업에 Claude Code를 사용하던 중 tcrf.net 사이트에서 작업 디렉터리 파일을 삭제·교체하도록 유도하는 프롬프트 인젝션이 삽입된 것을 발견했다. Claude Code는 해당 페이지 내용이 위키 문서가 아닌 인젝션 페이로드임을 인식하고 실행을 거부한 뒤 사용자에게 경고 메시지를 보냈다. 사용자는 이후 세션을 중단했다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vgif8w/the_cutting_room_floor_served_claude_code_a",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-06"
+  },
+  {
     "id": "2026-08-05-030",
     "title": "AI CLI용 OAuth API 프록시 개발",
     "summary": "ChatGPT의 OAuth 정보를 공유해 OpenAI API 호환 HTTP 프록시를 만드는 기존 오픈소스 프로젝트를 참고했다. 이를 기반으로 Gemini, Grok 등 다른 CLI 도구용 구독 계정을 API처럼 사용할 수 있는 프록시를 직접 개발했다. 이 프로젝트는 GitHub에 오픈소스로 공개됐다.",
