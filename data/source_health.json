@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-07T10:29:42.860178+09:00",
+  "updated_at": "2026-08-08T07:33:17.889790+09:00",
   "sources": {
     "GeekNews": {
       "kind": "static",
       "status": "healthy",
-      "total_runs": 15,
-      "successful_runs": 15,
+      "total_runs": 16,
+      "successful_runs": 16,
       "failed_runs": 0,
       "consecutive_failures": 0,
-      "total_fetched": 750,
-      "total_selected": 112,
-      "total_duplicates": 131,
+      "total_fetched": 800,
+      "total_selected": 121,
+      "total_duplicates": 139,
       "history": [
         {
           "at": "2026-07-24T10:09:26.751175+09:00",
@@ -132,22 +132,30 @@
           "selected": 8,
           "duplicate": 8,
           "error": null
+        },
+        {
+          "at": "2026-08-08T07:33:17.889790+09:00",
+          "status": "success",
+          "fetched": 50,
+          "selected": 9,
+          "duplicate": 8,
+          "error": null
         }
       ],
-      "last_success_at": "2026-08-07T10:29:42.860178+09:00",
+      "last_success_at": "2026-08-08T07:33:17.889790+09:00",
       "last_error": null,
-      "last_run_at": "2026-08-07T10:29:42.860178+09:00"
+      "last_run_at": "2026-08-08T07:33:17.889790+09:00"
     },
     "Hacker News Show HN": {
       "kind": "static",
       "status": "healthy",
-      "total_runs": 15,
-      "successful_runs": 15,
+      "total_runs": 16,
+      "successful_runs": 16,
       "failed_runs": 0,
       "consecutive_failures": 0,
-      "total_fetched": 1437,
-      "total_selected": 120,
-      "total_duplicates": 36,
+      "total_fetched": 1537,
+      "total_selected": 130,
+      "total_duplicates": 37,
       "history": [
         {
           "at": "2026-07-24T10:09:26.751175+09:00",
@@ -268,22 +276,30 @@
           "selected": 8,
           "duplicate": 0,
           "error": null
+        },
+        {
+          "at": "2026-08-08T07:33:17.889790+09:00",
+          "status": "success",
+          "fetched": 100,
+          "selected": 10,
+          "duplicate": 1,
+          "error": null
         }
       ],
-      "last_success_at": "2026-08-07T10:29:42.860178+09:00",
+      "last_success_at": "2026-08-08T07:33:17.889790+09:00",
       "last_error": null,
-      "last_run_at": "2026-08-07T10:29:42.860178+09:00"
+      "last_run_at": "2026-08-08T07:33:17.889790+09:00"
     },
     "r/ClaudeAI": {
       "kind": "static",
       "status": "healthy",
-      "total_runs": 15,
-      "successful_runs": 14,
+      "total_runs": 16,
+      "successful_runs": 15,
       "failed_runs": 1,
       "consecutive_failures": 0,
-      "total_fetched": 350,
-      "total_selected": 114,
-      "total_duplicates": 0,
+      "total_fetched": 375,
+      "total_selected": 123,
+      "total_duplicates": 3,
       "history": [
         {
           "at": "2026-07-24T10:09:26.751175+09:00",
@@ -404,12 +420,20 @@
           "selected": 7,
           "duplicate": 0,
           "error": null
+        },
+        {
+          "at": "2026-08-08T07:33:17.889790+09:00",
+          "status": "success",
+          "fetched": 25,
+          "selected": 9,
+          "duplicate": 3,
+          "error": null
         }
       ],
       "last_failure_at": "2026-07-24T10:09:26.751175+09:00",
       "last_error": null,
-      "last_run_at": "2026-08-07T10:29:42.860178+09:00",
-      "last_success_at": "2026-08-07T10:29:42.860178+09:00"
+      "last_run_at": "2026-08-08T07:33:17.889790+09:00",
+      "last_success_at": "2026-08-08T07:33:17.889790+09:00"
     },
     "r/LocalLLaMA": {
       "kind": "static",
@@ -472,13 +496,13 @@
     "Simon Willison": {
       "kind": "static",
       "status": "healthy",
-      "total_runs": 15,
-      "successful_runs": 15,
+      "total_runs": 16,
+      "successful_runs": 16,
       "failed_runs": 0,
       "consecutive_failures": 0,
-      "total_fetched": 450,
-      "total_selected": 74,
-      "total_duplicates": 300,
+      "total_fetched": 480,
+      "total_selected": 76,
+      "total_duplicates": 328,
       "history": [
         {
           "at": "2026-07-24T10:09:26.751175+09:00",
@@ -599,11 +623,19 @@
           "selected": 7,
           "duplicate": 23,
           "error": null
+        },
+        {
+          "at": "2026-08-08T07:33:17.889790+09:00",
+          "status": "success",
+          "fetched": 30,
+          "selected": 2,
+          "duplicate": 28,
+          "error": null
         }
       ],
-      "last_success_at": "2026-08-07T10:29:42.860178+09:00",
+      "last_success_at": "2026-08-08T07:33:17.889790+09:00",
       "last_error": null,
-      "last_run_at": "2026-08-07T10:29:42.860178+09:00"
+      "last_run_at": "2026-08-08T07:33:17.889790+09:00"
     }
   }
 }

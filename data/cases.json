@@ -1,5 +1,153 @@
 [
   {
+    "id": "2026-08-08-028",
+    "title": "Claude CLI로 화장실 찾기 앱 바이브코딩 제작",
+    "summary": "개발자가 Mac에서 Claude CLI를 사용해 가까운 공중 화장실을 찾는 컴퍼스 앱 'Compiss'의 코드, 에셋, e2e 테스트를 전부 생성했다. 청결도 평가, 사진·댓글 첨부, 무료/접근성 필터 기능을 갖춘 앱을 만들어 Apple 앱스토어와 구글 플레이에 출시했다. Apple Watch 버전 코드도 Claude가 작성했다.",
+    "tool": [
+      "Claude CLI"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vi5guo/i_used_claude_cli_to_vibe_code_a_compass_app_to",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-08"
+  },
+  {
+    "id": "2026-08-08-024",
+    "title": "Claude Code·Codex 에이전트 관리용 오케스트레이션 툴 개발",
+    "summary": "개발자가 로컬 LLM 에이전트인 Claude Code와 OpenAI Codex를 관리하기 위한 얇은 오케스트레이션 레이어 'Podiom'을 Go와 Svelte로 만들어 오픈소스로 공개했다. 지속되는 세션, 프로젝트 원장, 스케줄링, MCP·도구·스킬 통합 기능을 제공하며 단일 바이너리로 설치해 사용할 수 있다.",
+    "tool": [
+      "Claude Code",
+      "OpenAI Codex"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://github.com/Podiom/Podiom",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-08"
+  },
+  {
+    "id": "2026-08-08-023",
+    "title": "Claude Code로 위키피디아 기반 지구본 탐색 앱 제작",
+    "summary": "개발자가 Claude Code를 활용해 위키피디아 데이터를 기반으로 한 지구본 탐색 앱 'mundu.app'을 무료로 제작했다. 지구본의 아무 지점이나 눌러 관련 위키피디아 문서를 보여주는 자유 탐색 모드와 특정 사건의 전개를 지도상에서 보여주는 스토리 모드 두 가지를 제공한다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vi6stm/ive_turned_claudecode_into_a_historical_map",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-08"
+  },
+  {
+    "id": "2026-08-08-018",
+    "title": "AI 생성 아트로 보드게임 프로토타입 제작",
+    "summary": "개발자가 웹 기반 비대칭 전략 보드게임 Samudra Manthana의 플레이테스트 빌드에서 타일 아트를 FLUX로 생성했다. 게임 페이지에는 코드와 그래픽 일부에 AI를 활용했다는 AI 사용 고지가 명시되어 있다. 최종 아트는 추후 별도로 커미션할 예정이라고 밝혔다.",
+    "tool": [
+      "FLUX"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://mighty840.itch.io/samudra-manthan",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-08"
+  },
+  {
+    "id": "2026-08-08-017",
+    "title": "Claude Code로 파이어벤딩 웹데모 제작",
+    "summary": "개발자가 Claude Code(Opus 5, high effort)를 이용해 WebGPU 기반 파이어벤딩 데모를 제작했다. 워터벤딩 데모의 프롬프트를 참고해 직접 스펙을 새로 작성하고, 여러 세션에 걸쳐 반복 프롬프트로 코드를 처음부터 생성시켰다. 결과물은 웹에 공개되어 누구나 브라우저에서 체험할 수 있다.",
+    "tool": [
+      "Claude Code",
+      "Opus 5"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1viavns/i_was_inspired_by_the_desert_and_waterbending",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-08"
+  },
+  {
+    "id": "2026-08-08-014",
+    "title": "Claude로 Unity 게임 자동 플레이 테스트",
+    "summary": "Unity CLI와 Claude를 연동해 개발 중인 콜로니 시뮬레이션 게임을 자동으로 플레이 테스트했다. Claude가 격리 절차 확인을 위한 감염 실험, 야생동물로 인한 콜로니 손실 등 다양한 시나리오를 게임 내에서 직접 실행하고 결과를 보고했다. 개발자는 Unity 엔진의 플레이 모드를 통해 테스트 전 과정을 실시간으로 관찰할 수 있었다.",
+    "tool": [
+      "Claude",
+      "Unity CLI"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vibi2i/i_gave_claude_the_ability_to_directly_test_my",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-08"
+  },
+  {
+    "id": "2026-08-08-009",
+    "title": "웹 UI 피드백을 코딩 에이전트가 바로 처리하는 도구",
+    "summary": "개발자가 'Agent Feedback'이라는 오픈소스 도구를 만들어 라이브 앱 화면에서 요소를 클릭해 남긴 코멘트를 Claude, Codex, Cursor 같은 코딩 에이전트가 읽고 자동으로 수정하게 했다. Vite나 Next.js 프로젝트에 설치하면 피드백이 개발 서버 로그와 jsonl 파일로 기록되고, 에이전트가 이를 감지해 해당 요소를 수정한다. npx 명령 한 줄로 설치 가능하며 별도 서버나 계정 없이 로컬에서 동작한다.",
+    "tool": [
+      "Claude Code",
+      "Codex",
+      "Cursor",
+      "OpenCode"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/montanaflynn/agent-feedback",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-08"
+  },
+  {
+    "id": "2026-08-08-007",
+    "title": "Claude Code 세션 상태를 게 아이콘으로 보여주는 앱 제작",
+    "summary": "개발자가 여러 Claude Code 세션을 동시에 돌리면서 어느 세션이 응답을 기다리는지 파악하기 어려운 문제를 해결하기 위해 화면 가장자리에 세션별 픽셀 게 캐릭터를 표시하는 macOS 앱 'claudme'을 만들었다. Claude Code가 세션마다 남기는 상태 파일을 1초마다 폴링해 유휴·작업 중·승인 대기 등 상태를 시각화한다. Swift로 제작되어 용량이 약 3MB이며 MIT 라이선스로 깃허브에 공개됐다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vibxas/i_could_never_tell_which_of_my_claude_code",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-08"
+  },
+  {
+    "id": "2026-08-08-004",
+    "title": "Codex GPT-5.6로 너구리 도둑 게임 제작 사례",
+    "summary": "저자가 과거 GPT-3로 만든 게임 아이디어를 Codex Desktop의 GPT-5.6 Sol Ultra 모드에 입력해 박물관 배경의 너구리 하이스트 게임을 완성했다. 텍스처와 이미지는 gpt-image-2로 생성했으며, 캐릭터 눈 크기 버그는 대화형 프롬프트로 수정했다. 작업 시간은 52분이었고 전체 코드와 대화 기록을 GitHub에 공개했다.",
+    "tool": [
+      "Codex",
+      "GPT-5.6 Sol Ultra",
+      "gpt-image-2"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-08"
+  },
+  {
+    "id": "2026-08-08-003",
+    "title": "학생이 Claude로 코딩 디버깅·개념학습에 활용한 후기",
+    "summary": "한 학생이 Claude를 코드 작성보다는 버그 원인 설명, 단계별 디버깅 안내, 시험 전 개념 이해에 주로 활용했다고 밝혔다. 앱을 빠르게 만드는 것보다 문제 해결 과정 학습에 더 유용했다는 경험을 공유했다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vicl7o/as_a_student_claudes_actually_more_useful_for_the",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-08"
+  },
+  {
     "id": "2026-08-07-027",
     "title": "Claude에게 유튜브 채널 운영을 맡긴 실험",
     "summary": "사용자가 Claude(Sonnet 5 High Effort)에게 가이드라인만 주고 유튜브 채널명, 콘텐츠 주제, 제목, 설명 작성을 전적으로 맡겼다. Claude는 인터넷 리서치를 통해 스스로 콘텐츠를 기획했고, 사용자는 업로드 전 검수만 담당했다. 결과물은 실제 유튜브 채널(@GroundTruthInfo)에 게시되어 월 1000회 조회수를 목표로 운영 중이다.",
