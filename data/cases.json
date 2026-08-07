@@ -1,5 +1,111 @@
 [
   {
+    "id": "2026-08-07-027",
+    "title": "Claude에게 유튜브 채널 운영을 맡긴 실험",
+    "summary": "사용자가 Claude(Sonnet 5 High Effort)에게 가이드라인만 주고 유튜브 채널명, 콘텐츠 주제, 제목, 설명 작성을 전적으로 맡겼다. Claude는 인터넷 리서치를 통해 스스로 콘텐츠를 기획했고, 사용자는 업로드 전 검수만 담당했다. 결과물은 실제 유튜브 채널(@GroundTruthInfo)에 게시되어 월 1000회 조회수를 목표로 운영 중이다.",
+    "tool": [
+      "Claude",
+      "Sonnet 5"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vhe036/i_gave_claude_a_youtube_channel",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-07"
+  },
+  {
+    "id": "2026-08-07-021",
+    "title": "Whisper로 고령 화자 음성인식 편향 벤치마크 제작",
+    "summary": "개발자가 Whisper(large-v3)와 wav2vec2 모델을 이용해 Common Voice 데이터셋 2760개 클립을 연령대별로 분석하는 벤치마크를 만들었다. 분석 결과 Whisper는 고령 화자를 더 정확히 전사했지만, 고정 침묵 임계값 기반 음성 에이전트는 고령 화자의 발화를 2~2.5배 더 자주 끊었다. 코드는 GitHub에 공개되어 별도 API 키 없이 재현 가능하다.",
+    "tool": [
+      "Whisper",
+      "wav2vec2",
+      "Pipecat smart-turn"
+    ],
+    "domain": "리서치",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://github.com/Kayvan-Zahiri/asr-age-gap",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-07"
+  },
+  {
+    "id": "2026-08-07-019",
+    "title": "AI 에이전트가 야간에 다단계 작업을 자율 수행",
+    "summary": "사용자가 취침 전 AI 에이전트 Fable에게 10단계 계획을 맡기자, 여러 하위 에이전트를 스스로 생성해 작업을 진행하고 사용량 소진을 스스로 관리했다. 사용자는 필요시 전화로 깨워주는 기능을 추가하기 위해 Twilio 연동을 고려했다고 밝혔다.",
+    "tool": [
+      "Fable",
+      "Twilio"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vhgaiu/sometimes_i_cant_believe_this_is_really_happening",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-07"
+  },
+  {
+    "id": "2026-08-07-015",
+    "title": "Claude Code로 회사 웹개발팀 Docker 환경 구축",
+    "summary": "사용자가 Claude Code(Opus·Sonnet)를 이용해 신규 입사한 회사의 웹개발팀을 위한 로컬 Docker 개발 환경을 구축하고 설치 안내 위키 문서를 작성했다. 서브에이전트 활용과 대화 컨텍스트 정리로 토큰 사용을 줄이려 했으나 회사 요금제의 토큰 한도를 초과해 사용 제한에 부딪혔다. 결국 예산 한도를 높이는 방식으로 대응했지만 이후 Opus 대신 Sonnet 위주로 작업 효율이 저하됐다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vhib7p/finally_experiencing_the_token_issue_and_its",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-07"
+  },
+  {
+    "id": "2026-08-07-013",
+    "title": "Claude Code 플랜을 독립 AI로 검토하는 오픈소스 플러그인",
+    "summary": "개발자가 Claude Code용 오픈소스 플러그인 'Plan Review'를 만들어, 계획 모드에서 작성한 실행 계획을 OpenAI Codex나 별도의 Claude 인스턴스가 독립적으로 검토하도록 했다. 사용자는 각 검토 의견을 수용(Investigate) 또는 기각(Dismiss)하며 계획을 개선하고, 승인 전에 설계 오류를 미리 잡을 수 있다. GitHub에 소스코드가 공개되어 있으며 CLI 설치 후 바로 사용 가능하다.",
+    "tool": [
+      "Claude Code",
+      "OpenAI Codex"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/dachev/plan-review",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-07"
+  },
+  {
+    "id": "2026-08-07-009",
+    "title": "VS Code용 시맨틱 코드 검색 확장 프로그램 Semble 공개",
+    "summary": "개발자가 semble CLI와 임베딩 모델을 활용해 VS Code에서 자연어로 코드를 검색할 수 있는 확장 프로그램을 만들었다. 함수명을 몰라도 '설정을 파싱하는 곳' 같은 설명으로 코드 위치를 찾을 수 있으며, 첫 검색 시 인덱스와 임베딩 모델을 다운로드한 뒤 캐시로 빠르게 결과를 반환한다. CLI는 uv 또는 pip로 설치 가능하며 소스는 GitHub에 공개되어 있다.",
+    "tool": [
+      "Semble CLI",
+      "VS Code",
+      "uv"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/SeanPedersen/vscode-semble",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-07"
+  },
+  {
+    "id": "2026-08-07-001",
+    "title": "ChatGPT·Codex로 만든 키보드 MIDI 컨트롤러",
+    "summary": "개발자가 컴퓨터 QWERTY 키보드를 현악기식 배열의 MIDI 컨트롤러로 쓰는 웹앱을 ChatGPT 5.6을 이용해 하루아침 만에 프로토타입으로 구현했다. 이후 Codex와의 대화 세션을 통해 모니터링용 2오실레이터 웨이브테이블 신디사이저도 함께 개발했다. 결과물은 실제 브라우저에서 동작하는 데모로 공개되었다.",
+    "tool": [
+      "ChatGPT",
+      "Codex"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://beijaflor.io/blog/07-2026/querymidi",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-07"
+  },
+  {
     "id": "2026-08-06-030",
     "title": "영상으로 허가용 건축 도면 만드는 AI 서비스 HomeCat",
     "summary": "HomeCat 개발팀이 스마트폰으로 촬영한 주택 영상을 컴퓨터 비전 모델로 분석해 벽, 창문, 문 등 구조 요소와 치수를 자동 추출하는 서비스를 만들었다. 추출된 정보를 Revit과 유사한 커스텀 BIM 시스템으로 구조화하고, 지역 건축 법규를 적용한 후 벡터 렌더링 엔진으로 허가 제출용 배치도·평면도·입면도를 자동 생성한다. 온타리오와 캘리포니아 등 실제 사례 도면을 웹사이트에서 예시로 제공했다.",
