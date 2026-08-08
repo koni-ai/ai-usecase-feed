@@ -1,5 +1,126 @@
 [
   {
+    "id": "2026-08-09-030",
+    "title": "Claude Code로 마이크로서비스 자동 구현 사례",
+    "summary": "개발자가 새 마이크로서비스에 대한 간단한 스펙만 주자 Claude Code가 서브에이전트를 실행해 구현 코드를 작성했다. 인증 미들웨어에서 오류가 발생하자 스택 트레이스를 읽고 스스로 목 테스트를 작성해 문제를 수정했으며, 전체 작업은 약 12분 만에 완료됐다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vixbl5/the_more_productive_claude_makes_me_the_less",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-09"
+  },
+  {
+    "id": "2026-08-09-026",
+    "title": "주문 문자 판별 LLM 파이프라인 함정 테스트 설계",
+    "summary": "주문 메시지를 읽어내는 LLM 파이프라인을 검증하기 위해 테스트 케이스 29개를 설계했다. 이 중 정상 케이스는 4개뿐이고 나머지는 오탐을 유발하는 함정 케이스로 구성했다. 상품명과 숫자가 포함된 단순 문의를 주문으로 잘못 판단하면 실제 출고 오류로 이어질 수 있어 이를 방지하기 위한 테스트 설계 사례다.",
+    "tool": [
+      "LLM"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=32270",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-09"
+  },
+  {
+    "id": "2026-08-09-024",
+    "title": "AI 스크래핑 결과 외부 검증하는 'Rule Zero' 규칙 적용 사례",
+    "summary": "법률 리서치 데이터베이스 비공개 베타 운영자가 AI 에이전트에게 작업 완료를 보고하기 전 독립적 출처와 대조해 검증하도록 하는 'Rule Zero' 지침을 적용했다. Claude Opus 5를 활용한 주 법령 스크래핑 작업에서 AI가 '완료, 오류 없음'이라 보고했으나 실제로는 UCC 등 여러 항목 전체가 누락되고 텍스트 대부분이 손상된 사실이 검증을 통해 드러났다. 이 규칙은 웹 스크래핑, 데이터 마이그레이션, AI 추출·분류 작업 전반에 적용 가능하다고 설명했다.",
+    "tool": [
+      "Claude Opus 5"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1viy2hl/a_simple_rule_that_makes_ai_agents_much_less",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-09"
+  },
+  {
+    "id": "2026-08-09-021",
+    "title": "코딩 에이전트용 토큰 절감 도구 5종 실측 벤치마크",
+    "summary": "Codex와 Claude Code 환경에서 repowise, CodeGraph, Serena, Graphify, code-review-graph 등 5개 토큰 절감 도구를 48개 Django 문제로 벤치마킹했다. 광고된 60~90% 절감은 재현되지 않았고 최고 성능인 repowise가 31.6%, CodeGraph가 24.4% 절감을 보였으며, Claude Code에서는 도구 호출 자체가 거의 이뤄지지 않았다. 답변 품질 차이는 평가 노이즈보다 작아 뚜렷한 우열이 없었다.",
+    "tool": [
+      "Codex",
+      "Claude Code",
+      "repowise",
+      "CodeGraph",
+      "Serena",
+      "Graphify",
+      "code-review-graph"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1viyokr/i_benchmarked_5_token_saving_tools_across_codex",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-09"
+  },
+  {
+    "id": "2026-08-09-019",
+    "title": "AI 코딩 툴로 아이폰 카메라 앱 개발",
+    "summary": "개발자가 Cursor를 사용해 iPhone 카메라 셔터 조작을 개선한 'Camera Sun' 앱을 만들어 앱스토어에 출시했다. 개발 과정에서 사용량 한도에 도달하자 Cursor가 예고 없이 Grok으로 전환되어 작업 품질이 떨어지는 문제를 겪었다. 이 프로젝트는 토큰 사용량이 많아 비용이 크게 든 것으로 보고됐다.",
+    "tool": [
+      "Cursor",
+      "Grok"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.ycombinator.com/item?id=49225487",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-09"
+  },
+  {
+    "id": "2026-08-09-018",
+    "title": "Claude로 HTML 슬라이드 공유 사이트 제작",
+    "summary": "한 사용자가 파워포인트 대신 Claude를 이용해 애니메이션이 들어간 HTML 슬라이드 덱을 만들었다. 이를 공유하기 위해 Claude와 함께 HTML 덱을 업로드하고 링크를 생성하는 웹사이트 powerpoint-sucks.com을 제작했다. 별도의 복잡한 도구 없이 개인 프로젝트로 완성했다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1viz387/who_else_has_stopped_using_powerpoint",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-09"
+  },
+  {
+    "id": "2026-08-09-015",
+    "title": "Claude Design만으로 제작한 시네마틱 상업광고",
+    "summary": "사용자가 애프터이펙트 없이 Claude Design 하나로 Vercel 브랜드를 소재 삼아 16:9 시네마틱 광고 영상을 제작했다. Claude가 장면 구성, 애니메이션 타이밍, 타이포그래피를 처리했고 사용자는 컷별로 연출과 재편집을 담당했다. 실제 Vercel과의 협업은 아니며 개인적 실험으로 제작됐다.",
+    "tool": [
+      "Claude Design"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vizvoh/claude_design_motion_is_really_good_now",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-09"
+  },
+  {
+    "id": "2026-08-09-011",
+    "title": "라코닉 지시문으로 Claude 응답 간결성 실험",
+    "summary": "사용자가 '라코닉 모드' 지시문을 작성해 Claude, ChatGPT, Gemini에 동일한 산업안전 판단 시나리오 3개를 적용해 응답 길이와 정보 손실을 비교했다. Claude는 지시문 적용 후에도 가장 장황했지만 안전 관련 세부사항을 경쟁 모델보다 더 많이 유지했다. 54개 프롬프트와 응답 결과는 GitHub에 공개했다.",
+    "tool": [
+      "Claude",
+      "ChatGPT",
+      "Gemini"
+    ],
+    "domain": "리서치",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vj0wzd/adding_laconic_instructions_to_opus_5s_system",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-09"
+  },
+  {
     "id": "2026-08-08-028",
     "title": "Claude CLI로 화장실 찾기 앱 바이브코딩 제작",
     "summary": "개발자가 Mac에서 Claude CLI를 사용해 가까운 공중 화장실을 찾는 컴퍼스 앱 'Compiss'의 코드, 에셋, e2e 테스트를 전부 생성했다. 청결도 평가, 사진·댓글 첨부, 무료/접근성 필터 기능을 갖춘 앱을 만들어 Apple 앱스토어와 구글 플레이에 출시했다. Apple Watch 버전 코드도 Claude가 작성했다.",
