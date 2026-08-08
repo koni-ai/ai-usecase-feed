@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-09T07:27:32.050136+09:00",
+  "updated_at": "2026-08-09T08:42:46.878182+09:00",
   "sources": [
     {
       "id": "86daefd8f26e008b62f8",
@@ -13,19 +13,44 @@
       "status_reason": "newly_discovered",
       "discovered_by": "DEV automation articles",
       "discovered_at": "2026-07-26T09:11:04.442720+09:00",
-      "last_checked_at": "2026-08-02T09:09:19.786959+09:00",
-      "last_success_at": "2026-08-02T09:09:19.786959+09:00",
+      "last_checked_at": "2026-08-09T08:42:39.764702+09:00",
+      "last_success_at": "2026-08-09T08:42:39.764702+09:00",
       "last_error": null,
-      "successful_checks": 2,
+      "successful_checks": 3,
       "consecutive_failures": 0,
       "success_dates": [
         "2026-07-26",
-        "2026-08-02"
+        "2026-08-02",
+        "2026-08-09"
       ],
       "sample_item_count": 15,
       "recent_item_count": 15,
+      "signal_item_count": 1,
+      "signal_ratio": 0.0667
+    },
+    {
+      "id": "8148fd509492b5efdd71",
+      "name": "Qingze Hu",
+      "type": "rss",
+      "endpoint": "https://qingze.bearblog.dev/feed/",
+      "homepage": "https://qingze.bearblog.dev/fable-5-plays-pokemon-sapphire-vision-only/",
+      "site_host": "qingze.bearblog.dev",
+      "status": "probation",
+      "status_reason": "newly_discovered",
+      "discovered_by": "DEV AI articles",
+      "discovered_at": "2026-08-09T08:42:39.764702+09:00",
+      "last_checked_at": "2026-08-09T08:42:39.764702+09:00",
+      "last_success_at": "2026-08-09T08:42:39.764702+09:00",
+      "last_error": null,
+      "successful_checks": 1,
+      "consecutive_failures": 0,
+      "success_dates": [
+        "2026-08-09"
+      ],
+      "sample_item_count": 4,
+      "recent_item_count": 4,
       "signal_item_count": 3,
-      "signal_ratio": 0.2
+      "signal_ratio": 0.75
     }
   ],
   "retired_hosts": [],
@@ -181,6 +206,45 @@
       "page_errors": 1,
       "discovered_count": 0,
       "rejected_count": 3,
+      "probed_count": 1,
+      "promoted_count": 0,
+      "recovered_static_count": 0,
+      "dry_run": false
+    },
+    {
+      "started_at": "2026-08-09T08:42:39.764702+09:00",
+      "finished_at": "2026-08-09T08:42:46.878182+09:00",
+      "status": "success",
+      "indexes": [
+        {
+          "name": "HN AI workflow stories",
+          "status": "success",
+          "urls": 19,
+          "error": null
+        },
+        {
+          "name": "HN Claude use cases",
+          "status": "success",
+          "urls": 18,
+          "error": null
+        },
+        {
+          "name": "DEV AI articles",
+          "status": "success",
+          "urls": 20,
+          "error": null
+        },
+        {
+          "name": "DEV automation articles",
+          "status": "success",
+          "urls": 20,
+          "error": null
+        }
+      ],
+      "pages_considered": 12,
+      "page_errors": 0,
+      "discovered_count": 1,
+      "rejected_count": 0,
       "probed_count": 1,
       "promoted_count": 0,
       "recovered_static_count": 0,
