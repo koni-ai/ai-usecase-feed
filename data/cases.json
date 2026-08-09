@@ -1,5 +1,141 @@
 [
   {
+    "id": "2026-08-10-027",
+    "title": "Claude가 제안한 블루투스 신호 추적으로 분실폰 찾기",
+    "summary": "MDM으로 Find My가 비활성화된 상태에서 30분간 휴대전화를 찾지 못하자 Claude에게 도움을 요청했다. Claude는 블루투스 신호 강도 추적을 제안하고 약 1분 만에 측정 도구를 작성해주었다. 사용자는 이 도구로 신호 강도가 커지는 방향을 따라가 사무실에서 휴대전화를 찾아냈다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "기타",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=32302",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-10"
+  },
+  {
+    "id": "2026-08-10-025",
+    "title": "Claude Code에서 서브에이전트로 타사 모델 병행 사용 패치",
+    "summary": "개발자가 Claude Code의 로컬 빌드를 수정해 메인 에이전트는 Anthropic Max 플랜의 Opus 모델을 쓰면서 서브에이전트는 DeepSeek, GLM 등 타사 모델로 실행할 수 있는 패치를 만들었다. 서브에이전트 목록에 고정(pin), 분리(detach) 등 편의 기능도 추가해 별도 리포지토리로 공개했다. 설치 방법과 동작 원리를 정리한 글도 함께 공유했다.",
+    "tool": [
+      "Claude Code",
+      "DeepSeek",
+      "GLM",
+      "Claude Opus"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vjrap8/any_3rd_party_model_as_a_subagent_in_claude_code",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-10"
+  },
+  {
+    "id": "2026-08-10-022",
+    "title": "Claude와 Sol로 옛 음악 프로젝트 자동 믹싱",
+    "summary": "사용자가 Claude와 Sol AI 에이전트를 이용해 오래된 Ableton 프로젝트 파일들을 자동으로 정리하고 마무리 작업을 진행했다. AI가 기본 레벨링, 일부 플러그인 추가, 러프 믹스 생성까지 수행했다. 그 결과 그동안 방치됐던 여러 음악 프로젝트를 적은 노력으로 완성할 수 있게 되었다.",
+    "tool": [
+      "Claude",
+      "Sol",
+      "Ableton"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vjrnyp/where_will_we_be_in_6_months",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-10"
+  },
+  {
+    "id": "2026-08-10-019",
+    "title": "Claude로 100% 코딩한 레이싱 게임 트랙 빌더",
+    "summary": "레이싱 게임 OVERSTEER 개발자가 Claude(Opus 5, Fable)를 활용해 코드 전체를 작성한 트랙 빌더 툴을 공개했다. 커넥터 노드 기반 트랙 조각 배치, 절차적 지형 생성, 레이싱 라인 자동 추출로 NPC AI와 미니맵 데이터를 생성한다. Opus 5는 3D 모델링에 강하고 Fable은 과도한 설계를 덜 하는 등 각 모델의 강점을 구분해 사용했다.",
+    "tool": [
+      "Claude Opus 5",
+      "Claude Fable"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vjv4sq/i_made_a_track_builder_tool_for_my_racing_game",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-10"
+  },
+  {
+    "id": "2026-08-10-018",
+    "title": "Claude로 만든 별자리 앱, 기존 오픈소스와 판박이",
+    "summary": "개발자가 Claude를 이용해 밤하늘 천체 안내 앱 Dark Hours를 제작해 공개했다. 그러나 기존 오픈소스 웹앱 DarkHours.app과 이름과 기능이 매우 유사했다. 약 한 시간 뒤 기존 프로젝트가 수정했던 버그까지 그대로 재현된 사실을 발견했다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=32306",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-10"
+  },
+  {
+    "id": "2026-08-10-006",
+    "title": "Claude와 Obsidian으로 개인 작업·지식 관리 시스템 구축",
+    "summary": "한 사용자가 Claude를 Obsidian 볼트와 연동해 프로젝트, 지식, 일일 로그를 관리하는 개인 운영체제형 워크플로를 구축했다. 체크박스 태스크를 Python 스크립트(build-index.py)로 인덱싱하고, Claude가 작업 완료 처리·프론트매터 업데이트·일일 로그 기록을 자동 수행한다. 클리핑한 뉴스 기사를 지식 노트로 정리하는 전용 Claude 에이전트도 운영 중이다.",
+    "tool": [
+      "Claude",
+      "Obsidian",
+      "Python"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vk19mm/using_claude_in_obsidian_looking_for_feedback_on",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-10"
+  },
+  {
+    "id": "2026-08-10-003",
+    "title": "Opus로 만든 Claude Code 간결 응답 규칙",
+    "summary": "사용자가 Claude Opus에게 Claude와 GPT-5.6의 응답 길이 차이를 분석하게 한 뒤, 그 제안에 따라 CLAUDE.md 파일에 응답 스타일 규칙을 추가했다. 이 규칙은 답변을 100단어 내외로 제한하고 헤더·이모지·요약 등을 금지해 간결한 출력을 유도한다.",
+    "tool": [
+      "Claude Opus",
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vk1ef1/why_are_claude_models_3x_more_verbose_than_gpt56",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-10"
+  },
+  {
+    "id": "2026-08-10-002",
+    "title": "P2P 방식으로 거대 LLM 구동하는 Lumabri 프로젝트",
+    "summary": "개발자가 Colibrì 프로젝트에 이어 여러 일반 컴퓨터를 하나의 자원 풀로 묶어 거대 LLM을 구동하는 Lumabri를 만들었다. Mixture-of-Experts 모델에서 큰 가중치 대신 작은 활성화값을 피어에 전송해 실행하는 방식을 실험했다. SHA-256 검증, 서명된 모델 상태, 장애 복구 등 보안 요소를 개발 중이며 코드는 GitHub에 공개되어 있다.",
+    "tool": [
+      "Lumabri",
+      "Colibrì"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://github.com/JustVugg/lumabri",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-10"
+  },
+  {
+    "id": "2026-08-10-001",
+    "title": "Codex로 만든 실시간 음성 마이크 도구",
+    "summary": "개발자가 Codex를 활용해 OAuth 기반 실시간 음성 스트리밍 마이크 도구를 만들었다. Ctrl+E로 녹음을 시작하면 cpal로 48kHz 오디오를 캡처해 24kHz 모노 PCM16으로 변환 후 웹소켓으로 전송한다. 현재는 윈도우 환경에서만 테스트가 완료된 상태다.",
+    "tool": [
+      "Codex"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=32311",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-10"
+  },
+  {
     "id": "2026-08-09-030",
     "title": "Claude Code로 마이크로서비스 자동 구현 사례",
     "summary": "개발자가 새 마이크로서비스에 대한 간단한 스펙만 주자 Claude Code가 서브에이전트를 실행해 구현 코드를 작성했다. 인증 미들웨어에서 오류가 발생하자 스택 트레이스를 읽고 스스로 목 테스트를 작성해 문제를 수정했으며, 전체 작업은 약 12분 만에 완료됐다.",
