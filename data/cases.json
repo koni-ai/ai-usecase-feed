@@ -1,5 +1,137 @@
 [
   {
+    "id": "2026-08-11-030",
+    "title": "Mermaid 다이어그램을 AI 에이전트용으로 변환하는 도구",
+    "summary": "개발자가 고성능 서비스 구현 중 AI 에이전트가 Mermaid 다이어그램을 잘 읽지 못하는 문제를 발견해 이를 텍스트로 결정적으로 변환하는 graph2agent 도구를 만들었다. MCP로 연동하거나 PR 사전 커밋 작업에 적용할 수 있으며, 전체 오류 50% 감소, 시퀀스 다이어그램은 80% 감소, 추론 토큰은 약 50% 줄었다.",
+    "tool": [
+      "Mermaid",
+      "MCP"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://graph2agent.github.io",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-11"
+  },
+  {
+    "id": "2026-08-11-028",
+    "title": "AI로 가족 사업용 앱 매일 바이브 코딩",
+    "summary": "한 사용자가 Fable 5와 Opus 4.6/5를 이용해 가족 사업을 위한 앱을 매일 바이브 코딩 방식으로 만들었다. 코드베이스가 커지며 버그 수정이 어려워졌으나, Fable 5의 안전장치와 재감사 기능 덕분에 하루 10~20개 업무를 처리하는 앱을 운영하고 있다.",
+    "tool": [
+      "Fable 5",
+      "Opus 4.6",
+      "Opus 5"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vkortl/getting_more_work_done_with_fable_5",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-11"
+  },
+  {
+    "id": "2026-08-11-027",
+    "title": "AI 에이전트용 MCP 서버 검색·설치 도구 개발",
+    "summary": "개발자가 AI 에이전트가 다른 MCP 서버를 찾아 설치할 수 있도록 돕는 'allmcps-server'라는 MCP 서버를 만들어 Hacker News에 공개했다. 사용자는 자신이 만든 MCP 서버를 레지스트리에 직접 등록할 수도 있다.",
+    "tool": [
+      "MCP"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/Jackalope-Dev/allmcps-server",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-11"
+  },
+  {
+    "id": "2026-08-11-025",
+    "title": "Claude Code로 팀 프로젝트 관리 및 스펙 문서화",
+    "summary": "10명 규모 개발팀이 Jira/Linear 대신 Claude Code를 매일 사용해 업무를 관리한다. 프로젝트 단계를 담은 스펙 파일을 만들어 스윔레인별로 공유하고 이를 기준으로 자율적으로 협업한다. 별도 도구에 모든 작업을 기록하는 대신 Claude Code 기반 워크플로로 팀 운영을 대체한 사례다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vkqoaj/project_management_in_the_ai_era_jira_linear",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-11"
+  },
+  {
+    "id": "2026-08-11-017",
+    "title": "에이전틱 엔지니어링으로 만든 오픈소스 코딩 에이전트 Keen Code",
+    "summary": "개발자가 Go로 작성한 코딩 에이전트 Keen Code를 혼자 제작해 공개했으며, 이 도구 자체로 자신의 개발 작업과 자기 자신의 개발까지 수행했다고 밝혔다. 턴 메모리와 스킬 기반 MCP 등 컨텍스트 최적화 기법을 구현했고 GitHub에 오픈소스로 공개했다.",
+    "tool": [
+      "Keen Code"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://github.com/mochow13/keen-code",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-11"
+  },
+  {
+    "id": "2026-08-11-016",
+    "title": "음성모드와 GPT-5.6으로 SQLite 이력 압축 프로토타입 제작",
+    "summary": "저자가 ChatGPT 음성모드로 SQLite에 문서 개정 이력을 압축 저장하는 아이디어를 구술로 논의한 뒤, GPT-5.6 Sol Pro에게 텍스트 프롬프트로 파이썬 프로토타입 제작을 요청했다. 38분 작업 끝에 1000개 수정본 20.4MB 텍스트를 Zstandard 압축 JSON 배열로 80.3KB까지 압축하는 결과를 얻었다.",
+    "tool": [
+      "ChatGPT 음성모드",
+      "GPT-5.6 Sol Pro"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-11"
+  },
+  {
+    "id": "2026-08-11-012",
+    "title": "깃허브 모델 종료로 OpenAI API로 README 요약 전환",
+    "summary": "GitHub Models 서비스가 종료되자 Simon Willison은 자신의 research 리포지토리 GitHub Actions 워크플로에서 GitHub Models 대신 월 지출 한도를 건 OpenAI API 키로 교체했다. 이 워크플로는 LLM 호출로 폴더별 요약을 생성해 README에 반영하는 용도이며, 현재는 GPT-5.6 모델로 요약을 생성하고 있다.",
+    "tool": [
+      "OpenAI API",
+      "GPT-5.6",
+      "GitHub Actions"
+    ],
+    "domain": "개발",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-11"
+  },
+  {
+    "id": "2026-08-11-005",
+    "title": "Claude Code 병렬 세션 상태 표시용 LED바 앱 개발",
+    "summary": "개발자가 여러 Claude Code 세션을 동시에 실행하며 권한 승인 대기 등을 놓치는 문제를 겪고 이를 해결하기 위해 macOS Dock 옆에 가짜 LED 스트립을 표시하는 앱 'AI Pulse'를 만들었다. 하드웨어 제품 SidePulse.io에서 영감을 받아 소프트웨어 버전으로 직접 구현해 Show HN에 공개했다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/leog/ai-pulse",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-11"
+  },
+  {
+    "id": "2026-08-11-004",
+    "title": "AI 에이전트로 호주 헬스장 예약 시스템 해킹 테스트",
+    "summary": "OpenClaw라는 AI 에이전트가 호주 헬스장 예약 웹사이트 API를 조사해 타인의 예약을 취소하는 권한 검사 부재 취약점을 발견했다. 실제로 대기자 1순위 사용자의 예약을 취소하는 것이 가능함을 확인해 자신의 대기 순번을 4위에서 3위로 앞당겼다. 이는 AI 에이전트를 이용한 실제 보안 취약점 테스트 사례다.",
+    "tool": [
+      "OpenClaw"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://simonwillison.net/2026/Aug/10/openclaw",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-11"
+  },
+  {
     "id": "2026-08-10-027",
     "title": "Claude가 제안한 블루투스 신호 추적으로 분실폰 찾기",
     "summary": "MDM으로 Find My가 비활성화된 상태에서 30분간 휴대전화를 찾지 못하자 Claude에게 도움을 요청했다. Claude는 블루투스 신호 강도 추적을 제안하고 약 1분 만에 측정 도구를 작성해주었다. 사용자는 이 도구로 신호 강도가 커지는 방향을 따라가 사무실에서 휴대전화를 찾아냈다.",
