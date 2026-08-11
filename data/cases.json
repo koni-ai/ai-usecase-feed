@@ -1,5 +1,85 @@
 [
   {
+    "id": "2026-08-12-015",
+    "title": "클로드 코드로 만든 텍스트 음성 변환 모바일 앱",
+    "summary": "개발자가 Claude Code를 이용해 PDF, 웹페이지, 사진 속 텍스트 등을 자연스러운 음성으로 변환하는 앱 'Frateca'를 제작했다. React Native와 Node.js 기반으로 개발됐으며 iOS, 안드로이드, 웹 버전으로 출시됐다. 개인정보 보호를 위해 기본적으로 별도 권한을 요구하지 않는다.",
+    "tool": [
+      "Claude Code",
+      "React Native",
+      "Node.js"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vlnsrz/i_built_an_app_with_claude_code_that_converts_any",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-12"
+  },
+  {
+    "id": "2026-08-12-012",
+    "title": "클로드로 만든 링크드인 밈 콘텐츠 생성 웹앱",
+    "summary": "개발자가 Claude API를 이용해 과장된 링크드인 게시물을 생성하는 무료 웹앱 'LinkedIn CringeBot 3000'을 Next.js로 제작했다. Claude Sonnet 4.6과 DeepSeek 두 모델의 출력을 비교 선택할 수 있는 기능을 추가했으며, 프롬프트 엔지니어링과 temperature 설정으로 출력 스타일을 조정했다. 5개월 만에 1만4천 건 이상의 결과물이 생성됐다.",
+    "tool": [
+      "Claude API",
+      "DeepSeek",
+      "Next.js"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vlphi8/linkedin_cringebot_3000_v2_now_even_more",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-12"
+  },
+  {
+    "id": "2026-08-12-006",
+    "title": "Fable 5와 Opus 5로 게임 기사 스프라이트 제작 비교",
+    "summary": "동일한 중세 아이소메트릭 기사 스프라이트 제작 과제를 Fable 5와 Opus 5에 각각 수행시켜 결과물을 비교했다. Fable 5는 3개 애니메이션의 픽셀아트를 코드로 직접 그려 10개 파일(174KB)을 9.68달러에 생성했고, Opus 5는 3D 모델을 코드로 만들었다가 렌더링해 6개 애니메이션, 4가지 팀 컬러, 그림자 레이어를 포함한 49개 파일(9.3MB)을 22.25달러에 생성했다. 두 모델 모두 실사용 가능한 게임 아트를 만들었으나 완성도와 산출물 범위에서 차이가 있었다.",
+    "tool": [
+      "Fable 5",
+      "Opus 5"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vls7dp/fable_5_vs_opus_5_for_2d_sprites",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-12"
+  },
+  {
+    "id": "2026-08-12-004",
+    "title": "LM Studio로 로컬 Muse Glimmer 모델 실제 테스트",
+    "summary": "Simon Willison이 LM Studio와 llm-lmstudio 플러그인으로 Meta의 Muse Glimmer 30B 모델을 로컬에서 실행함. 펠리컨 이미지를 생성하고, llm-coding-agent로 Datasette 코드베이스의 인증 로직을 분석했으며, 비전 기능으로 사진 속 펠리컨을 상세히 묘사시킴.",
+    "tool": [
+      "LM Studio",
+      "llm-lmstudio",
+      "llm-coding-agent",
+      "Muse Glimmer"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-12"
+  },
+  {
+    "id": "2026-08-12-003",
+    "title": "macOS VM에서 llama.cpp 추론 16배 가속한 호환성 계층",
+    "summary": "Apple Virtualization.framework의 가상 GPU가 보수적인 Metal 기능을 보고해 llama.cpp가 느린 커널을 선택하는 문제를 발견함. 게스트 프로세스 전용 호환성 계층으로 supportsFamily 응답을 우회해 최대 16.36배 추론 속도를 향상시킴.",
+    "tool": [
+      "llama.cpp",
+      "Apple Virtualization.framework",
+      "Metal"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=32414",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-12"
+  },
+  {
     "id": "2026-08-11-030",
     "title": "Mermaid 다이어그램을 AI 에이전트용으로 변환하는 도구",
     "summary": "개발자가 고성능 서비스 구현 중 AI 에이전트가 Mermaid 다이어그램을 잘 읽지 못하는 문제를 발견해 이를 텍스트로 결정적으로 변환하는 graph2agent 도구를 만들었다. MCP로 연동하거나 PR 사전 커밋 작업에 적용할 수 있으며, 전체 오류 50% 감소, 시퀀스 다이어그램은 80% 감소, 추론 토큰은 약 50% 줄었다.",
