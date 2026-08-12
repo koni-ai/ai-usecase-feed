@@ -1,5 +1,113 @@
 [
   {
+    "id": "2026-08-13-029",
+    "title": "tmux로 여러 Claude·Codex 코딩 에이전트 관리 도구 제작",
+    "summary": "개발자가 올해부터 Claude Code와 Codex 에이전트를 병렬로 여러 개 돌리며 코딩 작업을 해왔다. 원격 서버에서도 계속 실행되도록 tmux 위에서 관리하다가, 여러 세션의 에이전트 상태를 한눈에 보여주는 tmux 플러그인 tmux-agent-switcher를 직접 만들어 공개했다. 이 플러그인은 tmux 메타데이터와 터미널 출력을 분석해 에이전트의 유휴·작업 상태를 아이콘으로 표시한다.",
+    "tool": [
+      "Claude Code",
+      "Codex",
+      "tmux"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/Ymirke/tmux-agent-switcher",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-13"
+  },
+  {
+    "id": "2026-08-13-025",
+    "title": "Opus 5로 만든 3D 달 탐사선 서베이 게임",
+    "summary": "개발자가 Claude Code(Opus 5)를 이용해 빌드 도구 없이 순수 WebGL2와 three.js 기반 3D 달 탐사선 게임을 제작했다. 텍스처·지형·사운드를 모두 코드로 생성해 전체 용량을 약 380KB로 압축했으며, 실제 물리 공식을 반영한 사실적인 주행감을 구현했다. 결과물은 5개 미션 캠페인과 자유 탐사 모드를 갖춘 플레이 가능한 게임으로 GitHub에 MIT 라이선스로 공개됐다.",
+    "tool": [
+      "Claude Code",
+      "Opus 5"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vmi9x3/i_created_a_3d_moon_rover_survey_game_with_opus_5",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-13"
+  },
+  {
+    "id": "2026-08-13-015",
+    "title": "Claude Opus 5로 24시간 자율 GTA6 스타일 게임 제작 시도",
+    "summary": "사용자가 Claude Opus 5에게 도시, 건물, 차량, 날씨 등 게임 요소를 스스로 설계하도록 맡기고 24시간 동안 개입 없이 자율적으로 GTA6 유사 게임을 만들게 했다. 결과물은 완성도가 낮지만 게임플레이와 트레일러 영상으로 공개됐으며, 사용된 에이전트·스킬·툴을 담은 하네스(aaabench)를 깃허브에 공개했다.",
+    "tool": [
+      "Claude Opus 5"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vmjzh7/i_asked_opus_5_to_build_gta6_on_its_own_in_24",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-13"
+  },
+  {
+    "id": "2026-08-13-012",
+    "title": "연구자들이 LLM의 암호화된 추론 흔적 탈취 공격 시연",
+    "summary": "연구자들이 OpenAI, Anthropic, Google API가 반환하는 암호화된 추론(사고 과정) 블록을 취약한 형제 모델에 재입력해 탈옥시켜 원문 추론 내용을 복원하는 공격을 시연했다. Claude Haiku 4.5가 가장 쉽게 뚫렸으며 GPT-5.5의 CSS 코드 작성 사고 과정 등이 평문으로 노출됐다. 각 제공사에 신고 후 해당 취약점은 수정됐다.",
+    "tool": [
+      "OpenAI API",
+      "Claude Haiku 4.5",
+      "GPT-5.5",
+      "Gemini"
+    ],
+    "domain": "리서치",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-13"
+  },
+  {
+    "id": "2026-08-13-010",
+    "title": "로컬 LLM으로 Claude Desktop 응답 쉬운 말로 실시간 번역",
+    "summary": "개발자가 Windows 접근성 API를 활용해 Claude Desktop의 응답을 감지하고, 로컬 Ollama 모델(qwen3:14b)로 어려운 문장을 쉬운 언어로 다시 써주는 plainclaude라는 파이썬 도구를 만들었다. 원본과 재작성본을 나란히 보여주는 항상 위에 뜨는 창을 제공하며, 코드와 수식은 그대로 보존하고 정의되지 않은 변수에는 설명을 추가한다. 완전히 로컬에서 동작하며 오픈소스로 공개되었다.",
+    "tool": [
+      "Ollama",
+      "qwen3:14b",
+      "Claude Desktop",
+      "Python"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vmnvb8/plainclaude_a_local_model_rewrites_every_claude",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-13"
+  },
+  {
+    "id": "2026-08-13-006",
+    "title": "Claude Code로 편집 프로그램 없이 60초 광고 영상 제작",
+    "summary": "한 스타트업 개발자가 Claude Code를 이용해 After Effects나 Premiere 없이 HTML/JS/CSS로 작성된 웹 구성물로 60초짜리 홍보 영상을 만들었다. Claude가 장면 구성, 애니메이션 타이밍, 타이포그래피는 물론 화면 녹화와 최종 편집까지 수행했고, 렌더링 오류를 스스로 디버깅해 재촬영 방식을 바꿔 문제를 해결했다. 개발자는 감독 역할로 장면별 피드백만 제공했다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vmp3gp/zero_after_effects_claude_code_built_animated_and",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-13"
+  },
+  {
+    "id": "2026-08-13-003",
+    "title": "Claude Code 세션 로그를 grep으로 검색해 작업 이력 추적",
+    "summary": "Claude Code 사용자가 ~/.claude/projects 폴더에 세션 대화와 도구 호출 결과가 평문 JSON(jsonl)으로 저장됨을 발견했다. ripgrep으로 과거 세션 파일을 검색해 몇 주 전에 실행한 명령이나 결과를 다시 찾아내고 에이전트가 실제로 무엇을 했는지 감사할 수 있었다. 다만 붙여넣은 민감정보도 암호화 없이 그대로 저장되는 문제가 확인됐다.",
+    "tool": [
+      "Claude Code",
+      "ripgrep"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vmpplr/psa_your_claude_code_sessions_are_on_disk_as",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-13"
+  },
+  {
     "id": "2026-08-12-015",
     "title": "클로드 코드로 만든 텍스트 음성 변환 모바일 앱",
     "summary": "개발자가 Claude Code를 이용해 PDF, 웹페이지, 사진 속 텍스트 등을 자연스러운 음성으로 변환하는 앱 'Frateca'를 제작했다. React Native와 Node.js 기반으로 개발됐으며 iOS, 안드로이드, 웹 버전으로 출시됐다. 개인정보 보호를 위해 기본적으로 별도 권한을 요구하지 않는다.",
