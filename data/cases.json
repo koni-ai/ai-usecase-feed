@@ -1,5 +1,116 @@
 [
   {
+    "id": "2026-08-14-018",
+    "title": "Claude 커넥터 여러 개 연결해 업무 자동화한 사례",
+    "summary": "Reddit 사용자가 Claude에 Firecrawl, Gmail, Google Drive, Linear, Notion, Planable, SE Ranking, Slack 등 다수의 커넥터를 연결해 이메일 정리, 콘텐츠 제작 및 SNS 자동 게시, SEO 데이터 조회, 프로젝트 일정 관리를 수행했다. Claude가 콘텐츠를 생성하면 Planable이 자동으로 소셜 미디어에 게시하는 등 일부 작업을 사람 개입 없이 처리하도록 구성했다.",
+    "tool": [
+      "Claude",
+      "Firecrawl",
+      "Gmail",
+      "Google Drive",
+      "Linear",
+      "Notion",
+      "Planable",
+      "SE Ranking"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vnhpmt/do_you_guys_have_some_favourite_claude_connectors",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-14"
+  },
+  {
+    "id": "2026-08-14-012",
+    "title": "Codex와 GPT-5.6로 DB 라이브러리 프로토타입 제작",
+    "summary": "개발자가 Codex와 GPT-5.6 Sol Ultra에게 sqlite-utils와 유사한 API를 가진 SQLAlchemy 기반 다중 DB 라이브러리 제작을 지시했다. 몇 번의 후속 프롬프트만으로 PostgreSQL, SQLite, DuckDB를 지원하는 alchemy-utils 알파 버전을 릴리스했다. 이후 Codex를 이용해 느린 CSV 삽입 속도를 1시간에서 35초로 최적화했다.",
+    "tool": [
+      "Codex",
+      "GPT-5.6"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/12/alchemy-utils",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-14"
+  },
+  {
+    "id": "2026-08-14-011",
+    "title": "Claude로 미국 전역 러닝트랙 지도 제작",
+    "summary": "개발자가 미국과 8개국의 러닝트랙 18,861개를 정리한 TrackAtlas.org를 만들었다. Claude가 OSM 데이터를 소싱하는 알고리즘 개발과 사이트 제작 전반에 활용됐으며, 오탐 의심 지점에 대한 항공사진 분석 파이프라인에도 사용됐다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vnkde8/built_a_map_of_all_18861_running_tracks_in_the_us",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-14"
+  },
+  {
+    "id": "2026-08-14-009",
+    "title": "AI 에이전트가 앱을 만드는 가족용 협업 워크스페이스",
+    "summary": "개발자가 가족을 위해 Hearth라는 공유 워크스페이스를 만들었으며, 내부 AI 에이전트가 노트와 일정 등 컨텍스트를 바탕으로 캘린더·여행 앱 같은 앱을 직접 빌드해 워크스페이스 안에서 실행한다. 이 시스템은 Playground라는 자체 개발 중인 협업 AI 코딩 하니스 라이브러리 위에 구축되었다. 현재 베타 단계이며 곧 오픈소스로 공개할 예정이다.",
+    "tool": [
+      "Playground"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.ycombinator.com/item?id=49292004",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-14"
+  },
+  {
+    "id": "2026-08-14-007",
+    "title": "Claude Code로 PC 문제 스스로 해결한 사례",
+    "summary": "비전문가 사용자가 Claude Code에 PC 문제를 직접 입력해 원인과 해결책을 얻었다. 부팅 속도 저하 문제를 진단해 RAM 재훈련이 원인임을 찾고 BIOS 설정 변경을 안내받아 부팅 시간을 127초에서 10초로 줄였다. 다른 곳에서 찾지 못한 해결책도 Claude Code를 통해 얻었다고 밝혔다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "기타",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vnmrtv/claude_as_a_pc_troubleshooter",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-14"
+  },
+  {
+    "id": "2026-08-14-003",
+    "title": "티켓 관리하는 자체 루프 오케스트레이터 'Lloyd' 구축",
+    "summary": "20년 경력 엔지니어가 SQLite 기반 티켓 테이블을 스스로 관리하는 AI 루프 오케스트레이터 'Lloyd'를 만들어 600건 이상의 티켓을 처리했다. 이메일에서 버그 리포트를 확인하고, 문서 업데이트 필요 여부와 앱 로그를 점검한 뒤 스스로 새 티켓을 생성하는 방식으로 동작한다. 과거 관련 티켓을 조회해 맥락을 이어가는 내부 지식 데이터베이스 역할도 한다.",
+    "tool": [
+      "SQLite",
+      "Claude"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vnnpur/example_of_a_real_working_loop_orchestrator",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-14"
+  },
+  {
+    "id": "2026-08-14-002",
+    "title": "Rust로 만든 초경량 MCP 서버 mcp-stama 공개",
+    "summary": "개발자가 AI 코딩 에이전트용 MCP 서버를 Rust로 개발해 GitHub에 공개했다. Node/Python 기반 기존 MCP 서버 대비 메모리 사용량을 10MB 이하로, 응답 속도를 밀리초 이하로 줄였다고 밝혔다. Cursor, Claude Desktop, Windsurf에 자동 설치 기능을 제공한다.",
+    "tool": [
+      "MCP",
+      "Cursor",
+      "Claude Desktop",
+      "Windsurf",
+      "Rust"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://github.com/StamManif/mcp-stama",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-14"
+  },
+  {
     "id": "2026-08-13-029",
     "title": "tmux로 여러 Claude·Codex 코딩 에이전트 관리 도구 제작",
     "summary": "개발자가 올해부터 Claude Code와 Codex 에이전트를 병렬로 여러 개 돌리며 코딩 작업을 해왔다. 원격 서버에서도 계속 실행되도록 tmux 위에서 관리하다가, 여러 세션의 에이전트 상태를 한눈에 보여주는 tmux 플러그인 tmux-agent-switcher를 직접 만들어 공개했다. 이 플러그인은 tmux 메타데이터와 터미널 출력을 분석해 에이전트의 유휴·작업 상태를 아이콘으로 표시한다.",
