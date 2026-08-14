@@ -1,5 +1,111 @@
 [
   {
+    "id": "2026-08-15-019",
+    "title": "Go 표준 라이브러리만으로 만든 AI 에이전트 샌드박스",
+    "summary": "개발자가 외부 의존성 없이 Go 표준 라이브러리만 사용해 AI 에이전트 실행용 샌드박스를 제작했다. 해당 프로젝트는 towardsdev 블로그를 통해 공개되었다.",
+    "tool": [
+      "Go standard library"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://towardsdev.com/i-built-an-ai-agent-sandbox-from-the-go-standard-library-350ecac5d578?sk=f58cedafe6394788d87ecb3179f2ccbd",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-15"
+  },
+  {
+    "id": "2026-08-15-017",
+    "title": "AI 에이전트용 오픈소스 디자인 캔버스 도구 제작",
+    "summary": "paper.design의 MCP 유료 정책에 불만을 느낀 개발자가 오픈소스 대안인 tracepaper를 만들었다. AI 에이전트가 목업 디자인을 올리고 사용자가 같은 캔버스에서 댓글을 남길 수 있으며, Cloudflare 터널을 이용한 공유 모드를 제공한다.",
+    "tool": [
+      "MCP",
+      "Cloudflare Tunnels"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://github.com/caffeinum/tracepaper",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-15"
+  },
+  {
+    "id": "2026-08-15-016",
+    "title": "11개 AI 모델로 동일 웹사이트 프롬프트 비교 실험",
+    "summary": "Netlify가 커피숍 웹사이트 제작 프롬프트를 11개 AI 모델에 각각 3회 실행해 결과를 비교했다. 모델별로 디자인·콘텐츠 품질과 소모 크레딧이 2.4부터 수백 단위까지 크게 차이났다. 정식 벤치마크가 아닌 실제 생성 결과를 직접 비교한 실험이다.",
+    "tool": [
+      "Netlify AI"
+    ],
+    "domain": "개발",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=32505",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-15"
+  },
+  {
+    "id": "2026-08-15-012",
+    "title": "llm-gemini로 Gemini 3.7 Flash 실사용 테스트",
+    "summary": "Simon Willison이 llm-gemini 0.33 플러그인을 업데이트해 Gemini 3.7 Flash와 서버사이드 코드 실행 도구를 지원하도록 했다. CLI에서 Python 코드 실행으로 계산을 수행하고, 추론 강도를 달리해 자전거 타는 펠리컨 SVG를 생성해 비교했다. 처음엔 렌더링 오류를 모델 탓으로 돌렸으나 이후 자신의 렌더링 도구 버그였음을 확인해 수정했다.",
+    "tool": [
+      "llm-gemini",
+      "Gemini 3.7 Flash",
+      "LLM CLI"
+    ],
+    "domain": "개발",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/13/llm-gemini",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-15"
+  },
+  {
+    "id": "2026-08-15-007",
+    "title": "Claude Code로 20년치 연구를 브라우저 게임으로 제작",
+    "summary": "ASU 교수가 Claude Code를 통해 Fable 5에게 자신의 20년간 연구 내용을 조사시켜 브라우저 게임 'Hyperbubble'을 설계했다. 90회 이상의 반복 협업 끝에 절차적 그래픽과 합성 사운드트랙을 갖춘 단일 HTML 파일 게임과 Cloudflare Worker 기반 리더보드를 완성했다. 결과물은 MIT 라이선스로 공개되었고 GitHub 저장소에 배경 설명과 함께 공유되었다.",
+    "tool": [
+      "Claude Code",
+      "Fable 5",
+      "Cloudflare Worker"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://playhyperbubble.com",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-15"
+  },
+  {
+    "id": "2026-08-15-004",
+    "title": "Claude Code 플러그인으로 1060만 실적발표 임베딩 검색",
+    "summary": "솔로 개발자가 실적발표 대본(어닝콜) 1060만 건 임베딩 데이터베이스를 구축하고, PostgreSQL과 ElasticSearch로 샤딩·복제된 백엔드를 만들어 자연어 질의를 지원했다. 'NVIDIA가 데이터센터 수요에 대해 뭐라 했나' 같은 질문, 시장 개장 전 브리핑, 주가 급등 알림 등을 제공하며 Claude Code, Hermes Agent 등과 연동되는 무료 의존성 없는 파이썬 플러그인을 MIT 라이선스로 공개했다.",
+    "tool": [
+      "Claude Code",
+      "PostgreSQL",
+      "ElasticSearch"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://fn2.ai/claude",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-15"
+  },
+  {
+    "id": "2026-08-15-002",
+    "title": "LLM 환각 태그 생성 후 임베딩으로 실제 태그 매칭",
+    "summary": "블로그에 1,856개 태그가 있어 LLM에 전체 목록을 주기 어려운 상황에서, Doug Turnbull의 방법을 활용해 LLM이 기존 어휘를 모른 채 새로운 태그를 상상해서 생성하게 했다. 이후 벡터 임베딩으로 생성된 태그와 기존 태그 코퍼스 간 유사도를 계산해 가장 가까운 실제 태그를 찾아 분류에 활용했다. 예시 프롬프트로 가구·생활용품 카테고리 구조를 제시해 모델이 더 유용한 추측을 하도록 유도했다.",
+    "tool": [
+      "LLM",
+      "embeddings"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-15"
+  },
+  {
     "id": "2026-08-14-018",
     "title": "Claude 커넥터 여러 개 연결해 업무 자동화한 사례",
     "summary": "Reddit 사용자가 Claude에 Firecrawl, Gmail, Google Drive, Linear, Notion, Planable, SE Ranking, Slack 등 다수의 커넥터를 연결해 이메일 정리, 콘텐츠 제작 및 SNS 자동 게시, SEO 데이터 조회, 프로젝트 일정 관리를 수행했다. Claude가 콘텐츠를 생성하면 Planable이 자동으로 소셜 미디어에 게시하는 등 일부 작업을 사람 개입 없이 처리하도록 구성했다.",
