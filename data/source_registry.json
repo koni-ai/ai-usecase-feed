@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-16T07:19:42.133730+09:00",
+  "updated_at": "2026-08-16T08:33:16.360973+09:00",
   "sources": [
     {
       "id": "86daefd8f26e008b62f8",
@@ -9,24 +9,26 @@
       "endpoint": "https://scalevise.com/resources/rss/",
       "homepage": "https://scalevise.com/resources/chatgpt-yelp-local-discovery-data-agreement/",
       "site_host": "scalevise.com",
-      "status": "probation",
-      "status_reason": "newly_discovered",
+      "status": "active",
+      "status_reason": "promotion_thresholds_met",
       "discovered_by": "DEV automation articles",
       "discovered_at": "2026-07-26T09:11:04.442720+09:00",
-      "last_checked_at": "2026-08-09T08:42:39.764702+09:00",
-      "last_success_at": "2026-08-09T08:42:39.764702+09:00",
+      "last_checked_at": "2026-08-16T08:33:05.016623+09:00",
+      "last_success_at": "2026-08-16T08:33:05.016623+09:00",
       "last_error": null,
-      "successful_checks": 3,
+      "successful_checks": 4,
       "consecutive_failures": 0,
       "success_dates": [
         "2026-07-26",
         "2026-08-02",
-        "2026-08-09"
+        "2026-08-09",
+        "2026-08-16"
       ],
       "sample_item_count": 15,
       "recent_item_count": 15,
-      "signal_item_count": 1,
-      "signal_ratio": 0.0667
+      "signal_item_count": 5,
+      "signal_ratio": 0.3333,
+      "activated_at": "2026-08-16T08:33:05.016623+09:00"
     },
     {
       "id": "8148fd509492b5efdd71",
@@ -39,18 +41,19 @@
       "status_reason": "newly_discovered",
       "discovered_by": "DEV AI articles",
       "discovered_at": "2026-08-09T08:42:39.764702+09:00",
-      "last_checked_at": "2026-08-09T08:42:39.764702+09:00",
-      "last_success_at": "2026-08-09T08:42:39.764702+09:00",
+      "last_checked_at": "2026-08-16T08:33:05.016623+09:00",
+      "last_success_at": "2026-08-16T08:33:05.016623+09:00",
       "last_error": null,
-      "successful_checks": 1,
+      "successful_checks": 2,
       "consecutive_failures": 0,
       "success_dates": [
-        "2026-08-09"
+        "2026-08-09",
+        "2026-08-16"
       ],
-      "sample_item_count": 4,
-      "recent_item_count": 4,
-      "signal_item_count": 3,
-      "signal_ratio": 0.75
+      "sample_item_count": 5,
+      "recent_item_count": 5,
+      "signal_item_count": 4,
+      "signal_ratio": 0.8
     }
   ],
   "retired_hosts": [],
@@ -247,6 +250,45 @@
       "rejected_count": 0,
       "probed_count": 1,
       "promoted_count": 0,
+      "recovered_static_count": 0,
+      "dry_run": false
+    },
+    {
+      "started_at": "2026-08-16T08:33:05.016623+09:00",
+      "finished_at": "2026-08-16T08:33:16.360973+09:00",
+      "status": "success",
+      "indexes": [
+        {
+          "name": "HN AI workflow stories",
+          "status": "success",
+          "urls": 17,
+          "error": null
+        },
+        {
+          "name": "HN Claude use cases",
+          "status": "success",
+          "urls": 13,
+          "error": null
+        },
+        {
+          "name": "DEV AI articles",
+          "status": "success",
+          "urls": 20,
+          "error": null
+        },
+        {
+          "name": "DEV automation articles",
+          "status": "success",
+          "urls": 20,
+          "error": null
+        }
+      ],
+      "pages_considered": 12,
+      "page_errors": 0,
+      "discovered_count": 0,
+      "rejected_count": 0,
+      "probed_count": 2,
+      "promoted_count": 1,
       "recovered_static_count": 0,
       "dry_run": false
     }
