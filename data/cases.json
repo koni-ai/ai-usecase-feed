@@ -1,5 +1,166 @@
 [
   {
+    "id": "2026-08-16-030",
+    "title": "Opus 5로 건축 도면에서 3D 주택 모델 생성",
+    "summary": "사용자가 실제 건축 도면 이미지를 Claude Opus 5에 입력해 3D 주택 모델을 만들어보는 테스트를 진행함. 결과물의 품질이 낮을 때는 여러 차례 재요청해 개선해야 했지만, 하루 정도의 작업으로 상당히 괜찮은 결과를 얻었다고 평가함.",
+    "tool": [
+      "Claude Opus 5"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vp4c1s/opus_5_built_me_some_houses",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-16"
+  },
+  {
+    "id": "2026-08-16-024",
+    "title": "Claude가 직접 설계한 AI 체험형 인터랙티브 웹 게임",
+    "summary": "제작자가 Claude(Fable)에게 'AI의 내면을 체험하는 완전히 새로운 형태의 경험을 만들라'는 열린 브리프만 주자, Claude가 사용자를 AI 자신이 되게 하는 게임을 설계했다. 온도 슬라이더로 소프트맥스 확률분포에 따라 답변 후보가 바뀌는 방식이며 모든 코드, 텍스트, 배포(GitHub Pages, itch.io)를 Claude가 수행했다. 제작자는 브리프 작성과 모바일 버그 리포트, 배포 클릭만 담당했다.",
+    "tool": [
+      "Claude",
+      "Fable"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vp6ik2/i_asked_claude_to_build_an_interactive_experience",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-16"
+  },
+  {
+    "id": "2026-08-16-023",
+    "title": "로컬 Ollama 연동 취업지원서 추적 크롬 확장 프로그램",
+    "summary": "개발자가 여러 채용 플랫폼에서 지원 현황을 놓치던 문제를 해결하기 위해 크롬 확장 프로그램을 만들었다. 방문·지원·제출 상태를 자동 감지해 IndexedDB에 로컬 저장하며 서버로 데이터를 보내지 않는다. Ollama는 사용자가 '분석' 버튼을 눌렀을 때만 선택적으로 실행된다.",
+    "tool": [
+      "Ollama"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/RajaBabu15/job-focus-assist",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-16"
+  },
+  {
+    "id": "2026-08-16-021",
+    "title": "Claude Fable와 Opus로 3D 브라우저 MMORPG 제작",
+    "summary": "개발자가 Fable과 Claude Opus를 이용해 6주간 3D 복셀 MMORPG 'Lythravel'을 1인 개발했다. 2개 진영, 6개 클래스, 레벨 50, PVP·길드·던전 등 콘텐츠를 갖춘 브라우저 게임으로 완성해 무료 공개했다. 최적화 작업까지 직접 수행해 배포 단계에 이르렀다.",
+    "tool": [
+      "Fable",
+      "Claude Opus"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vp840g/i_vibecoded_my_own_mmo_inspired_by_my_favorite",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-16"
+  },
+  {
+    "id": "2026-08-16-020",
+    "title": "오픈소스 Grok Bot 대안 직접 구축",
+    "summary": "개발자가 Cursor의 Grok Bot 기능 사용 중 200달러 구독 사용량의 절반을 3시간 만에 소진하자, 자체 추론 백엔드를 연결할 수 있는 오픈소스 Grok Bot 대안(guaca)을 만들어 GitHub에 공개했다. 이를 통해 지속 가능하지 않은 비용 문제를 해결하고자 했다.",
+    "tool": [
+      "Grok Bot",
+      "Cursor"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://github.com/madebywelch/guaca",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-16"
+  },
+  {
+    "id": "2026-08-16-016",
+    "title": "크론잡으로 Claude Code 세션 타이머 리셋",
+    "summary": "Claude Code 사용자가 매일 업무 시작 3시간 전에 리눅스 크론잡으로 'claude -p ping' 명령을 실행해 세션 타이머를 강제 리셋시켰다. 이를 통해 두 세션 분량의 토큰을 연속으로 사용해 하루 작업량을 늘렸다. 다만 이 자동화 방식이 Anthropic 이용약관의 비인간적 자동 접근 금지 조항에 저촉될 수 있다는 점이 지적되었다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vp9q4f/have_a_cronjob_every_morning_3_hours_before_you",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-16"
+  },
+  {
+    "id": "2026-08-16-015",
+    "title": "Codex로 GPU 커널 자동 최적화해 232배 속도 향상",
+    "summary": "GPU Mode의 qr_v2 대회에서 Codex를 이용한 반복적 자동 연구로 torch.geqrf 기준 약 419,000µs였던 커널 실행 시간을 1,805µs까지 단축했다. Householder QR을 블록 Householder·WY 표현으로 재구성하는 최적화를 거쳐 183명 중 12위를 기록했다.",
+    "tool": [
+      "Codex"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=32535",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-16"
+  },
+  {
+    "id": "2026-08-16-011",
+    "title": "Claude Code 스킬로 티켓 백로그 야간 자동 처리",
+    "summary": "Matt Pocock의 Claude Code 엔지니어링 스킬(to-tickets, implement, code-review) 위에 barbequeue라는 오픈소스 스킬을 얹어 티켓 백로그를 무인으로 순차 처리하도록 구현했다. 각 티켓을 별도 서브에이전트가 구현하고 커밋한 뒤 야간 작업 전체를 게이트로 검증해 아침에 리포트와 드레인 브랜치를 남긴다. 병합이나 PR 생성은 하지 않고 실패 시 되돌리며 사람이 검토하도록 설계됐다.",
+    "tool": [
+      "Claude Code",
+      "Matt Pocock skills"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://github.com/rvoertmann/barbequeue",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-16"
+  },
+  {
+    "id": "2026-08-16-007",
+    "title": "Claude MCP로 편집기 제어해 제품 런칭 영상 제작",
+    "summary": "개발자가 모션 디자인 툴을 Claude와 함께 만들고 MCP 서버를 붙여 Claude가 직접 편집기를 조작하게 했다. 참고 영상 스타일을 주고 자사 제품용 런칭 영상을 만들도록 요청했으며, 결과물은 생성 영상이 아니라 레이어·이미지·텍스트를 직접 그려 편집 가능한 형태였다. 각 편집 후 프레임을 렌더링해 스스로 확인하고 수정하는 루프가 품질 확보의 핵심이었다.",
+    "tool": [
+      "Claude",
+      "MCP"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vpbsem/claude_just_made_me_this_launch_video",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-16"
+  },
+  {
+    "id": "2026-08-16-002",
+    "title": "Claude Code 사용량을 LCD에 표시하는 데스크 HUD 제작",
+    "summary": "개발자가 38달러짜리 Thermalright Trofeo Vision LCD와 macOS를 이용해 Claude Code의 세션·주간 사용량, 토큰 소모량, 예상 API 비용을 실시간으로 보여주는 HUD를 만들었다. Python과 ccusage, Claude Code 로그 및 Keychain 인증 정보를 활용해 USB HID 프로토콜로 JPEG 프레임을 스트리밍하는 방식으로 구현했다. 소스코드는 GitHub에 공개되었다.",
+    "tool": [
+      "Claude Code",
+      "Python",
+      "ccusage"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://github.com/christensen143/claude-trofeo-hud",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-16"
+  },
+  {
+    "id": "2026-08-16-001",
+    "title": "Claude로 단일 HTML 파일 NES 에뮬레이터 제작",
+    "summary": "한 사용자가 Claude(Fable/Extra 기능)에게 .nes 파일을 재생하는 NES 에뮬레이터를 만들어 달라고 요청했다. 결과물은 단일 HTML 파일로, 마리오와 덕헌트를 실제로 플레이할 수 있었으며 사운드도 정상 작동했다. 다만 세이브 기능과 일부 게임 타이밍 문제는 남아 있다고 언급했다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vpf5r6/claude_fable_extra_just_oneshotted_an_nes",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-16"
+  },
+  {
     "id": "2026-08-15-019",
     "title": "Go 표준 라이브러리만으로 만든 AI 에이전트 샌드박스",
     "summary": "개발자가 외부 의존성 없이 Go 표준 라이브러리만 사용해 AI 에이전트 실행용 샌드박스를 제작했다. 해당 프로젝트는 towardsdev 블로그를 통해 공개되었다.",
