@@ -1,5 +1,97 @@
 [
   {
+    "id": "2026-08-17-025",
+    "title": "Claude로 유니티 게임 'FrogPop' 첫 제작",
+    "summary": "개발자가 Claude를 활용해 Unity C# 스크립트를 작성·수정하며 개구리가 혀로 거품을 터뜨리는 로그라이트 게임 FrogPop을 만들었다. 혀·거품 메커닉, 웨이브 시스템, 업그레이드, 상점, 보스전 로직을 Claude와 함께 구현했고 게임 디자인과 밸런싱, 테스트는 직접 수행했다. 일부 아트는 PixelLab을 사용해 제작 후 직접 편집·통합했으며 무료 데모를 itch.io와 Steam에 공개했다.",
+    "tool": [
+      "Claude",
+      "PixelLab",
+      "Unity"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vq3rtp/i_built_my_first_unity_game_with_claude",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-17"
+  },
+  {
+    "id": "2026-08-17-020",
+    "title": "AI 코딩 에이전트에 구조화된 피드백 주는 앱 개발",
+    "summary": "개발자가 AI 코딩 에이전트에게 스크린샷 주석, 텍스트 선택, 웹 요소 코멘트 등으로 맥락 있는 피드백을 전달할 수 있는 Remarc를 만들었다. MCP(Model Context Protocol)를 통해 연결된 AI 에이전트가 세션을 읽고 작업을 처리하며 상태를 업데이트하고 해결 요약을 남길 수 있다. macOS용으로 무료 오픈소스로 배포되었다.",
+    "tool": [
+      "MCP",
+      "AI coding agents"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/metedata/Remarc",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-17"
+  },
+  {
+    "id": "2026-08-17-014",
+    "title": "GPT-5.6으로 만든 CORS Chat 웹 UI",
+    "summary": "개발자가 GPT-5.6-Sol xhigh를 활용해 하루 만에 CORS Chat이라는 웹 UI를 제작했다. 이는 LM Studio에서 실행되는 Qwen 3.8 27B 모델과 OpenRouter를 OpenAI-Responses 호환 방식으로 테스트하기 위한 도구로, 대화는 브라우저에 저장되고 JSON으로 내보낼 수 있으며 스트리밍 중 SVG 이미지를 점진적으로 렌더링하는 기능도 포함되었다.",
+    "tool": [
+      "GPT-5.6-Sol",
+      "LM Studio",
+      "OpenRouter"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/15/cors-chat",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-17"
+  },
+  {
+    "id": "2026-08-17-012",
+    "title": "Claude와 함께 개인 스토리 정리해 모금 캠페인 작성",
+    "summary": "한 사용자가 남편을 잃은 개인적 사연을 GoFundMe 모금 캠페인 글로 정리하기 위해 Claude(Opus 4.7)에게 인터뷰 방식으로 질문을 이어가며 이야기를 구조화해달라고 요청했다. 다른 AI는 감정적 세부사항을 삭제했지만 Claude는 세부내용을 유지하며 몇 달간 반복 수정 작업을 도왔고 결과물이 실제 모금 캠페인 페이지로 게시되었다. 사용자는 이 과정이 감정 정리에도 도움이 되었다고 밝혔다.",
+    "tool": [
+      "Claude Opus 4.7"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vq5yzi/the_most_beneficial_work_i_ever_did_with_ai",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-17"
+  },
+  {
+    "id": "2026-08-17-007",
+    "title": "직접 만든 SimCity 클론을 Claude가 시장으로 운영",
+    "summary": "한 개발자가 SimCity 3000 클론 게임을 직접 코딩한 뒤, Anthropic의 Claude AI에게 시장 역할을 맡겨 도시를 운영하도록 했다. Claude는 도시 경영에 어려움을 겪으면서도 점차 상황을 파악해 나가는 모습을 보였다. 이는 개인 프로젝트로 게임 제작과 AI 에이전트 플레이를 결합한 실험 사례다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vq863q/mayor_claude_playing_my_simcity_3000_clone",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-17"
+  },
+  {
+    "id": "2026-08-17-002",
+    "title": "Qwen 3.8 27B로 바운딩박스 시각화 도구 제작",
+    "summary": "Simon Willison이 로컬 LM Studio에서 Qwen 3.8 27B 모델을 실행해 펠리컨 사진의 바운딩 박스를 JSON 형태로 추출했다. 이어 동일 모델에 프롬프트 한 번으로 바운딩 박스를 이미지 위에 렌더링하는 HTML 시각화 도구를 생성했다. 기본 추론 강도(xhigh)가 과도하게 작동해 응답 생성에 21분이 걸리는 등 성능 이슈도 함께 확인했다.",
+    "tool": [
+      "Qwen 3.8 27B",
+      "LM Studio",
+      "llm CLI",
+      "OpenRouter"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": false,
+    "source_url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-17"
+  },
+  {
     "id": "2026-08-16-030",
     "title": "Opus 5로 건축 도면에서 3D 주택 모델 생성",
     "summary": "사용자가 실제 건축 도면 이미지를 Claude Opus 5에 입력해 3D 주택 모델을 만들어보는 테스트를 진행함. 결과물의 품질이 낮을 때는 여러 차례 재요청해 개선해야 했지만, 하루 정도의 작업으로 상당히 괜찮은 결과를 얻었다고 평가함.",
