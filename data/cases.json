@@ -1,5 +1,81 @@
 [
   {
+    "id": "2026-08-18-025",
+    "title": "Claude와 ChatGPT로 만든 오리건 트레일 게임 이식",
+    "summary": "개발자가 어린 시절 즐긴 1985년 애플 II 버전 오리건 트레일을 Wear OS와 웹용으로 재구현했다. 그래픽은 Claude로 프롬프트를 생성한 뒤 ChatGPT로 제작했고, Claude를 이용해 게임을 wasm으로 이식해 웹에서도 플레이 가능하게 했다. 소스코드와 APK는 GitHub에 공개됐다.",
+    "tool": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vqwsqt/weekend_project_oregon_trail_for_wear_os_web",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-18"
+  },
+  {
+    "id": "2026-08-18-021",
+    "title": "Claude로 만든 ADHD 친화 터미널 관리 도구",
+    "summary": "개발자가 여러 프로젝트와 SSH 세션을 한 화면에서 관리하기 위해 Claude를 활용해 오픈소스 터미널 관리 앱 NodeTerm을 제작했다. 터미널 세션 지속, SSH 연결 관리, Git 통합, 터미널 간 컨텍스트 공유 및 오케스트레이션 기능을 구현했다. 완성 후 GitHub에 공개하고 커뮤니티 피드백과 후원을 요청했다.",
+    "tool": [
+      "Claude",
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vqx297/i_coded_terminal_manager_for_adhd_brains_100",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-18"
+  },
+  {
+    "id": "2026-08-18-019",
+    "title": "LLM으로 커리큘럼 설계·이해도 점검하는 개인 튜터 개발",
+    "summary": "개발자가 책 대신 LLM을 활용해 주제별 커리큘럼을 자동 생성하고 챕터별로 이해도를 점검하는 오픈소스 도구 'Suki'를 만들었다. 초급부터 고급까지 학습 경로를 설계하고 사용자의 이해를 확인하는 방식으로 동작한다. GitHub에 오픈소스로 공개되었다.",
+    "tool": [
+      "LLM"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/grandimam/suki",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-18"
+  },
+  {
+    "id": "2026-08-18-013",
+    "title": "Fable로 여러 코딩 세션을 오케스트레이션한 개발 워크플로",
+    "summary": "사용자가 Fable이라는 도구를 사용해 여러 로컬 코딩 세션 간 통신을 활용, 하나의 마스터 세션이 문서·계획을 담당하고 여러 코딩 작업을 별도 워크트리로 분배하는 방식으로 빌드를 자동화했다. 각 세션이 독립된 컨텍스트 윈도우를 가져 컨텍스트 손실 문제가 줄었고, 코드 체크 게이트만 설정하면 수 시간 동안 개입 없이 실행 가능했다고 보고했다.",
+    "tool": [
+      "Fable"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vqz5kg/cross_session_communication_has_changed_the",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-18"
+  },
+  {
+    "id": "2026-08-18-004",
+    "title": "연방 계약 데이터로 건설 하도급 리드 자동 발굴",
+    "summary": "건설 하도급 업체가 Claude 에이전트를 이용해 USAspending API에서 연방 건설 계약 낙찰 데이터를 조회하고 NAICS 코드로 데이터센터 관련 계약을 필터링했다. Claude in Chrome으로 낙찰사 웹사이트에서 담당자 연락처를 찾고, Atomic Mail로 회사 도메인 메일함에서 직접 아웃리치 메일을 발송·응답을 처리했다. 한 주기 동안 12개 업체를 필터링해 10곳에 연락, 8곳 응답, 3건의 거래 성사라는 결과를 얻었다.",
+    "tool": [
+      "Claude",
+      "Claude in Chrome",
+      "USAspending API",
+      "Google Sheets",
+      "Atomic Mail"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vr3gvl/automating_lead_gen_from_public_federal_contract",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-18"
+  },
+  {
     "id": "2026-08-17-025",
     "title": "Claude로 유니티 게임 'FrogPop' 첫 제작",
     "summary": "개발자가 Claude를 활용해 Unity C# 스크립트를 작성·수정하며 개구리가 혀로 거품을 터뜨리는 로그라이트 게임 FrogPop을 만들었다. 혀·거품 메커닉, 웨이브 시스템, 업그레이드, 상점, 보스전 로직을 Claude와 함께 구현했고 게임 디자인과 밸런싱, 테스트는 직접 수행했다. 일부 아트는 PixelLab을 사용해 제작 후 직접 편집·통합했으며 무료 데모를 itch.io와 Steam에 공개했다.",

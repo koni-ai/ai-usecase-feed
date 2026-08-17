@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-17T07:19:15.167407+09:00",
+  "updated_at": "2026-08-18T07:22:59.031043+09:00",
   "items": {
     "df1c0150029c4a294a989a91eae1276b5388b8adc3efdf4651f4cf1a692534e6": {
       "status": "null",
@@ -4681,6 +4681,186 @@
       "failure_count": 0,
       "input_mode": "raw_text",
       "processed_at": "2026-08-17T07:19:15.167407+09:00"
+    },
+    "7ce6d147c7edd203f0bb6b6878274ea94065bd32cca657d524c927bf6a5f1bef": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "614c131495f8e1f0896b0c1e22d2165d603c6056f05c9b6232b75a7c4da68c80": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "6c84b4d4921bb2cbf2a2dfcb9969bad50d3456ee07f0bbf1578792402f3a0b72": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "e2c493e67f48d758bca9185ee4ec7b3dfe75ff8f826569cc2258c3e5a71f25ac": {
+      "status": "case",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "80605906fea60f1ed8c1033b5c98f82999b3fb45ba6045110134d4c6fba19521": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "08839a0b4a9640e168458fec728ea45a1c9ce5d2eabcd9557179d5f4542116cd": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "1c9541e98f9381169992308a309113a713b9f7280c7d9964f146c29f371e12af": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "link_page",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "0baacbe6fb7370c00e4b1c140962ca9eeac2a442f5abe00b938b88372172b99a": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "79f38e749039b6531dfcbddaef1620607df31622850211f218795bbb274d28fa": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "2b5a639fb01e044d339219a8864e969ac5828a65581f0a1b087cc0cb445d159c": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "2952f61f7623f81615386784d6215f0b47599d127ed268ce5bb947dfbfc852f9": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "5771aff29d121fc2479de06878467b49285be6e43c0a47a55fd2ae70ae43f8ab": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "2bddb2bfd91374ab36be8020716577e51a0842ab5f49839eeab282c492f28bb3": {
+      "status": "case",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "b3927e06500ed704d3dd81615371361d0f2973a1b5dd792d6ac89447ee2ba1f4": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "086507d579a99587f88373d4c3132c10cdb905d8f6fab9578e5d61d04fa86eb4": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "link_page",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "e5baf033140500b05df37ee6b5e6fc11c2e2f244ab3bd1407b27f0e38016948b": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "e9d83758a344e942f88966d02f05d9a5872026ad9dca0c0155b726845748d1b2": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "a8ad40b0f6598c7e9b133dadc5f278264d6c27e2e8dbfb84958e9dd2a6a749ef": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "f664b52cee0d16f58106cbb0c84959ce37173fd30d7bacd49f0ecafd97b19541": {
+      "status": "case",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "47bd7cb71939e99c21093305aee9b4501dd101050e57c8654396a1208547890e": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "1f17b74dbf2ed17351de2f154a4cdf7d6aaabdc3315e720acc89e92ed88699ce": {
+      "status": "case",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "59c527afbd51a97c895ee6f610a042eb5b9f183a2597a2285a9d242bc1715937": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "79af48a253294d3c1dc0543193890f8e105c7c2896fc589f23c250e6fc64b9ae": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "link_page",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "508f4f9a215f79351d9664a2ea3cc0f70f2606bd7946b9a6a227c80133dbc2f3": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "0ef3a0ce0ac0802b8199baacc33b4d6d6500bbb7b5ef23acfb530a419910bd5d": {
+      "status": "case",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "b4bbf95bc099310e402a1e73bb5d55b15b7e861294cf7ef71516001bdae7f581": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "47fa783c2be3e01bda38290ef46857e8e5f6fe5f64328bc0fd2fb5835a11facb": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "link_page",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "f81689013db97b85e6c3330ac3434d35f85a689fc459064ac3b70e5497e8fa68": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "e810a37a5f0f45f926f38b427cf4813eb767bfc4130427fd6dbd1f4038e0d4cd": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
+    },
+    "74f4dfa491bf305a29370695571ab0d09451d48c13c807e0d61f3f984a98008e": {
+      "status": "null",
+      "failure_count": 0,
+      "input_mode": "raw_text",
+      "processed_at": "2026-08-18T07:22:59.031043+09:00"
     }
   }
 }
