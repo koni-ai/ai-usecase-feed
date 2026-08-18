@@ -1,5 +1,37 @@
 [
   {
+    "id": "2026-08-19-021",
+    "title": "음성으로 VR 세계를 만드는 Claude Code 에이전트",
+    "summary": "A-Frame(Three.js, WebXR) 기반 VR 프로젝트에 마이크를 Claude Code에 연결해 음성 명령만으로 가상 세계의 오브젝트, 애니메이션, 환경을 생성했다. Opus 5 모델(추론 Low 이상)에서만 안정적으로 동작했고 Haiku·Sonnet은 따라오지 못했으며, 요청 처리에 수 분의 지연이 있었다. VR 헤드셋을 착용한 채 말로 세계를 형성하는 초기 형태의 시스템이 구현됨을 보여준 사례다.",
+    "tool": [
+      "Claude Code",
+      "A-Frame",
+      "Three.js",
+      "WebXR"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vrx2q5/building_a_world_with_my_voice_aframe_threejs",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-19"
+  },
+  {
+    "id": "2026-08-19-005",
+    "title": "Claude와 서브에이전트로 옛 게임을 언리얼5로 포팅",
+    "summary": "개발자가 뱀파이어 더 마스커레이드라는 오래된 2000년대 게임을 언리얼 엔진 5로 포팅하는 실험을 진행했다. Claude Fable과 서브 에이전트들을 활용해 옛 엔진의 메쉬 블렌딩, 애니메이션, 무기 부착 등을 자동으로 분석하고 처리했다. Unreal MCP 서비스를 통해 Claude가 엔진 내부에 접속해 실시간으로 테스트하고 데이터를 확인할 수 있도록 구성했다.",
+    "tool": [
+      "Claude",
+      "Unreal MCP"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vs2g9c/claude_fable_and_sub_agents_learning_how_to_port",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-19"
+  },
+  {
     "id": "2026-08-18-025",
     "title": "Claude와 ChatGPT로 만든 오리건 트레일 게임 이식",
     "summary": "개발자가 어린 시절 즐긴 1985년 애플 II 버전 오리건 트레일을 Wear OS와 웹용으로 재구현했다. 그래픽은 Claude로 프롬프트를 생성한 뒤 ChatGPT로 제작했고, Claude를 이용해 게임을 wasm으로 이식해 웹에서도 플레이 가능하게 했다. 소스코드와 APK는 GitHub에 공개됐다.",

@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-18T07:22:55.253497+09:00",
+  "updated_at": "2026-08-19T07:21:20.438932+09:00",
   "sources": {
     "GeekNews": {
       "kind": "static",
       "status": "healthy",
-      "total_runs": 26,
-      "successful_runs": 26,
+      "total_runs": 27,
+      "successful_runs": 27,
       "failed_runs": 0,
       "consecutive_failures": 0,
-      "total_fetched": 1300,
-      "total_selected": 211,
-      "total_duplicates": 247,
+      "total_fetched": 1350,
+      "total_selected": 218,
+      "total_duplicates": 256,
       "history": [
         {
           "at": "2026-07-24T10:09:26.751175+09:00",
@@ -220,21 +220,29 @@
           "selected": 7,
           "duplicate": 12,
           "error": null
+        },
+        {
+          "at": "2026-08-19T07:21:20.438932+09:00",
+          "status": "success",
+          "fetched": 50,
+          "selected": 7,
+          "duplicate": 9,
+          "error": null
         }
       ],
-      "last_success_at": "2026-08-18T07:22:55.253497+09:00",
+      "last_success_at": "2026-08-19T07:21:20.438932+09:00",
       "last_error": null,
-      "last_run_at": "2026-08-18T07:22:55.253497+09:00"
+      "last_run_at": "2026-08-19T07:21:20.438932+09:00"
     },
     "Hacker News Show HN": {
       "kind": "static",
       "status": "healthy",
-      "total_runs": 26,
-      "successful_runs": 26,
+      "total_runs": 27,
+      "successful_runs": 27,
       "failed_runs": 0,
       "consecutive_failures": 0,
-      "total_fetched": 2492,
-      "total_selected": 223,
+      "total_fetched": 2592,
+      "total_selected": 230,
       "total_duplicates": 41,
       "history": [
         {
@@ -444,21 +452,29 @@
           "selected": 7,
           "duplicate": 0,
           "error": null
+        },
+        {
+          "at": "2026-08-19T07:21:20.438932+09:00",
+          "status": "success",
+          "fetched": 100,
+          "selected": 7,
+          "duplicate": 0,
+          "error": null
         }
       ],
-      "last_success_at": "2026-08-18T07:22:55.253497+09:00",
+      "last_success_at": "2026-08-19T07:21:20.438932+09:00",
       "last_error": null,
-      "last_run_at": "2026-08-18T07:22:55.253497+09:00"
+      "last_run_at": "2026-08-19T07:21:20.438932+09:00"
     },
     "r/ClaudeAI": {
       "kind": "static",
       "status": "healthy",
-      "total_runs": 26,
-      "successful_runs": 24,
+      "total_runs": 27,
+      "successful_runs": 25,
       "failed_runs": 2,
       "consecutive_failures": 0,
-      "total_fetched": 600,
-      "total_selected": 200,
+      "total_fetched": 625,
+      "total_selected": 207,
       "total_duplicates": 3,
       "history": [
         {
@@ -668,12 +684,20 @@
           "selected": 7,
           "duplicate": 0,
           "error": null
+        },
+        {
+          "at": "2026-08-19T07:21:20.438932+09:00",
+          "status": "success",
+          "fetched": 25,
+          "selected": 7,
+          "duplicate": 0,
+          "error": null
         }
       ],
       "last_failure_at": "2026-08-15T07:20:48.239125+09:00",
       "last_error": null,
-      "last_run_at": "2026-08-18T07:22:55.253497+09:00",
-      "last_success_at": "2026-08-18T07:22:55.253497+09:00"
+      "last_run_at": "2026-08-19T07:21:20.438932+09:00",
+      "last_success_at": "2026-08-19T07:21:20.438932+09:00"
     },
     "r/LocalLLaMA": {
       "kind": "static",
@@ -736,13 +760,13 @@
     "Simon Willison": {
       "kind": "static",
       "status": "healthy",
-      "total_runs": 26,
-      "successful_runs": 26,
+      "total_runs": 27,
+      "successful_runs": 27,
       "failed_runs": 0,
       "consecutive_failures": 0,
-      "total_fetched": 780,
-      "total_selected": 103,
-      "total_duplicates": 601,
+      "total_fetched": 810,
+      "total_selected": 105,
+      "total_duplicates": 629,
       "history": [
         {
           "at": "2026-07-24T10:09:26.751175+09:00",
@@ -951,22 +975,30 @@
           "selected": 2,
           "duplicate": 28,
           "error": null
+        },
+        {
+          "at": "2026-08-19T07:21:20.438932+09:00",
+          "status": "success",
+          "fetched": 30,
+          "selected": 2,
+          "duplicate": 28,
+          "error": null
         }
       ],
-      "last_success_at": "2026-08-18T07:22:55.253497+09:00",
+      "last_success_at": "2026-08-19T07:21:20.438932+09:00",
       "last_error": null,
-      "last_run_at": "2026-08-18T07:22:55.253497+09:00"
+      "last_run_at": "2026-08-19T07:21:20.438932+09:00"
     },
     "Scalevise Resources": {
       "kind": "dynamic",
       "status": "healthy",
-      "total_runs": 2,
-      "successful_runs": 2,
+      "total_runs": 3,
+      "successful_runs": 3,
       "failed_runs": 0,
       "consecutive_failures": 0,
-      "total_fetched": 30,
-      "total_selected": 13,
-      "total_duplicates": 6,
+      "total_fetched": 45,
+      "total_selected": 20,
+      "total_duplicates": 9,
       "history": [
         {
           "at": "2026-08-17T07:19:11.815625+09:00",
@@ -983,11 +1015,19 @@
           "selected": 7,
           "duplicate": 6,
           "error": null
+        },
+        {
+          "at": "2026-08-19T07:21:20.438932+09:00",
+          "status": "success",
+          "fetched": 15,
+          "selected": 7,
+          "duplicate": 3,
+          "error": null
         }
       ],
-      "last_success_at": "2026-08-18T07:22:55.253497+09:00",
+      "last_success_at": "2026-08-19T07:21:20.438932+09:00",
       "last_error": null,
-      "last_run_at": "2026-08-18T07:22:55.253497+09:00"
+      "last_run_at": "2026-08-19T07:21:20.438932+09:00"
     }
   }
 }
