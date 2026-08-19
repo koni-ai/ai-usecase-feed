@@ -1,5 +1,67 @@
 [
   {
+    "id": "2026-08-20-028",
+    "title": "AI 도구로 워드프레스 사이트 PHP 재구축",
+    "summary": "한 사용자가 Elementor와 상용 테마를 걷어내고 순수 PHP 기반으로 워드프레스 사이트를 AI 코딩 도구 'Fable 5'를 이용해 2주간 바이브코딩으로 재구축했다. 완성 후 보안 취약점 점검을 요청했으나 해당 요청이 정책에 걸려 거부당했다. 사용자는 PHP 지식이 없었음에도 AI의 도움으로 사이트를 직접 만들었다.",
+    "tool": [
+      "Fable 5"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vsoi3j/its_a_bit_ironic_that_fable_5_cant_do_a_security",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-20"
+  },
+  {
+    "id": "2026-08-20-025",
+    "title": "웹사이트를 AI 에이전트용 경량 CLI로 변환하는 도구 개발",
+    "summary": "개발자가 oc라는 CLI 도구를 만들어 웹페이지를 요약된 번호 목록 형태로 변환, Claude Code·Codex 등 AI 에이전트가 적은 토큰으로 웹을 탐색하도록 했다. 실제 벤치마크에서 6개 페이지를 여는 데 기존 HTML 직접 가져오기 대비 토큰 사용량을 크게 줄였다(약 1,936 대 177,685 토큰). Hacker News, Reddit, GitHub 등 주요 사이트에 맞춘 전용 단축 명령도 지원한다.",
+    "tool": [
+      "Claude Code",
+      "Codex",
+      "Antigravity",
+      "oc"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/only-cli/oc",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-20"
+  },
+  {
+    "id": "2026-08-20-024",
+    "title": "Claude Code 스킬로 DeepSeek 성능 82%로 향상",
+    "summary": "Autoprompt라는 Claude Code용 스킬을 OpenCode 환경에서 DeepSeek V4 Flash 모델에 적용해 계획-빌드-테스트-리뷰-수정 루프를 자동화했다. 그 결과 Terminal-Bench 2.1 벤치마크 점수가 67.42%에서 82.02%로 상승했다. 대신 토큰 사용량은 약 2배, 실행 시간은 약 3배 늘어났다.",
+    "tool": [
+      "Claude Code",
+      "OpenCode",
+      "Autoprompt",
+      "DeepSeek V4 Flash"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vst0hm/one_claude_code_skill_pushed_deepseek_v4_flash",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-20"
+  },
+  {
+    "id": "2026-08-20-012",
+    "title": "Claude로 코딩하고 API 연동한 에이전틱 RTS 게임 개발",
+    "summary": "개발자가 수년간 작업한 RTS 게임 'IAH: Internet War'에서 올해부터 Claude 등 LLM을 코드 작성에 적극 활용했다고 밝혔다. 게임은 API를 통해 Claude 같은 에이전트가 플레이어와 동일한 능력으로 참여할 수 있는 에이전틱 게임플레이 구조를 갖췄다. Steam 출시를 앞두고 있으며, 향후 에이전트가 24시간 전투하는 MMO 스핀오프도 계획 중이다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vsvbjq/iah_internet_war_agentic_gameplay",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-20"
+  },
+  {
     "id": "2026-08-19-021",
     "title": "음성으로 VR 세계를 만드는 Claude Code 에이전트",
     "summary": "A-Frame(Three.js, WebXR) 기반 VR 프로젝트에 마이크를 Claude Code에 연결해 음성 명령만으로 가상 세계의 오브젝트, 애니메이션, 환경을 생성했다. Opus 5 모델(추론 Low 이상)에서만 안정적으로 동작했고 Haiku·Sonnet은 따라오지 못했으며, 요청 처리에 수 분의 지연이 있었다. VR 헤드셋을 착용한 채 말로 세계를 형성하는 초기 형태의 시스템이 구현됨을 보여준 사례다.",
