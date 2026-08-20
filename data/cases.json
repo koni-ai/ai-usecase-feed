@@ -1,5 +1,101 @@
 [
   {
+    "id": "2026-08-21-029",
+    "title": "Elements of Style로 Claude Code 글쓰기 규칙 제작",
+    "summary": "한 개발자가 1920년대 작문 지침서 The Elements of Style을 각색해 Claude Code와 Codex가 간결하고 명확한 문장을 쓰도록 만드는 CLAUDE.md/SKILL.md 규칙을 제작했다. 전문용어 설명, 능동태 사용, 불필요한 단어 제거 등 18개 규칙을 적용해 AI 응답의 장황함과 반복을 줄였다고 밝혔다. 제작자는 Codex에도 동일 규칙을 적용해 효과를 확인했다고 언급했다.",
+    "tool": [
+      "Claude Code",
+      "Codex"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vtmkna/i_adapted_the_elements_of_style_to_make_claude",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-21"
+  },
+  {
+    "id": "2026-08-21-020",
+    "title": "Codacy Skills로 코딩 에이전트가 테스트 커버리지 자동 설정",
+    "summary": "Codacy가 Claude Code, GitHub Copilot 등에서 동작하는 'Setup Coverage Skill'을 출시해 리포지토리의 언어·테스트 프레임워크·CI 구성을 읽고 커버리지 리포트 생성과 업로드를 자동으로 구성하도록 했다. 11개 언어군과 7개 CI 시스템을 지원하며, 실행 시 먼저 현재 상태를 읽기 전용으로 보고한 뒤 파이프라인 설정 파일을 수정한다. 테스트 코드 자체는 작성하지 않고 커버리지 리포팅 배선만 자동화한다.",
+    "tool": [
+      "Claude Code",
+      "GitHub Copilot",
+      "OpenAI Codex",
+      "Codacy Skills"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://blog.codacy.com/introducing-codacy-skills-part-3-let-your-agent-set-up-test-coverage",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-21"
+  },
+  {
+    "id": "2026-08-21-016",
+    "title": "Claude Code로 CCTV 카메라 데이터베이스 구축",
+    "summary": "개발자가 Claude Code를 활용해 77개 브랜드, 3,430개 CCTV/IP 카메라의 기술 스펙을 정리한 오픈 데이터베이스를 만들었다. 제조사 데이터시트와 판매처 정보를 JSON으로 정규화하고 검색·필터 가능한 웹뷰어로 공개했다. 시연 영상은 Remotion 기반의 Claude Code 스킬인 hve-spielberg로 제작했다.",
+    "tool": [
+      "Claude Code",
+      "hve-spielberg",
+      "Remotion"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://github.com/ch-bas/cctv-camera-database",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-21"
+  },
+  {
+    "id": "2026-08-21-011",
+    "title": "전력 사용 이상탐지 앱에 학습된 모델 적용",
+    "summary": "Youtilitics는 utility의 Green Button/ESPI 데이터를 받아 사람이 라벨링한 데이터로 학습한 모델로 대기전력, EV, HVAC 등 부하 유형을 구분한다. 새 데이터가 들어올 때마다 Python 스크립트로 추론을 실행해 사용량 이상 감지, 야간 급변 알림, 사용 히트맵 등을 제공한다. Flutter 기반 모바일 앱과 embedded Python 인터프리터(serious-python)로 opower 라이브러리를 임베드해 Green Button 미지원 유틸리티 데이터도 스크래핑한다.",
+    "tool": [
+      "Python",
+      "opower",
+      "serious-python",
+      "Flutter"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://youtilitics.com",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-21"
+  },
+  {
+    "id": "2026-08-21-008",
+    "title": "온디바이스 피아노 자동완성 모델 RollTab 개발",
+    "summary": "개발자가 MIDI 건반 연주를 실시간으로 이어주는 1억 2,500만 매개변수 모델 RollTab을 14차례 실험을 거쳐 개발했다. 음높이, 시작 간격, 길이, 세기를 하나의 복합 토큰으로 묶어 Transformer가 음표당 한 번만 실행되도록 설계했다. 결과적으로 iPhone 15에서 초당 약 108개 음표를 생성하는 성능을 달성했다.",
+    "tool": [
+      "Transformer",
+      "RollTab"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=32709",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-21"
+  },
+  {
+    "id": "2026-08-21-005",
+    "title": "Claude Code로 smolvm 샌드박스 테스트 자동화",
+    "summary": "Claude Code for web(Fable 5)에게 smolmachines의 smolvm을 안전한 코드 실행 샌드박스로 쓸 수 있는지 테스트하도록 요청했다. 컨테이너에 중첩 가상화 기능이 없어 실행이 막히자 AI는 스스로 GitHub Actions 러너를 활용해 실제 kvm 환경에서 테스트를 수행하는 대안을 찾아냈다. 임시 워크플로로 로그를 수집한 뒤 최종 커밋에서 제거하는 방식으로 문제를 해결했다.",
+    "tool": [
+      "Claude Code",
+      "smolvm",
+      "GitHub Actions"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-21"
+  },
+  {
     "id": "2026-08-20-028",
     "title": "AI 도구로 워드프레스 사이트 PHP 재구축",
     "summary": "한 사용자가 Elementor와 상용 테마를 걷어내고 순수 PHP 기반으로 워드프레스 사이트를 AI 코딩 도구 'Fable 5'를 이용해 2주간 바이브코딩으로 재구축했다. 완성 후 보안 취약점 점검을 요청했으나 해당 요청이 정책에 걸려 거부당했다. 사용자는 PHP 지식이 없었음에도 AI의 도움으로 사이트를 직접 만들었다.",
