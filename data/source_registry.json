@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-23T07:20:01.090477+09:00",
+  "updated_at": "2026-08-23T08:33:23.450740+09:00",
   "sources": [
     {
       "id": "86daefd8f26e008b62f8",
@@ -41,19 +41,44 @@
       "status_reason": "newly_discovered",
       "discovered_by": "DEV AI articles",
       "discovered_at": "2026-08-09T08:42:39.764702+09:00",
-      "last_checked_at": "2026-08-16T08:33:05.016623+09:00",
-      "last_success_at": "2026-08-16T08:33:05.016623+09:00",
+      "last_checked_at": "2026-08-23T08:33:18.403622+09:00",
+      "last_success_at": "2026-08-23T08:33:18.403622+09:00",
       "last_error": null,
-      "successful_checks": 2,
+      "successful_checks": 3,
       "consecutive_failures": 0,
       "success_dates": [
         "2026-08-09",
-        "2026-08-16"
+        "2026-08-16",
+        "2026-08-23"
       ],
       "sample_item_count": 5,
-      "recent_item_count": 5,
+      "recent_item_count": 4,
       "signal_item_count": 4,
       "signal_ratio": 0.8
+    },
+    {
+      "id": "745857100103e3bdaa18",
+      "name": "All about coding",
+      "type": "rss",
+      "endpoint": "https://allaboutcoding.ghinda.com/rss.xml",
+      "homepage": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
+      "site_host": "allaboutcoding.ghinda.com",
+      "status": "probation",
+      "status_reason": "newly_discovered",
+      "discovered_by": "HN Claude use cases",
+      "discovered_at": "2026-08-23T08:33:18.403622+09:00",
+      "last_checked_at": "2026-08-23T08:33:18.403622+09:00",
+      "last_success_at": "2026-08-23T08:33:18.403622+09:00",
+      "last_error": null,
+      "successful_checks": 1,
+      "consecutive_failures": 0,
+      "success_dates": [
+        "2026-08-23"
+      ],
+      "sample_item_count": 20,
+      "recent_item_count": 8,
+      "signal_item_count": 5,
+      "signal_ratio": 0.25
     }
   ],
   "retired_hosts": [],
@@ -289,6 +314,45 @@
       "rejected_count": 0,
       "probed_count": 2,
       "promoted_count": 1,
+      "recovered_static_count": 0,
+      "dry_run": false
+    },
+    {
+      "started_at": "2026-08-23T08:33:18.403622+09:00",
+      "finished_at": "2026-08-23T08:33:23.450740+09:00",
+      "status": "success",
+      "indexes": [
+        {
+          "name": "HN AI workflow stories",
+          "status": "success",
+          "urls": 18,
+          "error": null
+        },
+        {
+          "name": "HN Claude use cases",
+          "status": "success",
+          "urls": 16,
+          "error": null
+        },
+        {
+          "name": "DEV AI articles",
+          "status": "success",
+          "urls": 20,
+          "error": null
+        },
+        {
+          "name": "DEV automation articles",
+          "status": "success",
+          "urls": 20,
+          "error": null
+        }
+      ],
+      "pages_considered": 12,
+      "page_errors": 1,
+      "discovered_count": 1,
+      "rejected_count": 1,
+      "probed_count": 1,
+      "promoted_count": 0,
       "recovered_static_count": 0,
       "dry_run": false
     }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-23T07:20:01.090477+09:00",
+  "updated_at": "2026-08-23T08:33:23.450740+09:00",
   "sources": {
     "GeekNews": {
       "kind": "static",
@@ -827,7 +827,7 @@
       "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
       "last_run_at": "2026-07-28T08:00:28.005469+09:00",
       "last_probe_error": "FetchError: HTTP 403: https://www.reddit.com/r/LocalLLaMA/top.json?t=day&limit=25",
-      "last_probe_at": "2026-08-16T08:33:05.016623+09:00"
+      "last_probe_at": "2026-08-23T08:33:18.403622+09:00"
     },
     "Simon Willison": {
       "kind": "static",
