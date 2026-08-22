@@ -1,5 +1,66 @@
 [
   {
+    "id": "2026-08-23-030",
+    "title": "AI 코딩 에이전트로 macOS 모니터링 앱 제작",
+    "summary": "Simon Willison이 소개한 사례로, Thomas Ptacek은 AI 코딩 에이전트를 이용해 대역폭과 GPU 사용량을 보여주는 macOS 작업표시줄 앱을 vibe-coding 방식으로 만들었다. 이 앱들은 만든 지 몇 달이 지난 지금도 매일 사용되고 있으며, 이를 계기로 CLI 도구를 네이티브 GUI로 전환하는 것을 추천했다.",
+    "tool": [
+      "AI coding agent"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/21/stop-making-tuis",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-23"
+  },
+  {
+    "id": "2026-08-23-021",
+    "title": "Grok Bot이 로컬 Claude/Codex CLI에 코딩 작업 위임",
+    "summary": "개발자가 Locum이라는 커스텀 MCP 커넥터를 만들어 xAI의 Grok Bot이 자신의 맥에 설치된 Claude Code와 Codex CLI에 코딩 작업을 위임하도록 구현했다. Cloudflare 터널로 로컬 서버를 노출하고 OAuth 인증 서버를 자체 구현해 Grok의 커스텀 커넥터 요구사항을 충족시켰다. 이를 통해 Grok Bot 사용량을 아끼면서 이미 로그인된 Claude/Codex 구독을 활용할 수 있었다.",
+    "tool": [
+      "Grok Bot",
+      "Claude Code",
+      "Codex CLI",
+      "Cloudflare Tunnel",
+      "MCP"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://github.com/HarjjotSinghh/locum",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-23"
+  },
+  {
+    "id": "2026-08-23-008",
+    "title": "Claude Code 다중 에이전트로 여러 프로젝트 동시 관리",
+    "summary": "Anthropic의 엔지니어 Daisy는 Claude Code를 활용해 하루 30~50개 프롬프트만으로 8~10개 프로젝트를 동시에 운영한다고 소개됨. 두 개의 리드 에이전트가 서로를 감시·재시작하고, 그 아래 팀장·PM 에이전트가 각 프로젝트별 5~10개의 개별 작업 에이전트에 작업을 위임하는 구조를 사용함. 에이전트 간에는 SendMessage 도구로 직접 통신하며 IC 에이전트는 2~3일간 자율적으로 작업을 수행함.",
+    "tool": [
+      "Claude Code",
+      "SendMessage"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vvn0dy/anthropic_please_have_daisy_the_cc_engineer_do_a",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-23"
+  },
+  {
+    "id": "2026-08-23-004",
+    "title": "리누스 토르발스의 AI 활용 커널 디버깅 사례",
+    "summary": "리누스 토르발스가 drm/xe 드라이버의 까다로운 버그를 디버깅할 때 AI의 도움을 받아 반복적인 디버그 코드 작성과 로그 분석을 처리했다. AI는 여러 차례 문제 해결이 불가능하다고 답했지만 계속 요청하자 디버깅을 이어갔다. 최종적으로 커밋 메시지도 AI가 작성했다.",
+    "tool": [
+      "AI"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://simonwillison.net/2026/Aug/22/linus-torvalds",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-23"
+  },
+  {
     "id": "2026-08-21-029",
     "title": "Elements of Style로 Claude Code 글쓰기 규칙 제작",
     "summary": "한 개발자가 1920년대 작문 지침서 The Elements of Style을 각색해 Claude Code와 Codex가 간결하고 명확한 문장을 쓰도록 만드는 CLAUDE.md/SKILL.md 규칙을 제작했다. 전문용어 설명, 능동태 사용, 불필요한 단어 제거 등 18개 규칙을 적용해 AI 응답의 장황함과 반복을 줄였다고 밝혔다. 제작자는 Codex에도 동일 규칙을 적용해 효과를 확인했다고 언급했다.",
