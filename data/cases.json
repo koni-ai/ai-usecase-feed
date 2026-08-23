@@ -1,5 +1,95 @@
 [
   {
+    "id": "2026-08-24-030",
+    "title": "Qwen 3.8 27B로 앱 인증 우회 PoC 30분 만에 완성",
+    "summary": "단일 머신에서 실행한 Qwen 3.8 27B가 상용 앱의 라이선스 체계를 정적 분석해 약 30분 만에 작동하는 인증 우회 개념증명을 만들었다. 앱을 실제로 실행하지 않고도 수천 줄의 arm64 코드와 보안 함수 호출 지점을 분석해 바이너리에 숨겨진 공개 검증 키와 라이선스 검증 로직을 찾아냈다.",
+    "tool": [
+      "Qwen 3.8 27B"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=32808",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-24"
+  },
+  {
+    "id": "2026-08-24-026",
+    "title": "AI 4개 모델로 태블릿 보호 패키지 5개월 만에 해제",
+    "summary": "Amazon Fire HD 10 태블릿의 보호된 패키지를 제거하기 위해 5개월간 Kimi K3, GLM-5.3 등 AI 모델 4개를 활용했다. Kimi K3는 Fire OS에 남은 CVE-2022-38181 취약점을 30시간 분석 끝에 찾아냈고, GLM-5.3이 최종적으로 하루 만에 작업을 마무리했다. 총 266.15달러가 지출되어 태블릿 가격의 두 배를 넘었다.",
+    "tool": [
+      "Kimi K3",
+      "GLM-5.3"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=32809",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-24"
+  },
+  {
+    "id": "2026-08-24-025",
+    "title": "Claude Code로 Bun WebView API 프로토타입 제작",
+    "summary": "Simon Willison은 Bun 1.4의 새 Bun.WebView 기능을 활용해 shot-scraper 스타일 JSON API 서버 프로토타입을 만들기 위해 Claude Code for web을 사용했다. 이 도구로 웹페이지를 로드하고 JavaScript를 실행하는 TypeScript 서버 구현을 생성했다. 복잡한 웹페이지에서 전체 Chrome을 구동하는 데 192MB~256MB 컨테이너가 필요함을 cgroups로 테스트해 확인했다.",
+    "tool": [
+      "Claude Code for web",
+      "Bun.WebView"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/20/bun-webview-json-api",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-24"
+  },
+  {
+    "id": "2026-08-24-018",
+    "title": "Claude Code로 만든 Claude용 확장 프로그램 툴박스",
+    "summary": "개발자가 Claude 대화 사이드바에 폴더, 검색, 북마크, 프롬프트 라이브러리, 내보내기, 컨텍스트 미터 기능을 추가하는 크롬 확장 프로그램을 만들었다. Claude 통합 기능의 상당 부분을 Claude Code로 직접 작성해 개발했다. 무료 플랜과 유료 플랜으로 배포되며 ChatGPT, Gemini, Grok에도 동일 기능을 제공한다.",
+    "tool": [
+      "Claude Code",
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vw7i54/i_built_a_toolbox_for_claude_folders_search",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-24"
+  },
+  {
+    "id": "2026-08-24-015",
+    "title": "ChatGPT 튜터로 쿼터니언을 배워 앱에 회전 기능 구현",
+    "summary": "매트 웹은 ChatGPT에게 코드를 대신 작성시키지 않고 쿼터니언 개념을 가르쳐달라고 요청해 인내심 있는 튜터처럼 활용했다. 그 결과 책이나 수학자 지인에게 물어도 이해하지 못했던 쿼터니언을 배워 'Galactic Compass 2' 앱의 회전 기능을 직접 구현했다. 그는 AI에게 생각을 위임해도 학습이 멈추지 않고 오히려 더 배우게 된다고 평가했다.",
+    "tool": [
+      "ChatGPT"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/21/matt-webb",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-24"
+  },
+  {
+    "id": "2026-08-24-013",
+    "title": "Claude Code로 만든 아이소메트릭 게임 개발 키트",
+    "summary": "개발자가 Claude Code(Opus 5)를 이용해 타입스크립트 기반 아이소메트릭 게임 개발 킷 'Lattice'를 제작했다. 외부 에셋 없이 2D 캔버스에 렌더링되며 오디오도 실시간 합성하는 구조로 설계됐다. Claude Code, Codex, Grok 등 에이전트에 설치해 슬래시 명령으로 바로 게임 개발을 시작할 수 있다.",
+    "tool": [
+      "Claude Code",
+      "Opus 5",
+      "Codex",
+      "Grok"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vw868t/lattice_an_isometric_game_kit_for_agents",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-24"
+  },
+  {
     "id": "2026-08-23-030",
     "title": "AI 코딩 에이전트로 macOS 모니터링 앱 제작",
     "summary": "Simon Willison이 소개한 사례로, Thomas Ptacek은 AI 코딩 에이전트를 이용해 대역폭과 GPU 사용량을 보여주는 macOS 작업표시줄 앱을 vibe-coding 방식으로 만들었다. 이 앱들은 만든 지 몇 달이 지난 지금도 매일 사용되고 있으며, 이를 계기로 CLI 도구를 네이티브 GUI로 전환하는 것을 추천했다.",
