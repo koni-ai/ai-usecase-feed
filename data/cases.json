@@ -1,5 +1,84 @@
 [
   {
+    "id": "2026-08-25-016",
+    "title": "Claude로 아이폰 홈화면 위젯에 알림 보내는 MCP 통합 개발",
+    "summary": "개발자가 iOS 홈 화면 위젯 앱 Glance를 만들고 Claude용 MCP 통합을 공개했다. Claude가 아침 브리핑, 캘린더 변경, 중요 메시지 등을 감지해 홈 화면 위젯을 직접 생성·업데이트할 수 있게 했다. 앱과 통합은 무료로 제공된다.",
+    "tool": [
+      "Claude",
+      "MCP",
+      "Glance"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vxdgej/i_built_a_way_for_claude_to_send_things_directly",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-25"
+  },
+  {
+    "id": "2026-08-25-015",
+    "title": "macOS 단축어로 Shazam을 호출하는 Elisp 패키지 개발",
+    "summary": "개발자가 Emacs Lisp로 shazam.el 패키지를 만들어 macOS Shortcuts를 통해 Shazam 음악 인식 기능을 호출하도록 구현했다. 이를 통해 Emacs 환경 안에서 바로 음악 인식을 실행할 수 있게 됐다.",
+    "tool": [
+      "Shazam",
+      "macOS Shortcuts",
+      "Emacs Lisp"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "http://yummymelon.com/devnull/announcing-shazam-el.html",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-25"
+  },
+  {
+    "id": "2026-08-25-012",
+    "title": "AI로 낚시 게임 전체를 제작한 4주차 개발기",
+    "summary": "개발자가 Godot 엔진에서 Claude Code로 게임 로직과 3D 항구 씬을 구현하고, 이미지 생성은 ChatGPT, 3D 모델은 Blender와 Tripo 3D, 사운드는 StableAudio를 활용했다. 커뮤니티 피드백을 반영해 항구를 다시 3D로 제작하고 겹친 건물을 수정하는 에디터도 직접 만들었다. 현재까지 약 300달러를 투입했으며 게임은 여전히 개발 중이다.",
+    "tool": [
+      "Claude Code",
+      "ChatGPT",
+      "Godot",
+      "Blender",
+      "Tripo 3D",
+      "StableAudio"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vxdnw6/week_4_of_making_my_fishing_game_entirely_with_ai",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-25"
+  },
+  {
+    "id": "2026-08-25-008",
+    "title": "Opus 5로 만든 태양계 우주선 시뮬레이션",
+    "summary": "Reddit 사용자가 Claude Opus 5를 활용해 태양계 규모의 우주 비행 시뮬레이터를 개발 중이다. 행성들이 태양 주위를 공전하고 우주선에 관성이 적용되는 물리 시스템을 구현했다.",
+    "tool": [
+      "Claude Opus 5"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vxdw4p/spaceflight_sim_im_working_on_using_opus_5",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-25"
+  },
+  {
+    "id": "2026-08-25-005",
+    "title": "Claude Code로 라이브러리 마이그레이션 자동화",
+    "summary": "Simon Willison은 llm-anthropic 플러그인을 anthropic v1.0.0으로 업그레이드하기 위해 Claude Code에 공식 마이그레이션 가이드 링크를 주고 작업을 맡겼다. Claude Code가 httpx에서 httpx2로의 전환을 반영해 코드를 수정하고 테스트를 통과시켜 PR을 생성했다. 결과적으로 해당 PR이 병합되어 0.27 버전이 릴리스되었다.",
+    "tool": [
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/24/llm-anthropic",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-25"
+  },
+  {
     "id": "2026-08-24-030",
     "title": "Qwen 3.8 27B로 앱 인증 우회 PoC 30분 만에 완성",
     "summary": "단일 머신에서 실행한 Qwen 3.8 27B가 상용 앱의 라이선스 체계를 정적 분석해 약 30분 만에 작동하는 인증 우회 개념증명을 만들었다. 앱을 실제로 실행하지 않고도 수천 줄의 arm64 코드와 보안 함수 호출 지점을 분석해 바이너리에 숨겨진 공개 검증 키와 라이선스 검증 로직을 찾아냈다.",
