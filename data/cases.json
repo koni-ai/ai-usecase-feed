@@ -1,5 +1,63 @@
 [
   {
+    "id": "2026-08-26-029",
+    "title": "홈서버 관리 도구에 MCP로 AI 연동한 개인 프로젝트",
+    "summary": "개발자가 홈서버 관리를 위해 CLI, TUI, 웹 UI, MCP 서버를 하나의 Go 바이너리로 통합한 homebutler를 제작했다. 컨테이너 상태 확인, 백업 복원 검증, 포트 스캔 등의 기능을 MCP를 통해 AI가 도구로 직접 호출할 수 있도록 구현했다. Go 단일 바이너리로 배포되어 런타임 의존성 없이 동작한다.",
+    "tool": [
+      "MCP",
+      "Go"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=32878",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-26"
+  },
+  {
+    "id": "2026-08-26-013",
+    "title": "AI로 코드 대부분 생성한 P2P 분산 OS 프로젝트 공개",
+    "summary": "개발자가 Tauri/Rust/WASM 기반의 P2P 분산 사용자공간 운영체제 'Entity System'을 만들어 Show HN에 공개했다. 30개 이상의 앱과 컴퓨트 언어를 포함하며, 개발자는 코드와 콘텐츠 대부분이 AI로 생성되었다고 밝혔다. 프로젝트는 아직 초기 단계이며 스트레스 테스트가 필요한 상태다.",
+    "tool": [
+      "AI 코드 생성 도구"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://ecdeos.org",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-26"
+  },
+  {
+    "id": "2026-08-26-010",
+    "title": "Codex·Claude Code로 자바 성능 개선 하네스 개발",
+    "summary": "개발자가 Codex와 Claude Code를 활용해 자바 코드의 고성능 개선을 자동화하는 하네스 도구를 만들어 Show HN에 공개했다. 이 도구는 AI 코딩 에이전트를 통해 자바 성능 최적화 작업을 지원한다.",
+    "tool": [
+      "Codex",
+      "Claude Code"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.JAIPilot%2Fjaipilot/versions/6.4.2",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-26"
+  },
+  {
+    "id": "2026-08-26-002",
+    "title": "해커톤 AI 에이전트 크레딧으로 봇 3천개 만든 예측시장 창업기",
+    "summary": "프로그래밍을 독학한 한 인물이 해커톤에서 받은 AI 에이전트 크레딧을 활용해 예측 시장에서 거래하는 봇 3,000개를 구축했다. 이후 직접 예측 시장 거래소를 만드는 프로젝트로 이어졌다. AI 에이전트를 활용한 자동 트레이딩 봇 대량 생성 사례이다.",
+    "tool": [
+      "AI 에이전트"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=32887",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-26"
+  },
+  {
     "id": "2026-08-25-016",
     "title": "Claude로 아이폰 홈화면 위젯에 알림 보내는 MCP 통합 개발",
     "summary": "개발자가 iOS 홈 화면 위젯 앱 Glance를 만들고 Claude용 MCP 통합을 공개했다. Claude가 아침 브리핑, 캘린더 변경, 중요 메시지 등을 감지해 홈 화면 위젯을 직접 생성·업데이트할 수 있게 했다. 앱과 통합은 무료로 제공된다.",
