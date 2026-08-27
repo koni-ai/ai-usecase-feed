@@ -1,5 +1,65 @@
 [
   {
+    "id": "2026-08-27-030",
+    "title": "Claude로 텃밭 정원 가꾸기 배우기",
+    "summary": "한 사용자가 Claude를 이용해 처음으로 정원을 가꾸며 토마토, 호박, 가드니아, 고추 등을 키웠다. 병충해나 식물 상태 사진을 올려 진단받고, 맞춤 비료 일정, 일조·그늘 다이어그램, 파종·이식 캘린더 등 인터랙티브 아티팩트를 생성해 활용했다. 이를 통해 짧은 기간에 독학보다 빠르게 실질적인 원예 지식과 성과를 얻었다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "기타",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vz8rem/i_used_claude_to_learn_to_garden",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-27"
+  },
+  {
+    "id": "2026-08-27-006",
+    "title": "Claude Code 세션 토큰 낭비 분석 도구 Wattage 공개",
+    "summary": "개발자가 Claude Code 세션 로그와 OpenTelemetry 트레이스를 분석해 AI 에이전트의 낭비된 토큰 비용을 달러 단위로 찾아주는 오픈소스 도구 Wattage를 공개했다. 10가지 낭비 패턴 탐지기와 CI 비용 회귀 게이트를 제공해 PR에서 에이전트 비용이 늘면 빌드를 실패시킨다. uvx 명령으로 별도 API 키 없이 오프라인으로 바로 사용할 수 있다.",
+    "tool": [
+      "Claude Code",
+      "Wattage",
+      "OpenTelemetry"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/faizannraza/wattage",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-27"
+  },
+  {
+    "id": "2026-08-27-004",
+    "title": "DGX Spark에서 Qwen3.8 모델 양자화 버전 테스트",
+    "summary": "Simon Willison이 신규 오픈웨이트 모델 Qwen3.8-Flash-Next를 NVIDIA DGX Spark 환경에서 Unsloth의 양자화 버전(UD-IQ1_S, UD-Q2_K_XL)으로 실행해 테스트했다. 펠리컨이 자전거를 타는 이미지 생성 등 자체 벤치마크로 결과를 비교했으며, xhigh reasoning 설정의 UD-Q2_K_XL 결과를 가장 선호했다고 밝혔다.",
+    "tool": [
+      "Qwen3.8-Flash-Next",
+      "Unsloth",
+      "DGX Spark"
+    ],
+    "domain": "리서치",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-27"
+  },
+  {
+    "id": "2026-08-27-003",
+    "title": "파워포인트 대신 Claude로 디자인 작업 전환",
+    "summary": "한 사용자가 두 달간 파워포인트를 전혀 사용하지 않고 대신 Claude를 이용해 디자인 작업을 진행했다고 밝혔다. 별도의 의도적 결정 없이 자연스럽게 Claude 사용이 더 편해서 전환이 이루어졌다고 언급했다. 구체적인 결과물이나 워크플로 세부사항은 공개되지 않았다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1vzexpp/powerpoint_to_design",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-27"
+  },
+  {
     "id": "2026-08-26-029",
     "title": "홈서버 관리 도구에 MCP로 AI 연동한 개인 프로젝트",
     "summary": "개발자가 홈서버 관리를 위해 CLI, TUI, 웹 UI, MCP 서버를 하나의 Go 바이너리로 통합한 homebutler를 제작했다. 컨테이너 상태 확인, 백업 복원 검증, 포트 스캔 등의 기능을 MCP를 통해 AI가 도구로 직접 호출할 수 있도록 구현했다. Go 단일 바이너리로 배포되어 런타임 의존성 없이 동작한다.",
