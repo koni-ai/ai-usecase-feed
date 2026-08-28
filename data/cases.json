@@ -1,5 +1,103 @@
 [
   {
+    "id": "2026-08-28-030",
+    "title": "체스 실수 이유를 설명해주는 AI 분석 플랫폼 개발",
+    "summary": "개발자가 일주일간 만든 ChessRabbit은 Stockfish 엔진 평가와 AI 에이전트를 결합한 체스 분석 도구다. 기존처럼 '블런더'라고만 표시하는 대신, Stockfish의 검증을 바탕으로 왜 해당 수가 나쁜지 상대의 다음 수와 위협까지 포함해 자연어로 설명한다. Show HN에 공개해 사용자 피드백을 받고 있다.",
+    "tool": [
+      "Stockfish",
+      "AI 에이전트/LLM"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://chessrabbit.co",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-28"
+  },
+  {
+    "id": "2026-08-28-028",
+    "title": "맥으로 클로드 코드 채팅 요약해 토큰 1/3 절약",
+    "summary": "Claude Code 사용자가 매주 토큰 한도를 초과하자 원인을 분석해보니 변경되지 않은 파일 재읽기와 과거 대화 재삽입이 사용량의 상당 부분을 차지했다. 이에 맥의 Apple Intelligence를 활용해 밤사이 로컬에서 무료로 채팅 로그를 읽고, 대화가 끝나면 다음 대화용 핸드오프 요약(진행 상황, 결정 사항, 수정 파일)을 자동 생성하도록 구성했다. 처리하지 못하는 내용은 Haiku로 넘기도록 했으며, 동일한 Max 플랜으로 토큰 사용량을 약 1/3 늘려 사용하는 효과를 얻었다.",
+    "tool": [
+      "Claude Code",
+      "Apple Intelligence",
+      "Claude Haiku"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1w06a7b/how_i_got_my_mac_to_read_my_claude_code_chats_at",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-28"
+  },
+  {
+    "id": "2026-08-28-020",
+    "title": "Claude Opus 5로 만든 타워 쌓기 게임 개발",
+    "summary": "개발자가 Claude Opus 5를 활용해 물리 연산 기반의 타워 쌓기 게임 'highrise.lol'을 제작했다. 리더보드 부정 점수 검증 로직과 탭 난이도 조정이 가장 어려운 부분이었으며, 대부분의 코드를 Opus 5가 작성했다. Cloudflare Workers, Durable Objects, D1을 사용해 무료로 배포했다.",
+    "tool": [
+      "Claude Opus 5",
+      "Cloudflare Workers",
+      "Cloudflare Durable Objects",
+      "Cloudflare D1"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1w09wgo/built_this_tower_stacking_game_opus_5_wrote_the",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-28"
+  },
+  {
+    "id": "2026-08-28-005",
+    "title": "Claude Code 오토모드를 뚫은 프롬프트 인젝션 공격",
+    "summary": "보안 연구자 Johann Rehberger가 Claude Code의 Auto Mode 방어 기능을 우회하는 공격을 발견해 약 80%의 성공률로 악성 zip 파일을 다운로드·실행시키는 데 성공했다. Claude가 악성 프로세스를 인지하고 정리 명령을 내렸지만, Auto Mode의 분류기가 오히려 이 정리 명령을 차단하는 사례도 확인됐다. 이에 따라 컨테이너·VM 샌드박스 사용과 네트워크 제한 등의 방어책이 권고되었다.",
+    "tool": [
+      "Claude Code",
+      "Auto Mode"
+    ],
+    "domain": "리서치",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-28"
+  },
+  {
+    "id": "2026-08-28-002",
+    "title": "건축가가 AI로 만든 커스텀 QR코드 디자인",
+    "summary": "건축가인 작성자가 아내의 사업을 위해 Claude의 도움을 받아 커스텀 패턴, 색상, 로고를 넣을 수 있는 QR코드 생성 Python 데스크톱 앱을 제작했다. Nanobanana로 QR코드에 콜라주 스타일 미학을 적용했고, 1024x1024 제한을 넘기 위해 Claude로 ComfyUI 업스케일 파이프라인을 구축해 5~10배 확대 인쇄가 가능하도록 했다.",
+    "tool": [
+      "Claude",
+      "Nanobanana",
+      "ComfyUI",
+      "Python"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1w0gzkh/qr_codes_by_an_architect",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-28"
+  },
+  {
+    "id": "2026-08-28-001",
+    "title": "강화학습으로 격투 게임 에이전트 학습시키기",
+    "summary": "개발자가 강화학습(RL)을 활용해 2D 격투 게임을 플레이하는 신경망 에이전트를 학습시켰다. 보상 설계와 리그 방식의 자기대전(self-play)을 통해 회피, 잡기 등 창발적 전략을 발견했으며, 게임 엔진은 Rust로 작성해 웹과 Python 학습 환경에 모두 연동했다. 이 방법이 게임 개발 중 버그나 밸런스 문제를 사전에 발견하는 데 활용될 수 있다고 결론지었다.",
+    "tool": [
+      "강화학습(RL)",
+      "Python",
+      "Rust",
+      "wasm-pack",
+      "maturin"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://blog.lukesalamone.com/posts/fighting-game-rl",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-28"
+  },
+  {
     "id": "2026-08-27-030",
     "title": "Claude로 텃밭 정원 가꾸기 배우기",
     "summary": "한 사용자가 Claude를 이용해 처음으로 정원을 가꾸며 토마토, 호박, 가드니아, 고추 등을 키웠다. 병충해나 식물 상태 사진을 올려 진단받고, 맞춤 비료 일정, 일조·그늘 다이어그램, 파종·이식 캘린더 등 인터랙티브 아티팩트를 생성해 활용했다. 이를 통해 짧은 기간에 독학보다 빠르게 실질적인 원예 지식과 성과를 얻었다.",
