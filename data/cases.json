@@ -1,5 +1,64 @@
 [
   {
+    "id": "2026-08-29-029",
+    "title": "요약 프롬프트에 한 줄 추가해 핵심 통찰 도출",
+    "summary": "한 사용자가 요약 프롬프트에 '숙련된 독자가 훑어볼 때 놓칠 부분을 짚어달라'는 문장을 추가해 긴 문서 요약의 질을 개선했다. 이어서 핵심 논점을 3~4개로 정리해달라는 두 번째 질문을 덧붙여 구조화된 결과를 얻었다. 이 방법은 긴 PDF, 회의록, 리서치 자료 등에 적용해 절반 정도는 스스로 놓쳤던 내용을 발견했다고 밝혔다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "리서치",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1w0xgym/the_one_line_i_add_to_every_summary_prompt_that",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-29"
+  },
+  {
+    "id": "2026-08-29-013",
+    "title": "Claude 에이전트로 CS 매니지먼트 게임 개발해 스팀 출시",
+    "summary": "개발자가 Fable을 리드 에이전트로, 다수의 Sonnet 에이전트를 병렬로 활용해 카운터-스트라이크 팀 운영 시뮬레이션 게임 'Headshot Manager'를 제작했다. 게임 내 플레이어 초상화도 AI로 생성했으며, 완성된 게임은 스팀 페이지 승인을 받아 출시 준비를 마쳤다.",
+    "tool": [
+      "Claude",
+      "Fable",
+      "Sonnet"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1w1444j/i_used_fable_as_the_lead_and_a_fleet_of_sonnet",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-29"
+  },
+  {
+    "id": "2026-08-29-008",
+    "title": "Claude로 SEO 리서치, 자동 발행은 중복 페이지 유발",
+    "summary": "자사 테스트에서 Claude를 SEO 리서치와 초안 작성에 활용해 효율을 높였다. 그러나 사람 검토 없이 Claude로 콘텐츠를 자동 발행하자 중복 페이지가 생성되어 검색 노출에 문제가 발생했다. 이는 AI 리서치는 유용하지만 무감독 자동 발행은 위험할 수 있음을 보여준 사례다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "리서치",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://scalevise.com/resources/claude-seo-automation-risks-cloned-pages",
+    "source_name": "Scalevise Resources",
+    "collected_at": "2026-08-29"
+  },
+  {
+    "id": "2026-08-29-005",
+    "title": "AI 에이전트로 오픈소스 보안 취약점 신속 탐지",
+    "summary": "케임브리지 교수 Anil Madhavapeddy는 OCaml 프로젝트의 버그 소문만으로도 AI 코딩 에이전트가 몇 분 만에 보안 취약점을 찾아낸다는 것을 시연했으며, Claude Fable이 작업을 거부하자 DeepSeek V4 Pro로 전환해 성공했다. rclone 유지관리자 Nick Craig-Wood도 최근 한 달간 40건 이상의 보안 제보를 AI 도구로 분류하고 수정안을 마련하는 데 활용했다고 밝혔다. 이로 인해 GitHub의 CVE 발급 소요 시간이 기존 2~3일에서 3~4주로 늘어났다.",
+    "tool": [
+      "DeepSeek V4 Pro",
+      "Claude Fable"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-29"
+  },
+  {
     "id": "2026-08-28-030",
     "title": "체스 실수 이유를 설명해주는 AI 분석 플랫폼 개발",
     "summary": "개발자가 일주일간 만든 ChessRabbit은 Stockfish 엔진 평가와 AI 에이전트를 결합한 체스 분석 도구다. 기존처럼 '블런더'라고만 표시하는 대신, Stockfish의 검증을 바탕으로 왜 해당 수가 나쁜지 상대의 다음 수와 위협까지 포함해 자연어로 설명한다. Show HN에 공개해 사용자 피드백을 받고 있다.",
