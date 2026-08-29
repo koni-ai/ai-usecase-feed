@@ -1,0 +1,123 @@
+name: Daily Samgukji 365
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: Optional KST date for a controlled test (YYYY-MM-DD)
+        required: false
+        type: string
+  schedule:
+    - cron: "0 23 * * *"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ai-usecase-feed-production
+  cancel-in-progress: false
+
+jobs:
+  publish-samgukji:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      PYTHONUTF8: "1"
+      PYTHONIOENCODING: "utf-8"
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      TARGET_DATE: ${{ inputs.date || '' }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install subscription client and image processor
+        run: |
+          npm install --global @anthropic-ai/claude-code@2.1.218
+          python -m pip install --disable-pip-version-check "Pillow==11.3.0"
+
+      - name: Reject metered API routing
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${CLAUDE_CODE_OAUTH_TOKEN:-}"
+          test -z "${ANTHROPIC_API_KEY:-}"
+          test -z "${CLAUDE_CODE_USE_BEDROCK:-}"
+          test -z "${CLAUDE_CODE_USE_VERTEX:-}"
+          test -z "${CLAUDE_CODE_USE_FOUNDRY:-}"
+          case "${CLAUDE_CODE_OAUTH_TOKEN}" in sk-ant-oat01-*) ;; *) exit 1 ;; esac
+
+      - name: Validate last successful feed
+        run: python -B samgukji/generate_daily.py --validate-only
+
+      - name: Publish exactly one due chapter
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -n "${TARGET_DATE}" ]]; then
+            python -B samgukji/generate_daily.py --date "${TARGET_DATE}"
+          else
+            python -B samgukji/generate_daily.py
+          fi
+
+      - name: Validate publication artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -B samgukji/generate_daily.py --validate-only
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          private = Path("samgukji/data/feed.json")
+          public = Path("site/samgukji/feed.json")
+          assert private.read_bytes() == public.read_bytes()
+          feed = json.loads(public.read_text(encoding="utf-8"))
+          days = [item["day"] for item in feed["items"]]
+          assert days == list(range(1, len(days) + 1))
+          assert len(days) <= 365
+          assert all(item["image"]["url"] for item in feed["items"])
+          PY
+
+      - name: Persist successful state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add samgukji/data/feed.json site/samgukji/feed.json site/samgukji/images
+          if git diff --cached --quiet; then
+            echo "Samgukji is already current for this KST date."
+          else
+            git commit -m "chore: publish daily Samgukji chapter"
+            git push origin HEAD:main
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy GitHub Pages content endpoint
+        id: deployment
+        uses: actions/deploy-pages@v4

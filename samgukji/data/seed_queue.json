@@ -1,0 +1,2827 @@
+{
+  "schema_version": 1,
+  "project": "삼국지 365",
+  "pilot_days": 14,
+  "sources": [
+    {
+      "id": "hhs-huangfu-zhu",
+      "registry_id": "d1-ctext-houhanshu",
+      "tier": "H1",
+      "kind": "정사",
+      "title": "후한서 · 황보숭주준열전",
+      "author_or_holder": "범엽 / Chinese Text Project",
+      "language": "한문",
+      "location": "장각의 태평도·36방·봉기 계획, 장사 화공, 광종 전투",
+      "url": "https://ctext.org/hou-han-shu/huang-fu-song-zhu-jun-lie-zhuan/zh",
+      "license_or_use": "원전 링크와 짧은 인용, 한국어 요약",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "hhs-ling-annals",
+      "registry_id": "d1-ctext-houhanshu",
+      "tier": "H1",
+      "kind": "정사",
+      "title": "후한서 · 효령제기",
+      "author_or_holder": "범엽 / Chinese Text Project",
+      "language": "한문",
+      "location": "중평 원년(184) 황건 봉기와 조정의 월별 대응",
+      "url": "https://ctext.org/hou-han-shu/xiao-ling-di-ji",
+      "license_or_use": "원전 링크와 한국어 요약",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "hhs-lu-zhi",
+      "registry_id": "d1-ctext-houhanshu",
+      "tier": "H1",
+      "kind": "정사",
+      "title": "후한서 · 오연사노조열전 중 노식전",
+      "author_or_holder": "범엽 / Chinese Text Project",
+      "language": "한문",
+      "location": "노식의 광종 포위, 좌풍의 뇌물 요구와 무고",
+      "url": "https://ctext.org/hou-han-shu/wu-yan-shi-lu-zhao-lie-zhuan/zh",
+      "license_or_use": "원전 링크와 한국어 요약",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "romance-ch1",
+      "registry_id": "d1-ctext-romance",
+      "tier": "N1",
+      "kind": "연의",
+      "title": "삼국연의 제1회",
+      "author_or_holder": "나관중 전승 / Chinese Text Project",
+      "language": "한문·백화문",
+      "location": "황건 봉기와 도원결의의 소설적 구성",
+      "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+      "license_or_use": "원문 링크와 소설·정사 차이 설명",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "ws-romance-ch1-zh",
+      "registry_id": "n1-wikisource-romance-zh",
+      "tier": "N1",
+      "kind": "이야기 원전",
+      "title": "삼국연의 제1회 (중국어 원문)",
+      "author_or_holder": "나관중 전승 / 중국어 위키문헌",
+      "language": "중국어",
+      "location": "제1회: 영제 때의 징조, 장각·태평도, 36방, 황건 봉기",
+      "url": "https://zh.wikisource.org/wiki/三國演義/第001回",
+      "license_or_use": "공개 원문을 대조하고 쉬운 한국어로 독자 재서술",
+      "reuse_status": "approved_core",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "ws-san-kuo-ch1-en",
+      "registry_id": "n1-wikisource-san-kuo-v1",
+      "tier": "N1",
+      "kind": "이야기 원전",
+      "title": "San Kuo, Volume 1, Chapter 1 (1925 영어 번역)",
+      "author_or_holder": "C. H. Brewitt-Taylor / English Wikisource",
+      "language": "영어",
+      "location": "Chapter 1: 제1회 사건 순서와 인명 교차 확인",
+      "url": "https://en.wikisource.org/w/index.php?title=San_Kuo/Volume_1/Chapter_1&oldid=11957121",
+      "license_or_use": "미국 공개 영역 번역을 중국어 원문 대조용으로 사용",
+      "reuse_status": "approved_core",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "ws-houhanshu-vol8",
+      "registry_id": "h1-wikisource-houhanshu",
+      "tier": "H1",
+      "kind": "정사",
+      "title": "후한서 권8 · 효령제기",
+      "author_or_holder": "범엽 / 중국어 위키문헌",
+      "language": "한문",
+      "location": "영제 시대와 중평 원년(184) 황건 봉기의 연대기",
+      "url": "https://zh.wikisource.org/wiki/後漢書/卷8",
+      "license_or_use": "공개 원전 링크, 사실 대조, 쉬운 한국어 요약",
+      "reuse_status": "approved_core",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "ws-houhanshu-vol71",
+      "registry_id": "h1-wikisource-houhanshu",
+      "tier": "H1",
+      "kind": "정사",
+      "title": "후한서 권71 · 황보숭주준열전",
+      "author_or_holder": "범엽 / 중국어 위키문헌",
+      "language": "한문",
+      "location": "장각의 치료 활동, 십여 년 확장, 36방과 황건 표식",
+      "url": "https://zh.wikisource.org/wiki/後漢書/卷71",
+      "license_or_use": "공개 원전 링크, 사실 대조, 쉬운 한국어 요약",
+      "reuse_status": "approved_core",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "anu-last-han",
+      "registry_id": "h2-anu-last-of-han",
+      "tier": "H2",
+      "kind": "현대 역사 연구",
+      "title": "The Last of the Han: 181–220 AD",
+      "author_or_holder": "Rafe de Crespigny / Australian National University",
+      "language": "영어",
+      "location": "후한 말기의 정치·사회적 맥락과 사건 순서",
+      "url": "https://openresearch-repository.anu.edu.au/items/efc82a23-94db-44e9-97c3-0bc3a329a509",
+      "license_or_use": "내용 복제 없이 인용·요약·맥락 확인만 수행",
+      "reuse_status": "reference_only",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "sep-manipulation",
+      "registry_id": "p1-sep-manipulation-ethics",
+      "tier": "P1",
+      "kind": "심리·윤리 참고",
+      "title": "The Ethics of Manipulation",
+      "author_or_holder": "Stanford Encyclopedia of Philosophy",
+      "language": "영어",
+      "location": "선택을 흐리는 조종, 취약성 이용, 반대 증거 차단의 개념 경계",
+      "url": "https://plato.stanford.edu/entries/ethics-manipulation/",
+      "license_or_use": "현대 해석의 경계 확인용; 문장 복제 없이 인용·요약만 수행",
+      "reuse_status": "reference_only",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "openstax-social-influence",
+      "registry_id": "p1-openstax-social-influence",
+      "tier": "P1",
+      "kind": "사회심리 참고",
+      "title": "Social Psychology: Conformity and Group Influence",
+      "author_or_holder": "OpenStax",
+      "language": "영어",
+      "location": "소속, 동조, 집단 규범이 개인 판단에 주는 영향",
+      "url": "https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience",
+      "license_or_use": "사람이 읽는 참고·링크·개념 확인만 수행; 생성 입력 원문으로 사용하지 않음",
+      "reuse_status": "reference_only",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "commons-romance-illustrations",
+      "registry_id": "v1-commons-illustrated-romance",
+      "tier": "V1",
+      "kind": "시각 참고",
+      "title": "Romance of the Three Kingdoms in Illustrations",
+      "author_or_holder": "Wikimedia Commons / World Digital Library",
+      "language": "중국어·그림",
+      "location": "삼국연의 장면을 담은 240점 고전 삽화 모음; 화면 분위기와 인물 배치 참고",
+      "url": "https://commons.wikimedia.org/wiki/File:Romance_of_the_Three_Kingdoms_in_Illustrations_WDL11391.pdf",
+      "license_or_use": "Public Domain Mark 1.0. 현재 전황판은 삽화를 복제하지 않은 자체 제작물",
+      "reuse_status": "approved_core",
+      "checked_at": "2026-08-29"
+    }
+  ],
+  "items": [
+    {
+      "schema_version": 1,
+      "format_version": 2,
+      "day": 1,
+      "event_id": "w01-d1",
+      "published_at": "2026-09-01",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://zh.wikisource.org/wiki/三國演義/第001回",
+        "chronological": true
+      },
+      "title": "삼국지는 아직 시작되지 않았다",
+      "cold_open": "삼국지는 세 영웅이 나타나서 시작된 것이 아니다. 하나였던 나라가 나쁜 소식을 듣지 못하고, 사람들이 그 나라를 믿지 않게 되면서 시작됐다.",
+      "yesterday_recall": null,
+      "spaced_recall": null,
+      "situation_board": {
+        "era": "184년 봄",
+        "places": [
+          "낙양",
+          "거록"
+        ],
+        "factions": [
+          "후한 조정",
+          "백성",
+          "태평도"
+        ],
+        "one_line": "사람들은 황제의 명령보다 눈앞에서 도움을 주는 조직을 더 믿기 시작했다.",
+        "image_id": "day-001"
+      },
+      "orientation": {
+        "year": "184년",
+        "era": "후한 말기",
+        "state": "후한",
+        "state_plain": "위·촉·오가 생기기 전 중국 대륙을 다스리던 하나의 나라",
+        "capital": "낙양",
+        "current_marker": "황건 봉기 직전",
+        "full_path": [
+          "후한",
+          "황건 봉기",
+          "군웅 경쟁",
+          "위·촉·오",
+          "진의 통일"
+        ]
+      },
+      "memory_lock": {
+        "anchors": [
+          {
+            "type": "나라",
+            "name": "후한",
+            "plain": "위·촉·오가 생기기 전에 존재했던 하나의 나라"
+          },
+          {
+            "type": "사람",
+            "name": "영제",
+            "plain": "이야기가 시작되는 184년의 후한 황제"
+          },
+          {
+            "type": "장소",
+            "name": "낙양",
+            "plain": "후한 황제와 중앙정부가 있던 수도"
+          }
+        ],
+        "speak_prompt": "오늘의 세 단어를 보지 않고 한 문장으로 이어 말해보세요."
+      },
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "[연의] 이야기는 영웅이 아니라 낙양의 궁전에서 시작한다. 후한의 황제 영제가 자리에 앉아 있던 날, 궁전 들보에서 큰 푸른 뱀이 떨어졌다고 소설은 전한다. 황제는 놀라 쓰러지고, 곧바로 폭풍과 지진 같은 불길한 일이 이어진다. 이것이 실제 붕괴의 원인이라는 뜻은 아니다. 소설은 독자에게 ‘이 나라는 겉보기와 달리 안에서 병들었다’는 신호를 한 장면으로 보여준다.\n\n[극적 재구성] 낙양에서 멀리 떨어진 마을 사람의 눈에는 황제의 얼굴조차 보이지 않는다. 보이는 것은 세금 명령과 관리뿐이다. 궁전에서는 누가 황제에게 가까운지를 두고 싸우고, 지방에서는 흉년과 병을 버텨야 한다. 하나의 나라였지만 사람마다 경험하는 후한은 전혀 달랐다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "후한은 위·촉·오가 생기기 전에 중국 대륙을 다스리던 한 왕조의 뒤쪽 시대다. 오늘은 184년, 황제는 영제이며 수도는 낙양이다. 『삼국연의』 1회는 영제 때 중앙 정치의 혼란과 재난을 보여준 뒤 장각과 황건 봉기로 이동한다. 『후한서』도 영제 시대의 재난, 정치 갈등, 184년 황건 봉기를 별도 기록한다. 소설의 푸른 뱀은 나라가 약해졌다는 극적 신호로 읽고, 정사의 사실과 섞지 않는다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "보이지 않는 구조",
+          "body": "조직이 무너질 때 가장 먼저 사라지는 것은 돈이나 사람이 아닐 수 있다. 나쁜 소식이 위로 올라가는 길이 먼저 막힌다. 최고 책임자에게 가까운 사람이 정보를 고르고, 불편한 보고를 한 사람을 문제로 만들면 실제 위험은 사라지지 않고 화면에서만 사라진다. 후한의 문제를 황제 한 사람의 성격으로만 설명할 수는 없지만, 중앙과 지방이 서로 다른 현실을 보고 있었다는 구조는 이후 사건을 이해하는 첫 열쇠다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "회사에서도 대표의 보고서에는 모두 초록불인데 고객과 현장 직원은 이미 떠나고 있을 수 있다. ‘문제가 없다’는 말보다 나쁜 소식을 말한 사람이 어떤 대우를 받는지 보자. 내가 책임자라면 좋은 보고 한 건보다 불편한 보고가 안전하게 올라오는 길 하나를 만드는 것이 먼저다. 오늘 떠올릴 질문은 이것이다. 내 주변에서 사실을 말할수록 손해 보는 사람은 누구인가?",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "후한은 하루아침에 무너지지 않았고 황건 봉기 하나만으로 끝난 나라도 아니다. 영제 뒤에도 황제가 이어졌고 위·촉·오가 실제 국가가 되기까지 시간이 더 걸린다. 오늘은 복잡한 원인을 모두 외우는 날이 아니라, `후한이라는 하나의 나라가 먼저 있었고 그 안의 신뢰가 약해졌다`는 출발점만 기억한다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "당신이 영제라면 불길한 사건과 지방의 불만이 이어질 때 무엇부터 하겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "불안을 말하는 사람을 막는다",
+            "temptation": "당장 궁전의 분위기를 안정시킨다",
+            "risk": "나쁜 소식이 더 깊이 숨는다"
+          },
+          {
+            "id": "b",
+            "label": "서로 다른 보고 길을 만들고 지방 상태를 확인한다",
+            "temptation": "실제 위험을 더 빨리 볼 수 있다",
+            "risk": "가까운 권력자의 반발과 불편한 사실을 감당해야 한다"
+          }
+        ],
+        "historical_choice": "연의는 불길한 징조와 중앙의 혼란을 먼저 보여주고 장각의 등장으로 넘어간다. 정사는 징조를 국가 붕괴의 원인으로 증명하지 않으며 영제 시대의 정치·재난·봉기를 각각 기록한다."
+      },
+      "consequences": {
+        "gained": "겉으로 조용한 궁전과 익숙한 질서",
+        "lost": "지방의 실제 상태와 불편한 정보",
+        "returned_later": "중앙이 알아차렸을 때는 장각의 조직이 여러 지역에 이미 퍼져 있었다."
+      },
+      "hidden_board": {
+        "primary_lens": "SYSTEM",
+        "secondary_lens": "DRIVE",
+        "visible_event": "사람들은 황제의 명령보다 눈앞에서 도움을 주는 조직을 더 믿기 시작했다.",
+        "hidden_desire": "내가 통제하고 있다는 느낌을 지키고 싶다",
+        "hidden_mechanism": "불편한 보고를 줄여 위험이 없는 것처럼 보이게 한다",
+        "modern_signal": "문제를 발견한 사람보다 문제를 보고한 사람을 먼저 탓한다",
+        "defense": "한 사람의 요약과 별도로 현장·고객·반대 의견의 통로를 둔다.",
+        "caveat": "후한은 하루아침에 무너지지 않았고 황건 봉기 하나만으로 끝난 나라도 아니다. 영제 뒤에도 황제가 이어졌고 위·촉·오가 실제 국가가 되기까지 시간이 더 걸린다. 오늘은 복잡한 원인을 모두 외우는 날이 아니라, `후한이라는 하나의 나라가 먼저 있었고 그 안의 신뢰가 약해졌다`는 출발점만 기억한다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "『후한서』 효령제기는 영제 시대와 184년 황건 봉기를 연대순으로 기록한다.",
+          "source_ids": [
+            "ws-houhanshu-vol8",
+            "anu-last-han"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "『삼국연의』 1회는 푸른 뱀과 여러 재난을 왕조가 병들었다는 극적인 첫 장면으로 사용한다.",
+          "source_ids": [
+            "ws-romance-ch1-zh",
+            "ws-san-kuo-ch1-en"
+          ]
+        }
+      ],
+      "evidence_chain": [
+        {
+          "role": "이야기 원전",
+          "question": "연의는 삼국지의 첫 장면을 어떻게 열었나?",
+          "use": "중국어 제1회와 1925년 영어 번역으로 장면·순서·인명을 교차 확인",
+          "source_ids": [
+            "ws-romance-ch1-zh",
+            "ws-san-kuo-ch1-en"
+          ]
+        },
+        {
+          "role": "역사 확인",
+          "question": "184년의 나라와 황제, 봉기는 기록에 어떻게 남았나?",
+          "use": "후한서 효령제기로 연대와 사실의 뼈대를 확인",
+          "source_ids": [
+            "ws-houhanshu-vol8"
+          ]
+        },
+        {
+          "role": "현대 해석",
+          "question": "후한 말의 긴 흐름에서 이 장면은 어디쯤인가?",
+          "use": "ANU 연구서로 181~220년의 정치·사회 맥락을 보충",
+          "source_ids": [
+            "anu-last-han"
+          ]
+        },
+        {
+          "role": "시각 참고",
+          "question": "고전 독자는 이 세계를 어떤 그림으로 보았나?",
+          "use": "공개 영역 삽화집은 분위기만 참고하고, 화면의 전황판은 직접 제작",
+          "source_ids": [
+            "commons-romance-illustrations"
+          ]
+        }
+      ],
+      "strategy_card_id": "pilot-1",
+      "strategy_card": {
+        "id": "pilot-1",
+        "name": "나쁜 소식이 올라오는 길",
+        "plain_rule": "문제를 숨긴 조용함은 안정이 아니라 늦어진 경보다."
+      },
+      "life_application": {
+        "prompt": "내 조직이나 관계에서 사실을 말할수록 손해 보는 사람은 누구인가? 그 사람이 안전하게 말할 방법을 하나 적어보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 2,
+        "question": "멀리 있는 황제보다 바로 곁에서 병을 돌본 장각이 더 믿음직해 보인 이유는 무엇일까?"
+      },
+      "new_terms": [
+        "후한",
+        "태평도",
+        "황건"
+      ],
+      "source_ids": [
+        "ws-romance-ch1-zh",
+        "ws-san-kuo-ch1-en",
+        "ws-houhanshu-vol8",
+        "anu-last-han",
+        "commons-romance-illustrations"
+      ],
+      "image": {
+        "kind": "editorial-hero",
+        "url": "/images/day-001-hero.png",
+        "alt": "멀리 떨어진 후한 궁전에서는 보고가 막히고, 가까운 마을에서는 치료받는 가족을 그린 184년의 장면",
+        "creator": "OpenAI 이미지 생성 · PJ24 편집",
+        "source_name": "Day 1 핵심 메시지를 바탕으로 새로 생성한 대표 이미지",
+        "source_url": null,
+        "license": "PJ24 private AI-generated editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "외부 삽화를 복제하지 않고 Day 1 핵심 내용을 한 장면으로 새로 생성했다."
+      }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 2,
+      "day": 2,
+      "event_id": "w01-d2",
+      "published_at": "2026-09-02",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://zh.wikisource.org/wiki/三國演義/第001回",
+        "chronological": true
+      },
+      "title": "황제보다 장각이 가까웠다",
+      "cold_open": "사람들은 반란부터 선택한 것이 아니다. 병든 가족 곁에 황제보다 먼저 도착한 사람을 믿었고, 그 믿음이 나중에 거대한 조직이 됐다.",
+      "yesterday_recall": {
+        "from_day": 1,
+        "prompt": "어제의 핵심 ‘나쁜 소식이 올라오는 길’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": null,
+      "situation_board": {
+        "era": "184년 이전",
+        "places": [
+          "거록",
+          "여러 지방"
+        ],
+        "factions": [
+          "장각",
+          "병든 사람",
+          "태평도 제자"
+        ],
+        "one_line": "불안한 사람에게 치료와 설명과 소속을 한꺼번에 준 조직이 빠르게 커졌다.",
+        "image_id": "day-002"
+      },
+      "orientation": {
+        "year": "184년 이전",
+        "era": "후한 말기",
+        "state": "후한",
+        "state_plain": "아직 위·촉·오로 갈라지기 전의 나라",
+        "capital": "낙양",
+        "current_marker": "장각이 십여 년 동안 사람을 모으는 중",
+        "full_path": [
+          "후한",
+          "장각·태평도",
+          "황건 봉기",
+          "군웅 경쟁",
+          "위·촉·오"
+        ]
+      },
+      "memory_lock": {
+        "anchors": [
+          {
+            "type": "사람",
+            "name": "장각",
+            "plain": "병든 사람을 돌보며 큰 조직을 만든 종교 지도자"
+          },
+          {
+            "type": "조직",
+            "name": "태평도",
+            "plain": "장각의 가르침을 따르며 지역에서 사람을 모은 조직"
+          },
+          {
+            "type": "나라",
+            "name": "후한",
+            "plain": "장각이 활동하던 당시의 하나뿐인 나라"
+          }
+        ],
+        "speak_prompt": "오늘의 세 단어를 보지 않고 한 문장으로 이어 말해보세요."
+      },
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "[극적 재구성] 후한의 어느 마을. 네 가족이 열병에 걸렸다. 수도 낙양은 멀고, 관청에서 온 것은 도움보다 세금과 명령이다. 그때 장각의 제자가 찾아온다. 그는 물과 부적을 사용하고, 잘못을 고백하며 병이 낫기를 빌게 한다. 오늘의 의학 기준으로 효과가 확인된 치료는 아니다. 하지만 그는 곁에 앉아 아픈 사람의 이야기를 듣는다.\n\n장각은 거록 출신의 종교 지도자였다. 그가 이끈 가르침과 조직을 태평도라고 불렀다. 『후한서』는 장각이 이런 방식으로 병든 사람을 모았고 십여 년 사이 따르는 사람이 크게 늘었다고 기록한다. 사람들은 처음부터 나라를 뒤엎으려고 찾아온 것이 아니라 살고 싶고, 설명을 얻고 싶고, 혼자가 아니고 싶어서 들어왔을 가능성이 크다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "장각은 사람 이름이고 태평도는 그가 이끈 조직과 가르침이다. 후한서는 장각이 부적을 탄 물과 잘못의 고백을 이용해 병을 다스렸다고 전한다. 병이 나은 사례는 장각의 힘으로 보이기 쉽고, 낫지 않은 사례는 믿음이 부족해서라고 돌리기 쉬웠다. 실제 치료 효과를 오늘 확인할 자료는 없지만, 치료·설명·소속을 한 번에 제공한 조직이 빠르게 신뢰를 얻었다는 흐름은 확인할 수 있다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "본능의 눈",
+          "body": "사람은 불안할수록 완벽한 증명보다 지금 행동해주는 사람에게 끌린다. 장각의 힘은 신비한 말만이 아니라 접점에 있었다. 제자가 마을에 있었고, 아픈 사람을 만났고, 같은 의식을 반복했다. 비즈니스로 보면 멀리 있는 큰 브랜드가 해결하지 못한 문제를 지역 조직이 직접 잡은 것이다. 심리로 보면 생존, 설명, 소속이라는 세 욕구가 한곳에 묶였다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "현대의 고객도 최고의 기술보다 내 문제에 빨리 답하는 조직을 선택할 수 있다. 좋은 서비스는 가까이에서 불안을 줄인다. 위험한 서비스는 실패할 수 없는 약속을 만든다. 효과가 있으면 자기 덕이고 없으면 고객의 태도 탓이라고 말하는 순간 검증은 사라진다. 희망을 주는 것과 반대 증거를 지우는 것은 다르다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "장각을 단순한 사기꾼이나 구원자로 고정하지 않는다. 기록은 적대 세력을 보는 후한 왕조의 시선으로 남았고 평범한 신도의 목소리는 거의 없다. 오늘은 그의 진짜 마음을 읽는 대신, 국가가 채우지 못한 보호의 빈자리를 어떤 조직이 차지했는지 본다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "당신이 아픈 가족이라면 무엇을 기준으로 장각의 조직을 판단하겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "주변의 성공 사례를 믿는다",
+            "temptation": "빠르게 희망을 얻는다",
+            "risk": "실패 사례가 보이지 않을 수 있다"
+          },
+          {
+            "id": "b",
+            "label": "실패 사례와 대안을 함께 묻는다",
+            "temptation": "판단의 균형을 지킨다",
+            "risk": "당장 위로받는 느낌은 약하다"
+          }
+        ],
+        "historical_choice": "장각의 치료와 가르침은 사람을 모으는 입구가 되었고, 모인 사람들은 이후 지역 조직의 기반이 되었다."
+      },
+      "consequences": {
+        "gained": "빠른 신뢰와 강한 소속",
+        "lost": "주장을 의심할 안전한 공간",
+        "returned_later": "치료 공동체는 정치적 동원망으로 바뀐다."
+      },
+      "hidden_board": {
+        "primary_lens": "DRIVE",
+        "secondary_lens": "DARK",
+        "visible_event": "불안한 사람에게 치료와 설명과 소속을 한꺼번에 준 조직이 빠르게 커졌다.",
+        "hidden_desire": "고통을 멈추고 설명을 얻고 싶다",
+        "hidden_mechanism": "성공은 지도자 덕, 실패는 개인 탓으로 돌린다",
+        "modern_signal": "반대 사례를 묻자 믿음 부족이라고 공격한다",
+        "defense": "성공·실패 기준과 대안을 결정 전에 적어둔다.",
+        "caveat": "장각을 단순한 사기꾼이나 구원자로 고정하지 않는다. 기록은 적대 세력을 보는 후한 왕조의 시선으로 남았고 평범한 신도의 목소리는 거의 없다. 오늘은 그의 진짜 마음을 읽는 대신, 국가가 채우지 못한 보호의 빈자리를 어떤 조직이 차지했는지 본다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "후한서는 장각이 부적을 탄 물과 잘못의 고백을 이용해 병든 사람을 끌어들였다고 전한다.",
+          "source_ids": [
+            "ws-houhanshu-vol71",
+            "anu-last-han"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의도 장각이 태평요술서를 얻고 병을 치료해 민심을 얻는 이야기로 각색한다. 신비한 책의 장면은 소설 장치다.",
+          "source_ids": [
+            "ws-romance-ch1-zh",
+            "ws-san-kuo-ch1-en"
+          ]
+        }
+      ],
+      "evidence_chain": [
+        {
+          "role": "이야기 원전",
+          "question": "연의는 장각의 등장을 어떻게 기억하게 만드나?",
+          "use": "제1회의 태평요술·치료 장면을 원문과 공개 영어 번역으로 대조",
+          "source_ids": [
+            "ws-romance-ch1-zh",
+            "ws-san-kuo-ch1-en"
+          ]
+        },
+        {
+          "role": "역사 확인",
+          "question": "치료와 조직 확대는 정사에도 나오는가?",
+          "use": "후한서 권71에서 부적물·치료·십여 년 확장 기록을 확인",
+          "source_ids": [
+            "ws-houhanshu-vol71"
+          ]
+        },
+        {
+          "role": "현대 해석",
+          "question": "보호의 빈자리와 조종의 경계는 무엇인가?",
+          "use": "후한 말 연구로 맥락을, 조종 윤리 자료로 취약성 이용의 경계를 확인; 장각의 속마음은 단정하지 않음",
+          "source_ids": [
+            "anu-last-han",
+            "sep-manipulation"
+          ]
+        },
+        {
+          "role": "시각 참고",
+          "question": "장각의 종교적 장면을 어떻게 과장 없이 보일까?",
+          "use": "공개 영역 고전 삽화는 분위기만 참고하고, 화면은 자체 전황판으로 제작",
+          "source_ids": [
+            "commons-romance-illustrations"
+          ]
+        }
+      ],
+      "strategy_card_id": "pilot-2",
+      "strategy_card": {
+        "id": "pilot-2",
+        "name": "실패할 수 없는 약속",
+        "plain_rule": "어떤 결과가 나와도 주장한 사람이 옳다면 검증이 아니라 복종의 구조다."
+      },
+      "life_application": {
+        "prompt": "최근 본 광고나 조언 중 실패 결과를 전부 사용자의 탓으로 돌리는 문장을 하나 찾아보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 3,
+        "question": "믿는 사람이 수십만으로 늘었을 때, 장각은 어떻게 조직을 굴렸을까?"
+      },
+      "new_terms": [
+        "부적",
+        "황로",
+        "사회적 증거"
+      ],
+      "source_ids": [
+        "ws-romance-ch1-zh",
+        "ws-san-kuo-ch1-en",
+        "ws-houhanshu-vol71",
+        "anu-last-han",
+        "sep-manipulation",
+        "commons-romance-illustrations"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "/images/day-002.svg",
+        "alt": "184년 이전 거록·여러 지방의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "공개 원전 기반 자체 제작 · 고전 삽화는 시각 참고만 사용",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Romance_of_the_Three_Kingdoms_in_Illustrations_WDL11391.pdf",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [
+          "commons-romance-illustrations"
+        ],
+        "provenance_note": "외부 삽화를 복제하지 않고 세력·장소·흐름을 새 SVG로 구성했다."
+      }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 2,
+      "day": 3,
+      "event_id": "w01-d3",
+      "published_at": "2026-09-03",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://zh.wikisource.org/wiki/三國演義/第001回",
+        "chronological": true
+      },
+      "title": "노란 천이 사람을 군대로 만들었다",
+      "cold_open": "장각을 믿는 사람은 많았지만 아직 하나의 군대는 아니었다. 36개 조직과 노란 천이라는 같은 신호가 그들을 황건으로 바꿨다.",
+      "yesterday_recall": {
+        "from_day": 2,
+        "prompt": "어제의 핵심 ‘실패할 수 없는 약속’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": null,
+      "situation_board": {
+        "era": "184년 이전",
+        "places": [
+          "거록",
+          "8개 주"
+        ],
+        "factions": [
+          "장각 형제",
+          "지역 지도자",
+          "신도"
+        ],
+        "one_line": "장각은 모든 일을 직접 하지 않고 지역 책임자에게 사람과 정보를 맡겼다.",
+        "image_id": "day-003"
+      },
+      "orientation": {
+        "year": "184년",
+        "era": "후한 말기",
+        "state": "후한",
+        "state_plain": "황건 봉기가 여러 지역에서 터진 하나의 나라",
+        "capital": "낙양",
+        "current_marker": "황건 봉기 시작",
+        "full_path": [
+          "후한",
+          "장각·태평도",
+          "황건",
+          "군웅 등장",
+          "위·촉·오"
+        ]
+      },
+      "memory_lock": {
+        "anchors": [
+          {
+            "type": "나라",
+            "name": "후한",
+            "plain": "황건 봉기가 일어난 당시의 나라"
+          },
+          {
+            "type": "사람",
+            "name": "장각",
+            "plain": "태평도를 만들고 봉기를 이끈 지도자"
+          },
+          {
+            "type": "세력",
+            "name": "황건",
+            "plain": "장각을 따르며 노란 천을 표시로 쓴 봉기 세력"
+          }
+        ],
+        "speak_prompt": "후한·장각·황건을 시간순 이야기로 소리 내어 설명해보세요."
+      },
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "[극적 재구성] 어제까지 너는 병든 가족을 데리고 태평도 모임에 나가던 사람이었다. 오늘 지역 책임자는 특정 날을 준비하라고 한다. 멀리 떨어진 다른 마을에도 같은 가르침을 믿는 사람이 있고, 서로 모르는 사람들은 노란 천을 머리에 둘러 같은 편임을 확인한다. 치료 공동체의 신호가 정치 행동의 신호로 바뀌는 순간이다.\n\n후한서는 장각이 사람을 36개의 ‘방’으로 나눴다고 전한다. 방은 방 한 칸이 아니라 지역 조직이라는 뜻이다. 큰 조직에는 만 명이 넘고 작은 조직에도 수천 명이 있었다고 기록한다. 숫자는 고대 기록의 과장 가능성을 조심해야 하지만, 중앙 한 사람의 모임이 아니라 여러 지역 책임자가 움직이는 거대한 망이었다는 점은 분명하다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "184년 장각의 세력은 계획 누설 뒤 예정보다 빨리 움직였다. 참가자들이 머리에 노란 천을 표시로 사용했기 때문에 후한의 기록은 이들을 황건이라고 불렀다. 황건은 특정 한 사람의 이름이 아니라 장각의 가르침과 봉기에 연결된 세력을 가리키는 이름이다. 이 대규모 움직임을 황건 봉기 또는 황건적의 난이라고 부른다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "장사의 눈",
+          "body": "사람이 많다고 자동으로 조직이 되지는 않는다. 같은 목표, 지역 책임자, 전달망, 눈에 보이는 표식이 있어야 함께 움직일 수 있다. 장각은 믿음을 36개 지역 조직으로 나눴고 노란 천은 값싼 신분증이 됐다. 비즈니스로 보면 지점망과 브랜드가 결합한 구조다. 본능의 관점에서는 ‘나는 혼자가 아니다’라는 소속감이 위험을 감수하게 했다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "회사 로고, 팬덤 이름, 팀 유니폼도 협력을 쉽게 만든다. 하지만 강한 표식은 이탈과 반대의 비용도 높인다. ‘우리 편이면 당연히 이렇게 해야 한다’는 말이 나오면 소속과 동의를 분리해서 봐야 한다. 좋은 조직은 같은 표식을 써도 다른 의견을 말할 수 있고, 떠날 자유를 배신으로 취급하지 않는다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "황건에 참여한 모든 사람이 같은 이유로 움직인 것은 아니다. 병, 세금, 분노, 소속, 지역 관계 등 이유가 달랐을 수 있다. 또한 뒤에 등장하는 모든 황건 잔여 세력이 장각의 원래 조직과 직접 이어졌다고 단정할 수 없다. 오늘은 `노란 천을 쓴 장각의 봉기 세력`이라는 기본 뜻을 고정한다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "당신이 장각의 지역 책임자라면 많은 사람을 움직이기 위해 무엇을 우선하겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "같은 노란 표식과 한 문장으로 묶는다",
+            "temptation": "낯선 사람도 빠르게 같은 편이 된다",
+            "risk": "개인의 다른 이유와 반대가 지워질 수 있다"
+          },
+          {
+            "id": "b",
+            "label": "지역마다 자유롭게 행동하게 한다",
+            "temptation": "현장 상황에 맞게 움직인다",
+            "risk": "같은 시점에 큰 힘을 모으기 어렵다"
+          }
+        ],
+        "historical_choice": "장각은 36개 지역 조직을 두었고, 봉기 참가자들은 노란 천을 표식으로 사용했다. 그래서 황건이라는 이름이 생겼다."
+      },
+      "consequences": {
+        "gained": "빠른 동원과 강한 소속감",
+        "lost": "개별 판단과 중앙의 세밀한 통제",
+        "returned_later": "한 번의 계획 누설과 지역별 패배가 거대한 조직 전체를 흔들었다."
+      },
+      "hidden_board": {
+        "primary_lens": "BIZ",
+        "secondary_lens": "SYSTEM",
+        "visible_event": "장각은 모든 일을 직접 하지 않고 지역 책임자에게 사람과 정보를 맡겼다.",
+        "hidden_desire": "혼자가 아니라는 확신과 세상을 바꿀 힘을 얻고 싶다",
+        "hidden_mechanism": "지역 조직과 공통 표식이 낯선 사람의 행동을 묶는다",
+        "modern_signal": "근거보다 같은 표식을 쓰는지가 충성의 기준이 된다",
+        "defense": "소속과 동의를 분리하고 반대·이탈이 안전한지 확인한다.",
+        "caveat": "황건에 참여한 모든 사람이 같은 이유로 움직인 것은 아니다. 병, 세금, 분노, 소속, 지역 관계 등 이유가 달랐을 수 있다. 또한 뒤에 등장하는 모든 황건 잔여 세력이 장각의 원래 조직과 직접 이어졌다고 단정할 수 없다. 오늘은 `노란 천을 쓴 장각의 봉기 세력`이라는 기본 뜻을 고정한다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "『후한서』 황보숭주준열전은 장각의 36방과 노란 천 표식을 기록한다.",
+          "source_ids": [
+            "ws-houhanshu-vol71",
+            "anu-last-han"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "『삼국연의』 1회는 황건 봉기와 장각 형제의 장군 칭호를 영웅 등장 직전의 큰 위기로 압축한다.",
+          "source_ids": [
+            "ws-romance-ch1-zh",
+            "ws-san-kuo-ch1-en"
+          ]
+        }
+      ],
+      "evidence_chain": [
+        {
+          "role": "이야기 원전",
+          "question": "연의는 장각의 무리를 어떻게 큰 위기로 압축했나?",
+          "use": "제1회의 36방·장군 칭호·황건 봉기 장면을 두 공개 원문으로 대조",
+          "source_ids": [
+            "ws-romance-ch1-zh",
+            "ws-san-kuo-ch1-en"
+          ]
+        },
+        {
+          "role": "역사 확인",
+          "question": "36방과 노란 표식은 실제 기록에도 있는가?",
+          "use": "후한서 권71에서 조직 규모와 황건 표식을 확인하되 숫자는 그대로 확정하지 않음",
+          "source_ids": [
+            "ws-houhanshu-vol71"
+          ]
+        },
+        {
+          "role": "현대 해석",
+          "question": "소속과 공통 신호는 왜 행동을 묶는가?",
+          "use": "후한 말 연구로 맥락을 확인하고 사회적 영향 자료로 동조·집단 규범의 일반 원리를 점검",
+          "source_ids": [
+            "anu-last-han",
+            "openstax-social-influence"
+          ]
+        },
+        {
+          "role": "시각 참고",
+          "question": "황건이라는 표식을 어떻게 기억하게 만들까?",
+          "use": "공개 영역 고전 삽화는 시각 문법만 참고하고, 화면은 자체 전황판으로 제작",
+          "source_ids": [
+            "commons-romance-illustrations"
+          ]
+        }
+      ],
+      "strategy_card_id": "pilot-3",
+      "strategy_card": {
+        "id": "pilot-3",
+        "name": "사람을 묶는 표식",
+        "plain_rule": "공통 신호는 협력을 싸게 만들지만 개인 판단과 이탈의 비용도 올린다."
+      },
+      "life_application": {
+        "prompt": "내가 속한 집단에서 ‘우리라면 당연히’라고 여기는 행동 하나를 적고, 반대할 자유가 있는지 확인해보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 4,
+        "question": "황건의 계획이 내부에서 새자 장각은 왜 멈추지 않고 봉기를 앞당겼을까?"
+      },
+      "new_terms": [
+        "방",
+        "위임",
+        "지점망"
+      ],
+      "source_ids": [
+        "ws-romance-ch1-zh",
+        "ws-san-kuo-ch1-en",
+        "ws-houhanshu-vol71",
+        "anu-last-han",
+        "openstax-social-influence",
+        "commons-romance-illustrations"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "/images/day-003.svg",
+        "alt": "184년 이전 거록·8개 주의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "공개 원전 기반 자체 제작 · 고전 삽화는 시각 참고만 사용",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Romance_of_the_Three_Kingdoms_in_Illustrations_WDL11391.pdf",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [
+          "commons-romance-illustrations"
+        ],
+        "provenance_note": "외부 삽화를 복제하지 않고 세력·장소·흐름을 새 SVG로 구성했다."
+      }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 1,
+      "day": 4,
+      "event_id": "w01-d4",
+      "published_at": "2026-09-04",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+        "chronological": true
+      },
+      "title": "노란 천과 비밀 신호",
+      "cold_open": "설명서가 없어도 수십만 명을 같은 순간에 움직이게 하는 방법은 무엇일까? 장각의 조직은 긴 계획서 대신 날짜, 구호, 색을 사용했다.",
+      "yesterday_recall": {
+        "from_day": 3,
+        "prompt": "어제의 핵심 ‘사람을 묶는 표식’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": null,
+      "situation_board": {
+        "era": "184년 직전",
+        "places": [
+          "낙양",
+          "지방 거점"
+        ],
+        "factions": [
+          "태평도",
+          "내부 협력자",
+          "후한 관리"
+        ],
+        "one_line": "짧은 구호와 눈에 띄는 색은 복잡한 계획을 빠르게 행동으로 바꿨다.",
+        "image_id": "day-004"
+      },
+      "orientation": null,
+      "memory_lock": null,
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "장각 쪽은 관청의 문에 흰 흙으로 ‘갑자’라는 글자를 남기고, 특정 시점을 기다렸다고 후한서는 전한다. ‘푸른 하늘은 이미 죽었고 노란 하늘이 선다’는 말은 시대가 바뀐다는 메시지를 짧게 압축했다. 봉기가 시작되자 사람들은 머리에 노란 천을 둘러 서로를 알아봤다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "갑자는 옛 달력에서 한 주기가 다시 시작되는 해를 가리킨다. 184년이 그 해였다. 색과 날짜는 글을 길게 읽지 못하는 사람도 기억하기 쉬운 신호였다. 동시에 비밀 계획이 밖으로 새면 신호망 전체가 한꺼번에 드러난다는 약점도 있었다. 단순한 신호는 빠르지만, 잘못 퍼졌을 때 되돌리기 어렵다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "사람을 움직이는 기술",
+          "body": "사람을 움직이는 기술은 복잡한 현실을 선명한 두 편으로 나눈다. 낡은 하늘과 새 하늘, 우리와 그들, 지금과 곧 올 미래다. 이런 구도는 불확실성을 줄이고 행동을 쉽게 만든다. 그러나 선택지를 둘로만 좁혀 중간 의견을 배신처럼 만들 수 있다. 눈에 띄는 신호는 소속감과 감시를 동시에 만든다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "회사 슬로건, 정치 구호, 온라인 해시태그도 비슷한 힘을 쓴다. 좋은 구호는 사람들이 같은 목표를 기억하게 한다. 위험한 구호는 질문을 없애고, 반대하는 사람을 악으로 묶는다. 메시지가 짧을수록 그 뒤에서 누가 이익을 얻는지, 빠진 선택지가 무엇인지 한 번 더 봐야 한다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "짧은 구호가 모두 조작은 아니다. 위기 상황에서는 복잡한 명령을 줄여야 할 때도 있다. 문제는 구호가 사실 검토와 이견을 막는가이다. 장각의 구호를 현대 집단에 그대로 붙이지 말고, 신호가 행동 비용을 낮추는 원리만 가져온다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "당신이 비밀 조직의 운영자라면 신호를 더 단순하게 만들겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "색과 한 문장으로 통일한다",
+            "temptation": "기억과 동원이 쉬워진다",
+            "risk": "노출과 집단사고 위험이 커진다"
+          },
+          {
+            "id": "b",
+            "label": "지역마다 다른 신호를 쓴다",
+            "temptation": "한 번에 전체가 드러나지 않는다",
+            "risk": "서로를 확인하기 어렵고 혼선이 커진다"
+          }
+        ],
+        "historical_choice": "장각 세력은 갑자와 노란색 같은 단순한 신호를 사용했다. 계획은 빠르게 공유됐지만 배신 뒤에는 관련자가 넓게 드러났다."
+      },
+      "consequences": {
+        "gained": "빠른 확인과 강한 소속",
+        "lost": "중간 의견과 비밀의 안전",
+        "returned_later": "내부 고발 한 번이 전체 봉기 일정을 앞당긴다."
+      },
+      "hidden_board": {
+        "primary_lens": "DARK",
+        "secondary_lens": "BEHAVIOR",
+        "visible_event": "짧은 구호와 눈에 띄는 색은 복잡한 계획을 빠르게 행동으로 바꿨다.",
+        "hidden_desire": "불확실한 세상에서 분명한 편을 갖고 싶다",
+        "hidden_mechanism": "복잡한 현실을 두 편과 한 신호로 줄인다",
+        "modern_signal": "질문보다 구호 반복을 충성의 기준으로 삼는다",
+        "defense": "구호가 지운 선택지와 이익을 얻는 사람을 적어본다.",
+        "caveat": "짧은 구호가 모두 조작은 아니다. 위기 상황에서는 복잡한 명령을 줄여야 할 때도 있다. 문제는 구호가 사실 검토와 이견을 막는가이다. 장각의 구호를 현대 집단에 그대로 붙이지 말고, 신호가 행동 비용을 낮추는 원리만 가져온다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "후한서는 관청 문에 ‘갑자’를 쓰고 날짜를 맞추려 했으며, 봉기군이 노란 천을 표식으로 썼다고 전한다.",
+          "source_ids": [
+            "hhs-huangfu-zhu"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의는 ‘푸른 하늘은 이미 죽었다’는 구호와 황건 표식을 영웅 시대의 시작을 알리는 장면으로 크게 강조한다.",
+          "source_ids": [
+            "romance-ch1"
+          ]
+        }
+      ],
+      "evidence_chain": [],
+      "strategy_card_id": "pilot-4",
+      "strategy_card": {
+        "id": "pilot-4",
+        "name": "선명한 두 편",
+        "plain_rule": "메시지가 쉬울수록 행동은 빨라지지만, 빠진 선택지와 반대 증거도 커질 수 있다."
+      },
+      "life_application": {
+        "prompt": "최근 나를 즉시 한쪽 편으로 끌어당긴 문장을 떠올리고, 그 문장이 숨긴 세 번째 선택지를 적어보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 5,
+        "question": "많은 사람이 같은 신호를 보았을 때, 정말 모두 같은 이유로 움직였을까?"
+      },
+      "new_terms": [
+        "갑자",
+        "구호",
+        "집단사고"
+      ],
+      "source_ids": [
+        "hhs-huangfu-zhu",
+        "romance-ch1"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "/images/day-004.svg",
+        "alt": "184년 직전 낙양·지방 거점의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "일일 기록 기반 자체 제작",
+        "source_url": "https://ctext.org/hou-han-shu/huang-fu-song-zhu-jun-lie-zhuan/zh",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
+      }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 1,
+      "day": 5,
+      "event_id": "w01-d5",
+      "published_at": "2026-09-05",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+        "chronological": true
+      },
+      "title": "한꺼번에 움직이는 사람들",
+      "cold_open": "옆집도, 시장 사람도, 지역 책임자도 같은 노란 천을 준비한다면 당신은 어떻게 하겠는가? 많은 사람의 행동은 정보처럼 보이지만, 모두가 남을 보고 따라간 것일 수도 있다.",
+      "yesterday_recall": {
+        "from_day": 4,
+        "prompt": "어제의 핵심 ‘선명한 두 편’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": null,
+      "situation_board": {
+        "era": "184년 직전",
+        "places": [
+          "8개 주",
+          "낙양"
+        ],
+        "factions": [
+          "태평도 신도",
+          "지역 지도자",
+          "관망하는 주민"
+        ],
+        "one_line": "사람은 자신의 정보가 부족할수록 앞서 움직이는 다수의 행동을 답으로 삼는다.",
+        "image_id": "day-005"
+      },
+      "orientation": null,
+      "memory_lock": null,
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "장각의 망은 여러 지역에 퍼져 있었다. 누군가는 병을 고치고 싶어 들어왔고, 누군가는 세금과 관리에게 화가 났으며, 누군가는 가족과 마을을 따라갔을 것이다. 같은 노란 천을 썼다고 해서 속마음까지 같았다고 볼 수 없다. 하지만 밖에서 보면 거대한 한 덩어리처럼 보였다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "기록은 수십만 명과 36방이라는 큰 숫자를 전한다. 이 숫자가 정확히 현대식 명부로 센 결과인지 알 수는 없다. 확실한 것은 조정이 여러 주에서 동시에 움직이는 세력으로 인식했다는 점이다. 이미 참가자가 많다는 사실 자체가 새 참가자에게 ‘이쪽이 이길 수도 있다’는 신호가 되었을 가능성이 크다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "판단의 함정",
+          "body": "행동경제학에서는 다른 사람의 행동을 정보로 삼는 현상을 사회적 증거라고 부른다. 내가 상황을 잘 모를수록 다수의 선택은 더 강해 보인다. 문제는 앞사람도 확신이 아니라 그 앞사람을 따라갔을 수 있다는 것이다. 이렇게 만들어진 큰 흐름은 좋은 정보 없이도 빨라지고, 반대 방향의 작은 신호에는 갑자기 무너질 수 있다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "투자 열풍, 유행 상품, 회사의 침묵도 같은 질문을 만든다. ‘많이 샀다’와 ‘가치가 있다’는 같은 말이 아니다. 회의에서 아무도 반대하지 않았다는 사실도 모두 동의했다는 뜻이 아닐 수 있다. 선택 전에 다수의 숫자와 별개인 근거 하나를 요구하면 따라가기의 속도를 늦출 수 있다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "후한서에는 참가자 한 명 한 명의 마음이 남아 있지 않다. 그래서 사회적 증거가 실제로 얼마나 큰 역할을 했는지는 해석이다. 우리는 심리 용어로 역사를 확정하지 않는다. 다만 다양한 이유의 사람이 같은 표식 아래 모였을 가능성과, 규모 자체가 다음 행동을 부르는 구조를 본다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "주변 모두가 봉기에 참여하려 할 때 당신은 무엇을 확인하겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "사람 수와 유명 지도자를 본다",
+            "temptation": "빠르게 안전한 편을 고른 느낌을 얻는다",
+            "risk": "다수가 틀릴 때 함께 위험해진다"
+          },
+          {
+            "id": "b",
+            "label": "내가 직접 확인한 근거를 하나 찾는다",
+            "temptation": "따라가기 오류를 줄인다",
+            "risk": "결정이 늦어지고 공동체에서 의심받을 수 있다"
+          }
+        ],
+        "historical_choice": "여러 지역에서 많은 사람이 같은 시기에 움직였다. 그러나 같은 표식이 같은 동기까지 증명하지는 않는다."
+      },
+      "consequences": {
+        "gained": "규모가 주는 용기와 보호감",
+        "lost": "개별 판단과 반대 의견",
+        "returned_later": "첫 패배와 배신이 나오면 거대한 확신이 빠르게 흔들린다."
+      },
+      "hidden_board": {
+        "primary_lens": "BEHAVIOR",
+        "secondary_lens": "DRIVE",
+        "visible_event": "사람은 자신의 정보가 부족할수록 앞서 움직이는 다수의 행동을 답으로 삼는다.",
+        "hidden_desire": "이기는 편과 안전한 무리에 속하고 싶다",
+        "hidden_mechanism": "다른 사람의 행동을 사실 확인 대신 사용한다",
+        "modern_signal": "근거를 묻자 ‘다들 한다’는 답만 돌아온다",
+        "defense": "다수와 독립된 근거를 최소 하나 확인한다.",
+        "caveat": "후한서에는 참가자 한 명 한 명의 마음이 남아 있지 않다. 그래서 사회적 증거가 실제로 얼마나 큰 역할을 했는지는 해석이다. 우리는 심리 용어로 역사를 확정하지 않는다. 다만 다양한 이유의 사람이 같은 표식 아래 모였을 가능성과, 규모 자체가 다음 행동을 부르는 구조를 본다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "후한서는 장각의 무리가 수십만에 이르고 여러 주에 퍼졌다고 적지만 개별 참가자의 이유는 전하지 않는다.",
+          "source_ids": [
+            "hhs-huangfu-zhu"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의는 황건군을 큰 하나의 세력으로 묘사해 영웅들의 상대를 선명하게 만든다.",
+          "source_ids": []
+        }
+      ],
+      "evidence_chain": [],
+      "strategy_card_id": "pilot-5",
+      "strategy_card": {
+        "id": "pilot-5",
+        "name": "다수가 정보처럼 보일 때",
+        "plain_rule": "사람 수는 움직임의 크기를 보여줄 뿐, 판단의 정확성을 보장하지 않는다."
+      },
+      "life_application": {
+        "prompt": "최근 ‘다들 한다’는 이유로 선택한 일이 있었는가? 그 선택의 독립된 근거를 하나만 적어보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 6,
+        "question": "36개 거점은 빠르게 커졌지만, 위기가 오면 서로를 지켜줄 수 있었을까?"
+      },
+      "new_terms": [
+        "사회적 증거",
+        "동기",
+        "관망"
+      ],
+      "source_ids": [
+        "hhs-huangfu-zhu"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "/images/day-005.svg",
+        "alt": "184년 직전 8개 주·낙양의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "일일 기록 기반 자체 제작",
+        "source_url": "https://ctext.org/hou-han-shu/huang-fu-song-zhu-jun-lie-zhuan/zh",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
+      }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 1,
+      "day": 6,
+      "event_id": "w01-d6",
+      "published_at": "2026-09-06",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+        "chronological": true
+      },
+      "title": "36개 거점의 힘과 약점",
+      "cold_open": "큰 조직의 위기는 사람이 부족해서가 아니라 연결 방식이 틀려서 온다. 36개의 거점은 장각의 가장 큰 자산이자 가장 넓은 공격면이었다.",
+      "yesterday_recall": {
+        "from_day": 5,
+        "prompt": "어제의 핵심 ‘다수가 정보처럼 보일 때’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": null,
+      "situation_board": {
+        "era": "184년 직전",
+        "places": [
+          "거록",
+          "36개 방"
+        ],
+        "factions": [
+          "장각 지도부",
+          "방 책임자",
+          "신도"
+        ],
+        "one_line": "분산된 조직은 빨리 퍼지지만 한 번에 같은 품질과 비밀을 지키기 어렵다.",
+        "image_id": "day-006"
+      },
+      "orientation": null,
+      "memory_lock": null,
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "각 방은 자기 지역에서 사람을 모으고 연락을 유지했다. 중앙이 멀어도 지역 책임자가 결정할 수 있으니 속도가 빨랐다. 문제가 생겨도 한 거점이 다른 거점과 떨어져 버틸 수 있었을 것이다. 그러나 모두가 같은 날짜에 움직여야 하는 계획에서는 연락 하나가 늦거나 새는 순간 전체가 흔들린다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "후한서는 장각이 36방을 두고 각 책임자를 장군이라 불렀다고 전한다. 동시에 수도 안의 협력자와 지방 조직을 잇는 계획도 있었다. 이 연결망에서 당주라는 사람이 계획을 고발하자, 마원의가 처형되고 관련자 수사가 넓어졌다. 분산 조직도 핵심 일정과 인맥은 몇 개의 연결점에 의존했다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "장사의 눈",
+          "body": "사업에서 이런 지점을 단일 실패 지점이라고 부른다. 겉으로 지점이 많아도 결제, 물류, 한 명의 승인자, 하나의 비밀번호에 모두 기대면 실제로는 분산되지 않았다. 장각의 세력도 사람은 넓게 퍼졌지만, 시작 날짜와 중앙 연결은 좁은 길목에 몰려 있었다. 성장 지도와 실패 지도를 따로 그려야 하는 이유다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "팀이 여러 개여도 모든 결정이 대표 한 명에게 모이면 대표가 멈출 때 회사가 멈춘다. 반대로 누구나 모든 정보에 접근하면 한 사람의 실수로 전체가 드러난다. 중요한 정보는 필요한 만큼만 나누고, 한 길목이 막혀도 이어지는 대체 경로를 만들어야 한다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "당주의 고발이 정확히 어느 범위의 정보를 포함했는지는 기록만으로 완전히 복원하기 어렵다. 또한 현대 보안 조직과 반란 조직은 목적과 윤리가 다르다. 여기서는 불법 행동의 은폐법을 배우는 것이 아니라, 조직이 커질수록 연결점과 권한 관리가 왜 중요해지는지 본다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "36개 거점을 운영한다면 가장 먼저 어떤 안전장치를 만들겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "모든 정보를 빠르게 공유한다",
+            "temptation": "현장이 같은 방향으로 움직인다",
+            "risk": "한 번의 유출 피해가 커진다"
+          },
+          {
+            "id": "b",
+            "label": "필요한 정보만 나눈다",
+            "temptation": "피해 범위를 줄인다",
+            "risk": "전체 상황을 모르는 현장이 잘못 판단할 수 있다"
+          }
+        ],
+        "historical_choice": "36방은 확장과 동원의 힘을 줬지만 핵심 계획의 연결점이 드러나자 예정된 움직임을 유지하기 어려웠다."
+      },
+      "consequences": {
+        "gained": "분산된 실행력",
+        "lost": "정보 통제와 일정의 안정",
+        "returned_later": "고발 뒤 장각은 예정일보다 빨리 움직여야 했다."
+      },
+      "hidden_board": {
+        "primary_lens": "BIZ",
+        "secondary_lens": "SYSTEM",
+        "visible_event": "분산된 조직은 빨리 퍼지지만 한 번에 같은 품질과 비밀을 지키기 어렵다.",
+        "hidden_desire": "큰 조직을 빠르게 내 뜻대로 움직이고 싶다",
+        "hidden_mechanism": "지역 권한과 중앙 신호를 결합한다",
+        "modern_signal": "많은 팀이 한 사람·한 계정·한 승인에 의존한다",
+        "defense": "핵심 길목과 대체 경로, 접근 권한을 따로 점검한다.",
+        "caveat": "당주의 고발이 정확히 어느 범위의 정보를 포함했는지는 기록만으로 완전히 복원하기 어렵다. 또한 현대 보안 조직과 반란 조직은 목적과 윤리가 다르다. 여기서는 불법 행동의 은폐법을 배우는 것이 아니라, 조직이 커질수록 연결점과 권한 관리가 왜 중요해지는지 본다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "후한서의 36방 기록과 봉기 계획 누설 기록은 확장망과 핵심 연결점이 함께 있었음을 보여준다.",
+          "source_ids": [
+            "hhs-huangfu-zhu"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의는 당주가 밀고하고 마원의가 붙잡히면서 계획이 앞당겨지는 흐름을 극적으로 압축한다.",
+          "source_ids": [
+            "romance-ch1"
+          ]
+        }
+      ],
+      "evidence_chain": [],
+      "strategy_card_id": "pilot-6",
+      "strategy_card": {
+        "id": "pilot-6",
+        "name": "성장 지도와 실패 지도",
+        "plain_rule": "많이 나뉘어 있어도 하나의 길목에 기대면 실제로는 하나의 조직이다."
+      },
+      "life_application": {
+        "prompt": "내 일에서 멈추면 모두가 기다려야 하는 사람·파일·승인 하나를 찾아 대체 방법을 적어보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 7,
+        "question": "첫 주 군사회의: 반란군을 잡는 것과 반란이 생기는 구조를 고치는 것 중 무엇이 먼저일까?"
+      },
+      "new_terms": [
+        "거점",
+        "단일 실패 지점",
+        "접근 권한"
+      ],
+      "source_ids": [
+        "hhs-huangfu-zhu",
+        "romance-ch1"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "/images/day-006.svg",
+        "alt": "184년 직전 거록·36개 방의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "일일 기록 기반 자체 제작",
+        "source_url": "https://ctext.org/hou-han-shu/huang-fu-song-zhu-jun-lie-zhuan/zh",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
+      }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 1,
+      "day": 7,
+      "event_id": "w01-d7",
+      "published_at": "2026-09-07",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+        "chronological": true
+      },
+      "title": "군사회의: 반란은 하루아침에 생기지 않는다",
+      "cold_open": "당신에게 군대와 구호 예산이 모두 부족하다. 수도는 ‘당장 반란군 수를 줄이라’고 한다. 현장은 ‘사람들이 왜 넘어가는지부터 고쳐야 한다’고 한다. 무엇을 먼저 하겠는가?",
+      "yesterday_recall": {
+        "from_day": 6,
+        "prompt": "어제의 핵심 ‘성장 지도와 실패 지도’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": null,
+      "situation_board": {
+        "era": "184년 직전",
+        "places": [
+          "낙양",
+          "전국"
+        ],
+        "factions": [
+          "후한 조정",
+          "지방 관리",
+          "태평도"
+        ],
+        "one_line": "진압은 사건을 줄일 수 있지만 사건을 계속 만드는 구조까지 자동으로 고치지는 못한다.",
+        "image_id": "day-007"
+      },
+      "orientation": null,
+      "memory_lock": null,
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "지난 6일 동안 본 것은 하나의 연결된 과정이다. 병과 불안이 사람을 모았고, 장각은 지역 책임자를 세웠다. 짧은 구호와 노란 표식이 행동 비용을 낮췄고, 많은 사람의 참여가 다음 사람에게 확신처럼 보였다. 마지막에 보이는 반란만 떼어보면 앞의 십여 년이 사라진다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "후한의 기록은 반란 진압의 전투를 자세히 남겼다. 누가 지휘했고 몇 명을 베었는지, 어느 달에 어느 지역을 되찾았는지가 중심이다. 반면 평범한 사람이 왜 태평도에 들어갔는지는 훨씬 적게 남았다. 기록의 빈칸을 상상으로 채우지는 않되, 전투 기록만으로 원인을 다 설명할 수 없다는 점은 분명히 한다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "보이지 않는 구조",
+          "body": "구조의 눈은 문제를 세 층으로 나눈다. 사람, 사건, 반복 규칙이다. 위험한 사람을 막는 일은 필요할 수 있다. 하지만 같은 사건을 계속 만드는 보상, 정보, 보호의 빈자리가 남으면 다른 사람이 그 자리를 채운다. 반대로 구조만 말하며 지금의 폭력을 방치해도 피해가 커진다. 단기 진압과 장기 회복은 둘 중 하나가 아니라 순서와 비중의 문제다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "회사에서 반복되는 실수를 직원의 태도 문제로만 보면 사람을 바꿔도 문제가 돌아온다. 목표가 충돌하고, 승인 길목이 막히고, 나쁜 소식을 숨길수록 보상을 받는 구조라면 누구라도 비슷하게 행동한다. 먼저 피해를 멈추고, 다음으로 다시 생기게 하는 규칙을 바꾸는 두 단계가 필요하다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "모든 문제를 구조 탓으로 돌리면 개인의 선택과 책임이 사라진다. 장각과 지역 지도자에게도 선택이 있었고, 봉기 과정의 폭력은 구조 설명만으로 지워지지 않는다. 좋은 분석은 개인 책임과 구조 원인을 동시에 놓치지 않는다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "회의에서 당신이 제안할 100일 계획은 무엇인가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "초기 70일 진압, 30일 구호",
+            "temptation": "당장 위험을 줄이기 쉽다",
+            "risk": "불신 회복이 너무 늦을 수 있다"
+          },
+          {
+            "id": "b",
+            "label": "초기 40일 진압, 60일 구호·감사",
+            "temptation": "원인과 피해를 함께 다룬다",
+            "risk": "전선이 넓어져 둘 다 약해질 수 있다"
+          },
+          {
+            "id": "c",
+            "label": "지역별로 비중을 다르게 둔다",
+            "temptation": "상황에 맞춘다",
+            "risk": "중앙 통제와 성과 비교가 어려워진다"
+          }
+        ],
+        "historical_choice": "조정은 군 지휘관을 보내고 수도 경비를 강화했다. 동시에 당고의 금을 일부 풀어 협력 대상을 넓혔지만 장기 개혁으로 이어지지는 못했다."
+      },
+      "consequences": {
+        "gained": "진압과 회복을 함께 보는 지도",
+        "lost": "한 숫자로 성과를 설명하는 단순함",
+        "returned_later": "지방에 무장과 권한을 주는 선택이 다음 권력 질서를 바꾼다."
+      },
+      "hidden_board": {
+        "primary_lens": "SYSTEM",
+        "secondary_lens": "BIZ",
+        "visible_event": "진압은 사건을 줄일 수 있지만 사건을 계속 만드는 구조까지 자동으로 고치지는 못한다.",
+        "hidden_desire": "복잡한 위기를 한 가지 처방으로 끝내고 싶다",
+        "hidden_mechanism": "측정하기 쉬운 전투 성과가 보이지 않는 원인을 밀어낸다",
+        "modern_signal": "사건 수만 줄면 원인이 해결됐다고 말한다",
+        "defense": "단기 피해 지표와 재발 원인 지표를 따로 둔다.",
+        "caveat": "모든 문제를 구조 탓으로 돌리면 개인의 선택과 책임이 사라진다. 장각과 지역 지도자에게도 선택이 있었고, 봉기 과정의 폭력은 구조 설명만으로 지워지지 않는다. 좋은 분석은 개인 책임과 구조 원인을 동시에 놓치지 않는다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "영제기는 184년 조정의 장수 파견과 전투를 월별로 기록한다. 황보숭 열전은 그보다 앞선 조직 형성도 전한다.",
+          "source_ids": [
+            "hhs-huangfu-zhu",
+            "hhs-ling-annals"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의는 부패한 조정과 새 영웅의 등장을 빠르게 연결한다. 재미있는 인과지만 실제 제도 변화는 더 복잡했다.",
+          "source_ids": []
+        }
+      ],
+      "evidence_chain": [],
+      "strategy_card_id": "pilot-7",
+      "strategy_card": {
+        "id": "pilot-7",
+        "name": "사람·사건·규칙",
+        "plain_rule": "피해를 멈춘 뒤, 같은 피해를 다시 만드는 규칙까지 바꿔야 해결이 된다."
+      },
+      "life_application": {
+        "prompt": "최근 반복된 문제 하나를 사람, 사건, 반복 규칙 세 줄로 나눠 적어보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 40,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 8,
+        "question": "비밀이 새어 계획이 무너진 순간, 장각은 취소가 아니라 조기 봉기를 택한다. 왜였을까?"
+      },
+      "new_terms": [
+        "진압",
+        "재발",
+        "반복 규칙"
+      ],
+      "source_ids": [
+        "hhs-huangfu-zhu",
+        "hhs-ling-annals"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "/images/day-007.svg",
+        "alt": "184년 직전 낙양·전국의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "일일 기록 기반 자체 제작",
+        "source_url": "https://ctext.org/hou-han-shu/huang-fu-song-zhu-jun-lie-zhuan/zh",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
+      }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 1,
+      "day": 8,
+      "event_id": "w02-d1",
+      "published_at": "2026-09-08",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+        "chronological": true
+      },
+      "title": "예정보다 먼저 터진 봉기",
+      "cold_open": "십여 년 준비한 계획이 시작 직전에 들켰다. 멈추면 조직이 무너지고, 지금 시작하면 준비가 덜 됐다. 장각은 세 번째 선택을 만들지 못한 채 봉기를 앞당겼다.",
+      "yesterday_recall": {
+        "from_day": 7,
+        "prompt": "어제의 핵심 ‘사람·사건·규칙’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": {
+        "from_day": 1,
+        "prompt": "7일 전 Day 1의 선택에서 놓치면 안 되는 구조는 무엇이었나요?"
+      },
+      "situation_board": {
+        "era": "184년 봄",
+        "places": [
+          "낙양",
+          "거록",
+          "여러 주"
+        ],
+        "factions": [
+          "장각",
+          "당주",
+          "후한 조정"
+        ],
+        "one_line": "계획이 들킨 순간 이미 투자한 시간과 사람을 잃기 싫다는 마음이 결정을 밀어붙였다.",
+        "image_id": "day-008"
+      },
+      "orientation": null,
+      "memory_lock": null,
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "태평도 내부의 당주가 계획을 조정에 알렸다. 수도 연결을 맡았던 마원의는 붙잡혀 처형됐고, 관리들은 관련자를 잡기 시작했다. 장각에게 남은 시간은 급격히 줄었다. 원래 정한 날을 기다리면 지도부와 연락망이 먼저 끊길 가능성이 컸다. 그는 각 지역에 급히 알리고 봉기를 시작했다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "후한서 황보숭 열전은 당주의 고발, 마원의의 처형, 관련자 수사, 장각의 조기 행동을 이어 적는다. 구체적인 수와 날짜는 판본과 해석을 조심해야 하지만, 계획 누설이 봉기를 앞당겼다는 흐름은 분명하다. 준비된 동원망이 있었기 때문에 급한 신호에도 여러 지역이 움직일 수 있었다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "본능의 눈",
+          "body": "이 순간에는 손실을 피하려는 본능이 강하게 작동했을 수 있다. 사람은 이미 쓴 시간과 돈이 클수록 멈추기 어려워진다. 그러나 과거에 쓴 비용은 앞으로의 선택으로 돌아오지 않는다. 중요한 것은 지금 시작할 때의 기대 손실과 멈출 때의 기대 손실이다. 장각의 실제 마음은 알 수 없으므로 이것은 결정 구조에 대한 해석이다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "사업에서 출시 직전 큰 결함이 발견되면 같은 압박이 온다. ‘여기까지 왔는데’라는 말은 과거 비용을 근거로 미래 위험을 감춘다. 반대로 무조건 취소하는 것도 답은 아니다. 가능한 선택을 출시·취소 두 개로 좁히지 말고, 범위 축소, 제한 공개, 일정 변경 같은 세 번째 선택을 찾아야 한다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "봉기는 법과 생명이 걸린 사건이라 제품 출시와 같지 않다. 또한 장각이 매몰비용 때문에 행동했다고 기록된 것도 아니다. 이 렌즈는 그를 진단하기 위한 것이 아니라, 계획이 무너진 위기에서 선택지가 어떻게 좁아지는지 이해하기 위한 도구다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "당신이 장각의 참모라면 누설 직후 무엇을 제안하겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "즉시 전면 시작",
+            "temptation": "남은 망과 기세를 쓴다",
+            "risk": "준비 부족과 지역 혼선이 커진다"
+          },
+          {
+            "id": "b",
+            "label": "계획을 전면 취소",
+            "temptation": "당장의 대규모 충돌을 피한다",
+            "risk": "지도부가 각개로 잡힐 수 있다"
+          },
+          {
+            "id": "c",
+            "label": "지역별 철수와 제한 행동",
+            "temptation": "피해를 분산하고 재정비한다",
+            "risk": "통일된 목표와 신뢰가 무너질 수 있다"
+          }
+        ],
+        "historical_choice": "장각은 조기 봉기를 택했고 여러 지역이 움직였다. 조정도 즉시 군대와 수도 경비를 움직였다."
+      },
+      "consequences": {
+        "gained": "남아 있던 기세와 동원망",
+        "lost": "준비 시간과 통일된 일정",
+        "returned_later": "빠른 확산 뒤 지역별 전투력 차이와 지휘 혼선이 드러난다."
+      },
+      "hidden_board": {
+        "primary_lens": "DRIVE",
+        "secondary_lens": "BEHAVIOR",
+        "visible_event": "계획이 들킨 순간 이미 투자한 시간과 사람을 잃기 싫다는 마음이 결정을 밀어붙였다.",
+        "hidden_desire": "지금까지 쌓은 것을 잃고 싶지 않다",
+        "hidden_mechanism": "과거 비용이 미래 선택을 밀어붙인다",
+        "modern_signal": "‘여기까지 했는데’가 현재 위험보다 먼저 나온다",
+        "defense": "과거 비용을 지우고 지금부터의 손익만 다시 계산한다.",
+        "caveat": "봉기는 법과 생명이 걸린 사건이라 제품 출시와 같지 않다. 또한 장각이 매몰비용 때문에 행동했다고 기록된 것도 아니다. 이 렌즈는 그를 진단하기 위한 것이 아니라, 계획이 무너진 위기에서 선택지가 어떻게 좁아지는지 이해하기 위한 도구다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "후한서는 내부 고발 뒤 장각이 여러 지역에 급히 알리고 예정 전 봉기를 시작했다고 기록한다.",
+          "source_ids": [
+            "hhs-huangfu-zhu"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의 1회도 당주의 밀고와 마원의 처형을 계기로 장각이 밤새 봉기를 알리는 흐름을 따른다.",
+          "source_ids": [
+            "romance-ch1"
+          ]
+        }
+      ],
+      "evidence_chain": [],
+      "strategy_card_id": "pilot-8",
+      "strategy_card": {
+        "id": "pilot-8",
+        "name": "이미 쓴 비용의 덫",
+        "plain_rule": "되돌릴 수 없는 과거 비용은 다음 선택의 이유가 될 수 없다."
+      },
+      "life_application": {
+        "prompt": "지금 ‘여기까지 했으니’ 계속하는 일이 있다면, 오늘 처음 시작한다고 가정하고 다시 선택해보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 9,
+        "question": "급히 모인 사람들을 하나의 군대로 보이게 만든 노란 천은 실제로 무엇을 바꿨을까?"
+      },
+      "new_terms": [
+        "내부 고발",
+        "조기 봉기",
+        "매몰비용"
+      ],
+      "source_ids": [
+        "hhs-huangfu-zhu",
+        "romance-ch1"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "/images/day-008.svg",
+        "alt": "184년 봄 낙양·거록·여러 주의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "일일 기록 기반 자체 제작",
+        "source_url": "https://ctext.org/hou-han-shu/huang-fu-song-zhu-jun-lie-zhuan/zh",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
+      }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 1,
+      "day": 9,
+      "event_id": "w02-d2",
+      "published_at": "2026-09-09",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+        "chronological": true
+      },
+      "title": "같은 표식이 만든 거대한 무리",
+      "cold_open": "머리에 노란 천을 두르는 순간, 낯선 사람은 동료가 되고 관군에게는 적이 된다. 표식 하나가 보호와 위험을 동시에 키웠다.",
+      "yesterday_recall": {
+        "from_day": 8,
+        "prompt": "어제의 핵심 ‘이미 쓴 비용의 덫’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": {
+        "from_day": 2,
+        "prompt": "7일 전 Day 2의 선택에서 놓치면 안 되는 구조는 무엇이었나요?"
+      },
+      "situation_board": {
+        "era": "184년 봄",
+        "places": [
+          "여러 전장",
+          "마을과 관청"
+        ],
+        "factions": [
+          "황건군",
+          "후한군",
+          "주민"
+        ],
+        "one_line": "노란 천은 소속을 확인하게 했지만 개인의 여러 이유를 한 집단의 얼굴로 덮었다.",
+        "image_id": "day-009"
+      },
+      "orientation": null,
+      "memory_lock": null,
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "여러 지역에서 일어난 사람들은 노란 천을 머리에 둘렀고, 그래서 황건이라 불렸다. 표식은 혼란한 현장에서 같은 편을 빠르게 확인하게 했다. 서로 모르는 사람도 같은 색을 보면 함께 움직일 수 있었다. 반대로 관군과 주민은 그 표식만 보고 개인의 사정과 역할을 구분하기 어려웠다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "후한서는 봉기군이 모두 노란 천을 표식으로 삼았다고 적는다. 장각은 천공장군, 동생 장보와 장량은 각각 지공장군과 인공장군을 칭했다. 이름과 색은 새로운 질서가 이미 시작된 것처럼 보이게 했다. 상징은 군사 장비가 부족한 큰 무리에게 값싼 통신 수단이기도 했다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "본능의 눈",
+          "body": "사람은 소속이 보일 때 더 큰 위험도 감수한다. 혼자라면 못 할 행동을 무리 안에서는 한다. 표식은 ‘나는 혼자가 아니다’라는 안정감을 주고, 동시에 빠져나갈 때 배신자로 보일 비용을 높인다. 지도자는 소속 욕구를 결속으로 바꿀 수 있지만, 개인 판단을 집단 명령에 묶을 수도 있다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "유니폼, 회사 로고, 팬덤 이름은 공동체를 만든다. 좋은 상징은 협력을 쉽게 하고 책임을 기억하게 한다. 위험한 상징은 내부 비판을 외부 공격으로 취급하고, 사람의 행동을 소속 전체의 성격으로 일반화한다. ‘우리 편이면 이래야 한다’는 문장이 선택권을 얼마나 줄이는지 보자.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "황건군의 모든 참여자가 같은 믿음과 행동을 했다고 단정할 수 없다. 표식의 효과도 지역과 상황에 따라 달랐을 것이다. 소속 욕구는 선하거나 악한 본능이 아니다. 협력의 기반이면서 조작의 통로가 될 수 있어, 나갈 자유와 반대할 안전이 함께 있어야 한다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "당신이 큰 조직의 리더라면 강한 표식을 어떻게 사용하겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "충성의 기준으로 강하게 쓴다",
+            "temptation": "결속과 행동 속도가 커진다",
+            "risk": "비판과 이탈이 배신으로 취급된다"
+          },
+          {
+            "id": "b",
+            "label": "역할 확인에만 제한한다",
+            "temptation": "개인 판단과 다양성을 지킨다",
+            "risk": "위기 때 결속이 약할 수 있다"
+          }
+        ],
+        "historical_choice": "노란 천과 장군 칭호는 흩어진 사람을 하나의 세력으로 보이게 했고, 조정도 황건이라는 이름으로 대응했다."
+      },
+      "consequences": {
+        "gained": "소속감과 현장 확인",
+        "lost": "개인의 여러 이유와 이탈의 자유",
+        "returned_later": "황건이라는 이름은 본대가 무너진 뒤에도 여러 잔여 세력을 묶어 부르는 이름이 된다."
+      },
+      "hidden_board": {
+        "primary_lens": "DRIVE",
+        "secondary_lens": "DARK",
+        "visible_event": "노란 천은 소속을 확인하게 했지만 개인의 여러 이유를 한 집단의 얼굴로 덮었다.",
+        "hidden_desire": "혼자가 아니라는 확신",
+        "hidden_mechanism": "눈에 보이는 표식이 편과 행동을 묶는다",
+        "modern_signal": "질문하거나 떠나는 사람을 즉시 배신자로 부른다",
+        "defense": "소속과 동의를 분리하고 안전하게 반대·이탈할 길을 둔다.",
+        "caveat": "황건군의 모든 참여자가 같은 믿음과 행동을 했다고 단정할 수 없다. 표식의 효과도 지역과 상황에 따라 달랐을 것이다. 소속 욕구는 선하거나 악한 본능이 아니다. 협력의 기반이면서 조작의 통로가 될 수 있어, 나갈 자유와 반대할 안전이 함께 있어야 한다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "후한서는 노란 천을 공통 표식으로 썼기 때문에 황건이라 불렸다고 명시한다.",
+          "source_ids": [
+            "hhs-huangfu-zhu"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의는 노란 깃발과 장군 이름을 크게 보여주어 황건군을 하나의 거대한 적으로 시각화한다.",
+          "source_ids": [
+            "romance-ch1"
+          ]
+        }
+      ],
+      "evidence_chain": [],
+      "strategy_card_id": "pilot-9",
+      "strategy_card": {
+        "id": "pilot-9",
+        "name": "표식의 두 얼굴",
+        "plain_rule": "상징은 협력을 싸게 만들지만 반대와 이탈의 비용도 함께 올린다."
+      },
+      "life_application": {
+        "prompt": "내가 속한 집단에서 ‘우리라면 당연히’라고 말하는 규칙 하나를 떠올리고, 반대할 수 있는지 점검하자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 10,
+        "question": "중앙정부는 황건을 막기 위해 지방에 무장을 허용한다. 이 선택은 누구에게 힘을 남겼을까?"
+      },
+      "new_terms": [
+        "황건",
+        "소속",
+        "이탈 비용"
+      ],
+      "source_ids": [
+        "hhs-huangfu-zhu",
+        "romance-ch1"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "/images/day-009.svg",
+        "alt": "184년 봄 여러 전장·마을과 관청의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "일일 기록 기반 자체 제작",
+        "source_url": "https://ctext.org/hou-han-shu/huang-fu-song-zhu-jun-lie-zhuan/zh",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
+      }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 1,
+      "day": 10,
+      "event_id": "w02-d3",
+      "published_at": "2026-09-10",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+        "chronological": true
+      },
+      "title": "정부가 지방 군대를 허용하다",
+      "cold_open": "중앙군만으로 전국의 불을 끌 수 없다. 지방에 사람과 무기를 모을 권한을 주면 오늘은 산다. 하지만 내일 그 군대가 누구의 말을 들을지는 알 수 없다.",
+      "yesterday_recall": {
+        "from_day": 9,
+        "prompt": "어제의 핵심 ‘표식의 두 얼굴’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": {
+        "from_day": 3,
+        "prompt": "7일 전 Day 3의 선택에서 놓치면 안 되는 구조는 무엇이었나요?"
+      },
+      "situation_board": {
+        "era": "184년 봄",
+        "places": [
+          "낙양",
+          "각 군과 주"
+        ],
+        "factions": [
+          "후한 조정",
+          "지방 관리",
+          "지역 유력자"
+        ],
+        "one_line": "중앙은 급한 불을 끄기 위해 사람과 무장을 지방에서 모았고, 그 힘은 전쟁 뒤에도 남았다.",
+        "image_id": "day-010"
+      },
+      "orientation": null,
+      "memory_lock": null,
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "봉기가 여러 주에서 일어나자 조정은 낙양의 문과 주요 길목을 지키고 장수를 세 방향으로 보냈다. 노식은 북쪽의 장각을, 황보숭과 주준은 다른 지역의 황건 세력을 맡았다. 각 지방에서도 병사를 모아 도왔다. 위기 대응이 중앙군 하나가 아니라 여러 지역 조직으로 퍼졌다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "영제기는 184년 황건 봉기 뒤 하진이 수도 주변을 지키고, 노식·황보숭·주준 등이 출전한 일을 기록한다. 황보숭 열전에는 천하 여러 군의 병사를 일으켜 토벌하게 했다는 흐름이 나온다. 이는 당장 필요한 선택이었지만 지방의 지휘관과 유력자가 사람·무기·명분을 모으는 기회가 되었다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "보이지 않는 구조",
+          "body": "보이지 않는 구조는 ‘임시 권한’이 어디에 남는지 본다. 중앙은 목표를 정하지만 실제 모집, 보급, 지휘는 현장 사람이 맡는다. 전쟁이 끝나도 사람의 충성, 무기, 정보망은 종이 명령처럼 바로 회수되지 않는다. 위기 때 빌려준 힘에는 종료 조건과 회수 방법이 필요하다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "회사가 긴급 프로젝트 때문에 팀장에게 예외 권한을 주는 경우도 같다. 빠른 결정을 얻지만 예외가 새 기준이 될 수 있다. 계정 접근, 예산, 인사권을 임시로 줄 때는 기간, 사용 범위, 종료 뒤 점검을 미리 정해야 한다. ‘나중에 돌려받자’는 계획은 대개 늦다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "184년의 모집 명령 하나가 곧바로 군벌 시대를 만들었다고 단순화하면 안 된다. 이후 십상시의 몰락, 동탁의 집권, 지방 반란과 여러 전쟁이 겹쳤다. 오늘은 하나의 원인이 아니라 중앙 밖에 무장과 운영 능력이 축적되기 시작한 중요한 조건을 본다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "지방 지휘관에게 군대 모집 권한을 줄 때 무엇을 붙이겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "성과만 요구하고 넓게 맡긴다",
+            "temptation": "대응 속도가 가장 빠르다",
+            "risk": "개인 군대처럼 굳을 수 있다"
+          },
+          {
+            "id": "b",
+            "label": "기간·지역·보고 의무를 붙인다",
+            "temptation": "회수 가능성을 높인다",
+            "risk": "위기 대응이 느려지고 서류만 늘 수 있다"
+          },
+          {
+            "id": "c",
+            "label": "중앙 감찰관을 함께 보낸다",
+            "temptation": "정보를 직접 얻는다",
+            "risk": "현장 지휘 충돌과 뇌물 위험이 생긴다"
+          }
+        ],
+        "historical_choice": "조정은 여러 장수와 지방 병력을 동원해 황건을 막았다. 단기 전투력은 커졌지만 중앙 밖에도 무장 조직의 경험이 쌓였다."
+      },
+      "consequences": {
+        "gained": "전국에 대한 빠른 대응력",
+        "lost": "무장과 충성의 독점",
+        "returned_later": "황건 뒤의 혼란에서 지방 지휘관들이 독자 세력으로 성장한다."
+      },
+      "hidden_board": {
+        "primary_lens": "SYSTEM",
+        "secondary_lens": "BIZ",
+        "visible_event": "중앙은 급한 불을 끄기 위해 사람과 무장을 지방에서 모았고, 그 힘은 전쟁 뒤에도 남았다.",
+        "hidden_desire": "오늘의 위기를 당장 끝내고 싶다",
+        "hidden_mechanism": "임시 권한이 사람·자원·관계를 현장에 남긴다",
+        "modern_signal": "종료 날짜 없는 예외 권한이 반복된다",
+        "defense": "권한을 줄 때 회수 조건과 독립 기록을 함께 만든다.",
+        "caveat": "184년의 모집 명령 하나가 곧바로 군벌 시대를 만들었다고 단순화하면 안 된다. 이후 십상시의 몰락, 동탁의 집권, 지방 반란과 여러 전쟁이 겹쳤다. 오늘은 하나의 원인이 아니라 중앙 밖에 무장과 운영 능력이 축적되기 시작한 중요한 조건을 본다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "영제기와 황보숭 열전은 중앙 장수 파견과 여러 군의 병력 동원을 함께 보여준다.",
+          "source_ids": [
+            "hhs-ling-annals",
+            "hhs-huangfu-zhu"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의는 지방에서 의용군이 모이고 유비 일행이 등장하는 흐름을 강조한다. 도원결의와 세부 활약은 소설의 유명한 구성이다.",
+          "source_ids": []
+        }
+      ],
+      "evidence_chain": [],
+      "strategy_card_id": "pilot-10",
+      "strategy_card": {
+        "id": "pilot-10",
+        "name": "임시 권한은 흔적을 남긴다",
+        "plain_rule": "위기 때 준 힘은 종료 조건이 없으면 새 권력이 된다."
+      },
+      "life_application": {
+        "prompt": "내 조직의 ‘이번만 예외’ 가운데 아직 끝나지 않은 권한이나 절차가 있는지 하나 찾아보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 11,
+        "question": "현장에서 이기고 있던 노식은 왜 전투가 아니라 한 관리의 보고 때문에 끌려갔을까?"
+      },
+      "new_terms": [
+        "지방 병력",
+        "임시 권한",
+        "회수 조건"
+      ],
+      "source_ids": [
+        "hhs-ling-annals",
+        "hhs-huangfu-zhu"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "/images/day-010.svg",
+        "alt": "184년 봄 낙양·각 군과 주의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "일일 기록 기반 자체 제작",
+        "source_url": "https://ctext.org/hou-han-shu/xiao-ling-di-ji",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
+      }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 1,
+      "day": 11,
+      "event_id": "w02-d4",
+      "published_at": "2026-09-11",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+        "chronological": true
+      },
+      "title": "노식의 신중함은 왜 벌을 받았나",
+      "cold_open": "당신은 적의 본거지를 포위했고 승리가 가까워 보인다. 그때 수도에서 온 감찰자가 돈을 원한다. 주지 않으면 보고서 한 장으로 당신이 교체될 수 있다.",
+      "yesterday_recall": {
+        "from_day": 10,
+        "prompt": "어제의 핵심 ‘임시 권한은 흔적을 남긴다’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": {
+        "from_day": 4,
+        "prompt": "7일 전 Day 4의 선택에서 놓치면 안 되는 구조는 무엇이었나요?"
+      },
+      "situation_board": {
+        "era": "184년 여름",
+        "places": [
+          "광종",
+          "낙양"
+        ],
+        "factions": [
+          "노식의 관군",
+          "장각군",
+          "환관 좌풍"
+        ],
+        "one_line": "현장 성과보다 보고 길목을 쥔 사람이 상사의 판단을 바꿨다.",
+        "image_id": "day-011"
+      },
+      "orientation": null,
+      "memory_lock": null,
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "노식은 장각의 군대를 여러 차례 이기고 광종에서 포위했다. 당장 무리하게 들이치기보다 진지를 만들고 공격할 때를 기다렸다. 이때 황제 곁의 작은 환관 좌풍이 전황을 보러 왔다. 누군가는 노식에게 돈을 주라고 권했지만, 그는 거절했다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "후한서 노식전은 좌풍이 군을 살피러 왔고, 노식이 뇌물을 보내지 않았다고 적는다. 좌풍은 돌아가 노식이 적을 잡을 수 있는데도 진 안에서 쉬며 군을 지치게 한다고 보고했다. 황제는 노식을 죄인 수레에 태워 불러들였다. 영제기도 노식이 장각을 포위했지만 환관의 무고로 벌을 받았다고 짧게 확인한다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "사람을 움직이는 기술",
+          "body": "이 장면의 핵심은 나쁜 사람 한 명보다 정보의 길목이다. 황제는 현장을 직접 보지 못했고 좌풍의 보고에 의존했다. 감찰자가 사실 확인자이면서 개인 이익을 요구하면, 보고서는 통제 도구가 된다. 뇌물을 거절한 사람은 ‘협조하지 않는 사람’으로 바뀌고, 느린 전략은 ‘게으름’으로 이름 붙여진다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "회사에서도 최고 책임자가 한 중간관리자의 요약만 보면 비슷한 일이 생긴다. 숫자의 기준과 원자료를 누가 고르는지, 반대 설명이 위로 올라갈 길이 있는지 봐야 한다. 개인의 정직만 믿기보다 보고 경로를 둘로 만들고, 평가자와 이해관계자를 분리하는 설계가 필요하다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "노식의 전체 작전이 완벽했다고 단정할 수는 없다. 기록은 그를 긍정적으로 그릴 수 있고, 조정이 가진 다른 정보가 모두 남아 있지도 않다. 그러나 좌풍의 뇌물 요구와 무고, 노식의 소환은 정사에 명시된다. 심리 진단보다 이해 충돌과 정보 독점이라는 확인 가능한 구조를 중심에 둔다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "당신이 노식이라면 좌풍의 요구에 어떻게 대응하겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "돈을 주고 지휘권을 지킨다",
+            "temptation": "당장의 작전을 계속한다",
+            "risk": "다음 요구와 공범 위험이 커진다"
+          },
+          {
+            "id": "b",
+            "label": "거절하고 별도 보고를 올린다",
+            "temptation": "기준과 명예를 지킨다",
+            "risk": "보고 길목이 막혀 즉시 교체될 수 있다"
+          },
+          {
+            "id": "c",
+            "label": "부하와 전황 기록을 공개한다",
+            "temptation": "반박 증거를 남긴다",
+            "risk": "당시 전달 속도와 정치 보호가 부족하다"
+          }
+        ],
+        "historical_choice": "노식은 뇌물을 거절했고 좌풍의 보고 뒤 소환됐다. 후임 동탁은 장각을 이기지 못했고, 뒤에 황보숭이 전선을 이어받았다."
+      },
+      "consequences": {
+        "gained": "뇌물 구조에 굴복하지 않은 명분",
+        "lost": "승리가 가까웠던 지휘권",
+        "returned_later": "현장을 모르는 정치 개입이 전쟁을 늦추고 조정의 신뢰를 더 깎는다."
+      },
+      "hidden_board": {
+        "primary_lens": "DARK",
+        "secondary_lens": "SYSTEM",
+        "visible_event": "현장 성과보다 보고 길목을 쥔 사람이 상사의 판단을 바꿨다.",
+        "hidden_desire": "보고를 통제해 상대의 선택을 좁히고 싶다",
+        "hidden_mechanism": "한 사람이 현장 정보와 평가 문장을 독점한다",
+        "modern_signal": "원자료 없이 한 사람의 요약만 반복된다",
+        "defense": "독립 보고 경로와 이해 충돌 공개, 원자료 접근을 만든다.",
+        "caveat": "노식의 전체 작전이 완벽했다고 단정할 수는 없다. 기록은 그를 긍정적으로 그릴 수 있고, 조정이 가진 다른 정보가 모두 남아 있지도 않다. 그러나 좌풍의 뇌물 요구와 무고, 노식의 소환은 정사에 명시된다. 심리 진단보다 이해 충돌과 정보 독점이라는 확인 가능한 구조를 중심에 둔다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "노식전과 영제기는 노식의 광종 포위, 좌풍의 무고, 소환을 함께 전한다.",
+          "source_ids": [
+            "hhs-lu-zhi",
+            "hhs-ling-annals"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의 1회는 좌풍이 노골적으로 뇌물을 요구하고 노식이 결박되는 장면을 더 선명한 악역 구조로 만든다.",
+          "source_ids": [
+            "romance-ch1"
+          ]
+        }
+      ],
+      "evidence_chain": [],
+      "strategy_card_id": "pilot-11",
+      "strategy_card": {
+        "id": "pilot-11",
+        "name": "보고 길목을 잡은 사람",
+        "plain_rule": "현장을 못 보는 결정자는 사실보다 보고서를 고르는 사람에게 지배될 수 있다."
+      },
+      "life_application": {
+        "prompt": "내가 받는 중요한 보고 중 한 사람의 해석에만 기대는 것이 있는지, 원자료를 볼 방법을 적어보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 12,
+        "question": "병력이 적고 포위된 황보숭은 정면 승부 대신 적의 야영지를 관찰한다. 그가 본 한 가지는 무엇일까?"
+      },
+      "new_terms": [
+        "광종",
+        "환관",
+        "이해 충돌"
+      ],
+      "source_ids": [
+        "hhs-lu-zhi",
+        "hhs-ling-annals",
+        "romance-ch1"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "/images/day-011.svg",
+        "alt": "184년 여름 광종·낙양의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "일일 기록 기반 자체 제작",
+        "source_url": "https://ctext.org/hou-han-shu/wu-yan-shi-lu-zhao-lie-zhuan/zh",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
+      }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 1,
+      "day": 12,
+      "event_id": "w02-d5",
+      "published_at": "2026-09-12",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+        "chronological": true
+      },
+      "title": "황보숭은 불과 밤을 택했다",
+      "cold_open": "적은 많고 당신의 군사는 적다. 성은 포위됐고 부하들은 겁먹었다. 황보숭은 병사를 더 달라고 하지 않고 적이 어디에 진을 쳤는지 다시 봤다.",
+      "yesterday_recall": {
+        "from_day": 11,
+        "prompt": "어제의 핵심 ‘보고 길목을 잡은 사람’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": {
+        "from_day": 5,
+        "prompt": "7일 전 Day 5의 선택에서 놓치면 안 되는 구조는 무엇이었나요?"
+      },
+      "situation_board": {
+        "era": "184년 5월",
+        "places": [
+          "장사",
+          "성 밖 풀밭"
+        ],
+        "factions": [
+          "황보숭군",
+          "주준군",
+          "파재의 황건군"
+        ],
+        "one_line": "황보숭은 적의 숫자와 싸우지 않고 야영 방식이라는 약한 지점을 공략했다.",
+        "image_id": "day-012"
+      },
+      "orientation": null,
+      "memory_lock": null,
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "주준이 파재에게 패한 뒤 황보숭은 장사 성으로 들어갔다. 황건군은 많은 병력으로 성을 에워쌌고, 관군은 두려워했다. 황보숭은 적이 풀이 많은 곳에 진을 친 것을 보았다. 밤에 바람이 불면 불이 퍼지고, 어둠과 함성이 적의 숫자를 혼란으로 바꿀 수 있었다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "후한서 황보숭 열전은 황보숭이 병력의 많고 적음보다 뜻밖의 변화를 강조했다고 적는다. 밤에 군사들이 횃불 묶음을 들고, 정예병이 몰래 성 밖으로 나가 불을 놓고 함성을 질렀다. 성 위에서도 불로 응답했다. 황건군이 흔들릴 때 황보숭이 공격했고, 마침 조조의 지원군이 도착해 주준과 합세했다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "장사의 눈",
+          "body": "사업의 눈으로 보면 이것은 자원을 더 넣기 전에 병목과 약점을 찾은 결정이다. 황보숭은 ‘병사 수’라는 불리한 지표를 그대로 겨루지 않았다. 적의 야영 위치, 마른 풀, 밤, 바람, 통신 혼란을 하나의 흐름으로 묶었다. 작은 자원도 정확한 길목에 쓰면 큰 자원의 효율을 무너뜨릴 수 있다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "작은 회사가 큰 회사와 광고비로 싸우면 대개 진다. 대신 큰 조직이 느린 승인, 불편한 고객 경험, 특정 유통망에 기대는 지점을 찾을 수 있다. 그러나 약점 공략은 속임수만 뜻하지 않는다. 사용자가 가장 오래 기다리는 한 단계를 줄이는 것도 같은 원리다. 자원보다 흐름을 먼저 본다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "화공은 실제 사람의 죽음과 파괴를 낳은 전술이다. 현대 비즈니스에 적용할 때 상대에게 피해를 주는 방법이 아니라 제한된 자원을 병목 해결에 집중한다는 원리만 가져온다. 또한 바람과 지원군이라는 운도 승리에 기여했다. 성공 뒤에 모든 것을 지휘관의 천재성으로 돌리지 않는다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "당신이 포위된 지휘관이라면 어느 선택을 하겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "성문을 열고 정면 돌파한다",
+            "temptation": "주도권을 바로 되찾는다",
+            "risk": "수적 열세를 그대로 감당한다"
+          },
+          {
+            "id": "b",
+            "label": "밤·바람·풀을 이용해 혼란을 만든다",
+            "temptation": "적의 숫자 장점을 줄인다",
+            "risk": "바람이 바뀌면 아군이 위험해진다"
+          },
+          {
+            "id": "c",
+            "label": "지원군만 기다린다",
+            "temptation": "병력을 보존한다",
+            "risk": "사기와 식량이 먼저 무너질 수 있다"
+          }
+        ],
+        "historical_choice": "황보숭은 밤의 불과 함성으로 포위군을 흔들었고, 도착한 조조·주준의 병력과 함께 큰 승리를 거뒀다."
+      },
+      "consequences": {
+        "gained": "적의 숫자를 무력화한 순간",
+        "lost": "바람과 타이밍이 빗나갈 안전 여유",
+        "returned_later": "승리로 황보숭의 명성과 권한이 커지고 다음 전선까지 맡게 된다."
+      },
+      "hidden_board": {
+        "primary_lens": "BIZ",
+        "secondary_lens": "SYSTEM",
+        "visible_event": "황보숭은 적의 숫자와 싸우지 않고 야영 방식이라는 약한 지점을 공략했다.",
+        "hidden_desire": "부족한 자원을 더 많이 가진 상대에게 이기고 싶다",
+        "hidden_mechanism": "숫자 대신 흐름의 병목과 취약한 연결을 친다",
+        "modern_signal": "해결책이 늘 인원·예산 추가뿐이다",
+        "defense": "자원을 넣기 전 대기·승인·전달이 막히는 한 지점을 찾는다.",
+        "caveat": "화공은 실제 사람의 죽음과 파괴를 낳은 전술이다. 현대 비즈니스에 적용할 때 상대에게 피해를 주는 방법이 아니라 제한된 자원을 병목 해결에 집중한다는 원리만 가져온다. 또한 바람과 지원군이라는 운도 승리에 기여했다. 성공 뒤에 모든 것을 지휘관의 천재성으로 돌리지 않는다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "황보숭 열전은 장사 포위, 풀밭 야영, 야간 방화, 조조 지원군의 도착을 구체적으로 전한다.",
+          "source_ids": [
+            "hhs-huangfu-zhu",
+            "hhs-ling-annals"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의 1회에도 황보숭의 화공이 나오지만 유비 일행의 영웅 서사와 함께 재배치된다.",
+          "source_ids": [
+            "romance-ch1"
+          ]
+        }
+      ],
+      "evidence_chain": [],
+      "strategy_card_id": "pilot-12",
+      "strategy_card": {
+        "id": "pilot-12",
+        "name": "숫자 말고 흐름을 겨뤄라",
+        "plain_rule": "자원이 적을수록 더 넣기 전에 상대와 내 흐름의 병목을 찾는다."
+      },
+      "life_application": {
+        "prompt": "지금 돈이나 사람을 더 달라고 생각하는 문제 하나에서, 실제로 막힌 한 단계를 찾아보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 13,
+        "question": "장각과 형제들이 사라지면 반란은 끝날까? 지도자를 제거한 뒤에도 남는 것을 본다."
+      },
+      "new_terms": [
+        "장사",
+        "화공",
+        "병목"
+      ],
+      "source_ids": [
+        "hhs-huangfu-zhu",
+        "hhs-ling-annals",
+        "romance-ch1"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "/images/day-012.svg",
+        "alt": "184년 5월 장사·성 밖 풀밭의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "일일 기록 기반 자체 제작",
+        "source_url": "https://ctext.org/hou-han-shu/huang-fu-song-zhu-jun-lie-zhuan/zh",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
+      }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 1,
+      "day": 13,
+      "event_id": "w02-d6",
+      "published_at": "2026-09-13",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+        "chronological": true
+      },
+      "title": "지도자가 사라져도 불만은 남는다",
+      "cold_open": "장각이 죽고 동생들도 패했다. 조정은 승리를 선언할 수 있다. 그런데 이후에도 황건이라는 이름의 세력은 여러 곳에서 다시 나타난다. 무엇을 끝냈고 무엇을 놓쳤을까?",
+      "yesterday_recall": {
+        "from_day": 12,
+        "prompt": "어제의 핵심 ‘숫자 말고 흐름을 겨뤄라’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": {
+        "from_day": 6,
+        "prompt": "7일 전 Day 6의 선택에서 놓치면 안 되는 구조는 무엇이었나요?"
+      },
+      "situation_board": {
+        "era": "184년 말",
+        "places": [
+          "광종",
+          "하곡양",
+          "여러 지방"
+        ],
+        "factions": [
+          "장각 형제",
+          "황보숭군",
+          "남은 황건 세력"
+        ],
+        "one_line": "지도부는 무너졌지만 사람을 봉기로 밀어 넣은 불안과 지방의 무장망은 사라지지 않았다.",
+        "image_id": "day-013"
+      },
+      "orientation": null,
+      "memory_lock": null,
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "황보숭은 광종에서 장각의 동생 장량과 싸웠다. 처음에는 이기지 못하자 진을 닫고 병사를 쉬게 하며 상대가 느슨해지기를 기다렸다. 새벽에 기습해 크게 이겼다. 장각은 그보다 앞서 병으로 죽었고, 기록은 관군이 그의 무덤을 열어 머리를 수도로 보냈다고 전한다. 이어 장보도 패했다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "후한서는 주요 전투와 큰 희생을 기록하며 그해 핵심 지도부가 무너지는 과정을 전한다. 그러나 황건이라는 이름은 뒤의 기록에서도 계속 등장한다. 각지의 잔여 집단, 도적 세력, 새로 합류한 사람이 같은 이름으로 불렸다. 조직의 본부를 무너뜨린 것과 불만·생존 위기·무장 인력을 없애는 것은 다른 일이었다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "보이지 않는 구조",
+          "body": "구조의 눈으로 보면 지도자는 원인이면서 동시에 증상일 수 있다. 지도자를 제거하면 명령망과 상징은 약해진다. 하지만 사람을 모이게 한 보호의 빈자리, 세금 부담, 지역 갈등, 무기의 확산이 남으면 다른 지도자가 나온다. ‘누구를 없애면 끝나는가’라는 질문 뒤에 ‘어떤 조건이 다음 사람을 만드는가’를 붙여야 한다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "문제가 있는 팀장을 바꾸고 잠시 조용해졌는데 같은 문제가 돌아오는 조직이 있다. 목표 충돌, 숨겨진 보상, 인력 부족이 그대로라면 새 팀장도 비슷하게 행동한다. 반대로 구조를 말하며 해로운 리더를 그대로 두어서도 안 된다. 사람 교체와 규칙 수정을 같은 계획에 넣어야 한다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "남은 모든 황건 세력이 장각의 원래 조직과 직접 이어졌다고 볼 수 없다. 기록자가 다양한 집단을 편의상 같은 이름으로 불렀을 가능성도 있다. 그러므로 ‘동일 조직의 완전한 생존’이 아니라, 이름·불만·무장 경험이 여러 형태로 계속 나타났다고 표현한다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "핵심 지도부를 무너뜨린 뒤 다음 예산을 어디에 쓰겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "남은 지도자 추적에 집중한다",
+            "temptation": "재조직 속도를 늦춘다",
+            "risk": "새 참가자를 만드는 조건이 남는다"
+          },
+          {
+            "id": "b",
+            "label": "치안·구호·세금 정비에 집중한다",
+            "temptation": "재발 원인을 줄인다",
+            "risk": "당장 무장 세력이 다시 모일 수 있다"
+          },
+          {
+            "id": "c",
+            "label": "두 예산을 지역 위험에 따라 나눈다",
+            "temptation": "피해와 원인을 함께 다룬다",
+            "risk": "정보가 부정확하면 분배가 틀린다"
+          }
+        ],
+        "historical_choice": "장각과 형제들의 핵심 세력은 184년에 무너졌지만 황건과 연결된 여러 집단은 이후에도 계속 등장했다."
+      },
+      "consequences": {
+        "gained": "중앙 지도망과 상징의 큰 약화",
+        "lost": "불만을 흡수할 개혁의 시간",
+        "returned_later": "남은 무장 인력과 혼란은 새 영웅과 군벌이 성장할 시장이 된다."
+      },
+      "hidden_board": {
+        "primary_lens": "SYSTEM",
+        "secondary_lens": "DRIVE",
+        "visible_event": "지도부는 무너졌지만 사람을 봉기로 밀어 넣은 불안과 지방의 무장망은 사라지지 않았다.",
+        "hidden_desire": "한 사람을 제거해 복잡한 문제가 끝났다고 믿고 싶다",
+        "hidden_mechanism": "측정하기 쉬운 지도부 제거가 구조 회복을 대신한다",
+        "modern_signal": "책임자 교체 뒤 규칙과 보상은 그대로다",
+        "defense": "사람 조치와 재발 조건 조치를 한 표에 함께 둔다.",
+        "caveat": "남은 모든 황건 세력이 장각의 원래 조직과 직접 이어졌다고 볼 수 없다. 기록자가 다양한 집단을 편의상 같은 이름으로 불렀을 가능성도 있다. 그러므로 ‘동일 조직의 완전한 생존’이 아니라, 이름·불만·무장 경험이 여러 형태로 계속 나타났다고 표현한다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "황보숭 열전은 장각의 병사, 장량·장보의 패배를 전한다. 이후 후한·삼국 기록에는 황건 잔여 세력이 거듭 나타난다.",
+          "source_ids": [
+            "hhs-huangfu-zhu",
+            "hhs-ling-annals"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의는 장각 형제의 몰락을 초기 영웅들의 승리와 연결해 하나의 장을 빠르게 닫는다.",
+          "source_ids": []
+        }
+      ],
+      "evidence_chain": [],
+      "strategy_card_id": "pilot-13",
+      "strategy_card": {
+        "id": "pilot-13",
+        "name": "지도자와 발생 조건",
+        "plain_rule": "문제를 일으킨 사람을 막은 뒤, 같은 사람을 다시 만드는 조건까지 바꾼다."
+      },
+      "life_application": {
+        "prompt": "최근 사람을 바꿔 해결한 문제 하나에서 그대로 남아 있는 규칙이나 보상을 찾아보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 14,
+        "question": "2주 군사회의: 진압에 성공한 한나라는 왜 더 강해지지 못하고 군웅의 무대로 바뀌었을까?"
+      },
+      "new_terms": [
+        "광종",
+        "잔여 세력",
+        "재발 조건"
+      ],
+      "source_ids": [
+        "hhs-huangfu-zhu",
+        "hhs-ling-annals"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "/images/day-013.svg",
+        "alt": "184년 말 광종·하곡양·여러 지방의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "일일 기록 기반 자체 제작",
+        "source_url": "https://ctext.org/hou-han-shu/huang-fu-song-zhu-jun-lie-zhuan/zh",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
+      }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 1,
+      "day": 14,
+      "event_id": "w02-d7",
+      "published_at": "2026-09-14",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+        "chronological": true
+      },
+      "title": "군사회의: 진압과 해결은 다르다",
+      "cold_open": "보고서에는 승리라고 적혀 있다. 장각의 지도부는 사라졌고 주요 전투도 끝났다. 그런데 판 전체를 보면 중앙은 더 많은 힘을 잃었다. 승리한 조직이 왜 약해질 수 있을까?",
+      "yesterday_recall": {
+        "from_day": 13,
+        "prompt": "어제의 핵심 ‘지도자와 발생 조건’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": {
+        "from_day": 7,
+        "prompt": "7일 전 Day 7의 선택에서 놓치면 안 되는 구조는 무엇이었나요?"
+      },
+      "situation_board": {
+        "era": "184년 말",
+        "places": [
+          "낙양",
+          "전국"
+        ],
+        "factions": [
+          "후한 조정",
+          "승리한 장수",
+          "지방 무장 세력"
+        ],
+        "one_line": "한나라는 큰 전투를 이겼지만 위기 대응 과정에서 중앙 밖의 사람들에게 군대·명성·연결망을 남겼다.",
+        "image_id": "day-014"
+      },
+      "orientation": null,
+      "memory_lock": null,
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "황보숭과 주준 같은 장수는 큰 승리를 거뒀다. 조정은 봉기의 핵심을 꺾고 수도를 지켰다. 그러나 전쟁을 치르며 지방에서 병사를 모았고, 현장 지휘관에게 권한과 명성이 쌓였다. 백성이 중앙을 불신하게 만든 조건은 빠르게 사라지지 않았다. 전투의 점수와 국가의 회복 점수가 달랐다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "184년의 핵심 황건 봉기는 진압됐지만 후한의 정치 혼란은 계속됐다. 노식의 교체처럼 보고와 인사 체계는 흔들렸고, 승리한 황보숭조차 이후 정치 압력을 받는다. 여러 지방의 무장 경험과 독자 조직은 뒤의 혼란에서 중요한 자산이 된다. 이것이 곧바로 삼국을 만들었다기보다 다음 위기의 바닥을 바꿨다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "보이지 않는 구조",
+          "body": "해결 여부를 보려면 세 가지 잔액을 본다. 중앙의 신뢰, 현장의 무장·운영 능력, 다음 반란을 만드는 불만이다. 전투에서 이겨도 첫째가 줄고 둘째가 중앙 밖에 쌓이며 셋째가 남아 있으면 장기 판세는 나빠질 수 있다. 단기 성과가 장기 자산과 부채를 어떻게 옮겼는지 계산해야 한다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "사업도 매출 목표를 맞추고 조직이 약해질 수 있다. 무리한 할인으로 고객의 기준을 낮추고, 핵심 인력을 태우고, 파트너에게 고객 관계를 넘겼다면 이번 분기는 이겼지만 다음 분기는 불리하다. 결과 숫자 옆에 무엇을 빌렸고 무엇이 남았는지 적어야 한다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "후한의 붕괴를 황건의 난 하나로 설명하지 않는다. 황제와 환관, 외척, 지방 세력, 국경 문제, 후속 반란이 이어졌다. 14일 동안 만든 것은 완전한 원인표가 아니라 앞으로 인물을 이해할 첫 지도다. 다음부터는 이 판 위에 조조, 유비, 손견 같은 사람이 어떤 기회를 보았는지 따라간다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "당신이 184년 말 황제에게 올릴 결산의 첫 문장은 무엇인가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "주요 반란을 진압해 제국을 지켰다",
+            "temptation": "명확한 승리와 사기를 준다",
+            "risk": "남은 부채와 재발 조건을 가린다"
+          },
+          {
+            "id": "b",
+            "label": "전투는 이겼지만 지방 무장과 불신이 커졌다",
+            "temptation": "다음 위험을 일찍 본다",
+            "risk": "당장의 공과와 희생을 낮춰 보일 수 있다"
+          },
+          {
+            "id": "c",
+            "label": "승리·부채·90일 조치를 함께 쓴다",
+            "temptation": "성과와 다음 행동을 연결한다",
+            "risk": "복잡해 보여 정치적 메시지가 약해질 수 있다"
+          }
+        ],
+        "historical_choice": "조정은 핵심 봉기를 진압했지만 중앙의 불신과 지방 무장화는 남았다. 뒤이은 정치 위기에서 이 자산을 가진 사람들이 전면에 등장한다."
+      },
+      "consequences": {
+        "gained": "수도와 왕조가 버틴 시간",
+        "lost": "중앙의 독점적 지휘력과 회복 기회",
+        "returned_later": "다음 위기에는 지역의 유력자와 지휘관이 ‘질서를 만들 사람’으로 나선다."
+      },
+      "hidden_board": {
+        "primary_lens": "SYSTEM",
+        "secondary_lens": "BIZ",
+        "visible_event": "한나라는 큰 전투를 이겼지만 위기 대응 과정에서 중앙 밖의 사람들에게 군대·명성·연결망을 남겼다.",
+        "hidden_desire": "승리 숫자로 불안을 끝내고 싶다",
+        "hidden_mechanism": "단기 성과가 장기 자산 이동과 부채를 가린다",
+        "modern_signal": "성과 보고에 빌린 자원과 후속 비용이 없다",
+        "defense": "결과·남은 자산·새 부채·90일 조치를 함께 결산한다.",
+        "caveat": "후한의 붕괴를 황건의 난 하나로 설명하지 않는다. 황제와 환관, 외척, 지방 세력, 국경 문제, 후속 반란이 이어졌다. 14일 동안 만든 것은 완전한 원인표가 아니라 앞으로 인물을 이해할 첫 지도다. 다음부터는 이 판 위에 조조, 유비, 손견 같은 사람이 어떤 기회를 보았는지 따라간다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "후한서의 여러 관련 열전과 영제기는 184년 승리와 동시에 인사·지휘 혼선을 보여준다.",
+          "source_ids": [
+            "hhs-huangfu-zhu",
+            "hhs-ling-annals",
+            "hhs-lu-zhi"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의는 황건 진압을 유비·관우·장비 등 영웅의 입장 장면으로 사용한다. 다음 인물을 기억하기 좋지만 실제 권력 이동은 더 느리고 복잡하다.",
+          "source_ids": [
+            "romance-ch1"
+          ]
+        }
+      ],
+      "evidence_chain": [],
+      "strategy_card_id": "pilot-14",
+      "strategy_card": {
+        "id": "pilot-14",
+        "name": "승리 뒤의 잔액",
+        "plain_rule": "결과를 낸 뒤 신뢰·사람·권한·부채가 누구에게 남았는지 계산한다."
+      },
+      "life_application": {
+        "prompt": "최근 끝낸 일 하나를 ‘결과 / 남은 자산 / 새 부채 / 다음 90일’ 네 줄로 결산해보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 40,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 15,
+        "question": "이제 무대가 열린다. 같은 혼란을 보고 조조, 유비, 손견은 왜 서로 다른 기회를 잡았을까?"
+      },
+      "new_terms": [
+        "결산",
+        "장기 자산",
+        "권력 이동"
+      ],
+      "source_ids": [
+        "hhs-huangfu-zhu",
+        "hhs-ling-annals",
+        "hhs-lu-zhi",
+        "romance-ch1"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "/images/day-014.svg",
+        "alt": "184년 말 낙양·전국의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "일일 기록 기반 자체 제작",
+        "source_url": "https://ctext.org/hou-han-shu/huang-fu-song-zhu-jun-lie-zhuan/zh",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
+      }
+    }
+  ]
+}

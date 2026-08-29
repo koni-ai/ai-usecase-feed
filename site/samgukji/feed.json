@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "project": "삼국지 365",
+  "pilot_days": 14,
+  "sources": [
+    {
+      "id": "hhs-huangfu-zhu",
+      "registry_id": "d1-ctext-houhanshu",
+      "tier": "H1",
+      "kind": "정사",
+      "title": "후한서 · 황보숭주준열전",
+      "author_or_holder": "범엽 / Chinese Text Project",
+      "language": "한문",
+      "location": "장각의 태평도·36방·봉기 계획, 장사 화공, 광종 전투",
+      "url": "https://ctext.org/hou-han-shu/huang-fu-song-zhu-jun-lie-zhuan/zh",
+      "license_or_use": "원전 링크와 짧은 인용, 한국어 요약",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "hhs-ling-annals",
+      "registry_id": "d1-ctext-houhanshu",
+      "tier": "H1",
+      "kind": "정사",
+      "title": "후한서 · 효령제기",
+      "author_or_holder": "범엽 / Chinese Text Project",
+      "language": "한문",
+      "location": "중평 원년(184) 황건 봉기와 조정의 월별 대응",
+      "url": "https://ctext.org/hou-han-shu/xiao-ling-di-ji",
+      "license_or_use": "원전 링크와 한국어 요약",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "hhs-lu-zhi",
+      "registry_id": "d1-ctext-houhanshu",
+      "tier": "H1",
+      "kind": "정사",
+      "title": "후한서 · 오연사노조열전 중 노식전",
+      "author_or_holder": "범엽 / Chinese Text Project",
+      "language": "한문",
+      "location": "노식의 광종 포위, 좌풍의 뇌물 요구와 무고",
+      "url": "https://ctext.org/hou-han-shu/wu-yan-shi-lu-zhao-lie-zhuan/zh",
+      "license_or_use": "원전 링크와 한국어 요약",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "romance-ch1",
+      "registry_id": "d1-ctext-romance",
+      "tier": "N1",
+      "kind": "연의",
+      "title": "삼국연의 제1회",
+      "author_or_holder": "나관중 전승 / Chinese Text Project",
+      "language": "한문·백화문",
+      "location": "황건 봉기와 도원결의의 소설적 구성",
+      "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+      "license_or_use": "원문 링크와 소설·정사 차이 설명",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "ws-romance-ch1-zh",
+      "registry_id": "n1-wikisource-romance-zh",
+      "tier": "N1",
+      "kind": "이야기 원전",
+      "title": "삼국연의 제1회 (중국어 원문)",
+      "author_or_holder": "나관중 전승 / 중국어 위키문헌",
+      "language": "중국어",
+      "location": "제1회: 영제 때의 징조, 장각·태평도, 36방, 황건 봉기",
+      "url": "https://zh.wikisource.org/wiki/三國演義/第001回",
+      "license_or_use": "공개 원문을 대조하고 쉬운 한국어로 독자 재서술",
+      "reuse_status": "approved_core",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "ws-san-kuo-ch1-en",
+      "registry_id": "n1-wikisource-san-kuo-v1",
+      "tier": "N1",
+      "kind": "이야기 원전",
+      "title": "San Kuo, Volume 1, Chapter 1 (1925 영어 번역)",
+      "author_or_holder": "C. H. Brewitt-Taylor / English Wikisource",
+      "language": "영어",
+      "location": "Chapter 1: 제1회 사건 순서와 인명 교차 확인",
+      "url": "https://en.wikisource.org/w/index.php?title=San_Kuo/Volume_1/Chapter_1&oldid=11957121",
+      "license_or_use": "미국 공개 영역 번역을 중국어 원문 대조용으로 사용",
+      "reuse_status": "approved_core",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "ws-houhanshu-vol8",
+      "registry_id": "h1-wikisource-houhanshu",
+      "tier": "H1",
+      "kind": "정사",
+      "title": "후한서 권8 · 효령제기",
+      "author_or_holder": "범엽 / 중국어 위키문헌",
+      "language": "한문",
+      "location": "영제 시대와 중평 원년(184) 황건 봉기의 연대기",
+      "url": "https://zh.wikisource.org/wiki/後漢書/卷8",
+      "license_or_use": "공개 원전 링크, 사실 대조, 쉬운 한국어 요약",
+      "reuse_status": "approved_core",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "ws-houhanshu-vol71",
+      "registry_id": "h1-wikisource-houhanshu",
+      "tier": "H1",
+      "kind": "정사",
+      "title": "후한서 권71 · 황보숭주준열전",
+      "author_or_holder": "범엽 / 중국어 위키문헌",
+      "language": "한문",
+      "location": "장각의 치료 활동, 십여 년 확장, 36방과 황건 표식",
+      "url": "https://zh.wikisource.org/wiki/後漢書/卷71",
+      "license_or_use": "공개 원전 링크, 사실 대조, 쉬운 한국어 요약",
+      "reuse_status": "approved_core",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "anu-last-han",
+      "registry_id": "h2-anu-last-of-han",
+      "tier": "H2",
+      "kind": "현대 역사 연구",
+      "title": "The Last of the Han: 181–220 AD",
+      "author_or_holder": "Rafe de Crespigny / Australian National University",
+      "language": "영어",
+      "location": "후한 말기의 정치·사회적 맥락과 사건 순서",
+      "url": "https://openresearch-repository.anu.edu.au/items/efc82a23-94db-44e9-97c3-0bc3a329a509",
+      "license_or_use": "내용 복제 없이 인용·요약·맥락 확인만 수행",
+      "reuse_status": "reference_only",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "sep-manipulation",
+      "registry_id": "p1-sep-manipulation-ethics",
+      "tier": "P1",
+      "kind": "심리·윤리 참고",
+      "title": "The Ethics of Manipulation",
+      "author_or_holder": "Stanford Encyclopedia of Philosophy",
+      "language": "영어",
+      "location": "선택을 흐리는 조종, 취약성 이용, 반대 증거 차단의 개념 경계",
+      "url": "https://plato.stanford.edu/entries/ethics-manipulation/",
+      "license_or_use": "현대 해석의 경계 확인용; 문장 복제 없이 인용·요약만 수행",
+      "reuse_status": "reference_only",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "openstax-social-influence",
+      "registry_id": "p1-openstax-social-influence",
+      "tier": "P1",
+      "kind": "사회심리 참고",
+      "title": "Social Psychology: Conformity and Group Influence",
+      "author_or_holder": "OpenStax",
+      "language": "영어",
+      "location": "소속, 동조, 집단 규범이 개인 판단에 주는 영향",
+      "url": "https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience",
+      "license_or_use": "사람이 읽는 참고·링크·개념 확인만 수행; 생성 입력 원문으로 사용하지 않음",
+      "reuse_status": "reference_only",
+      "checked_at": "2026-08-29"
+    },
+    {
+      "id": "commons-romance-illustrations",
+      "registry_id": "v1-commons-illustrated-romance",
+      "tier": "V1",
+      "kind": "시각 참고",
+      "title": "Romance of the Three Kingdoms in Illustrations",
+      "author_or_holder": "Wikimedia Commons / World Digital Library",
+      "language": "중국어·그림",
+      "location": "삼국연의 장면을 담은 240점 고전 삽화 모음; 화면 분위기와 인물 배치 참고",
+      "url": "https://commons.wikimedia.org/wiki/File:Romance_of_the_Three_Kingdoms_in_Illustrations_WDL11391.pdf",
+      "license_or_use": "Public Domain Mark 1.0. 현재 전황판은 삽화를 복제하지 않은 자체 제작물",
+      "reuse_status": "approved_core",
+      "checked_at": "2026-08-29"
+    }
+  ],
+  "items": [
+    {
+      "schema_version": 1,
+      "format_version": 2,
+      "day": 1,
+      "event_id": "w01-d1",
+      "published_at": "2026-09-01",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://zh.wikisource.org/wiki/三國演義/第001回",
+        "chronological": true
+      },
+      "title": "삼국지는 아직 시작되지 않았다",
+      "cold_open": "삼국지는 세 영웅이 나타나서 시작된 것이 아니다. 하나였던 나라가 나쁜 소식을 듣지 못하고, 사람들이 그 나라를 믿지 않게 되면서 시작됐다.",
+      "yesterday_recall": null,
+      "spaced_recall": null,
+      "situation_board": {
+        "era": "184년 봄",
+        "places": [
+          "낙양",
+          "거록"
+        ],
+        "factions": [
+          "후한 조정",
+          "백성",
+          "태평도"
+        ],
+        "one_line": "사람들은 황제의 명령보다 눈앞에서 도움을 주는 조직을 더 믿기 시작했다.",
+        "image_id": "day-001"
+      },
+      "orientation": {
+        "year": "184년",
+        "era": "후한 말기",
+        "state": "후한",
+        "state_plain": "위·촉·오가 생기기 전 중국 대륙을 다스리던 하나의 나라",
+        "capital": "낙양",
+        "current_marker": "황건 봉기 직전",
+        "full_path": [
+          "후한",
+          "황건 봉기",
+          "군웅 경쟁",
+          "위·촉·오",
+          "진의 통일"
+        ]
+      },
+      "memory_lock": {
+        "anchors": [
+          {
+            "type": "나라",
+            "name": "후한",
+            "plain": "위·촉·오가 생기기 전에 존재했던 하나의 나라"
+          },
+          {
+            "type": "사람",
+            "name": "영제",
+            "plain": "이야기가 시작되는 184년의 후한 황제"
+          },
+          {
+            "type": "장소",
+            "name": "낙양",
+            "plain": "후한 황제와 중앙정부가 있던 수도"
+          }
+        ],
+        "speak_prompt": "오늘의 세 단어를 보지 않고 한 문장으로 이어 말해보세요."
+      },
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "[연의] 이야기는 영웅이 아니라 낙양의 궁전에서 시작한다. 후한의 황제 영제가 자리에 앉아 있던 날, 궁전 들보에서 큰 푸른 뱀이 떨어졌다고 소설은 전한다. 황제는 놀라 쓰러지고, 곧바로 폭풍과 지진 같은 불길한 일이 이어진다. 이것이 실제 붕괴의 원인이라는 뜻은 아니다. 소설은 독자에게 ‘이 나라는 겉보기와 달리 안에서 병들었다’는 신호를 한 장면으로 보여준다.\n\n[극적 재구성] 낙양에서 멀리 떨어진 마을 사람의 눈에는 황제의 얼굴조차 보이지 않는다. 보이는 것은 세금 명령과 관리뿐이다. 궁전에서는 누가 황제에게 가까운지를 두고 싸우고, 지방에서는 흉년과 병을 버텨야 한다. 하나의 나라였지만 사람마다 경험하는 후한은 전혀 달랐다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "후한은 위·촉·오가 생기기 전에 중국 대륙을 다스리던 한 왕조의 뒤쪽 시대다. 오늘은 184년, 황제는 영제이며 수도는 낙양이다. 『삼국연의』 1회는 영제 때 중앙 정치의 혼란과 재난을 보여준 뒤 장각과 황건 봉기로 이동한다. 『후한서』도 영제 시대의 재난, 정치 갈등, 184년 황건 봉기를 별도 기록한다. 소설의 푸른 뱀은 나라가 약해졌다는 극적 신호로 읽고, 정사의 사실과 섞지 않는다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "보이지 않는 구조",
+          "body": "조직이 무너질 때 가장 먼저 사라지는 것은 돈이나 사람이 아닐 수 있다. 나쁜 소식이 위로 올라가는 길이 먼저 막힌다. 최고 책임자에게 가까운 사람이 정보를 고르고, 불편한 보고를 한 사람을 문제로 만들면 실제 위험은 사라지지 않고 화면에서만 사라진다. 후한의 문제를 황제 한 사람의 성격으로만 설명할 수는 없지만, 중앙과 지방이 서로 다른 현실을 보고 있었다는 구조는 이후 사건을 이해하는 첫 열쇠다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "회사에서도 대표의 보고서에는 모두 초록불인데 고객과 현장 직원은 이미 떠나고 있을 수 있다. ‘문제가 없다’는 말보다 나쁜 소식을 말한 사람이 어떤 대우를 받는지 보자. 내가 책임자라면 좋은 보고 한 건보다 불편한 보고가 안전하게 올라오는 길 하나를 만드는 것이 먼저다. 오늘 떠올릴 질문은 이것이다. 내 주변에서 사실을 말할수록 손해 보는 사람은 누구인가?",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "후한은 하루아침에 무너지지 않았고 황건 봉기 하나만으로 끝난 나라도 아니다. 영제 뒤에도 황제가 이어졌고 위·촉·오가 실제 국가가 되기까지 시간이 더 걸린다. 오늘은 복잡한 원인을 모두 외우는 날이 아니라, `후한이라는 하나의 나라가 먼저 있었고 그 안의 신뢰가 약해졌다`는 출발점만 기억한다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "당신이 영제라면 불길한 사건과 지방의 불만이 이어질 때 무엇부터 하겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "불안을 말하는 사람을 막는다",
+            "temptation": "당장 궁전의 분위기를 안정시킨다",
+            "risk": "나쁜 소식이 더 깊이 숨는다"
+          },
+          {
+            "id": "b",
+            "label": "서로 다른 보고 길을 만들고 지방 상태를 확인한다",
+            "temptation": "실제 위험을 더 빨리 볼 수 있다",
+            "risk": "가까운 권력자의 반발과 불편한 사실을 감당해야 한다"
+          }
+        ],
+        "historical_choice": "연의는 불길한 징조와 중앙의 혼란을 먼저 보여주고 장각의 등장으로 넘어간다. 정사는 징조를 국가 붕괴의 원인으로 증명하지 않으며 영제 시대의 정치·재난·봉기를 각각 기록한다."
+      },
+      "consequences": {
+        "gained": "겉으로 조용한 궁전과 익숙한 질서",
+        "lost": "지방의 실제 상태와 불편한 정보",
+        "returned_later": "중앙이 알아차렸을 때는 장각의 조직이 여러 지역에 이미 퍼져 있었다."
+      },
+      "hidden_board": {
+        "primary_lens": "SYSTEM",
+        "secondary_lens": "DRIVE",
+        "visible_event": "사람들은 황제의 명령보다 눈앞에서 도움을 주는 조직을 더 믿기 시작했다.",
+        "hidden_desire": "내가 통제하고 있다는 느낌을 지키고 싶다",
+        "hidden_mechanism": "불편한 보고를 줄여 위험이 없는 것처럼 보이게 한다",
+        "modern_signal": "문제를 발견한 사람보다 문제를 보고한 사람을 먼저 탓한다",
+        "defense": "한 사람의 요약과 별도로 현장·고객·반대 의견의 통로를 둔다.",
+        "caveat": "후한은 하루아침에 무너지지 않았고 황건 봉기 하나만으로 끝난 나라도 아니다. 영제 뒤에도 황제가 이어졌고 위·촉·오가 실제 국가가 되기까지 시간이 더 걸린다. 오늘은 복잡한 원인을 모두 외우는 날이 아니라, `후한이라는 하나의 나라가 먼저 있었고 그 안의 신뢰가 약해졌다`는 출발점만 기억한다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "『후한서』 효령제기는 영제 시대와 184년 황건 봉기를 연대순으로 기록한다.",
+          "source_ids": [
+            "ws-houhanshu-vol8",
+            "anu-last-han"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "『삼국연의』 1회는 푸른 뱀과 여러 재난을 왕조가 병들었다는 극적인 첫 장면으로 사용한다.",
+          "source_ids": [
+            "ws-romance-ch1-zh",
+            "ws-san-kuo-ch1-en"
+          ]
+        }
+      ],
+      "evidence_chain": [
+        {
+          "role": "이야기 원전",
+          "question": "연의는 삼국지의 첫 장면을 어떻게 열었나?",
+          "use": "중국어 제1회와 1925년 영어 번역으로 장면·순서·인명을 교차 확인",
+          "source_ids": [
+            "ws-romance-ch1-zh",
+            "ws-san-kuo-ch1-en"
+          ]
+        },
+        {
+          "role": "역사 확인",
+          "question": "184년의 나라와 황제, 봉기는 기록에 어떻게 남았나?",
+          "use": "후한서 효령제기로 연대와 사실의 뼈대를 확인",
+          "source_ids": [
+            "ws-houhanshu-vol8"
+          ]
+        },
+        {
+          "role": "현대 해석",
+          "question": "후한 말의 긴 흐름에서 이 장면은 어디쯤인가?",
+          "use": "ANU 연구서로 181~220년의 정치·사회 맥락을 보충",
+          "source_ids": [
+            "anu-last-han"
+          ]
+        },
+        {
+          "role": "시각 참고",
+          "question": "고전 독자는 이 세계를 어떤 그림으로 보았나?",
+          "use": "공개 영역 삽화집은 분위기만 참고하고, 화면의 전황판은 직접 제작",
+          "source_ids": [
+            "commons-romance-illustrations"
+          ]
+        }
+      ],
+      "strategy_card_id": "pilot-1",
+      "strategy_card": {
+        "id": "pilot-1",
+        "name": "나쁜 소식이 올라오는 길",
+        "plain_rule": "문제를 숨긴 조용함은 안정이 아니라 늦어진 경보다."
+      },
+      "life_application": {
+        "prompt": "내 조직이나 관계에서 사실을 말할수록 손해 보는 사람은 누구인가? 그 사람이 안전하게 말할 방법을 하나 적어보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 2,
+        "question": "멀리 있는 황제보다 바로 곁에서 병을 돌본 장각이 더 믿음직해 보인 이유는 무엇일까?"
+      },
+      "new_terms": [
+        "후한",
+        "태평도",
+        "황건"
+      ],
+      "source_ids": [
+        "ws-romance-ch1-zh",
+        "ws-san-kuo-ch1-en",
+        "ws-houhanshu-vol8",
+        "anu-last-han",
+        "commons-romance-illustrations"
+      ],
+      "image": {
+        "kind": "editorial-hero",
+        "url": "https://koni-ai.github.io/ai-usecase-feed/samgukji/images/day-001-hero.png",
+        "alt": "멀리 떨어진 후한 궁전에서는 보고가 막히고, 가까운 마을에서는 치료받는 가족을 그린 184년의 장면",
+        "creator": "OpenAI 이미지 생성 · PJ24 편집",
+        "source_name": "Day 1 핵심 메시지를 바탕으로 새로 생성한 대표 이미지",
+        "source_url": null,
+        "license": "PJ24 private AI-generated editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "외부 삽화를 복제하지 않고 Day 1 핵심 내용을 한 장면으로 새로 생성했다."
+      }
+    }
+  ],
+  "generated_at": "2026-08-29T15:46:12.279Z"
+}
