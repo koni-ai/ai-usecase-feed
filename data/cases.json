@@ -1,5 +1,81 @@
 [
   {
+    "id": "2026-08-30-016",
+    "title": "GTA6 예고편 시맨틱 검색 서비스 제작",
+    "summary": "개발자들이 GTA6 넷플릭스 확장판 예고편을 대상으로 SAM3와 Gemini Embedding 2를 활용해 캐릭터, 차량, 무기, 건물 등을 인식하는 온톨로지를 구축했다. Gemini Embedding으로 사용자가 장면을 검색할 수 있게 했고, Gemini Flash로 각 샷과 장면의 설명을 생성했다. 결과물은 웹사이트를 통해 실제 서비스로 공개되었다.",
+    "tool": [
+      "SAM3",
+      "Gemini Embedding 2",
+      "Gemini Flash"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://twitter.com/trackernetwork/status/2093792050445799551",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-30"
+  },
+  {
+    "id": "2026-08-30-012",
+    "title": "Anthropic, Claude로 정렬 연구 자동화 실험",
+    "summary": "Anthropic은 병렬로 실행된 다수의 Claude 인스턴스를 활용해 AI 정렬(alignment) 연구 방법을 생성하고 테스트하는 'Automated Alignment Researchers' 실험을 진행했다. 결과는 긍정적이었으나 여전히 인간 평가가 필요함을 확인했다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "리서치",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://scalevise.com/resources/anthropic-claude-automated-alignment-research",
+    "source_name": "Scalevise Resources",
+    "collected_at": "2026-08-30"
+  },
+  {
+    "id": "2026-08-30-010",
+    "title": "AI 에이전트로 개인정보 삭제 자동화하는 오픈소스 도구 제작",
+    "summary": "작성자는 유료 개인정보 삭제 서비스가 효과가 없자 직접 오픈소스 저장소 remove-your-data를 만들었다. 이 저장소는 AI 에이전트에게 전화번호, 주소, 차량 정보 등을 데이터 브로커 사이트에서 삭제하도록 지시하는 방법을 알려준다. 구독 없이 누구나 사용할 수 있도록 공개되었다.",
+    "tool": [
+      "AI 에이전트"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://github.com/k7cfo/remove-your-data",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-30"
+  },
+  {
+    "id": "2026-08-30-008",
+    "title": "LLM 메모리 개발 중 프로그램 분석 엔진을 만든 사례",
+    "summary": "장시간 취약점 조사 과정에서 LLM이 이미 폐기된 가설을 반복 제안하는 문제를 해결하기 위해 Datalog 기반 상태 관리 엔진 Lemmalog를 개발했다. 과거 대화를 검색하는 대신 현재 참인 사실과 규칙을 관리하는 방식으로 전제를 추적한다. 이 과정에서 원래 목표였던 LLM 메모리 시스템이 프로그램 분석 엔진으로 발전했다.",
+    "tool": [
+      "LLM",
+      "Lemmalog"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=33015",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-30"
+  },
+  {
+    "id": "2026-08-30-002",
+    "title": "가짜 표준 cats.txt로 llms.txt 효과 검증 실험",
+    "summary": "llms.txt의 효과를 뒷받침하던 관찰들을 검증하기 위해 고양이 직책과 품종 등을 선언하는 가짜 표준 파일 cats.txt를 만들었다. 이 파일도 llms.txt와 동일한 기준을 모두 통과했으며 PerplexityBot, GPTBot, ClaudeBot, Googlebot 등 AI 크롤러에 의해 크롤링되는 것을 확인했다. 이를 통해 llms.txt의 GEO 효과 근거가 실질적으로 검증되지 않았음을 보였다.",
+    "tool": [
+      "PerplexityBot",
+      "GPTBot",
+      "ClaudeBot",
+      "Googlebot"
+    ],
+    "domain": "리서치",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=33017",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-30"
+  },
+  {
     "id": "2026-08-29-029",
     "title": "요약 프롬프트에 한 줄 추가해 핵심 통찰 도출",
     "summary": "한 사용자가 요약 프롬프트에 '숙련된 독자가 훑어볼 때 놓칠 부분을 짚어달라'는 문장을 추가해 긴 문서 요약의 질을 개선했다. 이어서 핵심 논점을 3~4개로 정리해달라는 두 번째 질문을 덧붙여 구조화된 결과를 얻었다. 이 방법은 긴 PDF, 회의록, 리서치 자료 등에 적용해 절반 정도는 스스로 놓쳤던 내용을 발견했다고 밝혔다.",
