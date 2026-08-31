@@ -1,5 +1,139 @@
 [
   {
+    "id": "2026-08-31-021",
+    "title": "냉장고 사진으로 Claude에게 일주일 식단 짜기",
+    "summary": "사용자가 냉장고와 팬트리 내부 사진을 찍어 Claude에게 보여주고 있는 재료 위주로 일주일치 저녁 식단을 요청했다. Claude는 상하기 쉬운 재료부터 먼저 소비하도록 요일별 메뉴를 짜고 부족한 재료 6개만 담긴 짧은 장보기 목록을 제공했다. 그 결과 식재료 낭비가 크게 줄고 주당 약 40달러의 지출을 절감했다고 밝혔다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "기타",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1w2oiyn/i_gave_claude_a_photo_of_my_fridge_and_asked_for",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-31"
+  },
+  {
+    "id": "2026-08-31-019",
+    "title": "LLM로 코드 기반 STEM 강의 영상 자동 생성 플랫폼 제작",
+    "summary": "박사과정생 두 명이 강의 영상을 코드로 작성해 컴퓨터 그래픽과 TTS로 컴파일하는 Academa 서비스를 만들었다. LLM이 강의 스크립트(코드)를 작성하며, 오류 신고 시 소스 코드만 수정하면 이후 시청자는 수정된 강의를 보게 된다. 각 강의에는 내용을 이해하는 AI 챗봇도 함께 제공된다.",
+    "tool": [
+      "LLM",
+      "TTS"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://academa.ai",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-31"
+  },
+  {
+    "id": "2026-08-31-014",
+    "title": "TwelveLabs Jockey로 강의 영상 검수 자동화 한 달 실측",
+    "summary": "인프런 강의 18편 제작 과정에서 병목이던 영상 검수 작업을 TwelveLabs Jockey를 활용한 파이프라인으로 자동화했다. 기존에는 말 끊김, 톤 점프, 강조 표시와 발화 불일치 등을 확인하기 위해 편집본당 최소 2회, 총 10시간 이상 정주행이 필요했다. 이를 AI 기반 검수 파이프라인으로 대체해 제작자의 시간을 절감했다.",
+    "tool": [
+      "TwelveLabs Jockey"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://news.hada.io/topic?id=33045",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-31"
+  },
+  {
+    "id": "2026-08-31-013",
+    "title": "애플 온디바이스 AI 모델 변경 추적 관찰소 'Underfoot'",
+    "summary": "개발자가 애플의 온디바이스 Foundation Models가 OS 업데이트마다 별도 공지 없이 바뀌는 것을 추적하기 위해 28개 프롬프트를 여러 OS 빌드에서 반복 실행하고 결과를 비교하는 관찰 도구를 만들었다. 이를 통해 JSON 출력 형식 변화, 시뮬레이터 가용성 API 오류, 가드레일 거부 응답 변화 등 실제 동작 차이를 문서화했다. 결과는 웹사이트로 공개되었다.",
+    "tool": [
+      "Apple Foundation Models",
+      "SystemLanguageModel"
+    ],
+    "domain": "리서치",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://umer9538.github.io/underfoot",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-08-31"
+  },
+  {
+    "id": "2026-08-31-011",
+    "title": "고등학생이 만든 Rust 기반 AI 파이프라인 DSL 'Xazz'",
+    "summary": "한 개발자가 파이썬 pandas/PyTorch 기반 AI 파이프라인의 타입 오류와 런타임 문제를 해결하기 위해 Rust로 AI 데이터 파이프라인 전용 언어 겸 플랫폼 Xazz를 개발했다. Polars와 Burn을 통합해 타입 안정성과 성능을 높이는 것을 목표로 한다. Show HN/GeekNews에 공개해 커뮤니티 피드백을 받았다.",
+    "tool": [
+      "Rust",
+      "Polars",
+      "Burn"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://news.hada.io/topic?id=33046",
+    "source_name": "GeekNews",
+    "collected_at": "2026-08-31"
+  },
+  {
+    "id": "2026-08-31-009",
+    "title": "Hy4 모델로 자전거 탄 펠리컨 SVG 생성 테스트",
+    "summary": "저자가 텐센트의 신규 오픈웨이트 모델 Hy4 Preview를 OpenRouter를 통해 테스트했다. '자전거를 탄 펠리컨' SVG를 그리라는 프롬프트를 기본 고추론(high reasoning) 모드로 실행해 결과 이미지와 추론 과정을 확인했다. 추론 트레이스에서 모델이 헬멧이나 선글라스 추가 여부를 고민하는 과정이 드러났다.",
+    "tool": [
+      "Hy4",
+      "OpenRouter"
+    ],
+    "domain": "콘텐츠",
+    "difficulty": "쉬움",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/29/hy4",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-31"
+  },
+  {
+    "id": "2026-08-31-008",
+    "title": "Claude로 이메일 트리아지 구축 중 벤치마크 서브에이전트 활용",
+    "summary": "한 사용자가 이메일 분류 자동화를 위해 Claude와 Hermes Agent 조합을 검토하며 다른 모델과의 비교 벤치마크를 요청했다. Claude가 처음에는 정보 부족을 이유로 답변을 거부했으나, 서브에이전트를 실행해 직접 검색하도록 지시하자 관련 벤치마크 데이터를 찾아 제공했다. 이는 Claude의 서브에이전트 기능을 실제 업무 자동화 조사에 활용한 사례다.",
+    "tool": [
+      "Claude",
+      "Hermes Agent"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1w2vksa/claude_gets_surprisingly_hostile_when_i_try",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-31"
+  },
+  {
+    "id": "2026-08-31-004",
+    "title": "Claude Code+Codex 에이전틱 개발 플러그인 Forge",
+    "summary": "개발자가 Claude Code 플러그인 'forge'를 만들어 Claude가 오케스트레이션과 검증을, Codex CLI가 구현과 1차 코드 리뷰를 담당하는 다중 에이전트 워크플로를 구축했다. 다중 계열 적대적 리뷰, 품질 게이트, 워크트리, 코드베이스 학습 기능을 포함하며 GitHub에 공개해 실제 업무에 사용 중이다.",
+    "tool": [
+      "Claude Code",
+      "Codex CLI"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1w2wiys/forge_a_claude_code_plugin_for_agentic",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-08-31"
+  },
+  {
+    "id": "2026-08-31-003",
+    "title": "ChatGPT Work로 웹 헤딩 추출 및 사이트 제작",
+    "summary": "저자가 ChatGPT Work의 헤드리스 브라우저 기능을 이용해 자신의 블로그 페이지에서 JavaScript로 헤딩 태그를 추출했다. 또한 '펠리컨 인 허 파이어티' 관련 정보를 조사해 JSON으로 정리한 뒤 ChatGPT Sites 기능으로 실제 웹사이트를 배포했다. 이 과정에서 코드 실행, 인터넷 접근, 영구 파일시스템 등 Work 전용 기능이 활용되었다.",
+    "tool": [
+      "ChatGPT Work",
+      "ChatGPT Sites"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
+    "source_name": "Simon Willison",
+    "collected_at": "2026-08-31"
+  },
+  {
     "id": "2026-08-30-016",
     "title": "GTA6 예고편 시맨틱 검색 서비스 제작",
     "summary": "개발자들이 GTA6 넷플릭스 확장판 예고편을 대상으로 SAM3와 Gemini Embedding 2를 활용해 캐릭터, 차량, 무기, 건물 등을 인식하는 온톨로지를 구축했다. Gemini Embedding으로 사용자가 장면을 검색할 수 있게 했고, Gemini Flash로 각 샷과 장면의 설명을 생성했다. 결과물은 웹사이트를 통해 실제 서비스로 공개되었다.",
