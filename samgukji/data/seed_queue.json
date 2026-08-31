@@ -174,7 +174,7 @@
       "format_version": 2,
       "day": 1,
       "event_id": "w01-d1",
-      "published_at": "2026-09-01",
+      "published_at": "2026-08-30",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,
@@ -412,7 +412,7 @@
       "format_version": 2,
       "day": 2,
       "event_id": "w01-d2",
-      "published_at": "2026-09-02",
+      "published_at": "2026-09-01",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,
@@ -657,7 +657,7 @@
       "format_version": 2,
       "day": 3,
       "event_id": "w01-d3",
-      "published_at": "2026-09-03",
+      "published_at": "2026-09-02",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,
@@ -902,7 +902,7 @@
       "format_version": 1,
       "day": 4,
       "event_id": "w01-d4",
-      "published_at": "2026-09-04",
+      "published_at": "2026-09-03",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,
@@ -1071,7 +1071,7 @@
       "format_version": 1,
       "day": 5,
       "event_id": "w01-d5",
-      "published_at": "2026-09-05",
+      "published_at": "2026-09-04",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,
@@ -1237,7 +1237,7 @@
       "format_version": 1,
       "day": 6,
       "event_id": "w01-d6",
-      "published_at": "2026-09-06",
+      "published_at": "2026-09-05",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,
@@ -1406,7 +1406,7 @@
       "format_version": 1,
       "day": 7,
       "event_id": "w01-d7",
-      "published_at": "2026-09-07",
+      "published_at": "2026-09-06",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,
@@ -1580,7 +1580,7 @@
       "format_version": 1,
       "day": 8,
       "event_id": "w02-d1",
-      "published_at": "2026-09-08",
+      "published_at": "2026-09-07",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,
@@ -1759,7 +1759,7 @@
       "format_version": 1,
       "day": 9,
       "event_id": "w02-d2",
-      "published_at": "2026-09-09",
+      "published_at": "2026-09-08",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,
@@ -1931,7 +1931,7 @@
       "format_version": 1,
       "day": 10,
       "event_id": "w02-d3",
-      "published_at": "2026-09-10",
+      "published_at": "2026-09-09",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,
@@ -2108,7 +2108,7 @@
       "format_version": 1,
       "day": 11,
       "event_id": "w02-d4",
-      "published_at": "2026-09-11",
+      "published_at": "2026-09-10",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,
@@ -2288,7 +2288,7 @@
       "format_version": 1,
       "day": 12,
       "event_id": "w02-d5",
-      "published_at": "2026-09-12",
+      "published_at": "2026-09-11",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,
@@ -2468,7 +2468,7 @@
       "format_version": 1,
       "day": 13,
       "event_id": "w02-d6",
-      "published_at": "2026-09-13",
+      "published_at": "2026-09-12",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,
@@ -2646,7 +2646,7 @@
       "format_version": 1,
       "day": 14,
       "event_id": "w02-d7",
-      "published_at": "2026-09-14",
+      "published_at": "2026-09-13",
       "read_minutes": 10,
       "balance": {
         "story_minutes": 5,

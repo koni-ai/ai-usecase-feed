@@ -26,7 +26,8 @@ RULES_PATH = ROOT / "AUTOMATION_RULES.md"
 PUBLIC_FEED_PATH = REPO / "site" / "samgukji" / "feed.json"
 PUBLIC_IMAGE_DIR = REPO / "site" / "samgukji" / "images"
 PUBLIC_BASE = "https://koni-ai.github.io/ai-usecase-feed/samgukji"
-START_DATE = dt.date(2026, 9, 1)
+DAY_ONE_DATE = dt.date(2026, 8, 30)
+DAILY_RESUME_DATE = dt.date(2026, 9, 1)
 SEOUL = ZoneInfo("Asia/Seoul")
 MODEL = "claude-sonnet-5"
 PAID_ENV = {
@@ -232,12 +233,20 @@ def validate_source_url(url: str) -> None:
             raise ValueError(f"source unavailable: {url}")
 
 
+def publication_date_for_day(day: int) -> dt.date:
+    if day < 1:
+        raise ValueError("day must be positive")
+    if day == 1:
+        return DAY_ONE_DATE
+    return DAILY_RESUME_DATE + dt.timedelta(days=day - 2)
+
+
 def validate_item(item: dict, source_ids: set[str], expected_day: int) -> None:
     if item.get("day") != expected_day:
         raise ValueError(f"wrong day: expected {expected_day}, got {item.get('day')}")
     if item.get("event_id") != f"w{((expected_day - 1) // 7) + 1:02d}-d{((expected_day - 1) % 7) + 1}":
         raise ValueError("event_id does not match day")
-    if item.get("published_at") != (START_DATE + dt.timedelta(days=expected_day - 1)).isoformat():
+    if item.get("published_at") != publication_date_for_day(expected_day).isoformat():
         raise ValueError("published_at does not match the daily sequence")
     if len(item.get("story_sections", [])) != 5:
         raise ValueError("exactly five story sections are required")
@@ -280,6 +289,8 @@ def validate_feed(feed: dict) -> None:
     for item in items:
         if item.get("schema_version") != 1 or not item.get("image", {}).get("url"):
             raise ValueError(f"invalid item or image on day {item.get('day')}")
+        if item.get("published_at") != publication_date_for_day(item["day"]).isoformat():
+            raise ValueError(f"day {item['day']} has the wrong publication date")
         missing = set(item.get("source_ids", [])) - source_ids
         if missing:
             raise ValueError(f"day {item['day']} has missing sources: {sorted(missing)}")
@@ -366,7 +377,7 @@ def call_claude(day_plan: dict, previous_item: dict, catalog: dict) -> dict:
         "hard_values": {
             "day": day_plan["day"],
             "event_id": day_plan["event_id"],
-            "published_at": (START_DATE + dt.timedelta(days=day_plan["day"] - 1)).isoformat(),
+            "published_at": publication_date_for_day(day_plan["day"]).isoformat(),
             "tomorrow_day": day_plan["day"] + 1,
         },
     }
@@ -510,9 +521,9 @@ def merge_sources(feed: dict, bundle: dict, catalog: dict, checked_at: str) -> s
 
 
 def next_day_for_date(feed: dict, target_date: dt.date) -> int | None:
-    target_day = (target_date - START_DATE).days + 1
-    if target_day < 1:
+    if target_date < DAY_ONE_DATE:
         return None
+    target_day = 1 if target_date < DAILY_RESUME_DATE else (target_date - DAILY_RESUME_DATE).days + 2
     current_day = max(item["day"] for item in feed["items"])
     if current_day >= min(target_day, 365) or current_day >= 365:
         return None

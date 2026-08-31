@@ -3,7 +3,8 @@
 비공개 Sites 앱이 읽는 공개 콘텐츠 엔드포인트다. 기존 아비투스 자동화의 오전
 8시 KST GitHub Actions 구조를 삼국지 프로젝트가 승계한다.
 
-- 시작일: 2026-09-01 (Day 1)
+- 실제 Day 1 참여일: 2026-08-30
+- 일일 발행 재개: 2026-09-01 08:00 KST (Day 2), 이후 매일 한 편
 - 실행: 매일 08:00 KST, 주말 포함
 - 한 번에 최대 한 편만 추가
 - Day 1~14: 승인 과정에서 완성된 대기열을 날짜에 맞춰 순차 발행
@@ -16,7 +17,7 @@
 
 ```powershell
 python -B samgukji/generate_daily.py --validate-only
-python -B samgukji/generate_daily.py --date 2026-09-02 --dry-run
+python -B samgukji/generate_daily.py --date 2026-09-01 --dry-run
 ```
 
 공개 데이터 주소:

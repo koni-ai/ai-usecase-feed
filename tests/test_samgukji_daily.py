@@ -58,9 +58,20 @@ class SamgukjiDailyTests(unittest.TestCase):
     def test_one_due_day_only(self) -> None:
         next_day = self.module.next_day_for_date
         self.assertIsNone(next_day(self.feed, dt.date(2026, 8, 31)))
-        self.assertIsNone(next_day(self.feed, dt.date(2026, 9, 1)))
-        self.assertEqual(next_day(self.feed, dt.date(2026, 9, 2)), 2)
+        self.assertEqual(next_day(self.feed, dt.date(2026, 9, 1)), 2)
+        day_two_feed = {**self.feed, "items": [*self.feed["items"], {"day": 2}]}
+        self.assertEqual(next_day(day_two_feed, dt.date(2026, 9, 2)), 3)
         self.assertEqual(next_day(self.feed, dt.date(2026, 9, 30)), 2)
+
+    def test_publication_dates_follow_actual_day_one_and_resume_date(self) -> None:
+        publication_date = self.module.publication_date_for_day
+        self.assertEqual(publication_date(1), dt.date(2026, 8, 30))
+        self.assertEqual(publication_date(2), dt.date(2026, 9, 1))
+        self.assertEqual(publication_date(3), dt.date(2026, 9, 2))
+        self.assertEqual(
+            [item["published_at"] for item in self.queue["items"]],
+            [publication_date(day).isoformat() for day in range(1, 15)],
+        )
 
     def test_feed_and_public_copy_validate(self) -> None:
         self.module.validate_feed(self.feed)
