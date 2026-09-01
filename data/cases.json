@@ -1,5 +1,82 @@
 [
   {
+    "id": "2026-09-01-030",
+    "title": "AI만으로 낚시 게임 5주째 제작한 개인 개발기",
+    "summary": "개발자가 Claude를 이용해 낚시 게임을 전적으로 AI로만 제작하며 5주차 진행 상황을 공유했다. UI 개선과 미니게임 형태의 낚시 시스템(WASD로 물고기를 특정 구역에 유지하며 희귀도 결정)을 구현했다. 반복적인 위치 조정 문제를 해결하기 위해 인게임 에디터를 Claude로 만들어 활용하는 팁도 공유했다.",
+    "tool": [
+      "Claude"
+    ],
+    "domain": "개발",
+    "difficulty": "중간",
+    "actionable": true,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1w3oha6/week_5_of_making_my_fishing_game_entirely_with_ai",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-09-01"
+  },
+  {
+    "id": "2026-09-01-025",
+    "title": "다중 에이전틱 코딩 CLI 관리용 2D 캔버스 IDE 개발",
+    "summary": "개발자가 여러 저장소에서 최대 15개의 에이전틱 코딩 CLI를 동시에 관리하며 겪은 컨텍스트 분산 문제를 해결하기 위해 49 IDE라는 2D 캔버스 기반 워크스페이스를 만들었다. 이 도구는 여러 기기와 머신에서 git 트리, 터미널, 사용량, 이슈, UI를 하나의 화면에서 확인할 수 있게 한다.",
+    "tool": [
+      "49 IDE",
+      "Git",
+      "에이전틱 CLI"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://github.com/alpbahadur/49-IDE",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-09-01"
+  },
+  {
+    "id": "2026-09-01-021",
+    "title": "AI 에이전트용 서명된 공개 포럼 API 공개",
+    "summary": "개발자가 AI 에이전트들이 서로 메시지를 주고받을 수 있는 서명된 공개 포럼을 만들어 REST와 SSE API, npm SDK 형태로 배포했다. 인증 없이 누구나 채널에 접근할 수 있으며, 향후 투표·에스크로 등 기능을 추가할 계획이다.",
+    "tool": [
+      "REST API",
+      "SSE",
+      "npm SDK"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://openagentforum.com",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-09-01"
+  },
+  {
+    "id": "2026-09-01-018",
+    "title": "Claude 에이전트가 자율 비즈니스 운영 및 AI간 결제 수행",
+    "summary": "운영자는 Claude 기반 에이전트 'Fable 5'에게 지갑을 부여해 검증 서비스를 자율 운영하게 했다. 이 에이전트는 다른 AI 에이전트의 의뢰를 받아 Stripe의 Tempo 블록체인과 MPP 결제 프로토콜로 190달러를 지급받고, 스스로 결제 시스템의 중복 결제 버그를 찾아 보고했다. 모든 결제와 감사 기록은 서명된 형태로 공개되어 검증 가능하다.",
+    "tool": [
+      "Claude",
+      "Stripe Tempo",
+      "MPP(HTTP 402)"
+    ],
+    "domain": "업무자동화",
+    "difficulty": "어려움",
+    "actionable": false,
+    "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1w3qyq4/my_fable_5_agent_thats_been_running_its_own",
+    "source_name": "r/ClaudeAI",
+    "collected_at": "2026-09-01"
+  },
+  {
+    "id": "2026-09-01-004",
+    "title": "AI 에이전트용 실시간 웹 인식 도구 Saccade 개발",
+    "summary": "개발자가 크롬/엣지 확장 프로그램과 로컬 Node.js Broker를 이용해 AI 에이전트가 MCP로 웹페이지 상태를 실시간으로 읽고 조작할 수 있는 Saccade를 만들었다. 페이지를 의미론적 객체로 변환해 델타 형태로 전달함으로써 Playwright와 비슷한 속도와 토큰 사용량을 보였다고 밝혔다. GitHub에 공개해 사용과 피드백을 요청했다.",
+    "tool": [
+      "MCP",
+      "Playwright"
+    ],
+    "domain": "개발",
+    "difficulty": "어려움",
+    "actionable": true,
+    "source_url": "https://github.com/nanlogic/saccade",
+    "source_name": "Hacker News Show HN",
+    "collected_at": "2026-09-01"
+  },
+  {
     "id": "2026-08-31-021",
     "title": "냉장고 사진으로 Claude에게 일주일 식단 짜기",
     "summary": "사용자가 냉장고와 팬트리 내부 사진을 찍어 Claude에게 보여주고 있는 재료 위주로 일주일치 저녁 식단을 요청했다. Claude는 상하기 쉬운 재료부터 먼저 소비하도록 요일별 메뉴를 짜고 부족한 재료 6개만 담긴 짧은 장보기 목록을 제공했다. 그 결과 식재료 낭비가 크게 줄고 주당 약 40달러의 지출을 절감했다고 밝혔다.",
