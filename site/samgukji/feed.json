@@ -651,7 +651,252 @@
         ],
         "provenance_note": "외부 삽화를 복제하지 않고 세력·장소·흐름을 새 SVG로 구성했다."
       }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 2,
+      "day": 3,
+      "event_id": "w01-d3",
+      "published_at": "2026-09-02",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://zh.wikisource.org/wiki/三國演義/第001回",
+        "chronological": true
+      },
+      "title": "노란 천이 사람을 군대로 만들었다",
+      "cold_open": "장각을 믿는 사람은 많았지만 아직 하나의 군대는 아니었다. 36개 조직과 노란 천이라는 같은 신호가 그들을 황건으로 바꿨다.",
+      "yesterday_recall": {
+        "from_day": 2,
+        "prompt": "어제의 핵심 ‘실패할 수 없는 약속’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": null,
+      "situation_board": {
+        "era": "184년 이전",
+        "places": [
+          "거록",
+          "8개 주"
+        ],
+        "factions": [
+          "장각 형제",
+          "지역 지도자",
+          "신도"
+        ],
+        "one_line": "장각은 모든 일을 직접 하지 않고 지역 책임자에게 사람과 정보를 맡겼다.",
+        "image_id": "day-003"
+      },
+      "orientation": {
+        "year": "184년",
+        "era": "후한 말기",
+        "state": "후한",
+        "state_plain": "황건 봉기가 여러 지역에서 터진 하나의 나라",
+        "capital": "낙양",
+        "current_marker": "황건 봉기 시작",
+        "full_path": [
+          "후한",
+          "장각·태평도",
+          "황건",
+          "군웅 등장",
+          "위·촉·오"
+        ]
+      },
+      "memory_lock": {
+        "anchors": [
+          {
+            "type": "나라",
+            "name": "후한",
+            "plain": "황건 봉기가 일어난 당시의 나라"
+          },
+          {
+            "type": "사람",
+            "name": "장각",
+            "plain": "태평도를 만들고 봉기를 이끈 지도자"
+          },
+          {
+            "type": "세력",
+            "name": "황건",
+            "plain": "장각을 따르며 노란 천을 표시로 쓴 봉기 세력"
+          }
+        ],
+        "speak_prompt": "후한·장각·황건을 시간순 이야기로 소리 내어 설명해보세요."
+      },
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "[극적 재구성] 어제까지 너는 병든 가족을 데리고 태평도 모임에 나가던 사람이었다. 오늘 지역 책임자는 특정 날을 준비하라고 한다. 멀리 떨어진 다른 마을에도 같은 가르침을 믿는 사람이 있고, 서로 모르는 사람들은 노란 천을 머리에 둘러 같은 편임을 확인한다. 치료 공동체의 신호가 정치 행동의 신호로 바뀌는 순간이다.\n\n후한서는 장각이 사람을 36개의 ‘방’으로 나눴다고 전한다. 방은 방 한 칸이 아니라 지역 조직이라는 뜻이다. 큰 조직에는 만 명이 넘고 작은 조직에도 수천 명이 있었다고 기록한다. 숫자는 고대 기록의 과장 가능성을 조심해야 하지만, 중앙 한 사람의 모임이 아니라 여러 지역 책임자가 움직이는 거대한 망이었다는 점은 분명하다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "184년 장각의 세력은 계획 누설 뒤 예정보다 빨리 움직였다. 참가자들이 머리에 노란 천을 표시로 사용했기 때문에 후한의 기록은 이들을 황건이라고 불렀다. 황건은 특정 한 사람의 이름이 아니라 장각의 가르침과 봉기에 연결된 세력을 가리키는 이름이다. 이 대규모 움직임을 황건 봉기 또는 황건적의 난이라고 부른다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "장사의 눈",
+          "body": "사람이 많다고 자동으로 조직이 되지는 않는다. 같은 목표, 지역 책임자, 전달망, 눈에 보이는 표식이 있어야 함께 움직일 수 있다. 장각은 믿음을 36개 지역 조직으로 나눴고 노란 천은 값싼 신분증이 됐다. 비즈니스로 보면 지점망과 브랜드가 결합한 구조다. 본능의 관점에서는 ‘나는 혼자가 아니다’라는 소속감이 위험을 감수하게 했다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "회사 로고, 팬덤 이름, 팀 유니폼도 협력을 쉽게 만든다. 하지만 강한 표식은 이탈과 반대의 비용도 높인다. ‘우리 편이면 당연히 이렇게 해야 한다’는 말이 나오면 소속과 동의를 분리해서 봐야 한다. 좋은 조직은 같은 표식을 써도 다른 의견을 말할 수 있고, 떠날 자유를 배신으로 취급하지 않는다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "황건에 참여한 모든 사람이 같은 이유로 움직인 것은 아니다. 병, 세금, 분노, 소속, 지역 관계 등 이유가 달랐을 수 있다. 또한 뒤에 등장하는 모든 황건 잔여 세력이 장각의 원래 조직과 직접 이어졌다고 단정할 수 없다. 오늘은 `노란 천을 쓴 장각의 봉기 세력`이라는 기본 뜻을 고정한다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "당신이 장각의 지역 책임자라면 많은 사람을 움직이기 위해 무엇을 우선하겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "같은 노란 표식과 한 문장으로 묶는다",
+            "temptation": "낯선 사람도 빠르게 같은 편이 된다",
+            "risk": "개인의 다른 이유와 반대가 지워질 수 있다"
+          },
+          {
+            "id": "b",
+            "label": "지역마다 자유롭게 행동하게 한다",
+            "temptation": "현장 상황에 맞게 움직인다",
+            "risk": "같은 시점에 큰 힘을 모으기 어렵다"
+          }
+        ],
+        "historical_choice": "장각은 36개 지역 조직을 두었고, 봉기 참가자들은 노란 천을 표식으로 사용했다. 그래서 황건이라는 이름이 생겼다."
+      },
+      "consequences": {
+        "gained": "빠른 동원과 강한 소속감",
+        "lost": "개별 판단과 중앙의 세밀한 통제",
+        "returned_later": "한 번의 계획 누설과 지역별 패배가 거대한 조직 전체를 흔들었다."
+      },
+      "hidden_board": {
+        "primary_lens": "BIZ",
+        "secondary_lens": "SYSTEM",
+        "visible_event": "장각은 모든 일을 직접 하지 않고 지역 책임자에게 사람과 정보를 맡겼다.",
+        "hidden_desire": "혼자가 아니라는 확신과 세상을 바꿀 힘을 얻고 싶다",
+        "hidden_mechanism": "지역 조직과 공통 표식이 낯선 사람의 행동을 묶는다",
+        "modern_signal": "근거보다 같은 표식을 쓰는지가 충성의 기준이 된다",
+        "defense": "소속과 동의를 분리하고 반대·이탈이 안전한지 확인한다.",
+        "caveat": "황건에 참여한 모든 사람이 같은 이유로 움직인 것은 아니다. 병, 세금, 분노, 소속, 지역 관계 등 이유가 달랐을 수 있다. 또한 뒤에 등장하는 모든 황건 잔여 세력이 장각의 원래 조직과 직접 이어졌다고 단정할 수 없다. 오늘은 `노란 천을 쓴 장각의 봉기 세력`이라는 기본 뜻을 고정한다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "『후한서』 황보숭주준열전은 장각의 36방과 노란 천 표식을 기록한다.",
+          "source_ids": [
+            "ws-houhanshu-vol71",
+            "anu-last-han"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "『삼국연의』 1회는 황건 봉기와 장각 형제의 장군 칭호를 영웅 등장 직전의 큰 위기로 압축한다.",
+          "source_ids": [
+            "ws-romance-ch1-zh",
+            "ws-san-kuo-ch1-en"
+          ]
+        }
+      ],
+      "evidence_chain": [
+        {
+          "role": "이야기 원전",
+          "question": "연의는 장각의 무리를 어떻게 큰 위기로 압축했나?",
+          "use": "제1회의 36방·장군 칭호·황건 봉기 장면을 두 공개 원문으로 대조",
+          "source_ids": [
+            "ws-romance-ch1-zh",
+            "ws-san-kuo-ch1-en"
+          ]
+        },
+        {
+          "role": "역사 확인",
+          "question": "36방과 노란 표식은 실제 기록에도 있는가?",
+          "use": "후한서 권71에서 조직 규모와 황건 표식을 확인하되 숫자는 그대로 확정하지 않음",
+          "source_ids": [
+            "ws-houhanshu-vol71"
+          ]
+        },
+        {
+          "role": "현대 해석",
+          "question": "소속과 공통 신호는 왜 행동을 묶는가?",
+          "use": "후한 말 연구로 맥락을 확인하고 사회적 영향 자료로 동조·집단 규범의 일반 원리를 점검",
+          "source_ids": [
+            "anu-last-han",
+            "openstax-social-influence"
+          ]
+        },
+        {
+          "role": "시각 참고",
+          "question": "황건이라는 표식을 어떻게 기억하게 만들까?",
+          "use": "공개 영역 고전 삽화는 시각 문법만 참고하고, 화면은 자체 전황판으로 제작",
+          "source_ids": [
+            "commons-romance-illustrations"
+          ]
+        }
+      ],
+      "strategy_card_id": "pilot-3",
+      "strategy_card": {
+        "id": "pilot-3",
+        "name": "사람을 묶는 표식",
+        "plain_rule": "공통 신호는 협력을 싸게 만들지만 개인 판단과 이탈의 비용도 올린다."
+      },
+      "life_application": {
+        "prompt": "내가 속한 집단에서 ‘우리라면 당연히’라고 여기는 행동 하나를 적고, 반대할 자유가 있는지 확인해보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 4,
+        "question": "황건의 계획이 내부에서 새자 장각은 왜 멈추지 않고 봉기를 앞당겼을까?"
+      },
+      "new_terms": [
+        "방",
+        "위임",
+        "지점망"
+      ],
+      "source_ids": [
+        "ws-romance-ch1-zh",
+        "ws-san-kuo-ch1-en",
+        "ws-houhanshu-vol71",
+        "anu-last-han",
+        "openstax-social-influence",
+        "commons-romance-illustrations"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "https://koni-ai.github.io/ai-usecase-feed/samgukji/images/day-003.svg",
+        "alt": "184년 이전 거록·8개 주의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "공개 원전 기반 자체 제작 · 고전 삽화는 시각 참고만 사용",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Romance_of_the_Three_Kingdoms_in_Illustrations_WDL11391.pdf",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [
+          "commons-romance-illustrations"
+        ],
+        "provenance_note": "외부 삽화를 복제하지 않고 세력·장소·흐름을 새 SVG로 구성했다."
+      }
     }
   ],
-  "generated_at": "2026-09-01T10:41:52+09:00"
+  "generated_at": "2026-09-02T09:51:32+09:00"
 }
