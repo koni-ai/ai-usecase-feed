@@ -896,7 +896,176 @@
         ],
         "provenance_note": "외부 삽화를 복제하지 않고 세력·장소·흐름을 새 SVG로 구성했다."
       }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 1,
+      "day": 4,
+      "event_id": "w01-d4",
+      "published_at": "2026-09-03",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+        "chronological": true
+      },
+      "title": "노란 천과 비밀 신호",
+      "cold_open": "설명서가 없어도 수십만 명을 같은 순간에 움직이게 하는 방법은 무엇일까? 장각의 조직은 긴 계획서 대신 날짜, 구호, 색을 사용했다.",
+      "yesterday_recall": {
+        "from_day": 3,
+        "prompt": "어제의 핵심 ‘사람을 묶는 표식’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": null,
+      "situation_board": {
+        "era": "184년 직전",
+        "places": [
+          "낙양",
+          "지방 거점"
+        ],
+        "factions": [
+          "태평도",
+          "내부 협력자",
+          "후한 관리"
+        ],
+        "one_line": "짧은 구호와 눈에 띄는 색은 복잡한 계획을 빠르게 행동으로 바꿨다.",
+        "image_id": "day-004"
+      },
+      "orientation": null,
+      "memory_lock": null,
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "장각 쪽은 관청의 문에 흰 흙으로 ‘갑자’라는 글자를 남기고, 특정 시점을 기다렸다고 후한서는 전한다. ‘푸른 하늘은 이미 죽었고 노란 하늘이 선다’는 말은 시대가 바뀐다는 메시지를 짧게 압축했다. 봉기가 시작되자 사람들은 머리에 노란 천을 둘러 서로를 알아봤다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "갑자는 옛 달력에서 한 주기가 다시 시작되는 해를 가리킨다. 184년이 그 해였다. 색과 날짜는 글을 길게 읽지 못하는 사람도 기억하기 쉬운 신호였다. 동시에 비밀 계획이 밖으로 새면 신호망 전체가 한꺼번에 드러난다는 약점도 있었다. 단순한 신호는 빠르지만, 잘못 퍼졌을 때 되돌리기 어렵다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "사람을 움직이는 기술",
+          "body": "사람을 움직이는 기술은 복잡한 현실을 선명한 두 편으로 나눈다. 낡은 하늘과 새 하늘, 우리와 그들, 지금과 곧 올 미래다. 이런 구도는 불확실성을 줄이고 행동을 쉽게 만든다. 그러나 선택지를 둘로만 좁혀 중간 의견을 배신처럼 만들 수 있다. 눈에 띄는 신호는 소속감과 감시를 동시에 만든다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "회사 슬로건, 정치 구호, 온라인 해시태그도 비슷한 힘을 쓴다. 좋은 구호는 사람들이 같은 목표를 기억하게 한다. 위험한 구호는 질문을 없애고, 반대하는 사람을 악으로 묶는다. 메시지가 짧을수록 그 뒤에서 누가 이익을 얻는지, 빠진 선택지가 무엇인지 한 번 더 봐야 한다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "짧은 구호가 모두 조작은 아니다. 위기 상황에서는 복잡한 명령을 줄여야 할 때도 있다. 문제는 구호가 사실 검토와 이견을 막는가이다. 장각의 구호를 현대 집단에 그대로 붙이지 말고, 신호가 행동 비용을 낮추는 원리만 가져온다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "당신이 비밀 조직의 운영자라면 신호를 더 단순하게 만들겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "색과 한 문장으로 통일한다",
+            "temptation": "기억과 동원이 쉬워진다",
+            "risk": "노출과 집단사고 위험이 커진다"
+          },
+          {
+            "id": "b",
+            "label": "지역마다 다른 신호를 쓴다",
+            "temptation": "한 번에 전체가 드러나지 않는다",
+            "risk": "서로를 확인하기 어렵고 혼선이 커진다"
+          }
+        ],
+        "historical_choice": "장각 세력은 갑자와 노란색 같은 단순한 신호를 사용했다. 계획은 빠르게 공유됐지만 배신 뒤에는 관련자가 넓게 드러났다."
+      },
+      "consequences": {
+        "gained": "빠른 확인과 강한 소속",
+        "lost": "중간 의견과 비밀의 안전",
+        "returned_later": "내부 고발 한 번이 전체 봉기 일정을 앞당긴다."
+      },
+      "hidden_board": {
+        "primary_lens": "DARK",
+        "secondary_lens": "BEHAVIOR",
+        "visible_event": "짧은 구호와 눈에 띄는 색은 복잡한 계획을 빠르게 행동으로 바꿨다.",
+        "hidden_desire": "불확실한 세상에서 분명한 편을 갖고 싶다",
+        "hidden_mechanism": "복잡한 현실을 두 편과 한 신호로 줄인다",
+        "modern_signal": "질문보다 구호 반복을 충성의 기준으로 삼는다",
+        "defense": "구호가 지운 선택지와 이익을 얻는 사람을 적어본다.",
+        "caveat": "짧은 구호가 모두 조작은 아니다. 위기 상황에서는 복잡한 명령을 줄여야 할 때도 있다. 문제는 구호가 사실 검토와 이견을 막는가이다. 장각의 구호를 현대 집단에 그대로 붙이지 말고, 신호가 행동 비용을 낮추는 원리만 가져온다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "후한서는 관청 문에 ‘갑자’를 쓰고 날짜를 맞추려 했으며, 봉기군이 노란 천을 표식으로 썼다고 전한다.",
+          "source_ids": [
+            "hhs-huangfu-zhu"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의는 ‘푸른 하늘은 이미 죽었다’는 구호와 황건 표식을 영웅 시대의 시작을 알리는 장면으로 크게 강조한다.",
+          "source_ids": [
+            "romance-ch1"
+          ]
+        }
+      ],
+      "evidence_chain": [],
+      "strategy_card_id": "pilot-4",
+      "strategy_card": {
+        "id": "pilot-4",
+        "name": "선명한 두 편",
+        "plain_rule": "메시지가 쉬울수록 행동은 빨라지지만, 빠진 선택지와 반대 증거도 커질 수 있다."
+      },
+      "life_application": {
+        "prompt": "최근 나를 즉시 한쪽 편으로 끌어당긴 문장을 떠올리고, 그 문장이 숨긴 세 번째 선택지를 적어보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 5,
+        "question": "많은 사람이 같은 신호를 보았을 때, 정말 모두 같은 이유로 움직였을까?"
+      },
+      "new_terms": [
+        "갑자",
+        "구호",
+        "집단사고"
+      ],
+      "source_ids": [
+        "hhs-huangfu-zhu",
+        "romance-ch1"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "https://koni-ai.github.io/ai-usecase-feed/samgukji/images/day-004.svg",
+        "alt": "184년 직전 낙양·지방 거점의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "일일 기록 기반 자체 제작",
+        "source_url": "https://ctext.org/hou-han-shu/huang-fu-song-zhu-jun-lie-zhuan/zh",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
+      }
     }
   ],
-  "generated_at": "2026-09-02T09:51:32+09:00"
+  "generated_at": "2026-09-03T09:58:38+09:00"
 }
