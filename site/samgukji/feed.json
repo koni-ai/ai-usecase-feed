@@ -1231,7 +1231,176 @@
         "visual_reference_source_ids": [],
         "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
       }
+    },
+    {
+      "schema_version": 1,
+      "format_version": 1,
+      "day": 6,
+      "event_id": "w01-d6",
+      "published_at": "2026-09-05",
+      "read_minutes": 10,
+      "balance": {
+        "story_minutes": 5,
+        "life_minutes": 5
+      },
+      "narrative_anchor": {
+        "work": "삼국연의",
+        "chapter": 1,
+        "chapter_title": "宴桃園豪傑三結義，斬黃巾英雄首立功",
+        "url": "https://ctext.org/sanguo-yanyi/ch1/zh",
+        "chronological": true
+      },
+      "title": "36개 거점의 힘과 약점",
+      "cold_open": "큰 조직의 위기는 사람이 부족해서가 아니라 연결 방식이 틀려서 온다. 36개의 거점은 장각의 가장 큰 자산이자 가장 넓은 공격면이었다.",
+      "yesterday_recall": {
+        "from_day": 5,
+        "prompt": "어제의 핵심 ‘다수가 정보처럼 보일 때’를 한 문장으로 설명해보세요."
+      },
+      "spaced_recall": null,
+      "situation_board": {
+        "era": "184년 직전",
+        "places": [
+          "거록",
+          "36개 방"
+        ],
+        "factions": [
+          "장각 지도부",
+          "방 책임자",
+          "신도"
+        ],
+        "one_line": "분산된 조직은 빨리 퍼지지만 한 번에 같은 품질과 비밀을 지키기 어렵다.",
+        "image_id": "day-006"
+      },
+      "orientation": null,
+      "memory_lock": null,
+      "story_sections": [
+        {
+          "title": "그날의 장면",
+          "body": "각 방은 자기 지역에서 사람을 모으고 연락을 유지했다. 중앙이 멀어도 지역 책임자가 결정할 수 있으니 속도가 빨랐다. 문제가 생겨도 한 거점이 다른 거점과 떨어져 버틸 수 있었을 것이다. 그러나 모두가 같은 날짜에 움직여야 하는 계획에서는 연락 하나가 늦거나 새는 순간 전체가 흔들린다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "기록에 남은 것",
+          "body": "후한서는 장각이 36방을 두고 각 책임자를 장군이라 불렀다고 전한다. 동시에 수도 안의 협력자와 지방 조직을 잇는 계획도 있었다. 이 연결망에서 당주라는 사람이 계획을 고발하자, 마원의가 처형되고 관련자 수사가 넓어졌다. 분산 조직도 핵심 일정과 인맥은 몇 개의 연결점에 의존했다.",
+          "claim_tags": [
+            "HISTORY"
+          ]
+        },
+        {
+          "title": "장사의 눈",
+          "body": "사업에서 이런 지점을 단일 실패 지점이라고 부른다. 겉으로 지점이 많아도 결제, 물류, 한 명의 승인자, 하나의 비밀번호에 모두 기대면 실제로는 분산되지 않았다. 장각의 세력도 사람은 넓게 퍼졌지만, 시작 날짜와 중앙 연결은 좁은 길목에 몰려 있었다. 성장 지도와 실패 지도를 따로 그려야 하는 이유다.",
+          "claim_tags": [
+            "INTERPRETATION"
+          ]
+        },
+        {
+          "title": "지금 우리에게 보이면",
+          "body": "팀이 여러 개여도 모든 결정이 대표 한 명에게 모이면 대표가 멈출 때 회사가 멈춘다. 반대로 누구나 모든 정보에 접근하면 한 사람의 실수로 전체가 드러난다. 중요한 정보는 필요한 만큼만 나누고, 한 길목이 막혀도 이어지는 대체 경로를 만들어야 한다.",
+          "claim_tags": [
+            "APPLICATION"
+          ]
+        },
+        {
+          "title": "여기까지는 단정하지 않는다",
+          "body": "당주의 고발이 정확히 어느 범위의 정보를 포함했는지는 기록만으로 완전히 복원하기 어렵다. 또한 현대 보안 조직과 반란 조직은 목적과 윤리가 다르다. 여기서는 불법 행동의 은폐법을 배우는 것이 아니라, 조직이 커질수록 연결점과 권한 관리가 왜 중요해지는지 본다.",
+          "claim_tags": [
+            "CAVEAT"
+          ]
+        }
+      ],
+      "decision": {
+        "prompt": "36개 거점을 운영한다면 가장 먼저 어떤 안전장치를 만들겠는가?",
+        "options": [
+          {
+            "id": "a",
+            "label": "모든 정보를 빠르게 공유한다",
+            "temptation": "현장이 같은 방향으로 움직인다",
+            "risk": "한 번의 유출 피해가 커진다"
+          },
+          {
+            "id": "b",
+            "label": "필요한 정보만 나눈다",
+            "temptation": "피해 범위를 줄인다",
+            "risk": "전체 상황을 모르는 현장이 잘못 판단할 수 있다"
+          }
+        ],
+        "historical_choice": "36방은 확장과 동원의 힘을 줬지만 핵심 계획의 연결점이 드러나자 예정된 움직임을 유지하기 어려웠다."
+      },
+      "consequences": {
+        "gained": "분산된 실행력",
+        "lost": "정보 통제와 일정의 안정",
+        "returned_later": "고발 뒤 장각은 예정일보다 빨리 움직여야 했다."
+      },
+      "hidden_board": {
+        "primary_lens": "BIZ",
+        "secondary_lens": "SYSTEM",
+        "visible_event": "분산된 조직은 빨리 퍼지지만 한 번에 같은 품질과 비밀을 지키기 어렵다.",
+        "hidden_desire": "큰 조직을 빠르게 내 뜻대로 움직이고 싶다",
+        "hidden_mechanism": "지역 권한과 중앙 신호를 결합한다",
+        "modern_signal": "많은 팀이 한 사람·한 계정·한 승인에 의존한다",
+        "defense": "핵심 길목과 대체 경로, 접근 권한을 따로 점검한다.",
+        "caveat": "당주의 고발이 정확히 어느 범위의 정보를 포함했는지는 기록만으로 완전히 복원하기 어렵다. 또한 현대 보안 조직과 반란 조직은 목적과 윤리가 다르다. 여기서는 불법 행동의 은폐법을 배우는 것이 아니라, 조직이 커질수록 연결점과 권한 관리가 왜 중요해지는지 본다."
+      },
+      "record_check": [
+        {
+          "label": "HISTORY",
+          "text": "후한서의 36방 기록과 봉기 계획 누설 기록은 확장망과 핵심 연결점이 함께 있었음을 보여준다.",
+          "source_ids": [
+            "hhs-huangfu-zhu"
+          ]
+        },
+        {
+          "label": "ROMANCE",
+          "text": "연의는 당주가 밀고하고 마원의가 붙잡히면서 계획이 앞당겨지는 흐름을 극적으로 압축한다.",
+          "source_ids": [
+            "romance-ch1"
+          ]
+        }
+      ],
+      "evidence_chain": [],
+      "strategy_card_id": "pilot-6",
+      "strategy_card": {
+        "id": "pilot-6",
+        "name": "성장 지도와 실패 지도",
+        "plain_rule": "많이 나뉘어 있어도 하나의 길목에 기대면 실제로는 하나의 조직이다."
+      },
+      "life_application": {
+        "prompt": "내 일에서 멈추면 모두가 기다려야 하는 사람·파일·승인 하나를 찾아 대체 방법을 적어보자.",
+        "difference_warning": "현대 조직과 후한 말 국가는 조건과 피해 규모가 다릅니다. 원리만 비교하세요."
+      },
+      "reward": {
+        "insight_points": 20,
+        "card_updates": [
+          "zhang-jue"
+        ]
+      },
+      "tomorrow": {
+        "day": 7,
+        "question": "첫 주 군사회의: 반란군을 잡는 것과 반란이 생기는 구조를 고치는 것 중 무엇이 먼저일까?"
+      },
+      "new_terms": [
+        "거점",
+        "단일 실패 지점",
+        "접근 권한"
+      ],
+      "source_ids": [
+        "hhs-huangfu-zhu",
+        "romance-ch1"
+      ],
+      "image": {
+        "kind": "situation-board",
+        "url": "https://koni-ai.github.io/ai-usecase-feed/samgukji/images/day-006.svg",
+        "alt": "184년 직전 거록·36개 방의 세력과 흐름을 단순화한 전황판",
+        "creator": "PJ24 편집 전황판",
+        "source_name": "일일 기록 기반 자체 제작",
+        "source_url": "https://ctext.org/hou-han-shu/huang-fu-song-zhu-jun-lie-zhuan/zh",
+        "license": "PJ24 private editorial asset",
+        "visual_reference_source_ids": [],
+        "provenance_note": "원전 기록을 바탕으로 새 SVG를 구성했다."
+      }
     }
   ],
-  "generated_at": "2026-09-04T09:49:50+09:00"
+  "generated_at": "2026-09-05T09:38:37+09:00"
 }
